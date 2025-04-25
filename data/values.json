@@ -1,0 +1,2712 @@
+{
+    "ingredients": {
+        "Thistle Branch": {
+            "effects": {
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Poison": {
+                    "magnitude": 0.8,
+                    "duration": 0.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Snowberry": {
+            "effects": {
+                "Resist Fire": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 0.2,
+                    "duration": 0.1
+                },
+                "Resist Frost": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Resist Shock": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Pine Thrush Egg": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Lockpicking": {
+                    "magnitude": 1.8,
+                    "duration": 1.0
+                },
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Chicken's Egg": {
+            "effects": {
+                "Resist Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Waterbreathing": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Nightshade": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 1.7,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Destruction": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Bone Meal": {
+            "effects": {
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Fire": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Fortify Conjuration": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Damage Maximum Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Salt": {
+            "effects": {
+                "Weakness to Magic": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Restoration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Tardiness": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Garlic": {
+            "effects": {
+                "Resist Poison": {
+                    "magnitude": 0.5,
+                    "duration": 5.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 0.3,
+                    "duration": 1.0
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 0.2
+                },
+                "Fortify Health Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 0.2
+                }
+            }
+        },
+        "Elves Ear": {
+            "effects": {
+                "Restore Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Marksman": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Frost": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Resist Fire": {
+                    "magnitude": 1.0,
+                    "duration": 0.5
+                }
+            }
+        },
+        "Frost Mirriam": {
+            "effects": {
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Sneak": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Chaurus Eggs": {
+            "effects": {
+                "Weakness to Poison": {
+                    "magnitude": 2.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Invisibility": {
+                    "magnitude": 1.0,
+                    "duration": 0.4
+                }
+            }
+        },
+        "Daedra Heart": {
+            "effects": {
+                "Lingering Damage Health": {
+                    "magnitude": 10.0,
+                    "duration": 12.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 10.0,
+                    "duration": 6.0
+                },
+                "Restore Stamina": {
+                    "magnitude": 10.0,
+                    "duration": 6.0
+                },
+                "Restore Health": {
+                    "magnitude": 20.0,
+                    "duration": 6.0
+                }
+            }
+        },
+        "Falmer Ear": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Frenzy": {
+                    "magnitude": 1.2,
+                    "duration": 1.0
+                },
+                "Resist Poison": {
+                    "magnitude": 1.3,
+                    "duration": 1.0
+                },
+                "Fortify Lockpicking": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Fire Salts": {
+            "effects": {
+                "Weakness to Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Fire": {
+                    "magnitude": 1.0,
+                    "duration": 5.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 2.5,
+                    "duration": 2.3
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Frost Salts": {
+            "effects": {
+                "Weakness to Fire": {
+                    "magnitude": 1.0,
+                    "duration": 2.0
+                },
+                "Resist Frost": {
+                    "magnitude": 2.0,
+                    "duration": 5.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 3.5,
+                    "duration": 2.3
+                },
+                "Fortify Conjuration": {
+                    "magnitude": 1.1,
+                    "duration": 3.0
+                }
+            }
+        },
+        "Void Salts": {
+            "effects": {
+                "Weakness to Shock": {
+                    "magnitude": 6.7,
+                    "duration": 1.0
+                },
+                "Resist Magic": {
+                    "magnitude": 3.0,
+                    "duration": 5.0
+                },
+                "Damage Health": {
+                    "magnitude": 3.3,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 2.0,
+                    "duration": 5.0
+                }
+            }
+        },
+        "Briar Heart": {
+            "effects": {
+                "Restore Magicka": {
+                    "magnitude": 2.0,
+                    "duration": 1.5
+                },
+                "Fortify Block": {
+                    "magnitude": 0.5,
+                    "duration": 2.0
+                },
+                "Paralysis": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 2.0
+                }
+            }
+        },
+        "Ectoplasm": {
+            "effects": {
+                "Restore Magicka": {
+                    "magnitude": 2.5,
+                    "duration": 1.0
+                },
+                "Fortify Destruction": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Giant's Toe": {
+            "effects": {
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health": {
+                    "magnitude": 1.0,
+                    "duration": 5.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Hagraven Feathers": {
+            "effects": {
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Conjuration": {
+                    "magnitude": 1.1,
+                    "duration": 1.0
+                },
+                "Frenzy": {
+                    "magnitude": 1.2,
+                    "duration": 1.0
+                },
+                "Weakness to Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Ice Wraith Teeth": {
+            "effects": {
+                "Weakness to Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Soulreaping": {
+                    "magnitude": 1.0,
+                    "duration": 0.5
+                },
+                "Invisibility": {
+                    "magnitude": 1.0,
+                    "duration": 0.4
+                },
+                "Weakness to Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Skeever Tail": {
+            "effects": {
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Slaughterfish Scales": {
+            "effects": {
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 1.4,
+                    "duration": 1.0
+                },
+                "Fortify Block": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Taproot": {
+            "effects": {
+                "Weakness to Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Troll Fat": {
+            "effects": {
+                "Resist Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Two-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Frenzy": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Glow Dust": {
+            "effects": {
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Destruction": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Vampire Dust": {
+            "effects": {
+                "Sanguinare Vampiris": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Soulreaping": {
+                    "magnitude": 1.0,
+                    "duration": 2.5
+                },
+                "Invisibility": {
+                    "magnitude": 1.0,
+                    "duration": 1.6
+                },
+                "Cure Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Tundra Cotton": {
+            "effects": {
+                "Resist Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Block": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Barter": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Lavender": {
+            "effects": {
+                "Resist Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Conjuration": {
+                    "magnitude": 0.9,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Wheat": {
+            "effects": {
+                "Restore Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Fly Amanita": {
+            "effects": {
+                "Resist Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Two-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Frenzy": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Bleeding Crown": {
+            "effects": {
+                "Weakness to Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Block": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "White Cap": {
+            "effects": {
+                "Weakness to Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Damage Maximum Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Imp Stool": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.3,
+                    "duration": 0.2
+                },
+                "Restore Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Namira's Rot": {
+            "effects": {
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Lockpicking": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fear": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Blisterwort": {
+            "effects": {
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Frenzy": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Restore Health": {
+                    "magnitude": 3.0,
+                    "duration": 0.5
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 0.8,
+                    "duration": 0.1
+                }
+            }
+        },
+        "Torchbug Thorax": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Juniper Berries": {
+            "effects": {
+                "Weakness to Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Marksman": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Deathbell": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 5.0
+                },
+                "Damage Maximum Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 2.0
+                },
+                "Tardiness": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Charred Skeever Hide": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Resist Poison": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Waterbreathing": {
+                    "magnitude": 1.0,
+                    "duration": 4.0
+                },
+                "Restore Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Hanging Moss": {
+            "effects": {
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify One-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Nirnroot": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 5.0,
+                    "duration": 0.0
+                },
+                "Damage Stamina": {
+                    "magnitude": 5.0,
+                    "duration": 1.0
+                },
+                "Invisibility": {
+                    "magnitude": 1.0,
+                    "duration": 1.7
+                },
+                "Resist Magic": {
+                    "magnitude": 4.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Spriggan Sap": {
+            "effects": {
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Restoration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Alteration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Canis Root": {
+            "effects": {
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify One-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Marksman": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 3.3,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Jazbay Grapes": {
+            "effects": {
+                "Weakness to Magic": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 0.4,
+                    "duration": 1.0
+                },
+                "Damage Maximum Health": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Hagraven Claw": {
+            "effects": {
+                "Resist Magic": {
+                    "magnitude": 1.0,
+                    "duration": 2.0
+                },
+                "Lingering Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Soulreaping": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Mudcrab Chitin": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Resist Poison": {
+                    "magnitude": 1.3,
+                    "duration": 1.0
+                },
+                "Resist Shock": {
+                    "magnitude": 1.3,
+                    "duration": 1.0
+                },
+                "Resist Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Claws": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 2.0,
+                    "duration": 0.2
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Sabre Cat Tooth": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 0.5
+                },
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Sabre Cat Eye": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.5,
+                    "duration": 1.0
+                },
+                "Damage Maximum Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Large Antlers": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.5,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.3,
+                    "duration": 2.0
+                },
+                "Tardiness": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Small Antlers": {
+            "effects": {
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Restoration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Wisp Wrappings": {
+            "effects": {
+                "Soulreaping": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Destruction": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Powdered Mammoth Tusk": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 2.5,
+                    "duration": 1.0
+                },
+                "Fortify Sneak": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fear": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Scaly Pholiota": {
+            "effects": {
+                "Weakness to Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Blue Butterfly Wing": {
+            "effects": {
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Conjuration": {
+                    "magnitude": 1.1,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Luna Moth Wing": {
+            "effects": {
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Invisibility": {
+                    "magnitude": 1.0,
+                    "duration": 0.4
+                }
+            }
+        },
+        "Butterfly Wing": {
+            "effects": {
+                "Restore Health": {
+                    "magnitude": 2.0,
+                    "duration": 1.0
+                },
+                "Fortify Barter": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Blue Mountain Flower": {
+            "effects": {
+                "Restore Health": {
+                    "magnitude": 0.5,
+                    "duration": 0.5
+                },
+                "Fortify Conjuration": {
+                    "magnitude": 0.4,
+                    "duration": 1.0
+                },
+                "Fortify Health": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 0.1,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Red Mountain Flower": {
+            "effects": {
+                "Restore Magicka": {
+                    "magnitude": 0.3,
+                    "duration": 0.5
+                },
+                "Damage Maximum Magicka": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 0.3,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Purple Mountain Flower": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 0.3,
+                    "duration": 1.0
+                },
+                "Fortify Sneak": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Lingering Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 0.5
+                },
+                "Resist Frost": {
+                    "magnitude": 0.3,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Swamp Fungal Pod": {
+            "effects": {
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 1.7,
+                    "duration": 1.0
+                },
+                "Restore Health": {
+                    "magnitude": 2.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Giant Lichen": {
+            "effects": {
+                "Weakness to Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Slaughterfish Egg": {
+            "effects": {
+                "Fortify Pickpocket": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Rock Warbler Egg": {
+            "effects": {
+                "Restore Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify One-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Nordic Barnacle": {
+            "effects": {
+                "Damage Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Waterbreathing": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Health Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Pickpocket": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Glowing Mushroom": {
+            "effects": {
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Destruction": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 0.5
+                },
+                "Fortify Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Grass Pod": {
+            "effects": {
+                "Resist Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Alteration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Pearl": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.5,
+                    "duration": 1.0
+                },
+                "Fortify Block": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 1.5,
+                    "duration": 1.0
+                },
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Small Pearl": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify One-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Restoration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Dragon's Tongue": {
+            "effects": {
+                "Resist Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.3
+                },
+                "Fortify Barter": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Two-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Spider Egg": {
+            "effects": {
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Lockpicking": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Marksman": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Beehive Husk": {
+            "effects": {
+                "Resist Poison": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Fortify Sneak": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Destruction": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Bee": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Damage Maximum Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Honeycomb": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 2.0,
+                    "duration": 1.0
+                },
+                "Fortify Block": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Armor Rating": {
+                    "magnitude": 0.8,
+                    "duration": 1.0
+                },
+                "Damage Maximum Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Heart": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 1.7,
+                    "duration": 0.0
+                },
+                "Damage Magicka": {
+                    "magnitude": 1.7,
+                    "duration": 1.0
+                },
+                "Damage Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Frenzy": {
+                    "magnitude": 1.2,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Creep Cluster": {
+            "effects": {
+                "Restore Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Crimson Nirnroot": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 6.7,
+                    "duration": 1.0
+                },
+                "Damage Stamina": {
+                    "magnitude": 6.7,
+                    "duration": 1.0
+                },
+                "Invisibility": {
+                    "magnitude": 1.0,
+                    "duration": 2.5
+                },
+                "Resist Magic": {
+                    "magnitude": 5.0,
+                    "duration": 3.0
+                }
+            }
+        },
+        "Orange Dartwing": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Pickpocket": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Moon Sugar": {
+            "effects": {
+                "Weakness to Fire": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 2.5,
+                    "duration": 1.0
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Blue Dartwing": {
+            "effects": {
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Pickpocket": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fear": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Hawk Beak": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.5,
+                    "duration": 1.0
+                },
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Shock": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Hawk Feathers": {
+            "effects": {
+                "Fortify Armor Rating": {
+                    "magnitude": 1.4,
+                    "duration": 1.0
+                },
+                "Cure Disease": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify One-Handed": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Sneak": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Mora Tapinella": {
+            "effects": {
+                "Restore Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Lingering Damage Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Dwarven Oil": {
+            "effects": {
+                "Weakness to Magic": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Illusion": {
+                    "magnitude": 1.3,
+                    "duration": 1.0
+                },
+                "Fortify Magicka Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 2.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Human Flesh": {
+            "effects": {
+                "Damage Health": {
+                    "magnitude": 0.7,
+                    "duration": 1.0
+                },
+                "Paralysis": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Restore Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Sneak": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Histcarp": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 0.5,
+                    "duration": 1.0
+                },
+                "Fortify Magicka": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Waterbreathing": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Cyrodilic Spadetail": {
+            "effects": {
+                "Fortify Restoration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fear": {
+                    "magnitude": 1.5,
+                    "duration": 1.0
+                },
+                "Damage Maximum Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "River Betty": {
+            "effects": {
+                "Fortify Alteration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Health": {
+                    "magnitude": 1.7,
+                    "duration": 0.0
+                },
+                "Tardiness": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Carry Weight": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Abcean Longfin": {
+            "effects": {
+                "Fortify Sneak": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Weakness to Poison": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Fortify Restoration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        },
+        "Silverside Perch": {
+            "effects": {
+                "Restore Stamina": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Stamina Regeneration": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Damage Maximum Health": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                },
+                "Resist Frost": {
+                    "magnitude": 1.0,
+                    "duration": 1.0
+                }
+            }
+        }
+    },
+    "effects": {
+        "Resist Frost": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Thistle Branch",
+                    "Frost Mirriam",
+                    "Slaughterfish Scales",
+                    "Small Pearl",
+                    "Moon Sugar",
+                    "Hawk Beak",
+                    "Silverside Perch"
+                ],
+                "('0.7', '1.0')": [
+                    "Snowberry"
+                ],
+                "('2.0', '5.0')": [
+                    "Frost Salts"
+                ],
+                "('0.3', '1.0')": [
+                    "Purple Mountain Flower"
+                ]
+            }
+        },
+        "Damage Maximum Stamina": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Thistle Branch",
+                    "Bone Meal",
+                    "Bee",
+                    "Honeycomb"
+                ],
+                "('1.0', '2.0')": [
+                    "Deathbell"
+                ]
+            }
+        },
+        "Resist Poison": {
+            "variants": {
+                "('0.8', '0.0')": [
+                    "Thistle Branch"
+                ],
+                "('0.5', '5.0')": [
+                    "Garlic"
+                ],
+                "('1.3', '1.0')": [
+                    "Falmer Ear",
+                    "Mudcrab Chitin"
+                ],
+                "('1.0', '1.0')": [
+                    "Troll Fat",
+                    "Slaughterfish Egg",
+                    "Grass Pod"
+                ],
+                "('0.5', '1.0')": [
+                    "Charred Skeever Hide",
+                    "Beehive Husk"
+                ]
+            }
+        },
+        "Fortify Armor Rating": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Thistle Branch",
+                    "Skeever Tail",
+                    "White Cap",
+                    "Claws",
+                    "Luna Moth Wing"
+                ],
+                "('1.4', '1.0')": [
+                    "Slaughterfish Scales",
+                    "Hawk Feathers"
+                ],
+                "('0.8', '1.0')": [
+                    "Sabre Cat Tooth",
+                    "Beehive Husk",
+                    "Honeycomb"
+                ]
+            }
+        },
+        "Resist Fire": {
+            "variants": {
+                "('0.7', '1.0')": [
+                    "Snowberry",
+                    "Bone Meal"
+                ],
+                "('1.0', '0.5')": [
+                    "Elves Ear"
+                ],
+                "('1.0', '5.0')": [
+                    "Fire Salts"
+                ],
+                "('1.0', '1.0')": [
+                    "Fly Amanita",
+                    "Mudcrab Chitin"
+                ],
+                "('1.0', '1.3')": [
+                    "Dragon's Tongue"
+                ]
+            }
+        },
+        "Fortify Stamina Regeneration": {
+            "variants": {
+                "('0.2', '0.1')": [
+                    "Snowberry"
+                ],
+                "('1.0', '1.0')": [
+                    "Fly Amanita",
+                    "Scaly Pholiota",
+                    "Bee",
+                    "Mora Tapinella"
+                ],
+                "('0.8', '0.1')": [
+                    "Blisterwort"
+                ],
+                "('2.0', '0.2')": [
+                    "Claws"
+                ]
+            }
+        },
+        "Resist Shock": {
+            "variants": {
+                "('0.7', '1.0')": [
+                    "Snowberry"
+                ],
+                "('1.0', '1.0')": [
+                    "Pine Thrush Egg",
+                    "Glow Dust",
+                    "Swamp Fungal Pod",
+                    "Glowing Mushroom",
+                    "Pearl",
+                    "Blue Dartwing",
+                    "Hawk Beak"
+                ],
+                "('1.3', '1.0')": [
+                    "Mudcrab Chitin"
+                ]
+            }
+        },
+        "Restore Stamina": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Pine Thrush Egg",
+                    "Torchbug Thorax",
+                    "Claws",
+                    "Sabre Cat Tooth",
+                    "Small Pearl",
+                    "Orange Dartwing",
+                    "Silverside Perch"
+                ],
+                "('10.0', '6.0')": [
+                    "Daedra Heart"
+                ],
+                "('0.5', '1.0')": [
+                    "Charred Skeever Hide",
+                    "Mudcrab Chitin",
+                    "Bee",
+                    "Histcarp"
+                ],
+                "('1.5', '1.0')": [
+                    "Sabre Cat Eye",
+                    "Large Antlers",
+                    "Pearl",
+                    "Hawk Beak"
+                ],
+                "('2.5', '1.0')": [
+                    "Powdered Mammoth Tusk"
+                ],
+                "('0.3', '1.0')": [
+                    "Purple Mountain Flower"
+                ],
+                "('2.0', '1.0')": [
+                    "Honeycomb"
+                ]
+            }
+        },
+        "Fortify Lockpicking": {
+            "variants": {
+                "('1.8', '1.0')": [
+                    "Pine Thrush Egg"
+                ],
+                "('1.0', '1.0')": [
+                    "Falmer Ear",
+                    "Namira's Rot",
+                    "Spider Egg"
+                ]
+            }
+        },
+        "Weakness to Poison": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Pine Thrush Egg",
+                    "Bleeding Crown",
+                    "Deathbell",
+                    "Sabre Cat Tooth",
+                    "Small Antlers",
+                    "Giant Lichen",
+                    "Abcean Longfin"
+                ],
+                "('2.0', '1.0')": [
+                    "Chaurus Eggs"
+                ]
+            }
+        },
+        "Resist Magic": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Chicken's Egg",
+                    "Tundra Cotton",
+                    "Lavender",
+                    "Bleeding Crown",
+                    "Wisp Wrappings"
+                ],
+                "('3.0', '5.0')": [
+                    "Void Salts"
+                ],
+                "('4.0', '1.0')": [
+                    "Nirnroot"
+                ],
+                "('1.0', '2.0')": [
+                    "Hagraven Claw"
+                ],
+                "('5.0', '3.0')": [
+                    "Crimson Nirnroot"
+                ]
+            }
+        },
+        "Damage Magicka Regeneration": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Chicken's Egg",
+                    "Nightshade",
+                    "Glow Dust",
+                    "Hanging Moss",
+                    "Spriggan Sap",
+                    "Claws",
+                    "Blue Butterfly Wing",
+                    "Spider Egg",
+                    "Heart"
+                ],
+                "('0.1', '1.0')": [
+                    "Blue Mountain Flower"
+                ]
+            }
+        },
+        "Waterbreathing": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Chicken's Egg",
+                    "Nordic Barnacle",
+                    "Histcarp"
+                ],
+                "('1.0', '4.0')": [
+                    "Charred Skeever Hide"
+                ]
+            }
+        },
+        "Lingering Damage Stamina": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Chicken's Egg",
+                    "Nightshade",
+                    "Small Antlers",
+                    "Butterfly Wing"
+                ]
+            }
+        },
+        "Damage Health": {
+            "variants": {
+                "('1.7', '1.0')": [
+                    "Nightshade",
+                    "Swamp Fungal Pod"
+                ],
+                "('1.0', '1.0')": [
+                    "Falmer Ear",
+                    "Imp Stool"
+                ],
+                "('3.3', '1.0')": [
+                    "Void Salts",
+                    "Canis Root"
+                ],
+                "('0.7', '1.0')": [
+                    "Ectoplasm",
+                    "Skeever Tail",
+                    "Troll Fat",
+                    "Small Antlers",
+                    "Human Flesh"
+                ],
+                "('1.0', '5.0')": [
+                    "Deathbell"
+                ],
+                "('5.0', '0.0')": [
+                    "Nirnroot"
+                ],
+                "('0.3', '1.0')": [
+                    "Red Mountain Flower"
+                ],
+                "('1.7', '0.0')": [
+                    "Heart",
+                    "River Betty"
+                ],
+                "('6.7', '1.0')": [
+                    "Crimson Nirnroot"
+                ]
+            }
+        },
+        "Fortify Destruction": {
+            "variants": {
+                "('0.8', '1.0')": [
+                    "Nightshade",
+                    "Ectoplasm"
+                ],
+                "('1.0', '1.0')": [
+                    "Glow Dust",
+                    "Wisp Wrappings",
+                    "Glowing Mushroom",
+                    "Beehive Husk"
+                ]
+            }
+        },
+        "Damage Stamina": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Bone Meal",
+                    "Giant's Toe",
+                    "Blisterwort",
+                    "Canis Root",
+                    "Blue Butterfly Wing",
+                    "Rock Warbler Egg",
+                    "Spider Egg",
+                    "Cyrodilic Spadetail"
+                ],
+                "('5.0', '1.0')": [
+                    "Nirnroot"
+                ],
+                "('6.7', '1.0')": [
+                    "Crimson Nirnroot"
+                ]
+            }
+        },
+        "Fortify Conjuration": {
+            "variants": {
+                "('0.7', '1.0')": [
+                    "Bone Meal"
+                ],
+                "('1.1', '3.0')": [
+                    "Frost Salts"
+                ],
+                "('1.1', '1.0')": [
+                    "Hagraven Feathers",
+                    "Blue Butterfly Wing"
+                ],
+                "('0.9', '1.0')": [
+                    "Lavender"
+                ],
+                "('0.4', '1.0')": [
+                    "Blue Mountain Flower"
+                ]
+            }
+        },
+        "Weakness to Magic": {
+            "variants": {
+                "('0.5', '1.0')": [
+                    "Salt",
+                    "Jazbay Grapes"
+                ],
+                "('1.0', '1.0')": [
+                    "Taproot",
+                    "Torchbug Thorax",
+                    "Scaly Pholiota",
+                    "Rock Warbler Egg",
+                    "Creep Cluster",
+                    "Dwarven Oil"
+                ]
+            }
+        },
+        "Fortify Restoration": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Salt",
+                    "Spriggan Sap",
+                    "Small Antlers",
+                    "Small Pearl",
+                    "Cyrodilic Spadetail",
+                    "Abcean Longfin"
+                ]
+            }
+        },
+        "Tardiness": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Salt",
+                    "Deathbell",
+                    "Large Antlers",
+                    "River Betty"
+                ]
+            }
+        },
+        "Fortify Magicka Regeneration": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Salt",
+                    "Fire Salts",
+                    "Taproot",
+                    "Moon Sugar",
+                    "Dwarven Oil"
+                ],
+                "('1.0', '0.2')": [
+                    "Garlic"
+                ],
+                "('0.4', '1.0')": [
+                    "Jazbay Grapes"
+                ]
+            }
+        },
+        "Fortify Stamina": {
+            "variants": {
+                "('0.3', '1.0')": [
+                    "Garlic"
+                ],
+                "('1.0', '1.0')": [
+                    "Chaurus Eggs",
+                    "Lavender",
+                    "Torchbug Thorax",
+                    "Slaughterfish Egg"
+                ],
+                "('1.0', '0.5')": [
+                    "Sabre Cat Tooth",
+                    "Glowing Mushroom"
+                ],
+                "('1.3', '2.0')": [
+                    "Large Antlers"
+                ]
+            }
+        },
+        "Fortify Health Regeneration": {
+            "variants": {
+                "('1.0', '0.2')": [
+                    "Garlic"
+                ],
+                "('1.0', '1.0')": [
+                    "Namira's Rot",
+                    "Juniper Berries",
+                    "Luna Moth Wing",
+                    "Nordic Barnacle"
+                ]
+            }
+        },
+        "Restore Magicka": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Elves Ear",
+                    "Taproot",
+                    "Grass Pod",
+                    "Creep Cluster",
+                    "Mora Tapinella",
+                    "Human Flesh"
+                ],
+                "('10.0', '6.0')": [
+                    "Daedra Heart"
+                ],
+                "('2.5', '2.3')": [
+                    "Fire Salts"
+                ],
+                "('3.5', '2.3')": [
+                    "Frost Salts"
+                ],
+                "('2.0', '1.5')": [
+                    "Briar Heart"
+                ],
+                "('2.5', '1.0')": [
+                    "Ectoplasm",
+                    "Moon Sugar"
+                ],
+                "('0.5', '1.0')": [
+                    "White Cap",
+                    "Giant Lichen"
+                ],
+                "('0.3', '0.5')": [
+                    "Red Mountain Flower"
+                ],
+                "('1.5', '1.0')": [
+                    "Pearl"
+                ],
+                "('2.0', '1.0')": [
+                    "Dwarven Oil"
+                ]
+            }
+        },
+        "Fortify Marksman": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Elves Ear",
+                    "Juniper Berries",
+                    "Canis Root",
+                    "Spider Egg"
+                ]
+            }
+        },
+        "Weakness to Frost": {
+            "variants": {
+                "('0.7', '1.0')": [
+                    "Elves Ear"
+                ],
+                "('1.0', '1.0')": [
+                    "Fire Salts",
+                    "Ice Wraith Teeth",
+                    "White Cap",
+                    "Abcean Longfin"
+                ]
+            }
+        },
+        "Fortify Sneak": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Frost Mirriam",
+                    "Powdered Mammoth Tusk",
+                    "Hawk Feathers",
+                    "Human Flesh",
+                    "Abcean Longfin"
+                ],
+                "('0.5', '1.0')": [
+                    "Purple Mountain Flower",
+                    "Beehive Husk"
+                ]
+            }
+        },
+        "Damage Maximum Magicka": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Frost Mirriam",
+                    "Lavender",
+                    "White Cap",
+                    "Grass Pod",
+                    "Orange Dartwing"
+                ],
+                "('0.5', '1.0')": [
+                    "Red Mountain Flower"
+                ]
+            }
+        },
+        "Damage Stamina Regeneration": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Frost Mirriam",
+                    "Giant's Toe",
+                    "Skeever Tail",
+                    "Wheat",
+                    "Juniper Berries",
+                    "Creep Cluster",
+                    "Histcarp",
+                    "Silverside Perch"
+                ],
+                "('0.5', '1.0')": [
+                    "Large Antlers"
+                ]
+            }
+        },
+        "Damage Magicka": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Chaurus Eggs",
+                    "Hagraven Feathers",
+                    "Glow Dust",
+                    "Namira's Rot",
+                    "Hanging Moss",
+                    "Sabre Cat Eye",
+                    "Luna Moth Wing",
+                    "Butterfly Wing",
+                    "Nordic Barnacle"
+                ],
+                "('1.7', '1.0')": [
+                    "Heart"
+                ]
+            }
+        },
+        "Invisibility": {
+            "variants": {
+                "('1.0', '0.4')": [
+                    "Chaurus Eggs",
+                    "Ice Wraith Teeth",
+                    "Luna Moth Wing"
+                ],
+                "('1.0', '1.6')": [
+                    "Vampire Dust"
+                ],
+                "('1.0', '1.7')": [
+                    "Nirnroot"
+                ],
+                "('1.0', '2.5')": [
+                    "Crimson Nirnroot"
+                ]
+            }
+        },
+        "Lingering Damage Health": {
+            "variants": {
+                "('10.0', '12.0')": [
+                    "Daedra Heart"
+                ],
+                "('1.0', '1.0')": [
+                    "Slaughterfish Scales",
+                    "Imp Stool",
+                    "Slaughterfish Egg",
+                    "Orange Dartwing",
+                    "Mora Tapinella"
+                ]
+            }
+        },
+        "Restore Health": {
+            "variants": {
+                "('20.0', '6.0')": [
+                    "Daedra Heart"
+                ],
+                "('1.0', '1.0')": [
+                    "Wheat",
+                    "Imp Stool",
+                    "Charred Skeever Hide",
+                    "Sabre Cat Eye",
+                    "Rock Warbler Egg",
+                    "Blue Dartwing"
+                ],
+                "('3.0', '0.5')": [
+                    "Blisterwort"
+                ],
+                "('2.0', '1.0')": [
+                    "Butterfly Wing",
+                    "Swamp Fungal Pod"
+                ],
+                "('0.5', '0.5')": [
+                    "Blue Mountain Flower"
+                ]
+            }
+        },
+        "Frenzy": {
+            "variants": {
+                "('1.2', '1.0')": [
+                    "Falmer Ear",
+                    "Hagraven Feathers",
+                    "Heart"
+                ],
+                "('0.8', '1.0')": [
+                    "Troll Fat",
+                    "Fly Amanita",
+                    "Blisterwort"
+                ]
+            }
+        },
+        "Weakness to Fire": {
+            "variants": {
+                "('1.0', '2.0')": [
+                    "Frost Salts"
+                ],
+                "('1.0', '1.0')": [
+                    "Ice Wraith Teeth",
+                    "Bleeding Crown",
+                    "Juniper Berries",
+                    "Powdered Mammoth Tusk",
+                    "Moon Sugar"
+                ]
+            }
+        },
+        "Weakness to Shock": {
+            "variants": {
+                "('6.7', '1.0')": [
+                    "Void Salts"
+                ],
+                "('1.0', '1.0')": [
+                    "Hagraven Feathers",
+                    "Giant Lichen",
+                    "Bee"
+                ]
+            }
+        },
+        "Fortify Magicka": {
+            "variants": {
+                "('2.0', '5.0')": [
+                    "Void Salts"
+                ],
+                "('1.0', '2.0')": [
+                    "Briar Heart"
+                ],
+                "('1.0', '1.0')": [
+                    "Ectoplasm",
+                    "Histcarp"
+                ],
+                "('0.8', '1.0')": [
+                    "Tundra Cotton"
+                ],
+                "('0.5', '1.0')": [
+                    "Jazbay Grapes",
+                    "Red Mountain Flower"
+                ]
+            }
+        },
+        "Fortify Block": {
+            "variants": {
+                "('0.5', '2.0')": [
+                    "Briar Heart"
+                ],
+                "('1.0', '1.0')": [
+                    "Slaughterfish Scales",
+                    "Bleeding Crown",
+                    "Pearl",
+                    "Honeycomb"
+                ],
+                "('0.8', '1.0')": [
+                    "Tundra Cotton"
+                ]
+            }
+        },
+        "Paralysis": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Briar Heart",
+                    "Human Flesh"
+                ]
+            }
+        },
+        "Fortify Health": {
+            "variants": {
+                "('1.0', '5.0')": [
+                    "Giant's Toe"
+                ],
+                "('0.5', '1.0')": [
+                    "Wheat",
+                    "Blue Mountain Flower"
+                ],
+                "('1.0', '1.0')": [
+                    "Hanging Moss",
+                    "Glowing Mushroom"
+                ]
+            }
+        },
+        "Fortify Carry Weight": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Giant's Toe",
+                    "Wisp Wrappings",
+                    "Scaly Pholiota",
+                    "Creep Cluster",
+                    "Hawk Beak",
+                    "River Betty"
+                ],
+                "('1.3', '0.2')": [
+                    "Imp Stool"
+                ]
+            }
+        },
+        "Soulreaping": {
+            "variants": {
+                "('1.0', '0.5')": [
+                    "Ice Wraith Teeth"
+                ],
+                "('1.0', '2.5')": [
+                    "Vampire Dust"
+                ],
+                "('1.0', '1.0')": [
+                    "Hagraven Claw",
+                    "Wisp Wrappings"
+                ]
+            }
+        },
+        "Damage Maximum Health": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Skeever Tail",
+                    "Sabre Cat Eye",
+                    "Giant Lichen",
+                    "Cyrodilic Spadetail",
+                    "Silverside Perch"
+                ],
+                "('0.5', '1.0')": [
+                    "Jazbay Grapes"
+                ]
+            }
+        },
+        "Fortify Illusion": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Taproot",
+                    "Spriggan Sap",
+                    "Hagraven Claw",
+                    "Scaly Pholiota",
+                    "Mora Tapinella"
+                ],
+                "('0.8', '1.0')": [
+                    "Blue Butterfly Wing",
+                    "Dragon's Tongue"
+                ],
+                "('1.3', '1.0')": [
+                    "Dwarven Oil"
+                ]
+            }
+        },
+        "Fortify Two-Handed": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Troll Fat",
+                    "Fly Amanita",
+                    "Dragon's Tongue"
+                ]
+            }
+        },
+        "Sanguinare Vampiris": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Vampire Dust"
+                ]
+            }
+        },
+        "Cure Poison": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Vampire Dust"
+                ]
+            }
+        },
+        "Fortify Barter": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Tundra Cotton",
+                    "Butterfly Wing",
+                    "Dragon's Tongue"
+                ]
+            }
+        },
+        "Lingering Damage Magicka": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Wheat",
+                    "Torchbug Thorax",
+                    "Hagraven Claw",
+                    "Swamp Fungal Pod"
+                ],
+                "('1.0', '0.5')": [
+                    "Purple Mountain Flower"
+                ]
+            }
+        },
+        "Fear": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Namira's Rot",
+                    "Powdered Mammoth Tusk",
+                    "Blue Dartwing"
+                ],
+                "('1.5', '1.0')": [
+                    "Cyrodilic Spadetail"
+                ]
+            }
+        },
+        "Fortify One-Handed": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Hanging Moss",
+                    "Canis Root",
+                    "Rock Warbler Egg",
+                    "Small Pearl",
+                    "Hawk Feathers"
+                ]
+            }
+        },
+        "Fortify Alteration": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Spriggan Sap",
+                    "Grass Pod",
+                    "River Betty"
+                ]
+            }
+        },
+        "Fortify Pickpocket": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Slaughterfish Egg",
+                    "Nordic Barnacle",
+                    "Orange Dartwing",
+                    "Blue Dartwing"
+                ]
+            }
+        },
+        "Cure Disease": {
+            "variants": {
+                "('1.0', '1.0')": [
+                    "Hawk Feathers"
+                ]
+            }
+        }
+    }
+}

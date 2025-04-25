@@ -1,0 +1,365 @@
+ingredient,effect,magnitude,duration
+Thistle Branch,Resist Frost,1.0,1.0
+Thistle Branch,Damage Maximum Stamina,1.0,1.0
+Thistle Branch,Resist Poison,0.8,0.0
+Thistle Branch,Fortify Armor Rating,1.0,1.0
+Snowberry,Resist Fire,0.7,1.0
+Snowberry,Fortify Stamina Regeneration,0.2,0.1
+Snowberry,Resist Frost,0.7,1.0
+Snowberry,Resist Shock,0.7,1.0
+Pine Thrush Egg,Restore Stamina,1.0,1.0
+Pine Thrush Egg,Fortify Lockpicking,1.8,1.0
+Pine Thrush Egg,Weakness to Poison,1.0,1.0
+Pine Thrush Egg,Resist Shock,1.0,1.0
+Chicken's Egg,Resist Magic,1.0,1.0
+Chicken's Egg,Damage Magicka Regeneration,1.0,1.0
+Chicken's Egg,Waterbreathing,1.0,1.0
+Chicken's Egg,Lingering Damage Stamina,1.0,1.0
+Nightshade,Damage Health,1.7,1.0
+Nightshade,Damage Magicka Regeneration,1.0,1.0
+Nightshade,Lingering Damage Stamina,1.0,1.0
+Nightshade,Fortify Destruction,0.8,1.0
+Bone Meal,Damage Stamina,1.0,1.0
+Bone Meal,Resist Fire,0.7,1.0
+Bone Meal,Fortify Conjuration,0.7,1.0
+Bone Meal,Damage Maximum Stamina,1.0,1.0
+Salt,Weakness to Magic,0.5,1.0
+Salt,Fortify Restoration,1.0,1.0
+Salt,Tardiness,1.0,1.0
+Salt,Fortify Magicka Regeneration,1.0,1.0
+Garlic,Resist Poison,0.5,5.0
+Garlic,Fortify Stamina,0.3,1.0
+Garlic,Fortify Magicka Regeneration,1.0,0.2
+Garlic,Fortify Health Regeneration,1.0,0.2
+Elves Ear,Restore Magicka,1.0,1.0
+Elves Ear,Fortify Marksman,1.0,1.0
+Elves Ear,Weakness to Frost,0.7,1.0
+Elves Ear,Resist Fire,1.0,0.5
+Frost Mirriam,Resist Frost,1.0,1.0
+Frost Mirriam,Fortify Sneak,1.0,1.0
+Frost Mirriam,Damage Maximum Magicka,1.0,1.0
+Frost Mirriam,Damage Stamina Regeneration,1.0,1.0
+Chaurus Eggs,Weakness to Poison,2.0,1.0
+Chaurus Eggs,Fortify Stamina,1.0,1.0
+Chaurus Eggs,Damage Magicka,1.0,1.0
+Chaurus Eggs,Invisibility,1.0,0.4
+Daedra Heart,Lingering Damage Health,10.0,12.0
+Daedra Heart,Restore Magicka,10.0,6.0
+Daedra Heart,Restore Stamina,10.0,6.0
+Daedra Heart,Restore Health,20.0,6.0
+Falmer Ear,Damage Health,1.0,1.0
+Falmer Ear,Frenzy,1.2,1.0
+Falmer Ear,Resist Poison,1.3,1.0
+Falmer Ear,Fortify Lockpicking,1.0,1.0
+Fire Salts,Weakness to Frost,1.0,1.0
+Fire Salts,Resist Fire,1.0,5.0
+Fire Salts,Restore Magicka,2.5,2.3
+Fire Salts,Fortify Magicka Regeneration,1.0,1.0
+Frost Salts,Weakness to Fire,1.0,2.0
+Frost Salts,Resist Frost,2.0,5.0
+Frost Salts,Restore Magicka,3.5,2.3
+Frost Salts,Fortify Conjuration,1.1,3.0
+Void Salts,Weakness to Shock,6.7,1.0
+Void Salts,Resist Magic,3.0,5.0
+Void Salts,Damage Health,3.3,1.0
+Void Salts,Fortify Magicka,2.0,5.0
+Briar Heart,Restore Magicka,2.0,1.5
+Briar Heart,Fortify Block,0.5,2.0
+Briar Heart,Paralysis,1.0,1.0
+Briar Heart,Fortify Magicka,1.0,2.0
+Ectoplasm,Restore Magicka,2.5,1.0
+Ectoplasm,Fortify Destruction,0.8,1.0
+Ectoplasm,Fortify Magicka,1.0,1.0
+Ectoplasm,Damage Health,0.7,1.0
+Giant's Toe,Damage Stamina,1.0,1.0
+Giant's Toe,Fortify Health,1.0,5.0
+Giant's Toe,Fortify Carry Weight,1.0,1.0
+Giant's Toe,Damage Stamina Regeneration,1.0,1.0
+Hagraven Feathers,Damage Magicka,1.0,1.0
+Hagraven Feathers,Fortify Conjuration,1.1,1.0
+Hagraven Feathers,Frenzy,1.2,1.0
+Hagraven Feathers,Weakness to Shock,1.0,1.0
+Ice Wraith Teeth,Weakness to Frost,1.0,1.0
+Ice Wraith Teeth,Soulreaping,1.0,0.5
+Ice Wraith Teeth,Invisibility,1.0,0.4
+Ice Wraith Teeth,Weakness to Fire,1.0,1.0
+Skeever Tail,Damage Stamina Regeneration,1.0,1.0
+Skeever Tail,Damage Maximum Health,1.0,1.0
+Skeever Tail,Damage Health,0.7,1.0
+Skeever Tail,Fortify Armor Rating,1.0,1.0
+Slaughterfish Scales,Resist Frost,1.0,1.0
+Slaughterfish Scales,Lingering Damage Health,1.0,1.0
+Slaughterfish Scales,Fortify Armor Rating,1.4,1.0
+Slaughterfish Scales,Fortify Block,1.0,1.0
+Taproot,Weakness to Magic,1.0,1.0
+Taproot,Fortify Illusion,1.0,1.0
+Taproot,Fortify Magicka Regeneration,1.0,1.0
+Taproot,Restore Magicka,1.0,1.0
+Troll Fat,Resist Poison,1.0,1.0
+Troll Fat,Fortify Two-Handed,1.0,1.0
+Troll Fat,Frenzy,0.8,1.0
+Troll Fat,Damage Health,0.7,1.0
+Glow Dust,Damage Magicka,1.0,1.0
+Glow Dust,Damage Magicka Regeneration,1.0,1.0
+Glow Dust,Fortify Destruction,1.0,1.0
+Glow Dust,Resist Shock,1.0,1.0
+Vampire Dust,Sanguinare Vampiris,1.0,1.0
+Vampire Dust,Soulreaping,1.0,2.5
+Vampire Dust,Invisibility,1.0,1.6
+Vampire Dust,Cure Poison,1.0,1.0
+Tundra Cotton,Resist Magic,1.0,1.0
+Tundra Cotton,Fortify Magicka,0.8,1.0
+Tundra Cotton,Fortify Block,0.8,1.0
+Tundra Cotton,Fortify Barter,1.0,1.0
+Lavender,Resist Magic,1.0,1.0
+Lavender,Fortify Stamina,1.0,1.0
+Lavender,Damage Maximum Magicka,1.0,1.0
+Lavender,Fortify Conjuration,0.9,1.0
+Wheat,Restore Health,1.0,1.0
+Wheat,Fortify Health,0.5,1.0
+Wheat,Damage Stamina Regeneration,1.0,1.0
+Wheat,Lingering Damage Magicka,1.0,1.0
+Fly Amanita,Resist Fire,1.0,1.0
+Fly Amanita,Fortify Two-Handed,1.0,1.0
+Fly Amanita,Frenzy,0.8,1.0
+Fly Amanita,Fortify Stamina Regeneration,1.0,1.0
+Bleeding Crown,Weakness to Fire,1.0,1.0
+Bleeding Crown,Fortify Block,1.0,1.0
+Bleeding Crown,Weakness to Poison,1.0,1.0
+Bleeding Crown,Resist Magic,1.0,1.0
+White Cap,Weakness to Frost,1.0,1.0
+White Cap,Fortify Armor Rating,1.0,1.0
+White Cap,Restore Magicka,0.5,1.0
+White Cap,Damage Maximum Magicka,1.0,1.0
+Imp Stool,Damage Health,1.0,1.0
+Imp Stool,Lingering Damage Health,1.0,1.0
+Imp Stool,Fortify Carry Weight,1.3,0.2
+Imp Stool,Restore Health,1.0,1.0
+Namira's Rot,Damage Magicka,1.0,1.0
+Namira's Rot,Fortify Lockpicking,1.0,1.0
+Namira's Rot,Fear,1.0,1.0
+Namira's Rot,Fortify Health Regeneration,1.0,1.0
+Blisterwort,Damage Stamina,1.0,1.0
+Blisterwort,Frenzy,0.8,1.0
+Blisterwort,Restore Health,3.0,0.5
+Blisterwort,Fortify Stamina Regeneration,0.8,0.1
+Torchbug Thorax,Restore Stamina,1.0,1.0
+Torchbug Thorax,Lingering Damage Magicka,1.0,1.0
+Torchbug Thorax,Weakness to Magic,1.0,1.0
+Torchbug Thorax,Fortify Stamina,1.0,1.0
+Juniper Berries,Weakness to Fire,1.0,1.0
+Juniper Berries,Fortify Marksman,1.0,1.0
+Juniper Berries,Fortify Health Regeneration,1.0,1.0
+Juniper Berries,Damage Stamina Regeneration,1.0,1.0
+Deathbell,Damage Health,1.0,5.0
+Deathbell,Damage Maximum Stamina,1.0,2.0
+Deathbell,Tardiness,1.0,1.0
+Deathbell,Weakness to Poison,1.0,1.0
+Charred Skeever Hide,Restore Stamina,0.5,1.0
+Charred Skeever Hide,Resist Poison,0.5,1.0
+Charred Skeever Hide,Waterbreathing,1.0,4.0
+Charred Skeever Hide,Restore Health,1.0,1.0
+Hanging Moss,Damage Magicka,1.0,1.0
+Hanging Moss,Fortify Health,1.0,1.0
+Hanging Moss,Damage Magicka Regeneration,1.0,1.0
+Hanging Moss,Fortify One-Handed,1.0,1.0
+Nirnroot,Damage Health,5.0,0.0
+Nirnroot,Damage Stamina,5.0,1.0
+Nirnroot,Invisibility,1.0,1.7
+Nirnroot,Resist Magic,4.0,1.0
+Spriggan Sap,Damage Magicka Regeneration,1.0,1.0
+Spriggan Sap,Fortify Illusion,1.0,1.0
+Spriggan Sap,Fortify Restoration,1.0,1.0
+Spriggan Sap,Fortify Alteration,1.0,1.0
+Canis Root,Damage Stamina,1.0,1.0
+Canis Root,Fortify One-Handed,1.0,1.0
+Canis Root,Fortify Marksman,1.0,1.0
+Canis Root,Damage Health,3.3,1.0
+Jazbay Grapes,Weakness to Magic,0.5,1.0
+Jazbay Grapes,Fortify Magicka,0.5,1.0
+Jazbay Grapes,Fortify Magicka Regeneration,0.4,1.0
+Jazbay Grapes,Damage Maximum Health,0.5,1.0
+Hagraven Claw,Resist Magic,1.0,2.0
+Hagraven Claw,Lingering Damage Magicka,1.0,1.0
+Hagraven Claw,Fortify Illusion,1.0,1.0
+Hagraven Claw,Soulreaping,1.0,1.0
+Mudcrab Chitin,Restore Stamina,0.5,1.0
+Mudcrab Chitin,Resist Poison,1.3,1.0
+Mudcrab Chitin,Resist Shock,1.3,1.0
+Mudcrab Chitin,Resist Fire,1.0,1.0
+Claws,Restore Stamina,1.0,1.0
+Claws,Fortify Armor Rating,1.0,1.0
+Claws,Fortify Stamina Regeneration,2.0,0.2
+Claws,Damage Magicka Regeneration,1.0,1.0
+Sabre Cat Tooth,Restore Stamina,1.0,1.0
+Sabre Cat Tooth,Fortify Armor Rating,0.8,1.0
+Sabre Cat Tooth,Fortify Stamina,1.0,0.5
+Sabre Cat Tooth,Weakness to Poison,1.0,1.0
+Sabre Cat Eye,Restore Stamina,1.5,1.0
+Sabre Cat Eye,Damage Maximum Health,1.0,1.0
+Sabre Cat Eye,Damage Magicka,1.0,1.0
+Sabre Cat Eye,Restore Health,1.0,1.0
+Large Antlers,Restore Stamina,1.5,1.0
+Large Antlers,Fortify Stamina,1.3,2.0
+Large Antlers,Tardiness,1.0,1.0
+Large Antlers,Damage Stamina Regeneration,0.5,1.0
+Small Antlers,Weakness to Poison,1.0,1.0
+Small Antlers,Fortify Restoration,1.0,1.0
+Small Antlers,Lingering Damage Stamina,1.0,1.0
+Small Antlers,Damage Health,0.7,1.0
+Wisp Wrappings,Soulreaping,1.0,1.0
+Wisp Wrappings,Fortify Destruction,1.0,1.0
+Wisp Wrappings,Fortify Carry Weight,1.0,1.0
+Wisp Wrappings,Resist Magic,1.0,1.0
+Powdered Mammoth Tusk,Restore Stamina,2.5,1.0
+Powdered Mammoth Tusk,Fortify Sneak,1.0,1.0
+Powdered Mammoth Tusk,Weakness to Fire,1.0,1.0
+Powdered Mammoth Tusk,Fear,1.0,1.0
+Scaly Pholiota,Weakness to Magic,1.0,1.0
+Scaly Pholiota,Fortify Illusion,1.0,1.0
+Scaly Pholiota,Fortify Stamina Regeneration,1.0,1.0
+Scaly Pholiota,Fortify Carry Weight,1.0,1.0
+Blue Butterfly Wing,Damage Stamina,1.0,1.0
+Blue Butterfly Wing,Fortify Conjuration,1.1,1.0
+Blue Butterfly Wing,Damage Magicka Regeneration,1.0,1.0
+Blue Butterfly Wing,Fortify Illusion,0.8,1.0
+Luna Moth Wing,Damage Magicka,1.0,1.0
+Luna Moth Wing,Fortify Armor Rating,1.0,1.0
+Luna Moth Wing,Fortify Health Regeneration,1.0,1.0
+Luna Moth Wing,Invisibility,1.0,0.4
+Butterfly Wing,Restore Health,2.0,1.0
+Butterfly Wing,Fortify Barter,1.0,1.0
+Butterfly Wing,Lingering Damage Stamina,1.0,1.0
+Butterfly Wing,Damage Magicka,1.0,1.0
+Blue Mountain Flower,Restore Health,0.5,0.5
+Blue Mountain Flower,Fortify Conjuration,0.4,1.0
+Blue Mountain Flower,Fortify Health,0.5,1.0
+Blue Mountain Flower,Damage Magicka Regeneration,0.1,1.0
+Red Mountain Flower,Restore Magicka,0.3,0.5
+Red Mountain Flower,Damage Maximum Magicka,0.5,1.0
+Red Mountain Flower,Fortify Magicka,0.5,1.0
+Red Mountain Flower,Damage Health,0.3,1.0
+Purple Mountain Flower,Restore Stamina,0.3,1.0
+Purple Mountain Flower,Fortify Sneak,0.5,1.0
+Purple Mountain Flower,Lingering Damage Magicka,1.0,0.5
+Purple Mountain Flower,Resist Frost,0.3,1.0
+Swamp Fungal Pod,Resist Shock,1.0,1.0
+Swamp Fungal Pod,Lingering Damage Magicka,1.0,1.0
+Swamp Fungal Pod,Damage Health,1.7,1.0
+Swamp Fungal Pod,Restore Health,2.0,1.0
+Giant Lichen,Weakness to Shock,1.0,1.0
+Giant Lichen,Damage Maximum Health,1.0,1.0
+Giant Lichen,Weakness to Poison,1.0,1.0
+Giant Lichen,Restore Magicka,0.5,1.0
+Slaughterfish Egg,Fortify Pickpocket,1.0,1.0
+Slaughterfish Egg,Resist Poison,1.0,1.0
+Slaughterfish Egg,Lingering Damage Health,1.0,1.0
+Slaughterfish Egg,Fortify Stamina,1.0,1.0
+Rock Warbler Egg,Restore Health,1.0,1.0
+Rock Warbler Egg,Fortify One-Handed,1.0,1.0
+Rock Warbler Egg,Damage Stamina,1.0,1.0
+Rock Warbler Egg,Weakness to Magic,1.0,1.0
+Nordic Barnacle,Damage Magicka,1.0,1.0
+Nordic Barnacle,Waterbreathing,1.0,1.0
+Nordic Barnacle,Fortify Health Regeneration,1.0,1.0
+Nordic Barnacle,Fortify Pickpocket,1.0,1.0
+Glowing Mushroom,Resist Shock,1.0,1.0
+Glowing Mushroom,Fortify Destruction,1.0,1.0
+Glowing Mushroom,Fortify Stamina,1.0,0.5
+Glowing Mushroom,Fortify Health,1.0,1.0
+Grass Pod,Resist Poison,1.0,1.0
+Grass Pod,Damage Maximum Magicka,1.0,1.0
+Grass Pod,Fortify Alteration,1.0,1.0
+Grass Pod,Restore Magicka,1.0,1.0
+Pearl,Restore Stamina,1.5,1.0
+Pearl,Fortify Block,1.0,1.0
+Pearl,Restore Magicka,1.5,1.0
+Pearl,Resist Shock,1.0,1.0
+Small Pearl,Restore Stamina,1.0,1.0
+Small Pearl,Fortify One-Handed,1.0,1.0
+Small Pearl,Fortify Restoration,1.0,1.0
+Small Pearl,Resist Frost,1.0,1.0
+Dragon's Tongue,Resist Fire,1.0,1.3
+Dragon's Tongue,Fortify Barter,1.0,1.0
+Dragon's Tongue,Fortify Illusion,0.8,1.0
+Dragon's Tongue,Fortify Two-Handed,1.0,1.0
+Spider Egg,Damage Stamina,1.0,1.0
+Spider Egg,Damage Magicka Regeneration,1.0,1.0
+Spider Egg,Fortify Lockpicking,1.0,1.0
+Spider Egg,Fortify Marksman,1.0,1.0
+Beehive Husk,Resist Poison,0.5,1.0
+Beehive Husk,Fortify Armor Rating,0.8,1.0
+Beehive Husk,Fortify Sneak,0.5,1.0
+Beehive Husk,Fortify Destruction,1.0,1.0
+Bee,Restore Stamina,0.5,1.0
+Bee,Damage Maximum Stamina,1.0,1.0
+Bee,Fortify Stamina Regeneration,1.0,1.0
+Bee,Weakness to Shock,1.0,1.0
+Honeycomb,Restore Stamina,2.0,1.0
+Honeycomb,Fortify Block,1.0,1.0
+Honeycomb,Fortify Armor Rating,0.8,1.0
+Honeycomb,Damage Maximum Stamina,1.0,1.0
+Heart,Damage Health,1.7,0.0
+Heart,Damage Magicka,1.7,1.0
+Heart,Damage Magicka Regeneration,1.0,1.0
+Heart,Frenzy,1.2,1.0
+Creep Cluster,Restore Magicka,1.0,1.0
+Creep Cluster,Damage Stamina Regeneration,1.0,1.0
+Creep Cluster,Fortify Carry Weight,1.0,1.0
+Creep Cluster,Weakness to Magic,1.0,1.0
+Crimson Nirnroot,Damage Health,6.7,1.0
+Crimson Nirnroot,Damage Stamina,6.7,1.0
+Crimson Nirnroot,Invisibility,1.0,2.5
+Crimson Nirnroot,Resist Magic,5.0,3.0
+Orange Dartwing,Restore Stamina,1.0,1.0
+Orange Dartwing,Damage Maximum Magicka,1.0,1.0
+Orange Dartwing,Fortify Pickpocket,1.0,1.0
+Orange Dartwing,Lingering Damage Health,1.0,1.0
+Moon Sugar,Weakness to Fire,1.0,1.0
+Moon Sugar,Resist Frost,1.0,1.0
+Moon Sugar,Restore Magicka,2.5,1.0
+Moon Sugar,Fortify Magicka Regeneration,1.0,1.0
+Blue Dartwing,Resist Shock,1.0,1.0
+Blue Dartwing,Fortify Pickpocket,1.0,1.0
+Blue Dartwing,Restore Health,1.0,1.0
+Blue Dartwing,Fear,1.0,1.0
+Hawk Beak,Restore Stamina,1.5,1.0
+Hawk Beak,Resist Frost,1.0,1.0
+Hawk Beak,Fortify Carry Weight,1.0,1.0
+Hawk Beak,Resist Shock,1.0,1.0
+Hawk Feathers,Fortify Armor Rating,1.4,1.0
+Hawk Feathers,Cure Disease,1.0,1.0
+Hawk Feathers,Fortify One-Handed,1.0,1.0
+Hawk Feathers,Fortify Sneak,1.0,1.0
+Mora Tapinella,Restore Magicka,1.0,1.0
+Mora Tapinella,Lingering Damage Health,1.0,1.0
+Mora Tapinella,Fortify Stamina Regeneration,1.0,1.0
+Mora Tapinella,Fortify Illusion,1.0,1.0
+Dwarven Oil,Weakness to Magic,1.0,1.0
+Dwarven Oil,Fortify Illusion,1.3,1.0
+Dwarven Oil,Fortify Magicka Regeneration,1.0,1.0
+Dwarven Oil,Restore Magicka,2.0,1.0
+Human Flesh,Damage Health,0.7,1.0
+Human Flesh,Paralysis,1.0,1.0
+Human Flesh,Restore Magicka,1.0,1.0
+Human Flesh,Fortify Sneak,1.0,1.0
+Histcarp,Restore Stamina,0.5,1.0
+Histcarp,Fortify Magicka,1.0,1.0
+Histcarp,Damage Stamina Regeneration,1.0,1.0
+Histcarp,Waterbreathing,1.0,1.0
+Cyrodilic Spadetail,Fortify Restoration,1.0,1.0
+Cyrodilic Spadetail,Damage Stamina,1.0,1.0
+Cyrodilic Spadetail,Fear,1.5,1.0
+Cyrodilic Spadetail,Damage Maximum Health,1.0,1.0
+River Betty,Fortify Alteration,1.0,1.0
+River Betty,Damage Health,1.7,0.0
+River Betty,Tardiness,1.0,1.0
+River Betty,Fortify Carry Weight,1.0,1.0
+Abcean Longfin,Fortify Sneak,1.0,1.0
+Abcean Longfin,Weakness to Frost,1.0,1.0
+Abcean Longfin,Weakness to Poison,1.0,1.0
+Abcean Longfin,Fortify Restoration,1.0,1.0
+Silverside Perch,Restore Stamina,1.0,1.0
+Silverside Perch,Damage Stamina Regeneration,1.0,1.0
+Silverside Perch,Damage Maximum Health,1.0,1.0
+Silverside Perch,Resist Frost,1.0,1.0

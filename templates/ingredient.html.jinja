@@ -1,0 +1,19 @@
+{% extends "default.html.jinja" %}
+{% block content %}
+<section>
+  <h2>Effects</h2>
+  {{ ingredient }}
+  {{ ingredient.name }}
+  <table class="table">
+    <thead>
+      <th>Effect</th>
+      {% for effect in ingredient.effects['effect'] %}
+      <th>{{ effect }}</th>
+      {% endfor %}
+    </thead>
+    <tbody>
+      ll
+    </tbody>
+  </table>
+</section>
+{% endblock content %}
