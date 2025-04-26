@@ -363,3 +363,147 @@ Silverside Perch,Restore Stamina,1,20
 Silverside Perch,Damage Stamina Regeneration,100,5
 Silverside Perch,Damage Maximum Health,2,10
 Silverside Perch,Resist Frost,3,60
+Yellow Mountain Flower,Resist Poison,2,60
+Yellow Mountain Flower,Fortify Restoration,2,60
+Yellow Mountain Flower,Fortify Health,5,60
+Yellow Mountain Flower,Damage Stamina Regeneration,50,5
+Ancestor Moth Wing,Damage Stamina,3,0
+Ancestor Moth Wing,Fortify Conjuration,5,60
+Ancestor Moth Wing,Damage Magicka Regeneration,100,5
+Ancestor Moth Wing,Fortify Magicka,1,30
+Gleamblossom,Resist Magic,1,60
+Gleamblossom,Fear,2,30
+Gleamblossom,Fortify Health Regeneration,5,300
+Gleamblossom,Paralysis,0,1
+Chaurus Hunter Antennae,Damage Stamina,3,0
+Chaurus Hunter Antennae,Fortify Conjuration,5,60
+Chaurus Hunter Antennae,Damage Magicka Regeneration,100,5
+Chaurus Hunter Antennae,Fortify Magicka,1,30
+Poisonous Bloom,Damage Health,3,1
+Poisonous Bloom,Tardiness,50,5
+Poisonous Bloom,Fortify Carry Weight,4,300
+Poisonous Bloom,Fear,2,30
+Salmon Roe,Fortify Magicka,8,300
+Salmon Roe,Restore Stamina,2,20
+Salmon Roe,Waterbreathing,0,20
+Salmon Roe,Fortify Magicka Regeneration,5,300
+Ashen Grass Pod,Resist Fire,4,80
+Ashen Grass Pod,Weakness to Shock,3,30
+Ashen Grass Pod,Fortify Lockpicking,0.2,30
+Ashen Grass Pod,Fortify Sneak,2,60
+Trama Root,Weakness to Shock,3,30
+Trama Root,Fortify Carry Weight,4,300
+Trama Root,Damage Magicka,3,0
+Trama Root,Tardiness,50,5
+Scathecraw,Damage Maximum Health,2,10
+Scathecraw,Damage Maximum Stamina,2,10
+Scathecraw,Damage Maximum Magicka,2,10
+Scathecraw,Lingering Damage Health,1,10
+Spwan Ash,Damage Maximum Stamina,2,10
+Spwan Ash,Resist Fire,2,60
+Spwan Ash,Fortify Illusion,3,60
+Spwan Ash,Damage Maximum Magicka,2,10
+Burnt Spriggan Wood,Weakness to Fire,3,30
+Burnt Spriggan Wood,Fortify Alteration,4,60
+Burnt Spriggan Wood,Damage Magicka Regeneration,100,5
+Burnt Spriggan Wood,Tardiness,50,5
+Boar Tusk,Fortify Stamina,1,20
+Boar Tusk,Fortify Health,1,20
+Boar Tusk,Fortify Block,1,20
+Boar Tusk,Frenzy,2,20
+Ash Hopper Jelly,Restore Health,0.5,20
+Ash Hopper Jelly,Fortify Armor Rating,4,60
+Ash Hopper Jelly,Resist Shock,3,60
+Ash Hopper Jelly,Weakness to Frost,3,30
+Netch Jelly,Damage Health,10,1
+Netch Jelly,Fortify Carry Weight,4,300
+Netch Jelly,Restore Stamina,1.5,20
+Netch Jelly,Fear,2,30
+Ash Creep Cluster,Damage Stamina,3,0
+Ash Creep Cluster,Invisibility,0,4
+Ash Creep Cluster,Resist Fire,2,60
+Ash Creep Cluster,Fortify Destruction,5,60
+Emperol Parasol Moss,Damage Health,3,1
+Emperol Parasol Moss,Fortify Magicka,2,60
+Emperol Parasol Moss,Fortify Health Regeneration,5,300
+Emperol Parasol Moss,Fortify Two-Handed,4,60
+Felsaad Tern Feathers,Restore Health,1,10
+Felsaad Tern Feathers,Fortify Armor Rating,4,60
+Felsaad Tern Feathers,Resist Poison,5,60
+Felsaad Tern Feathers,Resist Magic,1,120
+Angelfish,Fortify Health Regeneration,5,300
+Angelfish,Resist Fire,3,60
+Angelfish,Fortify Marksman,4,60
+Angelfish,Waterbreathing,0,5
+Pearlfish,Restore Stamina,1.5,20
+Pearlfish,Resist Frost,3,60
+Pearlfish,Fortify Speech,4,60
+Pearlfish,Fortify One-Handed,4,60
+Pygmy Sunfish,Restore Stamina,2,20
+Pygmy Sunfish,Lingering Damage Magicka,1,10
+Pygmy Sunfish,Damage Magicka Regeneration,100,5
+Pygmy Sunfish,Fortify Restoration,4,60
+Glassfish,Restore Magicka,1.5,20
+Glassfish,Invisibility,0,4
+Glassfish,Fortify Illusion,3,60
+Glassfish,Fortify Speech,4,60
+Goldfish,Restore Stamina,1,20
+Goldfish,Fortify Armor Rating,6,60
+Goldfish,Waterbreathing,5,0
+Goldfish,Resist Frost,3,60
+Angler Larvae,Fortify Stamina Regeneration,5,300
+Angler Larvae,Lingering Damage Health,1,10
+Angler Larvae,Waterbreathing,0,5
+Angler Larvae,Fortify Two-Handed,4,60
+Lyretail Anthias,Restore Magicka,1.5,20
+Lyretail Anthias,Fortify Alteration,4,60
+Lyretail Anthias,Fortify Conjuration,5,60
+Lyretail Anthias,Fortify Carry Weight,4,300
+Juvenile Mudcrab,Fortify Stamina Regeneration,5,300
+Juvenile Mudcrab,Fortify Carry Weight,4,300
+Juvenile Mudcrab,Cure Disease,5,0
+Juvenile Mudcrab,Fortify Two-Handed,4,60
+Spadefish,Restore Health,1,20
+Spadefish,Fortify Lockpicking,0.2,30
+Spadefish,Fortify Pickpocket,4,60
+Spadefish,Cure Disease,5,0
+Aloe Vera Leaves,Restore Health,0.5,20
+Aloe Vera Leaves,Restore Stamina,0.5,20
+Aloe Vera Leaves,Damage Magicka,3,0
+Aloe Vera Leaves,Invisibility,0,4
+Horker Fat,Resist Poison,4,180
+Horker Fat,Fortify Two-Handed,4,60
+Horker Fat,Frenzy,1,20
+Horker Fat,Damage Health,2,1
+Wolf Heart,Damage Health,3,1
+Wolf Heart,Damage Magicka,3,0
+Wolf Heart,Damage Stamina,5,5
+Wolf Heart,Frenzy,2,20
+Bear Heart,Fortify Health,5,300
+Bear Heart,Frenzy,2,20
+Bear Heart,Damage Stamina,5,5
+Bear Heart,Fortify Destruction,1,60
+Mammoth Heart,Fortify Carry Weight,3,600
+Mammoth Heart,Fortify Armor Rating,12,60
+Mammoth Heart,Fortify Stamina,5,300
+Mammoth Heart,Fortify Health,10,180
+Sabre Cat Heart,Damage Health,3,1
+Sabre Cat Heart,Damage Magicka,3,0
+Sabre Cat Heart,Damage Stamina,5,5
+Sabre Cat Heart,Frenzy,2,20
+Strange Remains,Invisibility,0,60
+Strange Remains,Soulreaping,0,10
+Strange Remains,Fortify Destruction,5,60
+Strange Remains,Resist Shock,5,60
+Red Glitterdust,Damage Health,10,0
+Red Glitterdust,Fortify Carry Weight,5,600
+Red Glitterdust,Restore Magicka,1.5,20
+Red Glitterdust,Damage Stamina,3,60
+Blue Glitterdust,Damage Stamina,3,60
+Blue Glitterdust,Cure Poison,5,0
+Blue Glitterdust,Waterbreathing,0,30
+Blue Glitterdust,Resist Poison,5,180
+Venomous Spittle,Lingering Damage Health,1,60
+Venomous Spittle,Damage Health,10,1
+Venomous Spittle,Lingering Damage Stamina,1,60
+Venomous Spittle,Paralysis,0,1
