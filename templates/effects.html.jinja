@@ -1,0 +1,61 @@
+{% import 'macros.jinja' as macros %}
+
+{% extends "default.html.jinja" %}
+{% block content %}
+  <section>
+    <h2>Table</h2>
+    <table id="effects" data-paging="false" 
+    class="table table-hover table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+          <th>Type</th>
+          {# <th data-orderable="false">Potency</th> #}
+          <th data-orderable="false">Ingredients</th>
+        </tr>
+      </thead>
+      <tbody>
+      {# {% for effect in data.effects %}
+        {% set grows = effect.grouped_rows %}
+        {% set grlen = grows | length %}
+        {% for key, value in grows.items() %}
+        <tr>
+          {% if loop.first %}
+          <th rowspan="{{ grlen }}">{{ effect.name }}</th>
+          <td rowspan="{{ grlen }}">{{ effect.value }}</td>
+          <td rowspan="{{ grlen }}">{{ effect.type_ }}</td>
+          {% else %}
+          {% endif %}
+          <td>{{ macros.format_magdur(key[0], key[1]) }}</td>
+          <td class="text-start">{{ value | join(', ') }}</td>
+        </tr>
+        {% endfor %}
+      {% endfor %} #}
+      {% for effect in data.effects %}
+        <tr>
+          <th>{{ effect.name }}</th>
+          <td>{{ effect.value }}</td>
+          <td>{{ effect.type_ }}</td>
+          <td class="text-start">
+          {% for key, value in effect.grouped_rows.items() %}
+            {{ macros.format_magdur(key[0], key[1]) }}
+            :
+            {{ value | join(', ') }}
+            <br/>
+          {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock content %}
+
+{% block additional_scripts %}
+  <script defer>new DataTable('#effects', {
+        layout: {
+        topStart: 'searchBuilder'
+    }
+  });</script>
+{% endblock additional_scripts %}

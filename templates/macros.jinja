@@ -1,0 +1,26 @@
+{%- macro format_num(val) -%}
+  {%- if val | round == val -%}
+    {{ val | int }}
+  {%- else -%}
+    {{ val | round(1) }}
+  {%- endif -%}
+{%- endmacro -%}
+
+{% macro color_class(val) %}
+  {% if val > 1 %}
+    text-success
+  {% else %}
+    {% if val < 1 %}
+    text-danger
+    {% else %}
+    text-secondary
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro format_magdur(mag, dur) %}
+  <span class="fw-bold {{ color_class(mag) }}">{{ format_num(mag) }}×💥</span>
+  <span class="fw-bold {{ color_class(dur) }}">{{ format_num(dur) }}×⏳</span>
+{% endmacro %}
+

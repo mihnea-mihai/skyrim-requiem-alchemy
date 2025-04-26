@@ -1,0 +1,48 @@
+{% import 'macros.jinja' as macros %}
+
+{% extends "default.html.jinja" %}
+{% block content %}
+  <section>
+    <h2>Table</h2>
+    <table id="ingredients" data-paging="false" 
+    class="table table-hover table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+          <th>Plantable</th>
+          <th data-searchable="true" data-filter-values="common,uncommon,rare">Rarity</th>
+          <th data-orderable="false">1<sup>st</sup> effect</th>
+          <th data-orderable="false">2<sup>nd</sup> effect</th>
+          <th data-orderable="false">3<sup>rd</sup> effect</th>
+          <th data-orderable="false">4<sup>th</sup> effect</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for ingredient in data.ingredients %}
+        <tr>
+          <th>{{ ingredient.name }}</th>
+          <td>{{ ingredient.value }}</td>
+          <td>{{ ingredient.plantable }}</td>
+          <td>{{ ingredient.rarity }}</td>
+          {% for row in ingredient.rows %}
+          <td>
+            <span class="fst-italic">{{ row.effect_name }}</span>
+            <br>
+            {{ macros.format_magdur(row.magnitude_mult,row.duration_mult) }}
+          </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock content %}
+
+{% block additional_scripts %}
+  <script defer>new DataTable('#ingredients', {
+        layout: {
+        topStart: 'searchBuilder'
+    }
+  });</script>
+{% endblock additional_scripts %}

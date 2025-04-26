@@ -1,0 +1,1666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Effects - Requiem for a Herb (6.0.2)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="An overview of Skyrim Requiem's Alchemy effects." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5
+/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/sb-1.8.2/datatables.min.css" rel="stylesheet" integrity="sha384-0rXjLCwM+fDcZqT8h60i8WkYzPL4hYsXzI9DBya561AOf7iGpvUMLxe9rY/gcCwM" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+</head>
+<body data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Requiem for a Herb (6.0.2)</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/ingredients">Ingredients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/effects">Effects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/potions">Potions</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  <header>
+    <h1>Effects</h1>
+  </header>
+  <main>
+  <section>
+    <h2>Table</h2>
+    <table id="effects" data-paging="false" 
+    class="table table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+          <th>Type</th>
+          <th data-orderable="false">Ingredients</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Cure Disease</th>
+          <td>43</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Hawk Feathers
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Cure Poison</th>
+          <td>43</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Vampire Dust
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>5</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">6.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Crimson Nirnroot
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Deathbell
+            <br/>
+              <span class="fw-bold     text-success
+">3.3×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Void Salts, Canis Root
+            <br/>
+              <span class="fw-bold     text-success
+">1.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Nightshade, Swamp Fungal Pod
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Falmer Ear, Imp Stool
+            <br/>
+              <span class="fw-bold     text-danger
+">0.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Ectoplasm, Skeever Tail, Troll Fat, Small Antlers, Human Flesh
+            <br/>
+              <span class="fw-bold     text-danger
+">0.3×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Red Mountain Flower
+            <br/>
+              <span class="fw-bold     text-success
+">5×💥</span>
+  <span class="fw-bold     text-danger
+">0×⏳</span>
+
+            :
+            Nirnroot
+            <br/>
+              <span class="fw-bold     text-success
+">1.7×💥</span>
+  <span class="fw-bold     text-danger
+">0×⏳</span>
+
+            :
+            Heart, River Betty
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Magicka</th>
+          <td>65</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Heart
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chaurus Eggs, Hagraven Feathers, Glow Dust, Namira's Rot, Hanging Moss, Sabre Cat Eye, Luna Moth Wing, Butterfly Wing, Nordic Barnacle
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Magicka Regeneration</th>
+          <td>54</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chicken's Egg, Nightshade, Glow Dust, Hanging Moss, Spriggan Sap, Claws, Blue Butterfly Wing, Spider Egg, Heart
+            <br/>
+              <span class="fw-bold     text-danger
+">0.1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Blue Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Health</th>
+          <td>6</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Skeever Tail, Sabre Cat Eye, Giant Lichen, Cyrodilic Spadetail, Silverside Perch
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Jazbay Grapes
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Magicka</th>
+          <td>6</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Frost Mirriam, Lavender, White Cap, Grass Pod, Orange Dartwing
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Red Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Stamina</th>
+          <td>67</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">2×⏳</span>
+
+            :
+            Deathbell
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Thistle Branch, Bone Meal, Bee, Honeycomb
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>67</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">6.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Crimson Nirnroot
+            <br/>
+              <span class="fw-bold     text-success
+">5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Nirnroot
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Bone Meal, Giant's Toe, Blisterwort, Canis Root, Blue Butterfly Wing, Rock Warbler Egg, Spider Egg, Cyrodilic Spadetail
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina Regeneration</th>
+          <td>76</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Frost Mirriam, Giant's Toe, Skeever Tail, Wheat, Juniper Berries, Creep Cluster, Histcarp, Silverside Perch
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Large Antlers
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fear</th>
+          <td>45</td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Cyrodilic Spadetail
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Namira's Rot, Powdered Mammoth Tusk, Blue Dartwing
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Alteration</th>
+          <td>34</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Spriggan Sap, Grass Pod, River Betty
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Armor Rating</th>
+          <td>23</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.4×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Slaughterfish Scales, Hawk Feathers
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Thistle Branch, Skeever Tail, White Cap, Claws, Luna Moth Wing
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Sabre Cat Tooth, Beehive Husk, Honeycomb
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Barter</th>
+          <td>35</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Tundra Cotton, Butterfly Wing, Dragon's Tongue
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Block</th>
+          <td>7</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-success
+">2×⏳</span>
+
+            :
+            Briar Heart
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Slaughterfish Scales, Bleeding Crown, Pearl, Honeycomb
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Tundra Cotton
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Carry Weight</th>
+          <td>8</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Giant's Toe, Wisp Wrappings, Scaly Pholiota, Creep Cluster, Hawk Beak, River Betty
+            <br/>
+              <span class="fw-bold     text-success
+">1.2×💥</span>
+  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+
+            :
+            Imp Stool
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Conjuration</th>
+          <td>656</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.1×💥</span>
+  <span class="fw-bold     text-success
+">3×⏳</span>
+
+            :
+            Frost Salts
+            <br/>
+              <span class="fw-bold     text-success
+">1.1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Hagraven Feathers, Blue Butterfly Wing
+            <br/>
+              <span class="fw-bold     text-danger
+">0.9×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Lavender
+            <br/>
+              <span class="fw-bold     text-danger
+">0.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Bone Meal
+            <br/>
+              <span class="fw-bold     text-danger
+">0.4×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Blue Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Destruction</th>
+          <td>45</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Glow Dust, Wisp Wrappings, Glowing Mushroom, Beehive Husk
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Nightshade, Ectoplasm
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>34</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Giant's Toe
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Hanging Moss, Glowing Mushroom
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Wheat, Blue Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health Regeneration</th>
+          <td>53</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Namira's Rot, Juniper Berries, Luna Moth Wing, Nordic Barnacle
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+
+            :
+            Garlic
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Illusion</th>
+          <td>57</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Dwarven Oil
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Taproot, Spriggan Sap, Hagraven Claw, Scaly Pholiota, Mora Tapinella
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Blue Butterfly Wing, Dragon's Tongue
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Lockpicking</th>
+          <td>85</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Pine Thrush Egg
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Falmer Ear, Namira's Rot, Spider Egg
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>75</td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Void Salts
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">2×⏳</span>
+
+            :
+            Briar Heart
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Ectoplasm, Histcarp
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Tundra Cotton
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Jazbay Grapes, Red Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka Regeneration</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Salt, Fire Salts, Taproot, Moon Sugar, Dwarven Oil
+            <br/>
+              <span class="fw-bold     text-danger
+">0.4×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Jazbay Grapes
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+
+            :
+            Garlic
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Marksman</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Elves Ear, Juniper Berries, Canis Root, Spider Egg
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify One-Handed</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Hanging Moss, Canis Root, Rock Warbler Egg, Small Pearl, Hawk Feathers
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Pickpocket</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Slaughterfish Egg, Nordic Barnacle, Orange Dartwing, Blue Dartwing
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Restoration</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Salt, Spriggan Sap, Small Antlers, Small Pearl, Cyrodilic Spadetail, Abcean Longfin
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Sneak</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Frost Mirriam, Powdered Mammoth Tusk, Hawk Feathers, Human Flesh, Abcean Longfin
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Purple Mountain Flower, Beehive Husk
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.2×💥</span>
+  <span class="fw-bold     text-success
+">2×⏳</span>
+
+            :
+            Large Antlers
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chaurus Eggs, Lavender, Torchbug Thorax, Slaughterfish Egg
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Sabre Cat Tooth, Glowing Mushroom
+            <br/>
+              <span class="fw-bold     text-danger
+">0.2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Garlic
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina Regeneration</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Fly Amanita, Scaly Pholiota, Bee, Mora Tapinella
+            <br/>
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+
+            :
+            Claws
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-danger
+">0.1×⏳</span>
+
+            :
+            Blisterwort
+            <br/>
+              <span class="fw-bold     text-danger
+">0.2×💥</span>
+  <span class="fw-bold     text-danger
+">0.1×⏳</span>
+
+            :
+            Snowberry
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Two-Handed</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Troll Fat, Fly Amanita, Dragon's Tongue
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Frenzy</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Falmer Ear, Hagraven Feathers, Heart
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Troll Fat, Fly Amanita, Blisterwort
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Invisibility</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">2.5×⏳</span>
+
+            :
+            Crimson Nirnroot
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">1.7×⏳</span>
+
+            :
+            Nirnroot
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">1.6×⏳</span>
+
+            :
+            Vampire Dust
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.4×⏳</span>
+
+            :
+            Chaurus Eggs, Ice Wraith Teeth, Luna Moth Wing
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Health</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">10×💥</span>
+  <span class="fw-bold     text-success
+">12×⏳</span>
+
+            :
+            Daedra Heart
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Slaughterfish Scales, Imp Stool, Slaughterfish Egg, Orange Dartwing, Mora Tapinella
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Magicka</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Wheat, Torchbug Thorax, Hagraven Claw, Swamp Fungal Pod
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Purple Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Stamina</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chicken's Egg, Nightshade, Small Antlers, Butterfly Wing
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Paralysis</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Briar Heart, Human Flesh
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Fire Salts
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">1.3×⏳</span>
+
+            :
+            Dragon's Tongue
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Fly Amanita, Mudcrab Chitin
+            <br/>
+              <span class="fw-bold     text-danger
+">0.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Snowberry, Bone Meal
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Elves Ear
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Frost</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Frost Salts
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Thistle Branch, Frost Mirriam, Slaughterfish Scales, Small Pearl, Moon Sugar, Hawk Beak, Silverside Perch
+            <br/>
+              <span class="fw-bold     text-danger
+">0.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Snowberry
+            <br/>
+              <span class="fw-bold     text-danger
+">0.3×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Purple Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Magic</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">3×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Void Salts
+            <br/>
+              <span class="fw-bold     text-success
+">5×💥</span>
+  <span class="fw-bold     text-success
+">3×⏳</span>
+
+            :
+            Crimson Nirnroot
+            <br/>
+              <span class="fw-bold     text-success
+">4×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Nirnroot
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">2×⏳</span>
+
+            :
+            Hagraven Claw
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chicken's Egg, Tundra Cotton, Lavender, Bleeding Crown, Wisp Wrappings
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-success
+">5×⏳</span>
+
+            :
+            Garlic
+            <br/>
+              <span class="fw-bold     text-success
+">1.2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Falmer Ear, Mudcrab Chitin
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Troll Fat, Slaughterfish Egg, Grass Pod
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Charred Skeever Hide, Beehive Husk
+            <br/>
+              <span class="fw-bold     text-danger
+">0.8×💥</span>
+  <span class="fw-bold     text-danger
+">0×⏳</span>
+
+            :
+            Thistle Branch
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Shock</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">1.3×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Mudcrab Chitin
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Pine Thrush Egg, Glow Dust, Swamp Fungal Pod, Glowing Mushroom, Pearl, Blue Dartwing, Hawk Beak
+            <br/>
+              <span class="fw-bold     text-danger
+">0.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Snowberry
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">20×💥</span>
+  <span class="fw-bold     text-success
+">6×⏳</span>
+
+            :
+            Daedra Heart
+            <br/>
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Butterfly Wing, Swamp Fungal Pod
+            <br/>
+              <span class="fw-bold     text-success
+">3×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Blisterwort
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Wheat, Imp Stool, Charred Skeever Hide, Sabre Cat Eye, Rock Warbler Egg, Blue Dartwing
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Blue Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">10×💥</span>
+  <span class="fw-bold     text-success
+">6×⏳</span>
+
+            :
+            Daedra Heart
+            <br/>
+              <span class="fw-bold     text-success
+">3.5×💥</span>
+  <span class="fw-bold     text-success
+">2.2×⏳</span>
+
+            :
+            Frost Salts
+            <br/>
+              <span class="fw-bold     text-success
+">2.5×💥</span>
+  <span class="fw-bold     text-success
+">2.2×⏳</span>
+
+            :
+            Fire Salts
+            <br/>
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-success
+">1.5×⏳</span>
+
+            :
+            Briar Heart
+            <br/>
+              <span class="fw-bold     text-success
+">2.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Ectoplasm, Moon Sugar
+            <br/>
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Dwarven Oil
+            <br/>
+              <span class="fw-bold     text-success
+">1.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Pearl
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Elves Ear, Taproot, Grass Pod, Creep Cluster, Mora Tapinella, Human Flesh
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            White Cap, Giant Lichen
+            <br/>
+              <span class="fw-bold     text-danger
+">0.2×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Red Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">10×💥</span>
+  <span class="fw-bold     text-success
+">6×⏳</span>
+
+            :
+            Daedra Heart
+            <br/>
+              <span class="fw-bold     text-success
+">2.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Powdered Mammoth Tusk
+            <br/>
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Honeycomb
+            <br/>
+              <span class="fw-bold     text-success
+">1.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Sabre Cat Eye, Large Antlers, Pearl, Hawk Beak
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Pine Thrush Egg, Torchbug Thorax, Claws, Sabre Cat Tooth, Small Pearl, Orange Dartwing, Silverside Perch
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Charred Skeever Hide, Mudcrab Chitin, Bee, Histcarp
+            <br/>
+              <span class="fw-bold     text-danger
+">0.2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Purple Mountain Flower
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Sanguinare Vampiris</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Vampire Dust
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Soulreaping</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">2.5×⏳</span>
+
+            :
+            Vampire Dust
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Hagraven Claw, Wisp Wrappings
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+
+            :
+            Ice Wraith Teeth
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Tardiness</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Salt, Deathbell, Large Antlers, River Betty
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Waterbreathing</th>
+          <td></td>
+          <td>pos</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">4×⏳</span>
+
+            :
+            Charred Skeever Hide
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chicken's Egg, Nordic Barnacle, Histcarp
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Fire</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-success
+">2×⏳</span>
+
+            :
+            Frost Salts
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Ice Wraith Teeth, Bleeding Crown, Juniper Berries, Powdered Mammoth Tusk, Moon Sugar
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Frost</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Fire Salts, Ice Wraith Teeth, White Cap, Abcean Longfin
+            <br/>
+              <span class="fw-bold     text-danger
+">0.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Elves Ear
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Magic</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Taproot, Torchbug Thorax, Scaly Pholiota, Rock Warbler Egg, Creep Cluster, Dwarven Oil
+            <br/>
+              <span class="fw-bold     text-danger
+">0.5×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Salt, Jazbay Grapes
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Poison</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">2×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Chaurus Eggs
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Pine Thrush Egg, Bleeding Crown, Deathbell, Sabre Cat Tooth, Small Antlers, Giant Lichen, Abcean Longfin
+            <br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Shock</th>
+          <td></td>
+          <td>neg</td>
+          <td class="text-start">
+              <span class="fw-bold     text-success
+">6.7×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Void Salts
+            <br/>
+              <span class="fw-bold     text-secondary
+">1×💥</span>
+  <span class="fw-bold     text-secondary
+">1×⏳</span>
+
+            :
+            Hagraven Feathers, Giant Lichen, Bee
+            <br/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  </main>
+  <footer>
+    <small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5
+/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/sb-1.8.2/datatables.min.js" integrity="sha384-aoax2PDBzqKN2QaB/OWLcBWAllHZWqpsttrtQfC4gpVm31ADbN1mEvVU+XTyIpSs" crossorigin="anonymous"></script>
+  <script defer>new DataTable('#effects', {
+        layout: {
+        topStart: 'searchBuilder'
+    }
+  });</script>
+</body>
+</html>
+
+
+ 

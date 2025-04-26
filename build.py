@@ -1,42 +1,30 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-import pandas as pd
+from data import Data
 
-df = pd.read_csv("data/values.csv")
-
-
-class Ingredient:
-    def __init__(self, name: str):
-        self.name: str = name
-        self.slug = "ingredients/" + self.name.lower().replace(" ", "_").replace(
-            "'", "_"
-        )
-        self.effects = df[df["ingredient"] == self.name][
-            ["effect", "magnitude", "duration"]
-        ]
+Data.populate()
 
 
-ingredients_list = df["ingredient"].sort_values().unique()
-
-ingredients = [Ingredient(ing) for ing in ingredients_list]
-
-env = Environment(loader=FileSystemLoader("templates"), autoescape=select_autoescape())
-
-tpl = env.get_template("default.html.jinja")
-
-with open("index.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(ingredients=ingredients))
-
-tpl = env.get_template("ingredient.html.jinja")
-for ingredient in ingredients:
-    with open(f"{ingredient.slug}.html", "w", encoding="utf-8") as file_out:
-        file_out.write(
-            tpl.render(
-                ingredient=ingredient, ingredients=ingredients, title=ingredient.name
-            )
-        )
-
-print(Ingredient("Deathbell").effects)
+def format_mult(mult: float) -> int | float:
+    int_num = round(mult)
+    if int_num == mult:
+        return int_num
+    return round(mult, 1)
 
 
-for eff in Ingredient("Deathbell").effects['effect']:
-    print(eff)
+env = Environment(
+    loader=FileSystemLoader("templates"),
+    autoescape=select_autoescape(),
+    trim_blocks=True,
+    lstrip_blocks=True,
+)
+
+
+tpl = env.get_template("ingredients.html.jinja")
+
+with open("ingredients.html", "w", encoding="utf-8") as file_out:
+    file_out.write(tpl.render(title="Ingredients", data=Data()))
+
+tpl = env.get_template("effects.html.jinja")
+
+with open("effects.html", "w", encoding="utf-8") as file_out:
+    file_out.write(tpl.render(title="Effects", data=Data()))

@@ -1,0 +1,56 @@
+name,type_,value
+Cure Disease,pos,43
+Cure Poison,pos,43
+Damage Health,neg,5
+Damage Magicka,neg,65
+Damage Magicka Regeneration,neg,54
+Damage Maximum Health,neg,6
+Damage Maximum Magicka,neg,6
+Damage Maximum Stamina,neg,67
+Damage Stamina,neg,67
+Damage Stamina Regeneration,neg,76
+Fear,neg,45
+Fortify Alteration,pos,34
+Fortify Armor Rating,pos,23
+Fortify Barter,pos,35
+Fortify Block,pos,7
+Fortify Carry Weight,pos,8
+Fortify Conjuration,pos,656
+Fortify Destruction,pos,45
+Fortify Health,pos,34
+Fortify Health Regeneration,pos,53
+Fortify Illusion,pos,57
+Fortify Lockpicking,pos,85
+Fortify Magicka,pos,75
+Fortify Magicka Regeneration,pos,
+Fortify Marksman,pos,
+Fortify One-Handed,pos,
+Fortify Pickpocket,pos,
+Fortify Restoration,pos,
+Fortify Sneak,pos,
+Fortify Stamina,pos,
+Fortify Stamina Regeneration,pos,
+Fortify Two-Handed,pos,
+Frenzy,neg,
+Invisibility,pos,
+Lingering Damage Health,neg,
+Lingering Damage Magicka,neg,
+Lingering Damage Stamina,neg,
+Paralysis,neg,
+Resist Fire,pos,
+Resist Frost,pos,
+Resist Magic,pos,
+Resist Poison,pos,
+Resist Shock,pos,
+Restore Health,pos,
+Restore Magicka,pos,
+Restore Stamina,pos,
+Sanguinare Vampiris,pos,
+Soulreaping,neg,
+Tardiness,neg,
+Waterbreathing,pos,
+Weakness to Fire,neg,
+Weakness to Frost,neg,
+Weakness to Magic,neg,
+Weakness to Poison,neg,
+Weakness to Shock,neg,
