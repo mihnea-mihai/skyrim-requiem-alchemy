@@ -5,7 +5,7 @@
   <section>
     <h2>Table</h2>
     <table id="ingredients" data-paging="false" 
-    class="table table-hover table-bordered align-middle text-center table-sm">
+    class="table table-hover table-bordered align-middle text-center">
       <thead>
         <tr>
           <th>Name</th>
@@ -27,9 +27,14 @@
           <td>{{ ingredient.rarity }}</td>
           {% for row in ingredient.rows %}
           <td>
+            <span class="fw-bold">{{ macros.format_num(row.price) }} 🪙</span>
+            <br/>
             <span class="fst-italic">{{ row.effect_name }}</span>
-            <br>
+            <br/>
             {{ macros.format_magdur(row.magnitude_mult,row.duration_mult) }}
+  {# <span class="fw-bold {{ color_class(dur) }}">{{ format_num(dur) }}×⏳</span> #}
+            
+            {# {{ row.price | round(1) }} #}
           </td>
           {% endfor %}
         </tr>

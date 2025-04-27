@@ -1,57 +1,57 @@
-name,type_,value
-Cure Disease,pos,43
-Cure Poison,pos,43
-Damage Health,neg,5
-Damage Magicka,neg,65
-Damage Magicka Regeneration,neg,54
-Damage Maximum Health,neg,6
-Damage Maximum Magicka,neg,6
-Damage Maximum Stamina,neg,67
-Damage Stamina,neg,67
-Damage Stamina Regeneration,neg,76
-Fear,neg,45
-Fortify Alteration,pos,34
-Fortify Armor Rating,pos,23
-Fortify Barter,pos,35
-Fortify Block,pos,7
-Fortify Carry Weight,pos,8
-Fortify Conjuration,pos,656
-Fortify Destruction,pos,45
-Fortify Health,pos,34
-Fortify Health Regeneration,pos,53
-Fortify Illusion,pos,57
-Fortify Lockpicking,pos,85
-Fortify Magicka,pos,75
-Fortify Magicka Regeneration,pos,
-Fortify Marksman,pos,
-Fortify One-Handed,pos,
-Fortify Pickpocket,pos,
-Fortify Restoration,pos,
-Fortify Sneak,pos,
-Fortify Speech,pos,
-Fortify Stamina,pos,
-Fortify Stamina Regeneration,pos,
-Fortify Two-Handed,pos,
-Frenzy,neg,
-Invisibility,pos,
-Lingering Damage Health,neg,
-Lingering Damage Magicka,neg,
-Lingering Damage Stamina,neg,
-Paralysis,neg,
-Resist Fire,pos,
-Resist Frost,pos,
-Resist Magic,pos,
-Resist Poison,pos,
-Resist Shock,pos,
-Restore Health,pos,
-Restore Magicka,pos,
-Restore Stamina,pos,
-Sanguinare Vampiris,pos,
-Soulreaping,neg,
-Tardiness,neg,
-Waterbreathing,pos,
-Weakness to Fire,neg,
-Weakness to Frost,neg,
-Weakness to Magic,neg,
-Weakness to Poison,neg,
-Weakness to Shock,neg,
+name,type_,base_cost
+Cure Disease,pos,0.25
+Cure Poison,pos,0.2
+Damage Health,neg,1.5
+Damage Magicka,neg,1.1
+Damage Magicka Regeneration,neg,0.25
+Damage Maximum Health,neg,0.25
+Damage Maximum Magicka,neg,0.5
+Damage Maximum Stamina,neg,0.8
+Damage Stamina,neg,0.9
+Damage Stamina Regeneration,neg,0.3
+Fear,neg,2.5
+Fortify Alteration,pos,0.25
+Fortify Armor Rating,pos,0.25
+Fortify Barter,pos,1
+Fortify Block,pos,0.25
+Fortify Carry Weight,pos,0.0725
+Fortify Conjuration,pos,0.25
+Fortify Destruction,pos,0.25
+Fortify Health,pos,0.2
+Fortify Health Regeneration,pos,0.05
+Fortify Illusion,pos,0.25
+Fortify Lockpicking,pos,0.5
+Fortify Magicka,pos,0.15
+Fortify Magicka Regeneration,pos,0.1
+Fortify Marksman,pos,0.25
+Fortify One-Handed,pos,0.25
+Fortify Pickpocket,pos,0.25
+Fortify Restoration,pos,0.25
+Fortify Sneak,pos,0.25
+Fortify Speech,pos,0.25
+Fortify Stamina,pos,0.15
+Fortify Stamina Regeneration,pos,0.05
+Fortify Two-Handed,pos,0.25
+Frenzy,neg,7.5
+Invisibility,pos,50
+Lingering Damage Health,neg,1.5
+Lingering Damage Magicka,neg,5
+Lingering Damage Stamina,neg,0.9
+Paralysis,neg,250
+Resist Fire,pos,0.25
+Resist Frost,pos,0.25
+Resist Magic,pos,0.5
+Resist Poison,pos,0.25
+Resist Shock,pos,0.25
+Restore Health,pos,0.25
+Restore Magicka,pos,0.3
+Restore Stamina,pos,0.3
+Sanguinare Vampiris,neg,0
+Soulreaping,neg,15
+Tardiness,neg,0.5
+Waterbreathing,pos,15
+Weakness to Fire,neg,0.3
+Weakness to Frost,neg,0.25
+Weakness to Magic,neg,0.5
+Weakness to Poison,neg,0.5
+Weakness to Shock,neg,0.35

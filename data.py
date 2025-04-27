@@ -18,6 +18,8 @@ class Data:  # pylint: disable=too-few-public-methods
     """List of all `Ingredient` instances."""
     effects: list[Effect] = []
     """List of all `Effect` instances."""
+    rows_dict: dict[str : dict[str:Row]] = {}
+    potions: set[Potion] = set()
 
     @classmethod
     def _infer_value(cls, value: "str") -> int | float | str:
@@ -54,9 +56,13 @@ class Data:  # pylint: disable=too-few-public-methods
         cls.rows = [Row(**line) for line in cls._csvrows("values")]
         cls.ingredients = [Ingredient(**line) for line in cls._csvrows("ingredients")]
         cls.effects = [Effect(**line) for line in cls._csvrows("effects")]
+        for row in cls.rows:
+            if row.ingredient_name not in cls.rows_dict:
+                cls.rows_dict[row.ingredient_name] = {}
+            cls.rows_dict[row.ingredient_name][row.effect_name] = row
 
 
-@dataclass
+@dataclass(frozen=True)
 class Row:
     """Maps ingredients to effects and magnitudes/durations."""
 
@@ -68,6 +74,15 @@ class Row:
     """Absolute value of the magnitude."""
     duration: float
     """Absolute value of the duration."""
+
+    # def __post_init__(self):
+    #     if not self.magnitude:
+    #         self.magnitude = 1
+    #     if not self.duration:
+    #         self.duration = 10
+
+    def __lt__(self, other: Row) -> bool:
+        return self.value < other.value
 
     @property
     def ingredient(self) -> Ingredient:
@@ -95,8 +110,20 @@ class Row:
             return 1
         return self.duration / med_dur
 
+    @property
+    def value(self) -> float:
+        """Value to be used in computing the price and the priority of effects."""
+        mag = self.magnitude if self.magnitude else 1
+        dur = self.duration if self.duration else 10
+        return pow(mag * dur / 10, 1.1)
 
-@dataclass
+    @property
+    def price(self) -> float:
+        """Estimated price of the effect."""
+        return self.value * self.effect.base_cost
+
+
+@dataclass(frozen=True)
 class Ingredient:
     """Ingredient data."""
 
@@ -106,8 +133,8 @@ class Ingredient:
     """Ingredient price."""
     plantable: bool
     """Wether or not the ingredient is plantable in Hearthfire."""
-    rarity: Literal["common", "uncommon", "rare"]
-    """Vendor rarity. Values are `common`, `uncommon`, `rare`."""
+    rarity: Literal["common", "uncommon", "rare", "unsold"]
+    """Vendor rarity. Values are `common`, `uncommon`, `rare` and `unsold`."""
 
     @classmethod
     def get(cls, name: str) -> Ingredient:
@@ -136,14 +163,19 @@ class Ingredient:
         """
         return [row for row in Data.rows if row.ingredient_name == self.name]
 
+    @property
+    def effects(self) -> set[Effect]:
+        """Effects of this ingredient."""
+        return {Effect.get(row.effect_name) for row in self.rows}
 
-@dataclass
+
+@dataclass(frozen=True)
 class Effect:
     """Effect data."""
 
     name: str
     """Effect name."""
-    value: int
+    base_cost: float
     """Effect base price."""
     type_: Literal["pos", "neg"]
     """Whether the effect is positive (`pos`) or negative (`neg`)."""
@@ -199,18 +231,105 @@ class Effect:
     def sorted_rows(self) -> dict[tuple, list[Row]]:
         """Similar to `rows()`, but also sorts in descending order of potency
         (magnitude x duration multipliers)."""
-        return sorted(
-            self.rows, key=lambda x: x.magnitude_mult * x.duration_mult, reverse=True
-        )
+        return sorted(self.rows, key=lambda x: x.value, reverse=True)
+
+    @property
+    def ingredients(self) -> set[Ingredient]:
+        """Ingredients having this effect."""
+        return {Ingredient.get(row.ingredient_name) for row in self.rows}
+
+    @property
+    def effects_lvl2(self) -> set[Effect]:
+        """2nd level effects (all effects of direct ingredients also having
+        the current effect)."""
+        effs = set()
+        for ingredient in self.ingredients:
+            effs |= {eff for eff in ingredient.effects if eff.type_ == self.type_}
+        return effs
+
+    @property
+    def ingredients_lvl2(self) -> set[Ingredient]:
+        """2nd level ingredients (compatible with direct ingredients of
+        this effect). Excludes combined potions (harmful and beneficial effects)."""
+        ings = set()
+        for effect in self.effects_lvl2:
+            ings |= effect.ingredients
+        return ings
+
+
+@dataclass(frozen=True)
+class Potion:
+    ingredients: frozenset[Ingredient]
+
+    @classmethod
+    def mix(cls, ing1: Ingredient, ing2: Ingredient) -> Potion | None:
+        key = frozenset({ing1, ing2})
+
+        common_effects = ing1.effects & ing2.effects
+        if not common_effects:
+            return
+        effect_types = set()
+        for effect in common_effects:
+            effect_types.add(effect.type_)
+            if len(effect_types) > 1:  # if both types
+                return
+        return Potion(key)
+
+    @classmethod
+    def _get_combined_effects(cls, ingredients: set[Ingredient]) -> frozenset[Row]:
+        dct = {}
+        for ingredient in ingredients:
+            for effect in ingredient.effects:
+                if effect not in dct:
+                    dct[effect] = set()
+                dct[effect].add(Data.rows_dict[ingredient.name][effect.name])
+        return frozenset({max(value) for value in dct.values() if len(value) > 1})
+
+    @classmethod
+    def enrich(cls, potion: Potion, ingredient: Ingredient) -> Potion | None:
+        if len(potion.ingredients) > 2:
+            return
+        new_ingredients = set(potion.ingredients) | {ingredient}
+        new_effects = cls._get_combined_effects(new_ingredients)
+        if new_effects == potion.effects:
+            return
+        effect_types = set()
+        for row in new_effects:
+            effect_types.add(row.effect.type_)
+            if len(effect_types) > 1:  # if both types
+                return
+        return Potion(frozenset(new_ingredients))
+
+    @property
+    def effects(self) -> frozenset[Row]:
+        return self._get_combined_effects(self.ingredients)
+
+    # @property
+    # def rows(self) -> set[Row]:
+    #     common_effects = self.ing1.effects & self.ing2.effects
 
 
 if __name__ == "__main__":
     Data.populate()
 
-    # ing = Ingredient.get("Canis Root")
+    for ing1 in Data.ingredients:
+        for ing2 in Data.ingredients:
+            Data.potions.add(Potion.mix(ing1, ing2))
+    pots_2ing = Data.potions.copy()
+    print(len(pots_2ing))
+    for pot in pots_2ing:
+        if not pot:
+            continue
+        for ing3 in Data.ingredients:
+            Data.potions.add(Potion.enrich(pot, ing3))
 
-    # print(ing.rows[0].effect.median_magnitude)
+    print(len(Data.potions))
 
-    eff = Effect.get("Restore Health").sorted_rows
-
-    pprint(eff)
+    effect_dict = {}
+    for pot in Data.potions:
+        if not pot:
+            continue
+        if pot.effects not in effect_dict:
+            effect_dict[pot.effects] = {}
+        effect_dict[pot.effects] = pot
+    print(len(effect_dict))

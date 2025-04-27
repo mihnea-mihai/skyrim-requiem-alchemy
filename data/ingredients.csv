@@ -1,5 +1,5 @@
 name,value,plantable,rarity
-Abcean Longfin,2,no,rare
+Abcean Longfin,15,no,common
 Aloe Vera Leaves,,,
 Ancestor Moth Wing,,,
 Angelfish,,,
@@ -8,121 +8,121 @@ Ash Creep Cluster,,,
 Ash Hopper Jelly,,,
 Ashen Grass Pod,,,
 Bear Heart,,,
-Bee,54,no,uncommon
-Beehive Husk,5,no,uncommon
-Bleeding Crown,5,yes,uncommon
-Blisterwort,6,yes,uncommon
-Blue Butterfly Wing,677,no,
-Blue Dartwing,7,no,
+Bee,3,no,common
+Beehive Husk,5,no,common
+Bleeding Crown,10,yes,uncommon
+Blisterwort,12,yes,uncommon
+Blue Butterfly Wing,2,no,uncommon
+Blue Dartwing,1,no,uncommon
 Blue Glitterdust,,,
-Blue Mountain Flower,76,yes,common
+Blue Mountain Flower,1,yes,common
 Boar Tusk,,,
-Bone Meal,,no,
-Briar Heart,54,no,
+Bone Meal,5,no,common
+Briar Heart,100,no,rare
 Burnt Spriggan Wood,,,
-Butterfly Wing,4,no,
-Canis Root,33,yes,
-Charred Skeever Hide,4,no,
-Chaurus Eggs,44,no,
+Butterfly Wing,3,no,uncommon
+Canis Root,15,yes,uncommon
+Charred Skeever Hide,1,no,uncommon
+Chaurus Eggs,10,no,uncommon
 Chaurus Hunter Antennae,,,
-Chicken's Egg,,no,
-Claws,66,no,
-Creep Cluster,6,yes,
-Crimson Nirnroot,7,no,
-Cyrodilic Spadetail,7,no,
-Daedra Heart,6,no,
-Deathbell,767,yes,
-Dragon's Tongue,67,yes,
-Dwarven Oil,76,no,
-Ectoplasm,7,no,
-Elves Ear,67,yes,
+Chicken's Egg,2,no,uncommon
+Claws,2,no,uncommon
+Creep Cluster,1,yes,uncommon
+Crimson Nirnroot,250,no,unsold
+Cyrodilic Spadetail,15,no,common
+Daedra Heart,1500,no,unsold
+Deathbell,4,yes,rare
+Dragon's Tongue,5,yes,common
+Dwarven Oil,50,no,uncommon
+Ectoplasm,25,no,uncommon
+Elves Ear,10,,common
 Emperol Parasol Moss,,,
-Falmer Ear,76,no,
+Falmer Ear,10,no,uncommon
 Felsaad Tern Feathers,,,
-Fire Salts,67,no,
-Fly Amanita,76,yes,
-Frost Mirriam,76,yes,
-Frost Salts,76,no,
-Garlic,76,no,
-Giant Lichen,67,,
-Giant's Toe,67,no,
+Fire Salts,250,no,rare
+Fly Amanita,2,yes,uncommon
+Frost Mirriam,1,no,uncommon
+Frost Salts,400,no,rare
+Garlic,3,no,common
+Giant Lichen,5,yes,uncommon
+Giant's Toe,20,no,rare
 Glassfish,,,
 Gleamblossom,,,
-Glow Dust,67,no,
-Glowing Mushroom,67,yes,
+Glow Dust,20,no,uncommon
+Glowing Mushroom,5,yes,unsold
 Goldfish,,,
-Grass Pod,67,yes,
-Hagraven Claw,,no,
-Hagraven Feathers,,,
-Hanging Moss,,,
-Hawk Beak,,,
-Hawk Feathers,,,
-Heart,,,
-Histcarp,,,
-Honeycomb,,,
+Grass Pod,1,yes,uncommon
+Hagraven Claw,20,no,rare
+Hagraven Feathers,20,no,rare
+Hanging Moss,1,no,uncommon
+Hawk Beak,15,no,uncommon
+Hawk Feathers,10,no,uncommon
+Heart,77,no,unsold
+Histcarp,6,no,common
+Honeycomb,12,no,common
 Horker Fat,,,
-Human Flesh,,,
-Ice Wraith Teeth,,,
-Imp Stool,,,
-Jazbay Grapes,,,
-Juniper Berries,,,
+Human Flesh,1,no,unsold
+Ice Wraith Teeth,30,no,rare
+Imp Stool,12,yes,rare
+Jazbay Grapes,1,yes,rare
+Juniper Berries,1,yes,common
 Juvenile Mudcrab,,,
-Large Antlers,,,
-Lavender,,,
-Luna Moth Wing,,,
+Large Antlers,25,no,uncommon
+Lavender,5,yes,common
+Luna Moth Wing,5,no,uncommon
 Lyretail Anthias,,,
 Mammoth Heart,,,
-Moon Sugar,,,
-Mora Tapinella,,,
-Mudcrab Chitin,,,
-Namira's Rot,,,
+Moon Sugar,45,no,uncommon
+Mora Tapinella,4,yes,uncommon
+Mudcrab Chitin,7,no,common
+Namira's Rot,12,yes,uncommon
 Netch Jelly,,,
-Nightshade,,,
-Nirnroot,,,
-Nordic Barnacle,,,
-Orange Dartwing,,,
-Pearl,,,
+Nightshade,8,yes,rare
+Nirnroot,100,no,rare
+Nordic Barnacle,5,yes,uncommon
+Orange Dartwing,1,no,uncommon
+Pearl,40,no,rare
 Pearlfish,,,
-Pine Thrush Egg,,,
+Pine Thrush Egg,2,no,common
 Poisonous Bloom,,,
-Powdered Mammoth Tusk,,,
-Purple Mountain Flower,,,
+Powdered Mammoth Tusk,25,no,uncommon
+Purple Mountain Flower,1,yes,common
 Pygmy Sunfish,,,
 Red Glitterdust,,,
-Red Mountain Flower,,,
-River Betty,,,
-Rock Warbler Egg,,,
-Sabre Cat Eye,,,
+Red Mountain Flower,1,yes,common
+River Betty,15,no,common
+Rock Warbler Egg,2,no,uncommon
+Sabre Cat Eye,2,no,uncommon
 Sabre Cat Heart,,,
-Sabre Cat Tooth,,,
+Sabre Cat Tooth,2,no,uncommon
 Salmon Roe,,,
-Salt,,,
-Scaly Pholiota,,,
+Salt,5,no,common
+Scaly Pholiota,4,yes,uncommon
 Scathecraw,,,
-Silverside Perch,,,
-Skeever Tail,,,
-Slaughterfish Egg,,,
-Slaughterfish Scales,,,
-Small Antlers,,,
-Small Pearl,,,
-Snowberry,,,
+Silverside Perch,15,no,common
+Skeever Tail,3,no,common
+Slaughterfish Egg,3,no,uncommon
+Slaughterfish Scales,3,no,uncommon
+Small Antlers,15,no,common
+Small Pearl,35,no,uncommon
+Snowberry,1,yes,common
 Spadefish,,,
-Spider Egg,,,
-Spriggan Sap,,,
+Spider Egg,5,no,uncommon
+Spriggan Sap,50,no,uncommon
 Spwan Ash,,,
 Strange Remains,,,
-Swamp Fungal Pod,,,
-Taproot,,,
-Thistle Branch,,,
-Torchbug Thorax,,,
+Swamp Fungal Pod,5,yes,uncommon
+Taproot,15,no,uncommon
+Thistle Branch,1,yes,common
+Torchbug Thorax,1,no,uncommon
 Trama Root,,,
-Troll Fat,,,
-Tundra Cotton,,,
-Vampire Dust,,,
+Troll Fat,25,no,uncommon
+Tundra Cotton,1,yes,common
+Vampire Dust,250,no,rare
 Venomous Spittle,,,
-Void Salts,,,
-Wheat,,,
-White Cap,,,
-Wisp Wrappings,,,
+Void Salts,500,no,unsold
+Wheat,1,yes,common
+White Cap,12,yes,uncommon
+Wisp Wrappings,30,no,uncommon
 Wolf Heart,,,
 Yellow Mountain Flower,,,
