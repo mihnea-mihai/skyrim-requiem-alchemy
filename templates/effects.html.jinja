@@ -9,10 +9,13 @@
       <thead>
         <tr>
           <th>Name</th>
-          <th>Value</th>
-          <th>Type</th>
+          <th>Effect type</th>
+          <th>Base cost</th>
+          <th>Median magnitude</th>
+          <th>Median duration</th>
+          <th>Median price</th>
           {# <th data-orderable="false">Potency</th> #}
-          <th data-orderable="false">Ingredients</th>
+          {# <th data-orderable="false">Ingredients</th> #}
         </tr>
       </thead>
       <tbody>
@@ -32,19 +35,28 @@
         </tr>
         {% endfor %}
       {% endfor %} #}
-      {% for effect in data.effects %}
+      {% for effect in effects %}
         <tr>
           <th>{{ effect.name }}</th>
-          <td>{{ effect.value }}</td>
-          <td>{{ effect.type_ }}</td>
-          <td class="text-start">
+          <td>
+            {% if effect.effect_type == 'beneficial' %}
+            <span class="text-success fw-bold">＋ beneficial</span>
+            {% else %}
+            <span class="text-danger fw-bold">− harmful</span>
+            {% endif %}
+          </td>
+          <td>{{ "%.4f" | format(effect.base_cost) }}</td>
+          <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
+          <td>{{ "%.0f" | format(effect.median_duration) }}</td>
+          <td>{{ "%.1f" | format(effect.median_price) }}</td>
+          {# <td class="text-start">
           {% for key, value in effect.grouped_rows.items() %}
             {{ macros.format_magdur(key[0], key[1]) }}
             :
             {{ value | join(', ') }}
             <br/>
           {% endfor %}
-          </td>
+          </td> #}
         </tr>
       {% endfor %}
       </tbody>

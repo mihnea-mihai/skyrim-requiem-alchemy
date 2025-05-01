@@ -1,14 +1,15 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from data import Data, Effect
+
+from data import Data
 
 Data.populate()
 
 
-def format_mult(mult: float) -> int | float:
-    int_num = round(mult)
-    if int_num == mult:
-        return int_num
-    return round(mult, 1)
+# def format_mult(mult: float) -> int | float:
+#     int_num = round(mult)
+#     if int_num == mult:
+#         return int_num
+#     return round(mult, 1)
 
 
 env = Environment(
@@ -19,19 +20,26 @@ env = Environment(
 )
 
 
-tpl = env.get_template("ingredients.html.jinja")
+tpl = env.get_template("default.html.jinja")
 
-with open("ingredients.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(title="Ingredients", data=Data()))
+with open("docs/index.html", "w", encoding="utf-8") as file_out:
+    file_out.write(tpl.render(title=""))
 
 tpl = env.get_template("effects.html.jinja")
 
-with open("effects.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(title="Effects", data=Data()))
+with open("docs/effects.html", "w", encoding="utf-8") as file_out:
+    file_out.write(tpl.render(title="Effects", effects=Data.effects.values()))
 
-tpl = env.get_template("effect.html.jinja")
+tpl = env.get_template("ingredients.html.jinja")
 
-with open("paralysis.html", "w", encoding="utf-8") as file_out:
+with open("docs/ingredients.html", "w", encoding="utf-8") as file_out:
     file_out.write(
-        tpl.render(title="Paralysis", effect=Effect.get("Waterbreathing"), data=Data())
+        tpl.render(title="Ingredients", ingredients=Data.ingredients.values())
     )
+
+# tpl = env.get_template("effect.html.jinja")
+
+# with open("paralysis.html", "w", encoding="utf-8") as file_out:
+#     file_out.write(
+#         tpl.render(title="Paralysis", effect=Effect.get("Waterbreathing"), data=Data())
+#     )

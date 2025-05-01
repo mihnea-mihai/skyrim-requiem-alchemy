@@ -5,38 +5,43 @@
   <section>
     <h2>Table</h2>
     <table id="ingredients" data-paging="false" 
-    class="table table-hover table-bordered align-middle text-center">
+    class="table table-hover table-bordered align-middle text-center table-sm">
       <thead>
         <tr>
           <th>Name</th>
           <th>Value</th>
           <th>Plantable</th>
-          <th data-searchable="true" data-filter-values="common,uncommon,rare">Rarity</th>
-          <th data-orderable="false">1<sup>st</sup> effect</th>
-          <th data-orderable="false">2<sup>nd</sup> effect</th>
-          <th data-orderable="false">3<sup>rd</sup> effect</th>
-          <th data-orderable="false">4<sup>th</sup> effect</th>
+          <th>Vendor Rarity</th>
+          <th>Unique to</th>
         </tr>
       </thead>
       <tbody>
-      {% for ingredient in data.ingredients %}
+      {% for ingredient in ingredients %}
         <tr>
           <th>{{ ingredient.name }}</th>
           <td>{{ ingredient.value }}</td>
-          <td>{{ ingredient.plantable }}</td>
-          <td>{{ ingredient.rarity }}</td>
-          {% for row in ingredient.rows %}
           <td>
-            <span class="fw-bold">{{ macros.format_num(row.price) }} 🪙</span>
-            <br/>
-            <span class="fst-italic">{{ row.effect_name }}</span>
-            <br/>
-            {{ macros.format_magdur(row.magnitude_mult,row.duration_mult) }}
-  {# <span class="fw-bold {{ color_class(dur) }}">{{ format_num(dur) }}×⏳</span> #}
-            
-            {# {{ row.price | round(1) }} #}
+            {% if ingredient.plantable %}
+            <span class="text-success">🪴 yes</span>
+            {% else %}
+            <span class="text-danger">🚫 no</span>
+            {% endif %}
           </td>
-          {% endfor %}
+          <td>
+            {% if ingredient.vendor_rarity == 'common' %}
+            <span class="text-success">◆◆◆ common</span>
+            {% elif ingredient.vendor_rarity == 'uncommon' %}
+            <span class="text-warning">◇◆◆ uncommon</span>
+            {% elif ingredient.vendor_rarity == 'rare' %}
+            <span class="text-danger">◇◇◆ rare</span>
+            {% elif ingredient.vendor_rarity == 'limited' %}
+            <span class="text-danger">◇◇◇ limited</span>
+            {% else %}
+            🚫 none
+            {% endif %}
+          </td>
+          <td>{{ ingredient.unique_to }}</td>
+
         </tr>
       {% endfor %}
       </tbody>
