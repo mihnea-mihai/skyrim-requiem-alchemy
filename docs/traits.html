@@ -1,0 +1,7704 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Traits - Requiem for a Herb (6.0.2)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="An overview of Skyrim Requiem's Alchemy effects." />
+  <base href="/skyrim-requiem-alchemy/"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5
+/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/sb-1.8.2/datatables.min.css" rel="stylesheet" integrity="sha384-0rXjLCwM+fDcZqT8h60i8WkYzPL4hYsXzI9DBya561AOf7iGpvUMLxe9rY/gcCwM" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+</head>
+<body data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Requiem for a Herb (6.0.2)</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ingredients">Ingredients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="effects">Effects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="traits">Traits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="potions">Potions</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  <header>
+    <h1>Traits</h1>
+  </header>
+  <main>
+  <section>
+    <h2>Table</h2>
+    <table id="traits" data-paging="false" 
+    class="table table-hover table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Ingredient name</th>
+          <th>Effect name</th>
+          <th>Effect median price</th>
+          <th>Trait price</th>
+          <th>Price multiplier</th>
+          <th>Magnitude</th>
+          <th>Effect magnitude</th>
+          <th>Magnitude multiplier</th>
+          <th>Duration</th>
+          <th>Effect duration</th>
+          <th>Duration multiplier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thistle Branch</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Thistle Branch</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Thistle Branch</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>0.8</td>
+          <td>0.1</td>
+          <td>3</td>
+          <td>4</td>
+          <td>0.8</td>
+          <td>0</td>
+          <td>60</td>
+          <td>0.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Thistle Branch</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>12.9</td>
+          <td>1</td>
+          <td>6</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Snowberry</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>3.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Snowberry</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>0.1</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>0.2</td>
+          <td>20</td>
+          <td>300</td>
+          <td>0.1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Snowberry</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>3.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3.0</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Snowberry</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>3.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pine Thrush Egg</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pine Thrush Egg</td>
+          <td>Fortify Lockpicking</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>1.9</td>
+          <td>0.35</td>
+          <td>0.2</td>
+          <td>1.7</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pine Thrush Egg</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pine Thrush Egg</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chicken's Egg</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chicken's Egg</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chicken's Egg</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chicken's Egg</td>
+          <td>Lingering Damage Stamina</td>
+          <td>0.9</td>
+          <td>0.9</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nightshade</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.7</td>
+          <td>1.8</td>
+          <td>5</td>
+          <td>3</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nightshade</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nightshade</td>
+          <td>Lingering Damage Stamina</td>
+          <td>0.9</td>
+          <td>0.9</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nightshade</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>8.2</td>
+          <td>0.8</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bone Meal</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bone Meal</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>3.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bone Meal</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>6.0</td>
+          <td>0.6</td>
+          <td>3</td>
+          <td>5</td>
+          <td>0.6</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bone Meal</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salt</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>1.7</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2.0</td>
+          <td>0.5</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salt</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salt</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salt</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>24.8</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Garlic</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>22.6</td>
+          <td>2.7</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Garlic</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>1.1</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>4.0</td>
+          <td>0.2</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Garlic</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>4.2</td>
+          <td>0.2</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>300.0</td>
+          <td>0.2</td>
+          
+
+        </tr>
+        <tr>
+          <td>Garlic</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>2.1</td>
+          <td>0.2</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>300.0</td>
+          <td>0.2</td>
+          
+
+        </tr>
+        <tr>
+          <td>Elves Ear</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>0.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Elves Ear</td>
+          <td>Fortify Marksman</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Elves Ear</td>
+          <td>Weakness to Frost</td>
+          <td>2.8</td>
+          <td>1.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3.0</td>
+          <td>0.7</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Elves Ear</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>2.8</td>
+          <td>0.5</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>60</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Mirriam</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Mirriam</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Mirriam</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Mirriam</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Eggs</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>7.7</td>
+          <td>2.1</td>
+          <td>4</td>
+          <td>2.0</td>
+          <td>2.0</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Eggs</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>4.9</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Eggs</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Eggs</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>18.2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Daedra Heart</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>290.5</td>
+          <td>193.7</td>
+          <td>10</td>
+          <td>1</td>
+          <td>10.0</td>
+          <td>120</td>
+          <td>10</td>
+          <td>12.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Daedra Heart</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>58.1</td>
+          <td>57.8</td>
+          <td>10</td>
+          <td>1.5</td>
+          <td>6.7</td>
+          <td>120</td>
+          <td>20.0</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Daedra Heart</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>58.1</td>
+          <td>90.4</td>
+          <td>10</td>
+          <td>1</td>
+          <td>10.0</td>
+          <td>120</td>
+          <td>20</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Daedra Heart</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>48.4</td>
+          <td>193.7</td>
+          <td>10</td>
+          <td>0.5</td>
+          <td>20.0</td>
+          <td>120</td>
+          <td>20</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Falmer Ear</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Falmer Ear</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>53.8</td>
+          <td>1.6</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Falmer Ear</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>10.5</td>
+          <td>1.3</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1.2</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Falmer Ear</td>
+          <td>Fortify Lockpicking</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fire Salts</td>
+          <td>Weakness to Frost</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fire Salts</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>35.3</td>
+          <td>5.9</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fire Salts</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>4.3</td>
+          <td>4.3</td>
+          <td>2.5</td>
+          <td>1.5</td>
+          <td>1.7</td>
+          <td>45</td>
+          <td>20.0</td>
+          <td>2.2</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fire Salts</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>24.8</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Salts</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>7.2</td>
+          <td>2.1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>30</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Salts</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>75.6</td>
+          <td>12.6</td>
+          <td>6</td>
+          <td>3.0</td>
+          <td>2.0</td>
+          <td>300</td>
+          <td>60.0</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Salts</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>6.2</td>
+          <td>6.2</td>
+          <td>3.5</td>
+          <td>1.5</td>
+          <td>2.3</td>
+          <td>45</td>
+          <td>20.0</td>
+          <td>2.2</td>
+          
+
+        </tr>
+        <tr>
+          <td>Frost Salts</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>35.3</td>
+          <td>3.3</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>180</td>
+          <td>60</td>
+          <td>3.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Void Salts</td>
+          <td>Weakness to Shock</td>
+          <td>3.9</td>
+          <td>31.6</td>
+          <td>8.1</td>
+          <td>20</td>
+          <td>3.0</td>
+          <td>6.7</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Void Salts</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>70.6</td>
+          <td>19.7</td>
+          <td>3</td>
+          <td>1</td>
+          <td>3.0</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Void Salts</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>1.5</td>
+          <td>3.8</td>
+          <td>10</td>
+          <td>3</td>
+          <td>3.3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Void Salts</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>62.3</td>
+          <td>17.3</td>
+          <td>8</td>
+          <td>3</td>
+          <td>2.7</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Briar Heart</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>2.2</td>
+          <td>2.1</td>
+          <td>2</td>
+          <td>1.5</td>
+          <td>1.3</td>
+          <td>30</td>
+          <td>20.0</td>
+          <td>1.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Briar Heart</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>120</td>
+          <td>60</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Briar Heart</td>
+          <td>Paralysis</td>
+          <td>19.9</td>
+          <td>19.9</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Briar Heart</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>10.6</td>
+          <td>2.9</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1.3</td>
+          <td>120</td>
+          <td>60</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ectoplasm</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.8</td>
+          <td>1.8</td>
+          <td>2.5</td>
+          <td>1.5</td>
+          <td>1.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ectoplasm</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>8.2</td>
+          <td>0.8</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ectoplasm</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>4.9</td>
+          <td>1.4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1.3</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ectoplasm</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant's Toe</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant's Toe</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>38.7</td>
+          <td>5.9</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant's Toe</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant's Toe</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Feathers</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Feathers</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Feathers</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>53.8</td>
+          <td>1.6</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Feathers</td>
+          <td>Weakness to Shock</td>
+          <td>3.9</td>
+          <td>3.9</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ice Wraith Teeth</td>
+          <td>Weakness to Frost</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ice Wraith Teeth</td>
+          <td>Soulreaping</td>
+          <td>5.5</td>
+          <td>2.6</td>
+          <td>0.5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ice Wraith Teeth</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>18.2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ice Wraith Teeth</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>3.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Skeever Tail</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Skeever Tail</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Skeever Tail</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Skeever Tail</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>12.9</td>
+          <td>1</td>
+          <td>6</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Scales</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Scales</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Scales</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>18.6</td>
+          <td>1.4</td>
+          <td>8.4</td>
+          <td>6.0</td>
+          <td>1.4</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Scales</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Taproot</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Taproot</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Taproot</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>24.8</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Taproot</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>0.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Troll Fat</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Troll Fat</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Troll Fat</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Troll Fat</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glow Dust</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glow Dust</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glow Dust</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glow Dust</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Vampire Dust</td>
+          <td>Sanguinare Vampiris</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Vampire Dust</td>
+          <td>Soulreaping</td>
+          <td>5.5</td>
+          <td>15.0</td>
+          <td>2.7</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>4</td>
+          <td>2.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Vampire Dust</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>78.1</td>
+          <td>4.3</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>15</td>
+          <td>4.0</td>
+          <td>3.8</td>
+          
+
+        </tr>
+        <tr>
+          <td>Vampire Dust</td>
+          <td>Cure Poison</td>
+          <td>1.2</td>
+          <td>1.2</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Tundra Cotton</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Tundra Cotton</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Tundra Cotton</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>3</td>
+          <td>4</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Tundra Cotton</td>
+          <td>Fortify Barter</td>
+          <td>7.2</td>
+          <td>7.2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lavender</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lavender</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>4.9</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lavender</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lavender</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>8.2</td>
+          <td>0.8</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>3.1</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>Lingering Damage Magicka</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fly Amanita</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fly Amanita</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fly Amanita</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Fly Amanita</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bleeding Crown</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>3.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bleeding Crown</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bleeding Crown</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bleeding Crown</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>White Cap</td>
+          <td>Weakness to Frost</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>White Cap</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>12.9</td>
+          <td>1</td>
+          <td>6</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>White Cap</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>1.5</td>
+          <td>0.3</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>White Cap</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Imp Stool</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Imp Stool</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Imp Stool</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>3.1</td>
+          <td>0.2</td>
+          <td>5</td>
+          <td>4.0</td>
+          <td>1.2</td>
+          <td>60</td>
+          <td>300.0</td>
+          <td>0.2</td>
+          
+
+        </tr>
+        <tr>
+          <td>Imp Stool</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Namira's Rot</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Namira's Rot</td>
+          <td>Fortify Lockpicking</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Namira's Rot</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>17.9</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Namira's Rot</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blisterwort</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>0.0</td>
+          <td>10</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blisterwort</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blisterwort</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.4</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>0.5</td>
+          <td>3.0</td>
+          <td>10</td>
+          <td>20</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blisterwort</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>0.8</td>
+          <td>0.1</td>
+          <td>4</td>
+          <td>5</td>
+          <td>0.8</td>
+          <td>30</td>
+          <td>300</td>
+          <td>0.1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Torchbug Thorax</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Torchbug Thorax</td>
+          <td>Lingering Damage Magicka</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Torchbug Thorax</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Torchbug Thorax</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>4.9</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juniper Berries</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>3.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juniper Berries</td>
+          <td>Fortify Marksman</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juniper Berries</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juniper Berries</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Deathbell</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>2.3</td>
+          <td>5.9</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>5</td>
+          <td>1</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Deathbell</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>3.7</td>
+          <td>2.1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>10</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Deathbell</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Deathbell</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Charred Skeever Hide</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Charred Skeever Hide</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Charred Skeever Hide</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>32.2</td>
+          <td>4.6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>20</td>
+          <td>5</td>
+          <td>4.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Charred Skeever Hide</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hanging Moss</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hanging Moss</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>6.6</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hanging Moss</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hanging Moss</td>
+          <td>Fortify One-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nirnroot</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>29.5</td>
+          <td>73.9</td>
+          <td>15</td>
+          <td>3</td>
+          <td>5.0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nirnroot</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>17.7</td>
+          <td>5.9</td>
+          <td>15</td>
+          <td>3.0</td>
+          <td>5.0</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nirnroot</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>83.8</td>
+          <td>4.6</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>16</td>
+          <td>4.0</td>
+          <td>4.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nirnroot</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>16.5</td>
+          <td>4.6</td>
+          <td>4</td>
+          <td>1</td>
+          <td>4.0</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spriggan Sap</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spriggan Sap</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spriggan Sap</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spriggan Sap</td>
+          <td>Fortify Alteration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Canis Root</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Canis Root</td>
+          <td>Fortify One-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Canis Root</td>
+          <td>Fortify Marksman</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Canis Root</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>1.5</td>
+          <td>3.8</td>
+          <td>10</td>
+          <td>3</td>
+          <td>3.3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Jazbay Grapes</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>1.7</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2.0</td>
+          <td>0.5</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Jazbay Grapes</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>2.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Jazbay Grapes</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>9.0</td>
+          <td>0.4</td>
+          <td>2</td>
+          <td>5.0</td>
+          <td>0.4</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Jazbay Grapes</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.2</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>0.5</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Claw</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>7.7</td>
+          <td>2.1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>120</td>
+          <td>60</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Claw</td>
+          <td>Lingering Damage Magicka</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Claw</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hagraven Claw</td>
+          <td>Soulreaping</td>
+          <td>5.5</td>
+          <td>5.5</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mudcrab Chitin</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mudcrab Chitin</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>10.5</td>
+          <td>1.3</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1.2</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mudcrab Chitin</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>8.2</td>
+          <td>1.4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1.3</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mudcrab Chitin</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Claws</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Claws</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>12.9</td>
+          <td>1</td>
+          <td>6</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Claws</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>4.5</td>
+          <td>0.4</td>
+          <td>10</td>
+          <td>5</td>
+          <td>2.0</td>
+          <td>60</td>
+          <td>300</td>
+          <td>0.2</td>
+          
+
+        </tr>
+        <tr>
+          <td>Claws</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Tooth</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Tooth</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>10.1</td>
+          <td>0.8</td>
+          <td>4.8</td>
+          <td>6.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Tooth</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>2.3</td>
+          <td>0.5</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>60.0</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Tooth</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Eye</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.0</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Eye</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Eye</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Eye</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Large Antlers</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.0</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Large Antlers</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>13.6</td>
+          <td>2.7</td>
+          <td>5</td>
+          <td>4.0</td>
+          <td>1.2</td>
+          <td>120</td>
+          <td>60.0</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Large Antlers</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Large Antlers</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>10.3</td>
+          <td>0.5</td>
+          <td>50</td>
+          <td>100.0</td>
+          <td>0.5</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Antlers</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Antlers</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Antlers</td>
+          <td>Lingering Damage Stamina</td>
+          <td>0.9</td>
+          <td>0.9</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Antlers</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wisp Wrappings</td>
+          <td>Soulreaping</td>
+          <td>5.5</td>
+          <td>5.5</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wisp Wrappings</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wisp Wrappings</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wisp Wrappings</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Powdered Mammoth Tusk</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.8</td>
+          <td>2.7</td>
+          <td>2.5</td>
+          <td>1</td>
+          <td>2.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Powdered Mammoth Tusk</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Powdered Mammoth Tusk</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>3.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Powdered Mammoth Tusk</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>17.9</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scaly Pholiota</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scaly Pholiota</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scaly Pholiota</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scaly Pholiota</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Butterfly Wing</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Butterfly Wing</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Butterfly Wing</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Butterfly Wing</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>3</td>
+          <td>4.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Luna Moth Wing</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Luna Moth Wing</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>12.9</td>
+          <td>1</td>
+          <td>6</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Luna Moth Wing</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Luna Moth Wing</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>18.2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Butterfly Wing</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.5</td>
+          <td>2.1</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>2.0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Butterfly Wing</td>
+          <td>Fortify Barter</td>
+          <td>7.2</td>
+          <td>7.2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Butterfly Wing</td>
+          <td>Lingering Damage Stamina</td>
+          <td>0.9</td>
+          <td>0.9</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Butterfly Wing</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Mountain Flower</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.1</td>
+          <td>0.2</td>
+          <td>0.25</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>10</td>
+          <td>20</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Mountain Flower</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>3.8</td>
+          <td>0.4</td>
+          <td>2</td>
+          <td>5</td>
+          <td>0.4</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Mountain Flower</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>3.1</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Mountain Flower</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>0.7</td>
+          <td>0.0</td>
+          <td>5</td>
+          <td>100.0</td>
+          <td>0.1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Mountain Flower</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.1</td>
+          <td>0.1</td>
+          <td>0.25</td>
+          <td>1.5</td>
+          <td>0.2</td>
+          <td>10</td>
+          <td>20.0</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Mountain Flower</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2.0</td>
+          <td>0.5</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Mountain Flower</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>2.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Mountain Flower</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.1</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>3</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Purple Mountain Flower</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.1</td>
+          <td>0.2</td>
+          <td>0.25</td>
+          <td>1</td>
+          <td>0.2</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Purple Mountain Flower</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4.0</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Purple Mountain Flower</td>
+          <td>Lingering Damage Magicka</td>
+          <td>5.0</td>
+          <td>2.3</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>10.0</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Purple Mountain Flower</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>1.8</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>3.0</td>
+          <td>0.3</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Swamp Fungal Pod</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Swamp Fungal Pod</td>
+          <td>Lingering Damage Magicka</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Swamp Fungal Pod</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.7</td>
+          <td>1.8</td>
+          <td>5</td>
+          <td>3</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Swamp Fungal Pod</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.5</td>
+          <td>2.1</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>2.0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant Lichen</td>
+          <td>Weakness to Shock</td>
+          <td>3.9</td>
+          <td>3.9</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant Lichen</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant Lichen</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Giant Lichen</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>1.5</td>
+          <td>0.3</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Egg</td>
+          <td>Fortify Pickpocket</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Egg</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Egg</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Slaughterfish Egg</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>4.9</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Rock Warbler Egg</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Rock Warbler Egg</td>
+          <td>Fortify One-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Rock Warbler Egg</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Rock Warbler Egg</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nordic Barnacle</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nordic Barnacle</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nordic Barnacle</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Nordic Barnacle</td>
+          <td>Fortify Pickpocket</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glowing Mushroom</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glowing Mushroom</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glowing Mushroom</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>2.3</td>
+          <td>0.5</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>60.0</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glowing Mushroom</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>6.6</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Grass Pod</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Grass Pod</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Grass Pod</td>
+          <td>Fortify Alteration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Grass Pod</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>0.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearl</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.0</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearl</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearl</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearl</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Pearl</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Pearl</td>
+          <td>Fortify One-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Pearl</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Small Pearl</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dragon's Tongue</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>8.2</td>
+          <td>1.4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>80</td>
+          <td>60</td>
+          <td>1.3</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dragon's Tongue</td>
+          <td>Fortify Barter</td>
+          <td>7.2</td>
+          <td>7.2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dragon's Tongue</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>3</td>
+          <td>4.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dragon's Tongue</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spider Egg</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spider Egg</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spider Egg</td>
+          <td>Fortify Lockpicking</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spider Egg</td>
+          <td>Fortify Marksman</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Beehive Husk</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Beehive Husk</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>10.1</td>
+          <td>0.8</td>
+          <td>4.8</td>
+          <td>6.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Beehive Husk</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4.0</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Beehive Husk</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bee</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bee</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bee</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bee</td>
+          <td>Weakness to Shock</td>
+          <td>3.9</td>
+          <td>3.9</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Honeycomb</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.4</td>
+          <td>2.1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2.0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Honeycomb</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Honeycomb</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>10.1</td>
+          <td>0.8</td>
+          <td>4.8</td>
+          <td>6.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Honeycomb</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Heart</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>8.8</td>
+          <td>22.1</td>
+          <td>5</td>
+          <td>3</td>
+          <td>1.7</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Heart</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>6.5</td>
+          <td>1.8</td>
+          <td>5</td>
+          <td>3.0</td>
+          <td>1.7</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Heart</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Heart</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>53.8</td>
+          <td>1.6</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Creep Cluster</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>0.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Creep Cluster</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Creep Cluster</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Creep Cluster</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Crimson Nirnroot</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>3.2</td>
+          <td>8.1</td>
+          <td>20</td>
+          <td>3</td>
+          <td>6.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Crimson Nirnroot</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>24.3</td>
+          <td>8.1</td>
+          <td>20</td>
+          <td>3.0</td>
+          <td>6.7</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Crimson Nirnroot</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>131.0</td>
+          <td>7.2</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>24</td>
+          <td>4.0</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Crimson Nirnroot</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>70.6</td>
+          <td>19.7</td>
+          <td>5</td>
+          <td>1</td>
+          <td>5.0</td>
+          <td>180</td>
+          <td>60</td>
+          <td>3.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Orange Dartwing</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Orange Dartwing</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Orange Dartwing</td>
+          <td>Fortify Pickpocket</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Orange Dartwing</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Moon Sugar</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>3.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Moon Sugar</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Moon Sugar</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.8</td>
+          <td>1.8</td>
+          <td>2.5</td>
+          <td>1.5</td>
+          <td>1.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Moon Sugar</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>24.8</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Dartwing</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Dartwing</td>
+          <td>Fortify Pickpocket</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Dartwing</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Dartwing</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>17.9</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Beak</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.0</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Beak</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Beak</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Beak</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Feathers</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>18.6</td>
+          <td>1.4</td>
+          <td>8.4</td>
+          <td>6.0</td>
+          <td>1.4</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Feathers</td>
+          <td>Cure Disease</td>
+          <td>1.5</td>
+          <td>39.6</td>
+          <td>27.0</td>
+          <td>100</td>
+          <td>5</td>
+          <td>20.0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Feathers</td>
+          <td>Fortify One-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Hawk Feathers</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mora Tapinella</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>0.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mora Tapinella</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mora Tapinella</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mora Tapinella</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dwarven Oil</td>
+          <td>Weakness to Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dwarven Oil</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>10.5</td>
+          <td>1.3</td>
+          <td>5</td>
+          <td>4.0</td>
+          <td>1.2</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dwarven Oil</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>24.8</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Dwarven Oil</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.4</td>
+          <td>1.4</td>
+          <td>2</td>
+          <td>1.5</td>
+          <td>1.3</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Human Flesh</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Human Flesh</td>
+          <td>Paralysis</td>
+          <td>19.9</td>
+          <td>19.9</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Human Flesh</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>0.7</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Human Flesh</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Histcarp</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Histcarp</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>4.9</td>
+          <td>1.4</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1.3</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Histcarp</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Histcarp</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Cyrodilic Spadetail</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Cyrodilic Spadetail</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Cyrodilic Spadetail</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>28.0</td>
+          <td>1.6</td>
+          <td>3</td>
+          <td>2</td>
+          <td>1.5</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Cyrodilic Spadetail</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>River Betty</td>
+          <td>Fortify Alteration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>River Betty</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>8.8</td>
+          <td>22.1</td>
+          <td>5</td>
+          <td>3</td>
+          <td>1.7</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>River Betty</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>River Betty</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Abcean Longfin</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Abcean Longfin</td>
+          <td>Weakness to Frost</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Abcean Longfin</td>
+          <td>Weakness to Poison</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Abcean Longfin</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Silverside Perch</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Silverside Perch</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>22.2</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Silverside Perch</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Silverside Perch</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Yellow Mountain Flower</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Yellow Mountain Flower</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4.0</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Yellow Mountain Flower</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>8.4</td>
+          <td>1.3</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1.2</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Yellow Mountain Flower</td>
+          <td>Damage Stamina Regeneration</td>
+          <td>22.2</td>
+          <td>10.3</td>
+          <td>0.5</td>
+          <td>50</td>
+          <td>100.0</td>
+          <td>0.5</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ancestor Moth Wing</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ancestor Moth Wing</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ancestor Moth Wing</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ancestor Moth Wing</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>0.5</td>
+          <td>0.1</td>
+          <td>1</td>
+          <td>3</td>
+          <td>0.3</td>
+          <td>30</td>
+          <td>60</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Gleamblossom</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>3.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Gleamblossom</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>17.9</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Gleamblossom</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Gleamblossom</td>
+          <td>Paralysis</td>
+          <td>19.9</td>
+          <td>19.9</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Hunter Antennae</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Hunter Antennae</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Hunter Antennae</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Chaurus Hunter Antennae</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>0.5</td>
+          <td>0.1</td>
+          <td>1</td>
+          <td>3</td>
+          <td>0.3</td>
+          <td>30</td>
+          <td>60</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Poisonous Bloom</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Poisonous Bloom</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Poisonous Bloom</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Poisonous Bloom</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>17.9</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salmon Roe</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>62.3</td>
+          <td>17.3</td>
+          <td>8</td>
+          <td>3</td>
+          <td>2.7</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salmon Roe</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.4</td>
+          <td>2.1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2.0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salmon Roe</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>32.2</td>
+          <td>4.6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>20</td>
+          <td>5</td>
+          <td>4.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Salmon Roe</td>
+          <td>Fortify Magicka Regeneration</td>
+          <td>24.8</td>
+          <td>24.8</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ashen Grass Pod</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>11.3</td>
+          <td>1.9</td>
+          <td>4</td>
+          <td>3</td>
+          <td>1.3</td>
+          <td>80</td>
+          <td>60</td>
+          <td>1.3</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ashen Grass Pod</td>
+          <td>Weakness to Shock</td>
+          <td>3.9</td>
+          <td>3.9</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ashen Grass Pod</td>
+          <td>Fortify Lockpicking</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ashen Grass Pod</td>
+          <td>Fortify Sneak</td>
+          <td>8.2</td>
+          <td>3.8</td>
+          <td>0.5</td>
+          <td>2</td>
+          <td>4.0</td>
+          <td>0.5</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Trama Root</td>
+          <td>Weakness to Shock</td>
+          <td>3.9</td>
+          <td>3.9</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Trama Root</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Trama Root</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Trama Root</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scathecraw</td>
+          <td>Damage Maximum Health</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scathecraw</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scathecraw</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Scathecraw</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spwan Ash</td>
+          <td>Damage Maximum Stamina</td>
+          <td>1.7</td>
+          <td>1.7</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spwan Ash</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>3.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spwan Ash</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>3</td>
+          <td>4.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spwan Ash</td>
+          <td>Damage Maximum Magicka</td>
+          <td>1.1</td>
+          <td>1.1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Burnt Spriggan Wood</td>
+          <td>Weakness to Fire</td>
+          <td>3.4</td>
+          <td>3.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Burnt Spriggan Wood</td>
+          <td>Fortify Alteration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Burnt Spriggan Wood</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Burnt Spriggan Wood</td>
+          <td>Tardiness</td>
+          <td>17.2</td>
+          <td>17.2</td>
+          <td>1</td>
+          <td>50</td>
+          <td>50</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Boar Tusk</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>0.3</td>
+          <td>0.1</td>
+          <td>1</td>
+          <td>4.0</td>
+          <td>0.2</td>
+          <td>20</td>
+          <td>60.0</td>
+          <td>0.3</td>
+          
+
+        </tr>
+        <tr>
+          <td>Boar Tusk</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>0.4</td>
+          <td>0.1</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0.2</td>
+          <td>20</td>
+          <td>60</td>
+          <td>0.3</td>
+          
+
+        </tr>
+        <tr>
+          <td>Boar Tusk</td>
+          <td>Fortify Block</td>
+          <td>8.2</td>
+          <td>0.5</td>
+          <td>0.1</td>
+          <td>1</td>
+          <td>4</td>
+          <td>0.2</td>
+          <td>20</td>
+          <td>60</td>
+          <td>0.3</td>
+          
+
+        </tr>
+        <tr>
+          <td>Boar Tusk</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Hopper Jelly</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Hopper Jelly</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>8.2</td>
+          <td>0.6</td>
+          <td>4</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Hopper Jelly</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Hopper Jelly</td>
+          <td>Weakness to Frost</td>
+          <td>2.8</td>
+          <td>2.8</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Netch Jelly</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>1.5</td>
+          <td>3.8</td>
+          <td>10</td>
+          <td>3</td>
+          <td>3.3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Netch Jelly</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Netch Jelly</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.0</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Netch Jelly</td>
+          <td>Fear</td>
+          <td>17.9</td>
+          <td>17.9</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Creep Cluster</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Creep Cluster</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>18.2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Creep Cluster</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>3.8</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Ash Creep Cluster</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Emperol Parasol Moss</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Emperol Parasol Moss</td>
+          <td>Fortify Magicka</td>
+          <td>3.6</td>
+          <td>2.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Emperol Parasol Moss</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Emperol Parasol Moss</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Felsaad Tern Feathers</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>2.0</td>
+          <td>10</td>
+          <td>20</td>
+          <td>0.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Felsaad Tern Feathers</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>8.2</td>
+          <td>0.6</td>
+          <td>4</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Felsaad Tern Feathers</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>10.5</td>
+          <td>1.3</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1.2</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Felsaad Tern Feathers</td>
+          <td>Resist Magic</td>
+          <td>3.6</td>
+          <td>7.7</td>
+          <td>2.1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>120</td>
+          <td>60</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angelfish</td>
+          <td>Fortify Health Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angelfish</td>
+          <td>Resist Fire</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angelfish</td>
+          <td>Fortify Marksman</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angelfish</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearlfish</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.0</td>
+          <td>1.6</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearlfish</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearlfish</td>
+          <td>Fortify Speech</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pearlfish</td>
+          <td>Fortify One-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pygmy Sunfish</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>1.4</td>
+          <td>2.1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2.0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pygmy Sunfish</td>
+          <td>Lingering Damage Magicka</td>
+          <td>5.0</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pygmy Sunfish</td>
+          <td>Damage Magicka Regeneration</td>
+          <td>18.5</td>
+          <td>18.5</td>
+          <td>1</td>
+          <td>100</td>
+          <td>100.0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Pygmy Sunfish</td>
+          <td>Fortify Restoration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glassfish</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glassfish</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>18.2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glassfish</td>
+          <td>Fortify Illusion</td>
+          <td>8.2</td>
+          <td>6.0</td>
+          <td>0.7</td>
+          <td>3</td>
+          <td>4.0</td>
+          <td>0.8</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Glassfish</td>
+          <td>Fortify Speech</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Goldfish</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Goldfish</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>12.9</td>
+          <td>1</td>
+          <td>6</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Goldfish</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>88.1</td>
+          <td>12.6</td>
+          <td>5</td>
+          <td>0</td>
+          <td>5</td>
+          <td>0</td>
+          <td>5</td>
+          <td>0.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Goldfish</td>
+          <td>Resist Frost</td>
+          <td>6.0</td>
+          <td>6.0</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angler Larvae</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angler Larvae</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+          <td>10</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angler Larvae</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Angler Larvae</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lyretail Anthias</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lyretail Anthias</td>
+          <td>Fortify Alteration</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lyretail Anthias</td>
+          <td>Fortify Conjuration</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Lyretail Anthias</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juvenile Mudcrab</td>
+          <td>Fortify Stamina Regeneration</td>
+          <td>12.4</td>
+          <td>12.4</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juvenile Mudcrab</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>14.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          <td>300</td>
+          <td>300.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juvenile Mudcrab</td>
+          <td>Cure Disease</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Juvenile Mudcrab</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spadefish</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.5</td>
+          <td>2.1</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>2.0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spadefish</td>
+          <td>Fortify Lockpicking</td>
+          <td>0.3</td>
+          <td>0.3</td>
+          <td>1</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>30</td>
+          <td>30.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spadefish</td>
+          <td>Fortify Pickpocket</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Spadefish</td>
+          <td>Cure Disease</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Aloe Vera Leaves</td>
+          <td>Restore Health</td>
+          <td>0.2</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Aloe Vera Leaves</td>
+          <td>Restore Stamina</td>
+          <td>0.6</td>
+          <td>0.3</td>
+          <td>0.5</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>0.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Aloe Vera Leaves</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Aloe Vera Leaves</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>18.2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Horker Fat</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>27.6</td>
+          <td>3.3</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>180</td>
+          <td>60</td>
+          <td>3.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Horker Fat</td>
+          <td>Fortify Two-Handed</td>
+          <td>8.2</td>
+          <td>8.2</td>
+          <td>1</td>
+          <td>4</td>
+          <td>4</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Horker Fat</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>16.1</td>
+          <td>0.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>0.5</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Horker Fat</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.3</td>
+          <td>0.6</td>
+          <td>2</td>
+          <td>3</td>
+          <td>0.7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wolf Heart</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wolf Heart</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wolf Heart</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>2.5</td>
+          <td>0.8</td>
+          <td>5</td>
+          <td>3.0</td>
+          <td>1.7</td>
+          <td>5</td>
+          <td>0.0</td>
+          <td>5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Wolf Heart</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bear Heart</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>49.5</td>
+          <td>7.5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1.2</td>
+          <td>300</td>
+          <td>60</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bear Heart</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bear Heart</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>2.5</td>
+          <td>0.8</td>
+          <td>5</td>
+          <td>3.0</td>
+          <td>1.7</td>
+          <td>5</td>
+          <td>0.0</td>
+          <td>5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Bear Heart</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>1.8</td>
+          <td>0.2</td>
+          <td>1</td>
+          <td>5</td>
+          <td>0.2</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mammoth Heart</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>21.9</td>
+          <td>1.6</td>
+          <td>3</td>
+          <td>4.0</td>
+          <td>0.8</td>
+          <td>600</td>
+          <td>300.0</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mammoth Heart</td>
+          <td>Fortify Armor Rating</td>
+          <td>12.9</td>
+          <td>27.6</td>
+          <td>2.1</td>
+          <td>12</td>
+          <td>6.0</td>
+          <td>2.0</td>
+          <td>60</td>
+          <td>60.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mammoth Heart</td>
+          <td>Fortify Stamina</td>
+          <td>4.9</td>
+          <td>37.1</td>
+          <td>7.5</td>
+          <td>5</td>
+          <td>4.0</td>
+          <td>1.2</td>
+          <td>300</td>
+          <td>60.0</td>
+          <td>5.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Mammoth Heart</td>
+          <td>Fortify Health</td>
+          <td>6.6</td>
+          <td>60.5</td>
+          <td>9.2</td>
+          <td>10</td>
+          <td>4</td>
+          <td>2.5</td>
+          <td>180</td>
+          <td>60</td>
+          <td>3.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Heart</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Heart</td>
+          <td>Damage Magicka</td>
+          <td>3.7</td>
+          <td>3.7</td>
+          <td>1</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Heart</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>2.5</td>
+          <td>0.8</td>
+          <td>5</td>
+          <td>3.0</td>
+          <td>1.7</td>
+          <td>5</td>
+          <td>0.0</td>
+          <td>5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Sabre Cat Heart</td>
+          <td>Frenzy</td>
+          <td>34.5</td>
+          <td>34.5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Strange Remains</td>
+          <td>Invisibility</td>
+          <td>18.2</td>
+          <td>358.9</td>
+          <td>19.7</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>4.0</td>
+          <td>15.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Strange Remains</td>
+          <td>Soulreaping</td>
+          <td>5.5</td>
+          <td>15.0</td>
+          <td>2.7</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>10</td>
+          <td>4</td>
+          <td>2.5</td>
+          
+
+        </tr>
+        <tr>
+          <td>Strange Remains</td>
+          <td>Fortify Destruction</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Strange Remains</td>
+          <td>Resist Shock</td>
+          <td>6.0</td>
+          <td>10.5</td>
+          <td>1.8</td>
+          <td>5</td>
+          <td>3</td>
+          <td>1.7</td>
+          <td>60</td>
+          <td>60</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Glitterdust</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>18.9</td>
+          <td>47.3</td>
+          <td>10</td>
+          <td>3</td>
+          <td>3.3</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Glitterdust</td>
+          <td>Fortify Carry Weight</td>
+          <td>14.0</td>
+          <td>38.5</td>
+          <td>2.7</td>
+          <td>5</td>
+          <td>4.0</td>
+          <td>1.2</td>
+          <td>600</td>
+          <td>300.0</td>
+          <td>2.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Glitterdust</td>
+          <td>Restore Magicka</td>
+          <td>1.0</td>
+          <td>1.0</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>1.5</td>
+          <td>1</td>
+          <td>20</td>
+          <td>20.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Red Glitterdust</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>21.6</td>
+          <td>7.2</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>0.0</td>
+          <td>60</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Glitterdust</td>
+          <td>Damage Stamina</td>
+          <td>3.0</td>
+          <td>21.6</td>
+          <td>7.2</td>
+          <td>3</td>
+          <td>3.0</td>
+          <td>1</td>
+          <td>60</td>
+          <td>0.0</td>
+          <td>60</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Glitterdust</td>
+          <td>Cure Poison</td>
+          <td>1.2</td>
+          <td>1.2</td>
+          <td>1</td>
+          <td>5</td>
+          <td>5.0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Glitterdust</td>
+          <td>Waterbreathing</td>
+          <td>7.0</td>
+          <td>50.2</td>
+          <td>7.2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>30</td>
+          <td>5</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Blue Glitterdust</td>
+          <td>Resist Poison</td>
+          <td>8.2</td>
+          <td>35.3</td>
+          <td>4.3</td>
+          <td>5</td>
+          <td>4</td>
+          <td>1.2</td>
+          <td>180</td>
+          <td>60</td>
+          <td>3.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Venomous Spittle</td>
+          <td>Lingering Damage Health</td>
+          <td>1.5</td>
+          <td>10.8</td>
+          <td>7.2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>10</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Venomous Spittle</td>
+          <td>Damage Health</td>
+          <td>0.4</td>
+          <td>1.5</td>
+          <td>3.8</td>
+          <td>10</td>
+          <td>3</td>
+          <td>3.3</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          
+
+        </tr>
+        <tr>
+          <td>Venomous Spittle</td>
+          <td>Lingering Damage Stamina</td>
+          <td>0.9</td>
+          <td>6.5</td>
+          <td>7.2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>60</td>
+          <td>10</td>
+          <td>6.0</td>
+          
+
+        </tr>
+        <tr>
+          <td>Venomous Spittle</td>
+          <td>Paralysis</td>
+          <td>19.9</td>
+          <td>19.9</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0.0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>1</td>
+          
+
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  </main>
+  <footer>
+    <small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5
+/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/sb-1.8.2/datatables.min.js" integrity="sha384-aoax2PDBzqKN2QaB/OWLcBWAllHZWqpsttrtQfC4gpVm31ADbN1mEvVU+XTyIpSs" crossorigin="anonymous"></script>
+  <script defer>new DataTable('#traits', {
+        layout: {
+        topStart: 'searchBuilder'
+    }
+  });</script>
+</body>
+</html>
+
+
+ 

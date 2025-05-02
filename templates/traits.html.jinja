@@ -1,0 +1,53 @@
+{% import 'macros.jinja' as macros %}
+
+{% extends "default.html.jinja" %}
+{% block content %}
+  <section>
+    <h2>Table</h2>
+    <table id="traits" data-paging="false" 
+    class="table table-hover table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Ingredient name</th>
+          <th>Effect name</th>
+          <th>Effect median price</th>
+          <th>Trait price</th>
+          <th>Price multiplier</th>
+          <th>Magnitude</th>
+          <th>Effect magnitude</th>
+          <th>Magnitude multiplier</th>
+          <th>Duration</th>
+          <th>Effect duration</th>
+          <th>Duration multiplier</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for trait in traits %}
+        <tr>
+          <td>{{ trait.ingredient_name }}</td>
+          <td>{{ trait.effect_name }}</td>
+          <td>{{ trait.effect.median_price | round(1) }}</td>
+          <td>{{ trait.price | round(1) }}</td>
+          <td>{{ trait.price_mult | round(1) }}</td>
+          <td>{{ trait.magnitude }}</td>
+          <td>{{ trait.effect.median_magnitude }}</td>
+          <td>{{ trait.magnitude_mult | round(1) }}</td>
+          <td>{{ trait.duration }}</td>
+          <td>{{ trait.effect.median_duration }}</td>
+          <td>{{ trait.duration_mult | round(1) }}</td>
+          
+
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock content %}
+
+{% block additional_scripts %}
+  <script defer>new DataTable('#traits', {
+        layout: {
+        topStart: 'searchBuilder'
+    }
+  });</script>
+{% endblock additional_scripts %}

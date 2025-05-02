@@ -37,10 +37,14 @@
             {% elif ingredient.vendor_rarity == 'limited' %}
             <span class="text-danger">◇◇◇ limited</span>
             {% else %}
-            🚫 none
+            <span class="text-danger">🚫 none</span>
             {% endif %}
           </td>
-          <td>{{ ingredient.unique_to }}</td>
+          <td>
+            {% if ingredient.unique_to %}
+            {{ ingredient.unique_to }}
+            {% endif %}
+          </td>
 
         </tr>
       {% endfor %}

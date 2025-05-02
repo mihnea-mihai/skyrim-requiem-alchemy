@@ -43,6 +43,26 @@ class Data:
         for row in cls.readcsv("traits"):
             cls.traits[row["ingredient_name"]][row["effect_name"]] = Trait(**row)
 
+        tried_mixtures = set()
+        cls.potions: set[Potion] = set()
+        for ing1 in Data.ingredients.values():
+            for ing2 in Data.ingredients.values():
+                key = frozenset({ing1, ing2})
+                if key in tried_mixtures:
+                    continue
+                tried_mixtures.add(key)
+                p = Potion(key)
+                if p.pure:
+                    cls.potions.add(p)
+                    for ing3 in Data.ingredients.values():
+                        key2 = frozenset({ing1, ing2, ing3})
+                        if key2 in tried_mixtures:
+                            continue
+                        tried_mixtures.add(key2)
+                        p2 = Potion(key2)
+                        if p2.pure and len(p2.effects) > len(p.effects):
+                            cls.potions.add(p2)
+
 
 @dataclass(frozen=True)
 class Effect:
@@ -70,6 +90,10 @@ class Effect:
 
         return median_value * self.base_cost
 
+    @property
+    def traits(self) -> Generator[Trait]:
+        return Trait.by_effect(self.name)
+
 
 @dataclass(frozen=True)
 class Ingredient:
@@ -81,6 +105,10 @@ class Ingredient:
         Literal["ResourcePack", "Hearthfire", "Dawnguard", "Dragonborn", "Requiem"]
         | None
     )
+
+    @property
+    def traits(self) -> Generator[Trait]:
+        return Trait.by_ingredient(self.name)
 
 
 @dataclass(frozen=True)
@@ -96,8 +124,88 @@ class Trait:
             if effect in eff_obj:
                 yield eff_obj[effect]
 
+    @classmethod
+    def by_ingredient(cls, ingredient: str) -> Generator[Trait]:
+        yield from Data.traits[ingredient].values()
 
-Data.populate()
+    @property
+    def effect(self) -> Effect:
+        return Data.effects[self.effect_name]
 
-for tr in Trait.by_effect(Data.effects["Waterbreathing"]):
-    print(tr)
+    @property
+    def ingredient(self) -> Ingredient:
+        return Data.ingredients[self.ingredient_name]
+
+    @property
+    def magnitude_mult(self) -> float:
+        mag = self.magnitude
+        med_mag = self.effect.median_magnitude
+        if mag == med_mag:
+            return 1
+        if med_mag == 0:
+            return mag
+        return mag / med_mag
+
+    @property
+    def duration_mult(self) -> float:
+        dur = self.duration
+        med_dur = self.effect.median_duration
+        if dur == med_dur:
+            return 1
+        if med_dur == 0:
+            return dur
+        return dur / med_dur
+
+    @property
+    def median_price(self) -> float:
+        return self.effect.pr
+
+    @property
+    def price(self) -> float:
+        magnitude_factor = 1
+        duration_factor = 1
+        if self.magnitude:
+            magnitude_factor = self.magnitude
+        if self.duration:
+            duration_factor = self.duration / 10
+        value = pow(magnitude_factor * duration_factor, 1.1)
+
+        return value * self.effect.base_cost
+
+    @property
+    def price_mult(self) -> float:
+        price = self.price
+        median_price = self.effect.median_price
+        if price == median_price:
+            return 1
+        return price / median_price
+
+
+@dataclass(frozen=True)
+class Potion:
+    ingredients: frozenset[Ingredient]
+
+    @property
+    def effects(self) -> frozenset[Effect]:
+        combined_effects = [tr.effect for ing in self.ingredients for tr in ing.traits]
+        valid_effects = [
+            effect for effect in combined_effects if combined_effects.count(effect) > 1
+        ]
+        return frozenset(valid_effects)
+
+    @property
+    def pure(self) -> bool:
+        effects = self.effects
+        if not effects:
+            return False
+        first = list(effects)[0].effect_type
+        for effect in effects:
+            if effect.effect_type != first:
+                return False
+        return True
+
+
+if __name__ == "__main__":
+    Data.populate()
+
+

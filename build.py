@@ -37,6 +37,20 @@ with open("docs/ingredients.html", "w", encoding="utf-8") as file_out:
         tpl.render(title="Ingredients", ingredients=Data.ingredients.values())
     )
 
+tpl = env.get_template("potions.html.jinja")
+
+with open("docs/potions.html", "w", encoding="utf-8") as file_out:
+    file_out.write(tpl.render(title="Potions", potions=Data.potions))
+
+tpl = env.get_template("traits.html.jinja")
+traits = []
+for value1 in Data.traits.values():
+    traits += value1.values()
+
+
+with open("docs/traits.html", "w", encoding="utf-8") as file_out:
+    file_out.write(tpl.render(title="Traits", traits=traits))
+
 # tpl = env.get_template("effect.html.jinja")
 
 # with open("paralysis.html", "w", encoding="utf-8") as file_out:

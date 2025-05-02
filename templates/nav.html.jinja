@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        {% for page in ['Ingredients', 'Effects', 'Potions'] %}
+        {% for page in ['Ingredients', 'Effects', 'Traits', 'Potions'] %}
         <li class="nav-item">
         {% if page == title %}
           <a class="nav-link active" aria-current="page" href="{{ page | lower }}">{{ page }}</a>
