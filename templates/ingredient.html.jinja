@@ -1,18 +1,64 @@
 {% extends "default.html.jinja" %}
 {% block content %}
 <section>
-  <h2>Effects</h2>
-  {{ ingredient.name }}
-  <table class="table">
+<h2>Compatible ingredients</h2>
+  <table id="compatible-ingredients" data-paging="false" 
+  class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>
-      <th>Effect</th>
-      {% for effect in ingredient.effects['effect'] %}
-      <th>{{ effect }}</th>
-      {% endfor %}
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+        <th>Plantable</th>
+        <th>Vendor Rarity</th>
+        <th>Unique to</th>
+        {% for effect in ingredient.effects %}
+          <th>{{ effect.name }}</th>
+        {% endfor %}
+      </tr>
     </thead>
     <tbody>
-      ll
+    {% for ing, effects in ingredient.compatibilities.items() %}
+      <tr>
+        <th>{{ formatting.link(ing) }}</th>
+        <td>{{ ing.value }}</td>
+        <td>{{ formatting.plantable(ing) }}</td>
+        <td>{{ formatting.vendor_rarity(ing) }}</td>
+        <td>{{ ing.unique_to | string }}</td>
+        {% for eff1 in ingredient.effects %}
+        <td>
+          {% for eff2 in effects %}
+            {% if eff1 == eff2 %}
+              yes
+            {% endif %}
+          {% endfor %}
+        </td>
+        {% endfor %}
+        {# <td>
+          {% for trait in ingredient.traits %}
+            <div>
+              {{ formatting.link(trait.potency.effect) }}:
+              {{ formatting.f_potency(trait.potency) }}
+            </div>
+          {% endfor %}
+        </td>
+        <td>
+          {% for ing, effects in ingredient.compatibilities.items() %}
+          <div>
+            <span>{{ formatting.link(ing) }},</span>
+            {% for effect in effects %}
+              <span>{{ formatting.link(effect) }}</span>
+            {% endfor %}
+            
+          </div>
+          {% endfor %}
+        </td> #}
+      </tr>
+    {% endfor %}
     </tbody>
   </table>
 </section>
 {% endblock content %}
+
+{% block additional_scripts %}
+{{ macros.datatables(['compatible-ingredients']) }}
+{% endblock additional_scripts %}

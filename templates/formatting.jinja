@@ -1,0 +1,79 @@
+{%- macro plantable(ingredient) -%}
+  {%- if ingredient.plantable -%}
+    <span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span>
+  {%- else -%}
+    <span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span>
+  {%- endif -%}
+{%- endmacro -%}
+
+{%- macro vendor_rarity(ingredient) -%}
+  {% if ingredient.vendor_rarity == 'common' %}
+  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+  {% elif ingredient.vendor_rarity == 'uncommon' %}
+  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+  {% elif ingredient.vendor_rarity == 'rare' %}
+  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+  {% elif ingredient.vendor_rarity == 'limited' %}
+  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+  {% else %}
+  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+  {% endif %}
+{%- endmacro -%}
+
+
+{%- macro link(obj) -%}
+  <a href="{{ obj.__class__.__name__ | lower }}s/{{ obj.name | urlencode }}">
+  {{ obj.name }}
+  </a>
+{%- endmacro -%}
+
+{% macro num_class(val) %}
+  {% if val > 1 %}
+    text-success
+  {% else %}
+    {% if val < 1 %}
+    text-danger
+    {% else %}
+    text-secondary
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+{%- macro int_float_num(val) -%}
+  {%- if val | round == val -%}
+    {{ val | int }}
+  {%- else -%}
+    {{ val | round(1) }}
+  {%- endif -%}
+{%- endmacro -%}
+
+{% macro magnitude_mult(mag) %}
+  <span class="fw-bold {{ num_class(mag) }}">
+    {{ int_float_num(mag) }}×💥
+  </span>
+{% endmacro %}
+
+{% macro duration_mult(dur) %}
+  <span class="fw-bold {{ num_class(dur) }}">
+    {{ int_float_num(dur) }}×⏳
+  </span>
+{% endmacro %}
+
+{% macro price_mult(price) %}
+  <span class="fw-bold {{ num_class(price) }}">
+    {{ int_float_num(price) }}×🪙
+  </span>
+{% endmacro %}
+
+{% macro f_potency(potency) %}
+  {{ magnitude_mult(potency.magnitude_mult) }}
+  {{ duration_mult(potency.duration_mult) }}
+  {{ price_mult(potency.price_mult) }}
+{% endmacro %}

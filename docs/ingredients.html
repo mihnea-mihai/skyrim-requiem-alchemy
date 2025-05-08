@@ -1,17 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Ingredients - Requiem for a Herb (6.0.2)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="An overview of Skyrim Requiem's Alchemy effects." />
   <base href="/skyrim-requiem-alchemy/"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5
-/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/sb-1.8.2/datatables.min.css" rel="stylesheet" integrity="sha384-0rXjLCwM+fDcZqT8h60i8WkYzPL4hYsXzI9DBya561AOf7iGpvUMLxe9rY/gcCwM" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.3.0/b-3.2.3/b-colvis-3.2.3/b-html5-3.2.3/sb-1.8.2/datatables.min.css" rel="stylesheet" integrity="sha384-lJltyt3ZqRD42G88QqIi3RnmWA/1dpcW1HSnEWUnQ8fzrkcrARSuAWnh/8BeOwIy" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
 </head>
 <body data-bs-theme="dark">
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,6 +25,9 @@
           <a class="nav-link" href="effects">Effects</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="potencies">Potencies</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="traits">Traits</a>
         </li>
         <li class="nav-item">
@@ -42,7 +41,6 @@
   </header>
   <main>
   <section>
-    <h2>Table</h2>
     <table id="ingredients" data-paging="false" 
     class="table table-hover table-bordered align-middle text-center table-sm">
       <thead>
@@ -56,1693 +54,1543 @@
       </thead>
       <tbody>
         <tr>
-          <th>Abcean Longfin</th>
+          <th><a href="ingredients/Abcean%20Longfin">
+  Abcean Longfin
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Aloe Vera Leaves</th>
+          <th><a href="ingredients/Aloe%20Vera%20Leaves">
+  Aloe Vera Leaves
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            ResourcePack
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>ResourcePack</td>
         </tr>
         <tr>
-          <th>Ancestor Moth Wing</th>
+          <th><a href="ingredients/Ancestor%20Moth%20Wing">
+  Ancestor Moth Wing
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Dawnguard
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Dawnguard</td>
         </tr>
         <tr>
-          <th>Angelfish</th>
+          <th><a href="ingredients/Angelfish">
+  Angelfish
+  </a></th>
           <td>30</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Angler Larvae</th>
+          <th><a href="ingredients/Angler%20Larvae">
+  Angler Larvae
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Ash Creep Cluster</th>
+          <th><a href="ingredients/Ash%20Creep%20Cluster">
+  Ash Creep Cluster
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Ash Hopper Jelly</th>
+          <th><a href="ingredients/Ash%20Hopper%20Jelly">
+  Ash Hopper Jelly
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Ashen Grass Pod</th>
+          <th><a href="ingredients/Ashen%20Grass%20Pod">
+  Ashen Grass Pod
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Bear Heart</th>
+          <th><a href="ingredients/Bear%20Heart">
+  Bear Heart
+  </a></th>
           <td>40</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Bee</th>
+          <th><a href="ingredients/Bee">
+  Bee
+  </a></th>
           <td>3</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Beehive Husk</th>
+          <th><a href="ingredients/Beehive%20Husk">
+  Beehive Husk
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Bleeding Crown</th>
+          <th><a href="ingredients/Bleeding%20Crown">
+  Bleeding Crown
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Blisterwort</th>
+          <th><a href="ingredients/Blisterwort">
+  Blisterwort
+  </a></th>
           <td>12</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Blue Butterfly Wing</th>
+          <th><a href="ingredients/Blue%20Butterfly%20Wing">
+  Blue Butterfly Wing
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Blue Dartwing</th>
+          <th><a href="ingredients/Blue%20Dartwing">
+  Blue Dartwing
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Blue Glitterdust</th>
+          <th><a href="ingredients/Blue%20Glitterdust">
+  Blue Glitterdust
+  </a></th>
           <td>100</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Blue Mountain Flower</th>
+          <th><a href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Boar Tusk</th>
+          <th><a href="ingredients/Boar%20Tusk">
+  Boar Tusk
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Bone Meal</th>
+          <th><a href="ingredients/Bone%20Meal">
+  Bone Meal
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Briar Heart</th>
+          <th><a href="ingredients/Briar%20Heart">
+  Briar Heart
+  </a></th>
           <td>100</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Burnt Spriggan Wood</th>
+          <th><a href="ingredients/Burnt%20Spriggan%20Wood">
+  Burnt Spriggan Wood
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Butterfly Wing</th>
+          <th><a href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+  </a></th>
           <td>3</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Canis Root</th>
+          <th><a href="ingredients/Canis%20Root">
+  Canis Root
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Charred Skeever Hide</th>
+          <th><a href="ingredients/Charred%20Skeever%20Hide">
+  Charred Skeever Hide
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Chaurus Eggs</th>
+          <th><a href="ingredients/Chaurus%20Eggs">
+  Chaurus Eggs
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Chicken's Egg</th>
+          <th><a href="ingredients/Chicken%27s%20Egg">
+  Chicken's Egg
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Claws</th>
+          <th><a href="ingredients/Claws">
+  Claws
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Creep Cluster</th>
+          <th><a href="ingredients/Creep%20Cluster">
+  Creep Cluster
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Crimson Nirnroot</th>
+          <th><a href="ingredients/Crimson%20Nirnroot">
+  Crimson Nirnroot
+  </a></th>
           <td>250</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Cyrodilic Spadetail</th>
+          <th><a href="ingredients/Cyrodilic%20Spadetail">
+  Cyrodilic Spadetail
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Daedra Heart</th>
+          <th><a href="ingredients/Daedra%20Heart">
+  Daedra Heart
+  </a></th>
           <td>1500</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Deathbell</th>
+          <th><a href="ingredients/Deathbell">
+  Deathbell
+  </a></th>
           <td>4</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Dragon's Tongue</th>
+          <th><a href="ingredients/Dragon%27s%20Tongue">
+  Dragon's Tongue
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Dwarven Oil</th>
+          <th><a href="ingredients/Dwarven%20Oil">
+  Dwarven Oil
+  </a></th>
           <td>50</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Ectoplasm</th>
+          <th><a href="ingredients/Ectoplasm">
+  Ectoplasm
+  </a></th>
           <td>25</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Elves Ear</th>
+          <th><a href="ingredients/Elves%20Ear">
+  Elves Ear
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Emperol Parasol Moss</th>
+          <th><a href="ingredients/Emperol%20Parasol%20Moss">
+  Emperol Parasol Moss
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Falmer Ear</th>
+          <th><a href="ingredients/Falmer%20Ear">
+  Falmer Ear
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Felsaad Tern Feathers</th>
+          <th><a href="ingredients/Felsaad%20Tern%20Feathers">
+  Felsaad Tern Feathers
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Fire Salts</th>
+          <th><a href="ingredients/Fire%20Salts">
+  Fire Salts
+  </a></th>
           <td>250</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Fly Amanita</th>
+          <th><a href="ingredients/Fly%20Amanita">
+  Fly Amanita
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Frost Mirriam</th>
+          <th><a href="ingredients/Frost%20Mirriam">
+  Frost Mirriam
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Frost Salts</th>
+          <th><a href="ingredients/Frost%20Salts">
+  Frost Salts
+  </a></th>
           <td>400</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Garlic</th>
+          <th><a href="ingredients/Garlic">
+  Garlic
+  </a></th>
           <td>3</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Giant Lichen</th>
+          <th><a href="ingredients/Giant%20Lichen">
+  Giant Lichen
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Giant's Toe</th>
+          <th><a href="ingredients/Giant%27s%20Toe">
+  Giant's Toe
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Glassfish</th>
+          <th><a href="ingredients/Glassfish">
+  Glassfish
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Gleamblossom</th>
+          <th><a href="ingredients/Gleamblossom">
+  Gleamblossom
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Dawnguard
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Dawnguard</td>
         </tr>
         <tr>
-          <th>Glow Dust</th>
+          <th><a href="ingredients/Glow%20Dust">
+  Glow Dust
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Glowing Mushroom</th>
+          <th><a href="ingredients/Glowing%20Mushroom">
+  Glowing Mushroom
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Goldfish</th>
+          <th><a href="ingredients/Goldfish">
+  Goldfish
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Grass Pod</th>
+          <th><a href="ingredients/Grass%20Pod">
+  Grass Pod
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Hagraven Claw</th>
+          <th><a href="ingredients/Hagraven%20Claw">
+  Hagraven Claw
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Hagraven Feathers</th>
+          <th><a href="ingredients/Hagraven%20Feathers">
+  Hagraven Feathers
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Hanging Moss</th>
+          <th><a href="ingredients/Hanging%20Moss">
+  Hanging Moss
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Hawk Beak</th>
+          <th><a href="ingredients/Hawk%20Beak">
+  Hawk Beak
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Hawk Feathers</th>
+          <th><a href="ingredients/Hawk%20Feathers">
+  Hawk Feathers
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Heart</th>
+          <th><a href="ingredients/Heart">
+  Heart
+  </a></th>
           <td>77</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Histcarp</th>
+          <th><a href="ingredients/Histcarp">
+  Histcarp
+  </a></th>
           <td>6</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Honeycomb</th>
+          <th><a href="ingredients/Honeycomb">
+  Honeycomb
+  </a></th>
           <td>12</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Horker Fat</th>
+          <th><a href="ingredients/Horker%20Fat">
+  Horker Fat
+  </a></th>
           <td>25</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Human Flesh</th>
+          <th><a href="ingredients/Human%20Flesh">
+  Human Flesh
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Ice Wraith Teeth</th>
+          <th><a href="ingredients/Ice%20Wraith%20Teeth">
+  Ice Wraith Teeth
+  </a></th>
           <td>30</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Imp Stool</th>
+          <th><a href="ingredients/Imp%20Stool">
+  Imp Stool
+  </a></th>
           <td>12</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Jazbay Grapes</th>
+          <th><a href="ingredients/Jazbay%20Grapes">
+  Jazbay Grapes
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Juniper Berries</th>
+          <th><a href="ingredients/Juniper%20Berries">
+  Juniper Berries
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Juvenile Mudcrab</th>
+          <th><a href="ingredients/Juvenile%20Mudcrab">
+  Juvenile Mudcrab
+  </a></th>
           <td>10</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Large Antlers</th>
+          <th><a href="ingredients/Large%20Antlers">
+  Large Antlers
+  </a></th>
           <td>25</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Lavender</th>
+          <th><a href="ingredients/Lavender">
+  Lavender
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Luna Moth Wing</th>
+          <th><a href="ingredients/Luna%20Moth%20Wing">
+  Luna Moth Wing
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Lyretail Anthias</th>
+          <th><a href="ingredients/Lyretail%20Anthias">
+  Lyretail Anthias
+  </a></th>
           <td>30</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Mammoth Heart</th>
+          <th><a href="ingredients/Mammoth%20Heart">
+  Mammoth Heart
+  </a></th>
           <td>250</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Moon Sugar</th>
+          <th><a href="ingredients/Moon%20Sugar">
+  Moon Sugar
+  </a></th>
           <td>45</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Mora Tapinella</th>
+          <th><a href="ingredients/Mora%20Tapinella">
+  Mora Tapinella
+  </a></th>
           <td>4</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Mudcrab Chitin</th>
+          <th><a href="ingredients/Mudcrab%20Chitin">
+  Mudcrab Chitin
+  </a></th>
           <td>7</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Namira's Rot</th>
+          <th><a href="ingredients/Namira%27s%20Rot">
+  Namira's Rot
+  </a></th>
           <td>12</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Netch Jelly</th>
+          <th><a href="ingredients/Netch%20Jelly">
+  Netch Jelly
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Nightshade</th>
+          <th><a href="ingredients/Nightshade">
+  Nightshade
+  </a></th>
           <td>8</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Nirnroot</th>
+          <th><a href="ingredients/Nirnroot">
+  Nirnroot
+  </a></th>
           <td>100</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Nordic Barnacle</th>
+          <th><a href="ingredients/Nordic%20Barnacle">
+  Nordic Barnacle
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Orange Dartwing</th>
+          <th><a href="ingredients/Orange%20Dartwing">
+  Orange Dartwing
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Pearl</th>
+          <th><a href="ingredients/Pearl">
+  Pearl
+  </a></th>
           <td>40</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Pearlfish</th>
+          <th><a href="ingredients/Pearlfish">
+  Pearlfish
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Pine Thrush Egg</th>
+          <th><a href="ingredients/Pine%20Thrush%20Egg">
+  Pine Thrush Egg
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Poisonous Bloom</th>
+          <th><a href="ingredients/Poisonous%20Bloom">
+  Poisonous Bloom
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Dawnguard
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Dawnguard</td>
         </tr>
         <tr>
-          <th>Powdered Mammoth Tusk</th>
+          <th><a href="ingredients/Powdered%20Mammoth%20Tusk">
+  Powdered Mammoth Tusk
+  </a></th>
           <td>25</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Purple Mountain Flower</th>
+          <th><a href="ingredients/Purple%20Mountain%20Flower">
+  Purple Mountain Flower
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Pygmy Sunfish</th>
+          <th><a href="ingredients/Pygmy%20Sunfish">
+  Pygmy Sunfish
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Red Glitterdust</th>
+          <th><a href="ingredients/Red%20Glitterdust">
+  Red Glitterdust
+  </a></th>
           <td>50</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Red Mountain Flower</th>
+          <th><a href="ingredients/Red%20Mountain%20Flower">
+  Red Mountain Flower
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>River Betty</th>
+          <th><a href="ingredients/River%20Betty">
+  River Betty
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Rock Warbler Egg</th>
+          <th><a href="ingredients/Rock%20Warbler%20Egg">
+  Rock Warbler Egg
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Sabre Cat Eye</th>
+          <th><a href="ingredients/Sabre%20Cat%20Eye">
+  Sabre Cat Eye
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Sabre Cat Heart</th>
+          <th><a href="ingredients/Sabre%20Cat%20Heart">
+  Sabre Cat Heart
+  </a></th>
           <td>35</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Sabre Cat Tooth</th>
+          <th><a href="ingredients/Sabre%20Cat%20Tooth">
+  Sabre Cat Tooth
+  </a></th>
           <td>2</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Salmon Roe</th>
+          <th><a href="ingredients/Salmon%20Roe">
+  Salmon Roe
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Hearthfire
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Hearthfire</td>
         </tr>
         <tr>
-          <th>Salt</th>
+          <th><a href="ingredients/Salt">
+  Salt
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Scaly Pholiota</th>
+          <th><a href="ingredients/Scaly%20Pholiota">
+  Scaly Pholiota
+  </a></th>
           <td>4</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Scathecraw</th>
+          <th><a href="ingredients/Scathecraw">
+  Scathecraw
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Silverside Perch</th>
+          <th><a href="ingredients/Silverside%20Perch">
+  Silverside Perch
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Skeever Tail</th>
+          <th><a href="ingredients/Skeever%20Tail">
+  Skeever Tail
+  </a></th>
           <td>3</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Slaughterfish Egg</th>
+          <th><a href="ingredients/Slaughterfish%20Egg">
+  Slaughterfish Egg
+  </a></th>
           <td>3</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Slaughterfish Scales</th>
+          <th><a href="ingredients/Slaughterfish%20Scales">
+  Slaughterfish Scales
+  </a></th>
           <td>3</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Small Antlers</th>
+          <th><a href="ingredients/Small%20Antlers">
+  Small Antlers
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Small Pearl</th>
+          <th><a href="ingredients/Small%20Pearl">
+  Small Pearl
+  </a></th>
           <td>35</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Snowberry</th>
+          <th><a href="ingredients/Snowberry">
+  Snowberry
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Spadefish</th>
+          <th><a href="ingredients/Spadefish">
+  Spadefish
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Fishing
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Fishing</td>
         </tr>
         <tr>
-          <th>Spider Egg</th>
+          <th><a href="ingredients/Spider%20Egg">
+  Spider Egg
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Spriggan Sap</th>
+          <th><a href="ingredients/Spriggan%20Sap">
+  Spriggan Sap
+  </a></th>
           <td>50</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Spwan Ash</th>
+          <th><a href="ingredients/Spwan%20Ash">
+  Spwan Ash
+  </a></th>
           <td>20</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Strange Remains</th>
+          <th><a href="ingredients/Strange%20Remains">
+  Strange Remains
+  </a></th>
           <td>850</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Swamp Fungal Pod</th>
+          <th><a href="ingredients/Swamp%20Fungal%20Pod">
+  Swamp Fungal Pod
+  </a></th>
           <td>5</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Taproot</th>
+          <th><a href="ingredients/Taproot">
+  Taproot
+  </a></th>
           <td>15</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Thistle Branch</th>
+          <th><a href="ingredients/Thistle%20Branch">
+  Thistle Branch
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Torchbug Thorax</th>
+          <th><a href="ingredients/Torchbug%20Thorax">
+  Torchbug Thorax
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Trama Root</th>
+          <th><a href="ingredients/Trama%20Root">
+  Trama Root
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Dragonborn
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Dragonborn</td>
         </tr>
         <tr>
-          <th>Troll Fat</th>
+          <th><a href="ingredients/Troll%20Fat">
+  Troll Fat
+  </a></th>
           <td>25</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Tundra Cotton</th>
+          <th><a href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Vampire Dust</th>
+          <th><a href="ingredients/Vampire%20Dust">
+  Vampire Dust
+  </a></th>
           <td>250</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◆ rare</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◆</span>
+  <span class="text-danger verbose">rare</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Venomous Spittle</th>
+          <th><a href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+  </a></th>
           <td>50</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">◇◇◇ limited</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-danger">◇◇◇</span>
+  <span class="text-danger verbose">limited</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Void Salts</th>
+          <th><a href="ingredients/Void%20Salts">
+  Void Salts
+  </a></th>
           <td>500</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Wheat</th>
+          <th><a href="ingredients/Wheat">
+  Wheat
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-success">◆◆◆ common</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-success">◆◆◆</span>
+  <span class="text-success verbose">common</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>White Cap</th>
+          <th><a href="ingredients/White%20Cap">
+  White Cap
+  </a></th>
           <td>12</td>
-          <td>
-            <span class="text-success">🪴 yes</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span>🪴</span>
+    <span class="text-success verbose pl-1">yes</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Wisp Wrappings</th>
+          <th><a href="ingredients/Wisp%20Wrappings">
+  Wisp Wrappings
+  </a></th>
           <td>30</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-warning">◇◆◆ uncommon</span>
-          </td>
-          <td>
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="text-warning">◇◆◆</span>
+  <span class="text-warning verbose">uncommon</span>
+</td>
+          <td></td>
         </tr>
         <tr>
-          <th>Wolf Heart</th>
+          <th><a href="ingredients/Wolf%20Heart">
+  Wolf Heart
+  </a></th>
           <td>25</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Requiem
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Requiem</td>
         </tr>
         <tr>
-          <th>Yellow Mountain Flower</th>
+          <th><a href="ingredients/Yellow%20Mountain%20Flower">
+  Yellow Mountain Flower
+  </a></th>
           <td>1</td>
-          <td>
-            <span class="text-danger">🚫 no</span>
-          </td>
-          <td>
-            <span class="text-danger">🚫 none</span>
-          </td>
-          <td>
-            Dawnguard
-          </td>
-
+          <td><span class="verbose">🚫</span>
+    <span class="text-danger verbose pl-1">no</span></td>
+          <td>  <span class="verbose">🚫</span>
+  <span class="text-danger verbose">none</span>
+</td>
+          <td>Dawnguard</td>
         </tr>
       </tbody>
     </table>
   </section>
   </main>
-  <footer>
-    <small>© <script>document.write(new Date().getFullYear())</script> Your company name. All Rights Reserved.</small>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5
-/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script src="/assets/js/custom.js"></script>
-  <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.2.2/sb-1.8.2/datatables.min.js" integrity="sha384-aoax2PDBzqKN2QaB/OWLcBWAllHZWqpsttrtQfC4gpVm31ADbN1mEvVU+XTyIpSs" crossorigin="anonymous"></script>
-  <script defer>new DataTable('#ingredients', {
-        layout: {
-        topStart: 'searchBuilder'
-    }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" integrity="sha384-VFQrHzqBh5qiJIU0uGU5CIW3+OWpdGGJM9LBnGbuIH2mkICcFZ7lPd/AAtI7SNf7" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" integrity="sha384-/RlQG9uf0M2vcTw3CX7fbqgbj/h8wKxw7C3zu9/GxcBPRKOEcESxaxufwRXqzq6n" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.3.0/b-3.2.3/b-colvis-3.2.3/b-html5-3.2.3/sb-1.8.2/datatables.min.js" integrity="sha384-FjJmsdI/nXWfbTzwKCi1vwGNvR/GO3pQee3tqFitWuLN61Fvtz3oDulKFExhn10L" crossorigin="anonymous"></script>
+    <script defer>new DataTable('#ingredients', {
+      layout: {
+        top2Start: {searchBuilder: {} },
+        topStart: {search: {} },
+        topEnd: {
+          buttons: [{
+            extend: 'colvis'
+          }]
+        }
+      },
+      language: {
+        searchBuilder: {
+          title: 'Filter this table'
+        }
+      }
   });</script>
+
 </body>
 </html>
 

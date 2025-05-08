@@ -1,5 +1,3 @@
-{% import 'macros.jinja' as macros %}
-
 {% extends "default.html.jinja" %}
 {% block content %}
   <section>
@@ -8,35 +6,15 @@
     class="table table-hover table-bordered align-middle text-center table-sm">
       <thead>
         <tr>
-          <th>Ingredient name</th>
-          <th>Effect name</th>
-          <th>Effect median price</th>
-          <th>Trait price</th>
-          <th>Price multiplier</th>
-          <th>Magnitude</th>
-          <th>Effect magnitude</th>
-          <th>Magnitude multiplier</th>
-          <th>Duration</th>
-          <th>Effect duration</th>
-          <th>Duration multiplier</th>
+          <th>Ingredient</th>
+          <th>Potency</th>
         </tr>
       </thead>
       <tbody>
-      {% for trait in traits %}
+      {% for trait in data.traits %}
         <tr>
-          <td>{{ trait.ingredient_name }}</td>
-          <td>{{ trait.effect_name }}</td>
-          <td>{{ trait.effect.median_price | round(1) }}</td>
-          <td>{{ trait.price | round(1) }}</td>
-          <td>{{ trait.price_mult | round(1) }}</td>
-          <td>{{ trait.magnitude }}</td>
-          <td>{{ trait.effect.median_magnitude }}</td>
-          <td>{{ trait.magnitude_mult | round(1) }}</td>
-          <td>{{ trait.duration }}</td>
-          <td>{{ trait.effect.median_duration }}</td>
-          <td>{{ trait.duration_mult | round(1) }}</td>
-          
-
+          <td>{{ trait.ingredient.name }}</td>
+          <td>{{ macros.format_potency(trait.potency) }}</td>
         </tr>
       {% endfor %}
       </tbody>
@@ -44,10 +22,7 @@
   </section>
 {% endblock content %}
 
+
 {% block additional_scripts %}
-  <script defer>new DataTable('#traits', {
-        layout: {
-        topStart: 'searchBuilder'
-    }
-  });</script>
+{{ macros.datatables(['traits']) }}
 {% endblock additional_scripts %}

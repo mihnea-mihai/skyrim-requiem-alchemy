@@ -1,9 +1,7 @@
-{% import 'macros.jinja' as macros %}
-
 {% extends "default.html.jinja" %}
 {% block content %}
   <section>
-    <h2>Table</h2>
+    {# <h2>Table</h2> #}
     <table id="ingredients" data-paging="false" 
     class="table table-hover table-bordered align-middle text-center table-sm">
       <thead>
@@ -13,39 +11,37 @@
           <th>Plantable</th>
           <th>Vendor Rarity</th>
           <th>Unique to</th>
+          {# <th>Traits</th>
+          <th>Compatible ingredients</th> #}
         </tr>
       </thead>
       <tbody>
-      {% for ingredient in ingredients %}
+      {% for ingredient in data.ingredients %}
         <tr>
-          <th>{{ ingredient.name }}</th>
+          <th>{{ formatting.link(ingredient) }}</th>
           <td>{{ ingredient.value }}</td>
-          <td>
-            {% if ingredient.plantable %}
-            <span class="text-success">🪴 yes</span>
-            {% else %}
-            <span class="text-danger">🚫 no</span>
-            {% endif %}
+          <td>{{ formatting.plantable(ingredient) }}</td>
+          <td>{{ formatting.vendor_rarity(ingredient) }}</td>
+          <td>{{ ingredient.unique_to | string }}</td>
+          {# <td>
+            {% for trait in ingredient.traits %}
+              <div>
+                {{ formatting.link(trait.potency.effect) }}:
+                {{ formatting.f_potency(trait.potency) }}
+              </div>
+            {% endfor %}
           </td>
           <td>
-            {% if ingredient.vendor_rarity == 'common' %}
-            <span class="text-success">◆◆◆ common</span>
-            {% elif ingredient.vendor_rarity == 'uncommon' %}
-            <span class="text-warning">◇◆◆ uncommon</span>
-            {% elif ingredient.vendor_rarity == 'rare' %}
-            <span class="text-danger">◇◇◆ rare</span>
-            {% elif ingredient.vendor_rarity == 'limited' %}
-            <span class="text-danger">◇◇◇ limited</span>
-            {% else %}
-            <span class="text-danger">🚫 none</span>
-            {% endif %}
-          </td>
-          <td>
-            {% if ingredient.unique_to %}
-            {{ ingredient.unique_to }}
-            {% endif %}
-          </td>
-
+            {% for ing, effects in ingredient.compatibilities.items() %}
+            <div>
+              <span>{{ formatting.link(ing) }},</span>
+              {% for effect in effects %}
+                <span>{{ formatting.link(effect) }}</span>
+              {% endfor %}
+              
+            </div>
+            {% endfor %}
+          </td> #}
         </tr>
       {% endfor %}
       </tbody>
@@ -53,10 +49,23 @@
   </section>
 {% endblock content %}
 
+
 {% block additional_scripts %}
-  <script defer>new DataTable('#ingredients', {
-        layout: {
-        topStart: 'searchBuilder'
-    }
+<script defer>new DataTable('#ingredients', {
+      layout: {
+        top2Start: {searchBuilder: {} },
+        topStart: {search: {} },
+        topEnd: {
+          buttons: [{
+            extend: 'colvis'
+          }]
+        }
+      },
+      language: {
+        searchBuilder: {
+          title: 'Filter this table'
+        },
+      fixedHeader: true
+      }
   });</script>
 {% endblock additional_scripts %}

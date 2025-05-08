@@ -1,5 +1,3 @@
-{% import 'macros.jinja' as macros %}
-
 {% extends "default.html.jinja" %}
 {% block content %}
   <section>
@@ -32,10 +30,7 @@
   </section>
 {% endblock content %}
 
+
 {% block additional_scripts %}
-  <script defer>new DataTable('#potions', {
-        layout: {
-        topStart: 'searchBuilder'
-    }
-  });</script>
+{{ macros.datatables(['potions']) }}
 {% endblock additional_scripts %}

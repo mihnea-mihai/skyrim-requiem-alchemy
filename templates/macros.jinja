@@ -18,9 +18,45 @@
   {% endif %}
 {% endmacro %}
 
-
-{% macro format_magdur(mag, dur) %}
+{% macro format_magnitude_mult(mag) %}
   <span class="fw-bold {{ color_class(mag) }}">{{ format_num(mag) }}×💥</span>
+{% endmacro %}
+
+{% macro format_duration_mult(dur) %}
   <span class="fw-bold {{ color_class(dur) }}">{{ format_num(dur) }}×⏳</span>
 {% endmacro %}
 
+{% macro format_price_mult(price) %}
+  <span class="fw-bold {{ color_class(price) }}">{{ format_num(price) }}×🪙</span>
+{% endmacro %}
+
+{% macro format_potency(potency, includeEffect = True) %}
+  {% if includeEffect %}
+  <span>{{ potency.effect.name }} :</span>
+  {% endif %}
+  {{ format_magnitude_mult(potency.magnitude_mult) }}
+  {{ format_duration_mult(potency.duration_mult) }}
+  {{ format_price_mult(potency.price_mult) }}
+{% endmacro %}
+
+{% macro datatables(table_ids) %}
+  {% for table_id in table_ids %}
+    <script defer>new DataTable('#{{ table_id }}', {
+      layout: {
+        top2Start: {searchBuilder: {} },
+        topStart: {search: {} },
+        topEnd: {
+          buttons: [{
+            extend: 'colvis'
+          }]
+        }
+      },
+      language: {
+        searchBuilder: {
+          title: 'Filter this table'
+        },
+      fixedHeader: true
+      }
+  });</script>
+  {% endfor %}
+{% endmacro %}

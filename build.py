@@ -4,14 +4,6 @@ from data import Data
 
 Data.populate()
 
-
-# def format_mult(mult: float) -> int | float:
-#     int_num = round(mult)
-#     if int_num == mult:
-#         return int_num
-#     return round(mult, 1)
-
-
 env = Environment(
     loader=FileSystemLoader("templates"),
     autoescape=select_autoescape(),
@@ -20,40 +12,31 @@ env = Environment(
 )
 
 
-tpl = env.get_template("default.html.jinja")
-
 with open("docs/index.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(title=""))
+    file_out.write(env.get_template("default.html.jinja").render(title=""))
 
-tpl = env.get_template("effects.html.jinja")
+for page in ["effects", "ingredients", "potencies", "traits"]:
+    with open(f"docs/{page}.html", "w", encoding="utf-8") as file_out:
+        file_out.write(
+            env.get_template(f"{page}.html.jinja").render(
+                title=page.capitalize(), data=Data
+            )
+        )
 
-with open("docs/effects.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(title="Effects", effects=Data.effects.values()))
+for ingredient in Data.ingredients:
+    with open(
+        f"docs/ingredients/{ingredient.name}.html", "w", encoding="utf-8"
+    ) as file_out:
+        file_out.write(
+            env.get_template("ingredient.html.jinja").render(
+                title=ingredient.name, data=Data, ingredient=ingredient
+            )
+        )
 
-tpl = env.get_template("ingredients.html.jinja")
-
-with open("docs/ingredients.html", "w", encoding="utf-8") as file_out:
-    file_out.write(
-        tpl.render(title="Ingredients", ingredients=Data.ingredients.values())
-    )
-
-tpl = env.get_template("potions.html.jinja")
-
-with open("docs/potions.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(title="Potions", potions=Data.potions))
-
-tpl = env.get_template("traits.html.jinja")
-traits = []
-for value1 in Data.traits.values():
-    traits += value1.values()
-
-
-with open("docs/traits.html", "w", encoding="utf-8") as file_out:
-    file_out.write(tpl.render(title="Traits", traits=traits))
-
-# tpl = env.get_template("effect.html.jinja")
-
-# with open("paralysis.html", "w", encoding="utf-8") as file_out:
-#     file_out.write(
-#         tpl.render(title="Paralysis", effect=Effect.get("Waterbreathing"), data=Data())
-#     )
+for effect in Data.effects:
+    with open(f"docs/effects/{effect.name}.html", "w", encoding="utf-8") as file_out:
+        file_out.write(
+            env.get_template("effect.html.jinja").render(
+                title=effect.name, data=Data, effect=effect
+            )
+        )

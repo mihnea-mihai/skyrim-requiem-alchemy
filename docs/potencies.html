@@ -1,0 +1,3688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Potencies - Requiem for a Herb (6.0.2)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <base href="/skyrim-requiem-alchemy/"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.3.0/b-3.2.3/b-colvis-3.2.3/b-html5-3.2.3/sb-1.8.2/datatables.min.css" rel="stylesheet" integrity="sha384-lJltyt3ZqRD42G88QqIi3RnmWA/1dpcW1HSnEWUnQ8fzrkcrARSuAWnh/8BeOwIy" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+</head>
+<body data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Requiem for a Herb (6.0.2)</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="ingredients">Ingredients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="effects">Effects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="potencies">Potencies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="traits">Traits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="potions">Potions</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  <header>
+    <h1>Potencies</h1>
+  </header>
+  <main>
+  <section>
+    <h2>Table</h2>
+    <table id="potencies" data-paging="false" 
+    class="table table-hover table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Effect</th>
+          <th>Magnitude</th>
+          <th>Duration</th>
+          <th>Price</th>
+          <th>Magnitude multiplier</th>
+          <th>Duration multiplier</th>
+          <th>Price multiplier</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Resist Frost</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>6.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Thistle Branch<br/>
+            Frost Mirriam<br/>
+            Slaughterfish Scales<br/>
+            Small Pearl<br/>
+            Moon Sugar<br/>
+            Hawk Beak<br/>
+            Silverside Perch<br/>
+            Pearlfish<br/>
+            Goldfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Stamina</th>
+          <td>2.0</td>
+          <td>10</td>
+          <td>1.7</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Thistle Branch<br/>
+            Bone Meal<br/>
+            Bee<br/>
+            Honeycomb<br/>
+            Scathecraw<br/>
+            Spwan Ash<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>3.0</td>
+          <td>0</td>
+          <td>0.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Thistle Branch<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Armor Rating</th>
+          <td>6.0</td>
+          <td>60</td>
+          <td>12.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Thistle Branch<br/>
+            Skeever Tail<br/>
+            White Cap<br/>
+            Claws<br/>
+            Luna Moth Wing<br/>
+            Goldfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Snowberry<br/>
+            Bone Meal<br/>
+            Spwan Ash<br/>
+            Ash Creep Cluster<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina Regeneration</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.0×🪙</span>
+</td>
+          <td>
+            Snowberry<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Frost</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Snowberry<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Shock</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Snowberry<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Pine Thrush Egg<br/>
+            Torchbug Thorax<br/>
+            Claws<br/>
+            Sabre Cat Tooth<br/>
+            Small Pearl<br/>
+            Orange Dartwing<br/>
+            Silverside Perch<br/>
+            Goldfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Lockpicking</th>
+          <td>0.3</td>
+          <td>30</td>
+          <td>0.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.9×🪙</span>
+</td>
+          <td>
+            Pine Thrush Egg<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Poison</th>
+          <td>2.0</td>
+          <td>30</td>
+          <td>3.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Pine Thrush Egg<br/>
+            Bleeding Crown<br/>
+            Deathbell<br/>
+            Sabre Cat Tooth<br/>
+            Small Antlers<br/>
+            Giant Lichen<br/>
+            Abcean Longfin<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Shock</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>6.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Pine Thrush Egg<br/>
+            Glow Dust<br/>
+            Swamp Fungal Pod<br/>
+            Glowing Mushroom<br/>
+            Pearl<br/>
+            Blue Dartwing<br/>
+            Hawk Beak<br/>
+            Ash Hopper Jelly<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Magic</th>
+          <td>1.0</td>
+          <td>60</td>
+          <td>3.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chicken's Egg<br/>
+            Tundra Cotton<br/>
+            Lavender<br/>
+            Bleeding Crown<br/>
+            Wisp Wrappings<br/>
+            Gleamblossom<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Magicka Regeneration</th>
+          <td>100.0</td>
+          <td>5</td>
+          <td>18.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chicken's Egg<br/>
+            Nightshade<br/>
+            Glow Dust<br/>
+            Hanging Moss<br/>
+            Spriggan Sap<br/>
+            Claws<br/>
+            Blue Butterfly Wing<br/>
+            Spider Egg<br/>
+            Heart<br/>
+            Ancestor Moth Wing<br/>
+            Burnt Spriggan Wood<br/>
+            Pygmy Sunfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Waterbreathing</th>
+          <td>0.0</td>
+          <td>5</td>
+          <td>7.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chicken's Egg<br/>
+            Nordic Barnacle<br/>
+            Histcarp<br/>
+            Angelfish<br/>
+            Angler Larvae<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Stamina</th>
+          <td>1.0</td>
+          <td>10</td>
+          <td>0.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chicken's Egg<br/>
+            Nightshade<br/>
+            Small Antlers<br/>
+            Butterfly Wing<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>5.0</td>
+          <td>1</td>
+          <td>0.7</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.8×🪙</span>
+</td>
+          <td>
+            Nightshade<br/>
+            Swamp Fungal Pod<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Destruction</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×🪙</span>
+</td>
+          <td>
+            Nightshade<br/>
+            Ectoplasm<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>3.0</td>
+          <td>0</td>
+          <td>3.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Bone Meal<br/>
+            Giant's Toe<br/>
+            Canis Root<br/>
+            Blue Butterfly Wing<br/>
+            Rock Warbler Egg<br/>
+            Spider Egg<br/>
+            Cyrodilic Spadetail<br/>
+            Ancestor Moth Wing<br/>
+            Ash Creep Cluster<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Conjuration</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>6.0</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Bone Meal<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Magic</th>
+          <td>1.0</td>
+          <td>30</td>
+          <td>1.7</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Salt<br/>
+            Jazbay Grapes<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Restoration</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Salt<br/>
+            Spriggan Sap<br/>
+            Small Antlers<br/>
+            Small Pearl<br/>
+            Cyrodilic Spadetail<br/>
+            Abcean Longfin<br/>
+            Pygmy Sunfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Tardiness</th>
+          <td>50.0</td>
+          <td>5</td>
+          <td>17.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Salt<br/>
+            Deathbell<br/>
+            Large Antlers<br/>
+            River Betty<br/>
+            Poisonous Bloom<br/>
+            Trama Root<br/>
+            Burnt Spriggan Wood<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka Regeneration</th>
+          <td>5.0</td>
+          <td>300</td>
+          <td>24.8</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Salt<br/>
+            Fire Salts<br/>
+            Taproot<br/>
+            Moon Sugar<br/>
+            Dwarven Oil<br/>
+            Salmon Roe<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>2.0</td>
+          <td>300</td>
+          <td>22.6</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.7×🪙</span>
+</td>
+          <td>
+            Garlic<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td>1.0</td>
+          <td>60</td>
+          <td>1.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Garlic<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka Regeneration</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>4.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Garlic<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health Regeneration</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>2.1</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Garlic<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.6</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Elves Ear<br/>
+            Taproot<br/>
+            Grass Pod<br/>
+            Creep Cluster<br/>
+            Mora Tapinella<br/>
+            Human Flesh<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Marksman</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Elves Ear<br/>
+            Juniper Berries<br/>
+            Canis Root<br/>
+            Spider Egg<br/>
+            Angelfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Frost</th>
+          <td>2.0</td>
+          <td>30</td>
+          <td>1.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Elves Ear<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td>3.0</td>
+          <td>30</td>
+          <td>2.8</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Elves Ear<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Sneak</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Frost Mirriam<br/>
+            Powdered Mammoth Tusk<br/>
+            Hawk Feathers<br/>
+            Human Flesh<br/>
+            Abcean Longfin<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Magicka</th>
+          <td>2.0</td>
+          <td>10</td>
+          <td>1.1</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Frost Mirriam<br/>
+            Lavender<br/>
+            White Cap<br/>
+            Grass Pod<br/>
+            Orange Dartwing<br/>
+            Scathecraw<br/>
+            Spwan Ash<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina Regeneration</th>
+          <td>100.0</td>
+          <td>5</td>
+          <td>22.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Frost Mirriam<br/>
+            Giant's Toe<br/>
+            Skeever Tail<br/>
+            Wheat<br/>
+            Juniper Berries<br/>
+            Creep Cluster<br/>
+            Histcarp<br/>
+            Silverside Perch<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Poison</th>
+          <td>4.0</td>
+          <td>30</td>
+          <td>7.7</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Chaurus Eggs<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>4.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chaurus Eggs<br/>
+            Lavender<br/>
+            Torchbug Thorax<br/>
+            Slaughterfish Egg<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Magicka</th>
+          <td>3.0</td>
+          <td>0</td>
+          <td>3.7</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chaurus Eggs<br/>
+            Hagraven Feathers<br/>
+            Glow Dust<br/>
+            Namira's Rot<br/>
+            Hanging Moss<br/>
+            Sabre Cat Eye<br/>
+            Luna Moth Wing<br/>
+            Butterfly Wing<br/>
+            Nordic Barnacle<br/>
+            Trama Root<br/>
+            Aloe Vera Leaves<br/>
+            Wolf Heart<br/>
+            Sabre Cat Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Invisibility</th>
+          <td>0.0</td>
+          <td>4</td>
+          <td>18.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Chaurus Eggs<br/>
+            Ice Wraith Teeth<br/>
+            Luna Moth Wing<br/>
+            Ash Creep Cluster<br/>
+            Glassfish<br/>
+            Aloe Vera Leaves<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Health</th>
+          <td>10.0</td>
+          <td>120</td>
+          <td>290.5</td>
+          <td>  <span class="fw-bold     text-success
+">10×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">12×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">193.7×🪙</span>
+</td>
+          <td>
+            Daedra Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>10.0</td>
+          <td>120</td>
+          <td>58.1</td>
+          <td>  <span class="fw-bold     text-success
+">6.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">57.8×🪙</span>
+</td>
+          <td>
+            Daedra Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>10.0</td>
+          <td>120</td>
+          <td>58.1</td>
+          <td>  <span class="fw-bold     text-success
+">10×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">90.4×🪙</span>
+</td>
+          <td>
+            Daedra Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td>10.0</td>
+          <td>120</td>
+          <td>48.4</td>
+          <td>  <span class="fw-bold     text-success
+">20×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">193.7×🪙</span>
+</td>
+          <td>
+            Daedra Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>3.0</td>
+          <td>1</td>
+          <td>0.4</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Falmer Ear<br/>
+            Imp Stool<br/>
+            Poisonous Bloom<br/>
+            Emperol Parasol Moss<br/>
+            Wolf Heart<br/>
+            Sabre Cat Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Frenzy</th>
+          <td>3.0</td>
+          <td>20</td>
+          <td>53.8</td>
+          <td>  <span class="fw-bold     text-success
+">1.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.6×🪙</span>
+</td>
+          <td>
+            Falmer Ear<br/>
+            Hagraven Feathers<br/>
+            Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>10.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×🪙</span>
+</td>
+          <td>
+            Falmer Ear<br/>
+            Mudcrab Chitin<br/>
+            Felsaad Tern Feathers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Lockpicking</th>
+          <td>0.2</td>
+          <td>30</td>
+          <td>0.3</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Falmer Ear<br/>
+            Namira's Rot<br/>
+            Spider Egg<br/>
+            Ashen Grass Pod<br/>
+            Spadefish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Frost</th>
+          <td>3.0</td>
+          <td>30</td>
+          <td>2.8</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Fire Salts<br/>
+            Ice Wraith Teeth<br/>
+            White Cap<br/>
+            Abcean Longfin<br/>
+            Ash Hopper Jelly<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td>3.0</td>
+          <td>300</td>
+          <td>35.3</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5.9×🪙</span>
+</td>
+          <td>
+            Fire Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>2.5</td>
+          <td>45</td>
+          <td>4.3</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4.3×🪙</span>
+</td>
+          <td>
+            Fire Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Fire</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>7.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Frost Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Frost</th>
+          <td>6.0</td>
+          <td>300</td>
+          <td>75.6</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">12.6×🪙</span>
+</td>
+          <td>
+            Frost Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>3.5</td>
+          <td>45</td>
+          <td>6.2</td>
+          <td>  <span class="fw-bold     text-success
+">2.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6.2×🪙</span>
+</td>
+          <td>
+            Frost Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Conjuration</th>
+          <td>5.0</td>
+          <td>180</td>
+          <td>35.3</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3.3×🪙</span>
+</td>
+          <td>
+            Frost Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Shock</th>
+          <td>20.0</td>
+          <td>30</td>
+          <td>31.6</td>
+          <td>  <span class="fw-bold     text-success
+">6.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">8.1×🪙</span>
+</td>
+          <td>
+            Void Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Magic</th>
+          <td>3.0</td>
+          <td>300</td>
+          <td>70.6</td>
+          <td>  <span class="fw-bold     text-success
+">3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">19.7×🪙</span>
+</td>
+          <td>
+            Void Salts<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>10.0</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>  <span class="fw-bold     text-success
+">3.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3.8×🪙</span>
+</td>
+          <td>
+            Void Salts<br/>
+            Canis Root<br/>
+            Netch Jelly<br/>
+            Venomous Spittle<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>8.0</td>
+          <td>300</td>
+          <td>62.3</td>
+          <td>  <span class="fw-bold     text-success
+">2.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">14.6×🪙</span>
+</td>
+          <td>
+            Void Salts<br/>
+            Salmon Roe<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>2.0</td>
+          <td>30</td>
+          <td>2.2</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Briar Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Block</th>
+          <td>2.0</td>
+          <td>120</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Briar Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Paralysis</th>
+          <td>0.0</td>
+          <td>1</td>
+          <td>19.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Briar Heart<br/>
+            Human Flesh<br/>
+            Gleamblossom<br/>
+            Venomous Spittle<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>4.0</td>
+          <td>120</td>
+          <td>10.6</td>
+          <td>  <span class="fw-bold     text-success
+">1.1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.5×🪙</span>
+</td>
+          <td>
+            Briar Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>2.5</td>
+          <td>20</td>
+          <td>1.8</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.8×🪙</span>
+</td>
+          <td>
+            Ectoplasm<br/>
+            Moon Sugar<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>4.9</td>
+          <td>  <span class="fw-bold     text-success
+">1.1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×🪙</span>
+</td>
+          <td>
+            Ectoplasm<br/>
+            Histcarp<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>2.0</td>
+          <td>1</td>
+          <td>0.3</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Ectoplasm<br/>
+            Skeever Tail<br/>
+            Troll Fat<br/>
+            Small Antlers<br/>
+            Human Flesh<br/>
+            Horker Fat<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>4.0</td>
+          <td>300</td>
+          <td>38.7</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5.9×🪙</span>
+</td>
+          <td>
+            Giant's Toe<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Carry Weight</th>
+          <td>4.0</td>
+          <td>300</td>
+          <td>14.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Giant's Toe<br/>
+            Wisp Wrappings<br/>
+            Scaly Pholiota<br/>
+            Creep Cluster<br/>
+            Hawk Beak<br/>
+            River Betty<br/>
+            Poisonous Bloom<br/>
+            Trama Root<br/>
+            Netch Jelly<br/>
+            Lyretail Anthias<br/>
+            Juvenile Mudcrab<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Conjuration</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>10.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Hagraven Feathers<br/>
+            Blue Butterfly Wing<br/>
+            Ancestor Moth Wing<br/>
+            Lyretail Anthias<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Shock</th>
+          <td>3.0</td>
+          <td>30</td>
+          <td>3.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Hagraven Feathers<br/>
+            Giant Lichen<br/>
+            Bee<br/>
+            Ashen Grass Pod<br/>
+            Trama Root<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Soulreaping</th>
+          <td>0.0</td>
+          <td>2</td>
+          <td>2.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Ice Wraith Teeth<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Fire</th>
+          <td>3.0</td>
+          <td>30</td>
+          <td>3.4</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Ice Wraith Teeth<br/>
+            Bleeding Crown<br/>
+            Juniper Berries<br/>
+            Powdered Mammoth Tusk<br/>
+            Moon Sugar<br/>
+            Burnt Spriggan Wood<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Health</th>
+          <td>2.0</td>
+          <td>10</td>
+          <td>0.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Skeever Tail<br/>
+            Sabre Cat Eye<br/>
+            Giant Lichen<br/>
+            Cyrodilic Spadetail<br/>
+            Silverside Perch<br/>
+            Scathecraw<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Health</th>
+          <td>1.0</td>
+          <td>10</td>
+          <td>1.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Slaughterfish Scales<br/>
+            Imp Stool<br/>
+            Slaughterfish Egg<br/>
+            Orange Dartwing<br/>
+            Mora Tapinella<br/>
+            Scathecraw<br/>
+            Angler Larvae<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Armor Rating</th>
+          <td>8.4</td>
+          <td>60</td>
+          <td>18.6</td>
+          <td>  <span class="fw-bold     text-success
+">1.4×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.4×🪙</span>
+</td>
+          <td>
+            Slaughterfish Scales<br/>
+            Hawk Feathers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Block</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Slaughterfish Scales<br/>
+            Bleeding Crown<br/>
+            Pearl<br/>
+            Honeycomb<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Weakness to Magic</th>
+          <td>2.0</td>
+          <td>30</td>
+          <td>3.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Taproot<br/>
+            Torchbug Thorax<br/>
+            Scaly Pholiota<br/>
+            Rock Warbler Egg<br/>
+            Creep Cluster<br/>
+            Dwarven Oil<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Illusion</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Taproot<br/>
+            Spriggan Sap<br/>
+            Hagraven Claw<br/>
+            Scaly Pholiota<br/>
+            Mora Tapinella<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Troll Fat<br/>
+            Slaughterfish Egg<br/>
+            Grass Pod<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Two-Handed</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Troll Fat<br/>
+            Fly Amanita<br/>
+            Dragon's Tongue<br/>
+            Emperol Parasol Moss<br/>
+            Angler Larvae<br/>
+            Juvenile Mudcrab<br/>
+            Horker Fat<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Frenzy</th>
+          <td>2.0</td>
+          <td>20</td>
+          <td>34.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Troll Fat<br/>
+            Fly Amanita<br/>
+            Blisterwort<br/>
+            Boar Tusk<br/>
+            Wolf Heart<br/>
+            Bear Heart<br/>
+            Sabre Cat Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Destruction</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>10.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Glow Dust<br/>
+            Wisp Wrappings<br/>
+            Glowing Mushroom<br/>
+            Beehive Husk<br/>
+            Ash Creep Cluster<br/>
+            Strange Remains<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Sanguinare Vampiris</th>
+          <td>20.0</td>
+          <td>4</td>
+          <td>0.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Vampire Dust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Soulreaping</th>
+          <td>0.0</td>
+          <td>10</td>
+          <td>15.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.7×🪙</span>
+</td>
+          <td>
+            Vampire Dust<br/>
+            Strange Remains<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Invisibility</th>
+          <td>0.0</td>
+          <td>15</td>
+          <td>78.1</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3.8×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4.3×🪙</span>
+</td>
+          <td>
+            Vampire Dust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Cure Poison</th>
+          <td>5.0</td>
+          <td>0</td>
+          <td>1.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Vampire Dust<br/>
+            Blue Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>3.6</td>
+          <td>  <span class="fw-bold     text-danger
+">0.9×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×🪙</span>
+</td>
+          <td>
+            Tundra Cotton<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Block</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>6.0</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×🪙</span>
+</td>
+          <td>
+            Tundra Cotton<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Barter</th>
+          <td>2.0</td>
+          <td>30</td>
+          <td>7.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Tundra Cotton<br/>
+            Butterfly Wing<br/>
+            Dragon's Tongue<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Conjuration</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×🪙</span>
+</td>
+          <td>
+            Lavender<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td>0.5</td>
+          <td>20</td>
+          <td>0.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Wheat<br/>
+            Imp Stool<br/>
+            Charred Skeever Hide<br/>
+            Sabre Cat Eye<br/>
+            Rock Warbler Egg<br/>
+            Blue Dartwing<br/>
+            Ash Hopper Jelly<br/>
+            Aloe Vera Leaves<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Wheat<br/>
+            Blue Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Magicka</th>
+          <td>1.0</td>
+          <td>10</td>
+          <td>5.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Wheat<br/>
+            Torchbug Thorax<br/>
+            Hagraven Claw<br/>
+            Swamp Fungal Pod<br/>
+            Pygmy Sunfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>6.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Fly Amanita<br/>
+            Mudcrab Chitin<br/>
+            Angelfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina Regeneration</th>
+          <td>5.0</td>
+          <td>300</td>
+          <td>12.4</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Fly Amanita<br/>
+            Scaly Pholiota<br/>
+            Bee<br/>
+            Mora Tapinella<br/>
+            Angler Larvae<br/>
+            Juvenile Mudcrab<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>0.5</td>
+          <td>20</td>
+          <td>0.3</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×🪙</span>
+</td>
+          <td>
+            White Cap<br/>
+            Giant Lichen<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Carry Weight</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>3.1</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Imp Stool<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fear</th>
+          <td>2.0</td>
+          <td>30</td>
+          <td>17.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Namira's Rot<br/>
+            Powdered Mammoth Tusk<br/>
+            Blue Dartwing<br/>
+            Gleamblossom<br/>
+            Poisonous Bloom<br/>
+            Netch Jelly<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health Regeneration</th>
+          <td>5.0</td>
+          <td>300</td>
+          <td>12.4</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Namira's Rot<br/>
+            Juniper Berries<br/>
+            Luna Moth Wing<br/>
+            Nordic Barnacle<br/>
+            Gleamblossom<br/>
+            Emperol Parasol Moss<br/>
+            Angelfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>3.0</td>
+          <td>10</td>
+          <td>3.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">10×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Blisterwort<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td>1.5</td>
+          <td>10</td>
+          <td>0.4</td>
+          <td>  <span class="fw-bold     text-success
+">3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.6×🪙</span>
+</td>
+          <td>
+            Blisterwort<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina Regeneration</th>
+          <td>4.0</td>
+          <td>30</td>
+          <td>0.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Blisterwort<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>3.0</td>
+          <td>5</td>
+          <td>2.3</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5.9×🪙</span>
+</td>
+          <td>
+            Deathbell<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Stamina</th>
+          <td>2.0</td>
+          <td>20</td>
+          <td>3.7</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Deathbell<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>0.5</td>
+          <td>20</td>
+          <td>0.3</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Charred Skeever Hide<br/>
+            Mudcrab Chitin<br/>
+            Bee<br/>
+            Histcarp<br/>
+            Aloe Vera Leaves<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Charred Skeever Hide<br/>
+            Beehive Husk<br/>
+            Yellow Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Waterbreathing</th>
+          <td>0.0</td>
+          <td>20</td>
+          <td>32.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4.6×🪙</span>
+</td>
+          <td>
+            Charred Skeever Hide<br/>
+            Salmon Roe<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>6.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Hanging Moss<br/>
+            Glowing Mushroom<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify One-Handed</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Hanging Moss<br/>
+            Canis Root<br/>
+            Rock Warbler Egg<br/>
+            Small Pearl<br/>
+            Hawk Feathers<br/>
+            Pearlfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>15.0</td>
+          <td>0</td>
+          <td>29.5</td>
+          <td>  <span class="fw-bold     text-success
+">5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">73.9×🪙</span>
+</td>
+          <td>
+            Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>15.0</td>
+          <td>0</td>
+          <td>17.7</td>
+          <td>  <span class="fw-bold     text-success
+">5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5.9×🪙</span>
+</td>
+          <td>
+            Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Invisibility</th>
+          <td>0.0</td>
+          <td>16</td>
+          <td>83.8</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4.6×🪙</span>
+</td>
+          <td>
+            Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Magic</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>16.5</td>
+          <td>  <span class="fw-bold     text-success
+">4×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4.6×🪙</span>
+</td>
+          <td>
+            Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Alteration</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Spriggan Sap<br/>
+            Grass Pod<br/>
+            River Betty<br/>
+            Burnt Spriggan Wood<br/>
+            Lyretail Anthias<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>2.3</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Jazbay Grapes<br/>
+            Red Mountain Flower<br/>
+            Emperol Parasol Moss<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka Regeneration</th>
+          <td>2.0</td>
+          <td>300</td>
+          <td>9.0</td>
+          <td>  <span class="fw-bold     text-danger
+">0.4×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.4×🪙</span>
+</td>
+          <td>
+            Jazbay Grapes<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Health</th>
+          <td>1.0</td>
+          <td>10</td>
+          <td>0.2</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Jazbay Grapes<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Magic</th>
+          <td>1.0</td>
+          <td>120</td>
+          <td>7.7</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Hagraven Claw<br/>
+            Felsaad Tern Feathers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Soulreaping</th>
+          <td>0.0</td>
+          <td>4</td>
+          <td>5.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Hagraven Claw<br/>
+            Wisp Wrappings<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Shock</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.4×🪙</span>
+</td>
+          <td>
+            Mudcrab Chitin<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina Regeneration</th>
+          <td>10.0</td>
+          <td>60</td>
+          <td>4.5</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.4×🪙</span>
+</td>
+          <td>
+            Claws<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Armor Rating</th>
+          <td>4.8</td>
+          <td>60</td>
+          <td>10.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×🪙</span>
+</td>
+          <td>
+            Sabre Cat Tooth<br/>
+            Beehive Husk<br/>
+            Honeycomb<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td>4.0</td>
+          <td>30</td>
+          <td>2.3</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Sabre Cat Tooth<br/>
+            Glowing Mushroom<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>1.5</td>
+          <td>20</td>
+          <td>1.0</td>
+          <td>  <span class="fw-bold     text-success
+">1.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.6×🪙</span>
+</td>
+          <td>
+            Sabre Cat Eye<br/>
+            Large Antlers<br/>
+            Pearl<br/>
+            Hawk Beak<br/>
+            Netch Jelly<br/>
+            Pearlfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td>5.0</td>
+          <td>120</td>
+          <td>13.6</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.7×🪙</span>
+</td>
+          <td>
+            Large Antlers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina Regeneration</th>
+          <td>50.0</td>
+          <td>5</td>
+          <td>10.3</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Large Antlers<br/>
+            Yellow Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>2.5</td>
+          <td>20</td>
+          <td>1.8</td>
+          <td>  <span class="fw-bold     text-success
+">2.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.7×🪙</span>
+</td>
+          <td>
+            Powdered Mammoth Tusk<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Illusion</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>6.0</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×🪙</span>
+</td>
+          <td>
+            Blue Butterfly Wing<br/>
+            Dragon's Tongue<br/>
+            Spwan Ash<br/>
+            Glassfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.5</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Butterfly Wing<br/>
+            Swamp Fungal Pod<br/>
+            Spadefish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td>0.2</td>
+          <td>10</td>
+          <td>0.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Blue Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Conjuration</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.4×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.4×🪙</span>
+</td>
+          <td>
+            Blue Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Magicka Regeneration</th>
+          <td>5.0</td>
+          <td>5</td>
+          <td>0.7</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.0×🪙</span>
+</td>
+          <td>
+            Blue Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>0.2</td>
+          <td>10</td>
+          <td>0.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Red Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Maximum Magicka</th>
+          <td>1.0</td>
+          <td>10</td>
+          <td>0.5</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Red Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>1.0</td>
+          <td>1</td>
+          <td>0.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×🪙</span>
+</td>
+          <td>
+            Red Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>0.2</td>
+          <td>20</td>
+          <td>0.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Purple Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Sneak</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Purple Mountain Flower<br/>
+            Beehive Husk<br/>
+            Ashen Grass Pod<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Magicka</th>
+          <td>1.0</td>
+          <td>5</td>
+          <td>2.3</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Purple Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Frost</th>
+          <td>1.0</td>
+          <td>60</td>
+          <td>1.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×🪙</span>
+</td>
+          <td>
+            Purple Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Pickpocket</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Slaughterfish Egg<br/>
+            Nordic Barnacle<br/>
+            Orange Dartwing<br/>
+            Blue Dartwing<br/>
+            Spadefish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>1.5</td>
+          <td>20</td>
+          <td>1.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Pearl<br/>
+            Glassfish<br/>
+            Lyretail Anthias<br/>
+            Red Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td>3.0</td>
+          <td>80</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.4×🪙</span>
+</td>
+          <td>
+            Dragon's Tongue<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Stamina</th>
+          <td>2.0</td>
+          <td>20</td>
+          <td>1.4</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Honeycomb<br/>
+            Salmon Roe<br/>
+            Pygmy Sunfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>5.0</td>
+          <td>0</td>
+          <td>8.8</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">22.1×🪙</span>
+</td>
+          <td>
+            Heart<br/>
+            River Betty<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Magicka</th>
+          <td>5.0</td>
+          <td>0</td>
+          <td>6.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.8×🪙</span>
+</td>
+          <td>
+            Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>20.0</td>
+          <td>1</td>
+          <td>3.2</td>
+          <td>  <span class="fw-bold     text-success
+">6.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">8.1×🪙</span>
+</td>
+          <td>
+            Crimson Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>20.0</td>
+          <td>0</td>
+          <td>24.3</td>
+          <td>  <span class="fw-bold     text-success
+">6.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">8.1×🪙</span>
+</td>
+          <td>
+            Crimson Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Invisibility</th>
+          <td>0.0</td>
+          <td>24</td>
+          <td>131.0</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.2×🪙</span>
+</td>
+          <td>
+            Crimson Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Magic</th>
+          <td>5.0</td>
+          <td>180</td>
+          <td>70.6</td>
+          <td>  <span class="fw-bold     text-success
+">5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">19.7×🪙</span>
+</td>
+          <td>
+            Crimson Nirnroot<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Cure Disease</th>
+          <td>100.0</td>
+          <td>0</td>
+          <td>39.6</td>
+          <td>  <span class="fw-bold     text-success
+">20×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">27.0×🪙</span>
+</td>
+          <td>
+            Hawk Feathers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Illusion</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>10.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×🪙</span>
+</td>
+          <td>
+            Dwarven Oil<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Magicka</th>
+          <td>2.0</td>
+          <td>20</td>
+          <td>1.4</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.4×🪙</span>
+</td>
+          <td>
+            Dwarven Oil<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fear</th>
+          <td>3.0</td>
+          <td>30</td>
+          <td>28.0</td>
+          <td>  <span class="fw-bold     text-success
+">1.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.6×🪙</span>
+</td>
+          <td>
+            Cyrodilic Spadetail<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Restoration</th>
+          <td>2.0</td>
+          <td>60</td>
+          <td>3.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Yellow Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>8.4</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×🪙</span>
+</td>
+          <td>
+            Yellow Mountain Flower<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Magicka</th>
+          <td>1.0</td>
+          <td>30</td>
+          <td>0.5</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Ancestor Moth Wing<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Fire</th>
+          <td>4.0</td>
+          <td>80</td>
+          <td>11.3</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.9×🪙</span>
+</td>
+          <td>
+            Ashen Grass Pod<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.3</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Boar Tusk<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.4</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Boar Tusk<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Block</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>0.5</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.1×🪙</span>
+</td>
+          <td>
+            Boar Tusk<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Armor Rating</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-danger
+">0.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.6×🪙</span>
+</td>
+          <td>
+            Ash Hopper Jelly<br/>
+            Felsaad Tern Feathers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Restore Health</th>
+          <td>1.0</td>
+          <td>10</td>
+          <td>0.2</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Felsaad Tern Feathers<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Speech</th>
+          <td>4.0</td>
+          <td>60</td>
+          <td>8.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Pearlfish<br/>
+            Glassfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Waterbreathing</th>
+          <td>5.0</td>
+          <td>0</td>
+          <td>88.1</td>
+          <td>  <span class="fw-bold     text-success
+">5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">12.6×🪙</span>
+</td>
+          <td>
+            Goldfish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Cure Disease</th>
+          <td>5.0</td>
+          <td>0</td>
+          <td>1.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×🪙</span>
+</td>
+          <td>
+            Juvenile Mudcrab<br/>
+            Spadefish<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>4.0</td>
+          <td>180</td>
+          <td>27.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3.3×🪙</span>
+</td>
+          <td>
+            Horker Fat<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Frenzy</th>
+          <td>1.0</td>
+          <td>20</td>
+          <td>16.1</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.5×🪙</span>
+</td>
+          <td>
+            Horker Fat<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>5.0</td>
+          <td>5</td>
+          <td>2.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×🪙</span>
+</td>
+          <td>
+            Wolf Heart<br/>
+            Bear Heart<br/>
+            Sabre Cat Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>5.0</td>
+          <td>300</td>
+          <td>49.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.5×🪙</span>
+</td>
+          <td>
+            Bear Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Destruction</th>
+          <td>1.0</td>
+          <td>60</td>
+          <td>1.8</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0.2×🪙</span>
+</td>
+          <td>
+            Bear Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Carry Weight</th>
+          <td>3.0</td>
+          <td>600</td>
+          <td>21.9</td>
+          <td>  <span class="fw-bold     text-danger
+">0.8×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.6×🪙</span>
+</td>
+          <td>
+            Mammoth Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Armor Rating</th>
+          <td>12.0</td>
+          <td>60</td>
+          <td>27.6</td>
+          <td>  <span class="fw-bold     text-success
+">2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.1×🪙</span>
+</td>
+          <td>
+            Mammoth Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Stamina</th>
+          <td>5.0</td>
+          <td>300</td>
+          <td>37.1</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">5×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.5×🪙</span>
+</td>
+          <td>
+            Mammoth Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Health</th>
+          <td>10.0</td>
+          <td>180</td>
+          <td>60.5</td>
+          <td>  <span class="fw-bold     text-success
+">2.5×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">9.2×🪙</span>
+</td>
+          <td>
+            Mammoth Heart<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Invisibility</th>
+          <td>0.0</td>
+          <td>60</td>
+          <td>358.9</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">15×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">19.7×🪙</span>
+</td>
+          <td>
+            Strange Remains<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Shock</th>
+          <td>5.0</td>
+          <td>60</td>
+          <td>10.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.7×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">1.8×🪙</span>
+</td>
+          <td>
+            Strange Remains<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Health</th>
+          <td>10.0</td>
+          <td>0</td>
+          <td>18.9</td>
+          <td>  <span class="fw-bold     text-success
+">3.3×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-danger
+">0×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">47.3×🪙</span>
+</td>
+          <td>
+            Red Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Fortify Carry Weight</th>
+          <td>5.0</td>
+          <td>600</td>
+          <td>38.5</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">2.7×🪙</span>
+</td>
+          <td>
+            Red Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Damage Stamina</th>
+          <td>3.0</td>
+          <td>60</td>
+          <td>21.6</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">60×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.2×🪙</span>
+</td>
+          <td>
+            Red Glitterdust<br/>
+            Blue Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Waterbreathing</th>
+          <td>0.0</td>
+          <td>30</td>
+          <td>50.2</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.2×🪙</span>
+</td>
+          <td>
+            Blue Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Resist Poison</th>
+          <td>5.0</td>
+          <td>180</td>
+          <td>35.3</td>
+          <td>  <span class="fw-bold     text-success
+">1.2×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">3×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">4.3×🪙</span>
+</td>
+          <td>
+            Blue Glitterdust<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Health</th>
+          <td>1.0</td>
+          <td>60</td>
+          <td>10.8</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.2×🪙</span>
+</td>
+          <td>
+            Venomous Spittle<br/>
+          </td>
+        </tr>
+        <tr>
+          <th>Lingering Damage Stamina</th>
+          <td>1.0</td>
+          <td>60</td>
+          <td>6.5</td>
+          <td>  <span class="fw-bold     text-secondary
+">1×💥</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">6×⏳</span>
+</td>
+          <td>  <span class="fw-bold     text-success
+">7.2×🪙</span>
+</td>
+          <td>
+            Venomous Spittle<br/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" integrity="sha384-VFQrHzqBh5qiJIU0uGU5CIW3+OWpdGGJM9LBnGbuIH2mkICcFZ7lPd/AAtI7SNf7" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" integrity="sha384-/RlQG9uf0M2vcTw3CX7fbqgbj/h8wKxw7C3zu9/GxcBPRKOEcESxaxufwRXqzq6n" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.3.0/b-3.2.3/b-colvis-3.2.3/b-html5-3.2.3/sb-1.8.2/datatables.min.js" integrity="sha384-FjJmsdI/nXWfbTzwKCi1vwGNvR/GO3pQee3tqFitWuLN61Fvtz3oDulKFExhn10L" crossorigin="anonymous"></script>
+    <script defer>new DataTable('#potencies', {
+      layout: {
+        top2Start: {searchBuilder: {} },
+        topStart: {search: {} },
+        topEnd: {
+          buttons: [{
+            extend: 'colvis'
+          }]
+        }
+      },
+      language: {
+        searchBuilder: {
+          title: 'Filter this table'
+        }
+      }
+  });</script>
+
+</body>
+</html>
+
+
+ 

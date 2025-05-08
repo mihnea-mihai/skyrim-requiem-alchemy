@@ -1,40 +1,8 @@
-{% import 'macros.jinja' as macros %}
 {% extends "default.html.jinja" %}
 {% block content %}
 <section>
   <h2>Combinations</h2>
   {{ effect.name }}
-  <table id="paralysis" data-paging="false" 
-    class="table table-hover table-bordered align-middle text-center">
-    <thead>
-      <th>Ingredient\Effect</th>
-      {% for eff2 in effect.effects_lvl2 %}
-      <th>{{ eff2.name }}</th>
-      {% endfor %}
-    </thead>
-    <tbody>
-      {% for ing2 in effect.ingredients_lvl2 %}
-      <tr>
-      <th>{{ ing2.name }}</th>
-      {% for eff2 in effect.effects_lvl2 %}
-      {% if eff2.name in data.rows_dict[ing2.name] %}
-      {% set row = data.rows_dict[ing2.name][eff2.name] %}
-      <td>{{ macros.format_magdur(row.magnitude_mult,row.duration_mult) }}</td>
-      {% else %}
-      <td></td>
-      {% endif %}
-      {% endfor %}
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+  
 </section>
 {% endblock content %}
-
-{% block additional_scripts %}
-  <script defer>new DataTable('#{{ effect.name | lower}}', {
-        layout: {
-        topStart: 'searchBuilder'
-    }
-  });</script>
-{% endblock additional_scripts %}

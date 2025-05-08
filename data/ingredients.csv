@@ -1,127 +1,127 @@
 name,value,plantable,vendor_rarity,unique_to
-Abcean Longfin,15,no,common,
-Aloe Vera Leaves,1,no,limited,ResourcePack
-Ancestor Moth Wing,2,no,,Dawnguard
-Angelfish,30,no,,Fishing
-Angler Larvae,1,no,,Fishing
-Ash Creep Cluster,20,no,limited,Dragonborn
-Ash Hopper Jelly,20,no,limited,Dragonborn
-Ashen Grass Pod,1,no,limited,Dragonborn
-Bear Heart,40,no,,Requiem
-Bee,3,no,common,
-Beehive Husk,5,no,common,
-Bleeding Crown,10,yes,uncommon,
-Blisterwort,12,yes,uncommon,
-Blue Butterfly Wing,2,no,uncommon,
-Blue Dartwing,1,no,uncommon,
-Blue Glitterdust,100,no,rare,Requiem
-Blue Mountain Flower,1,yes,common,
-Boar Tusk,20,no,,
-Bone Meal,5,no,common,
-Briar Heart,100,no,rare,
-Burnt Spriggan Wood,20,no,limited,Dragonborn
-Butterfly Wing,3,no,uncommon,
-Canis Root,15,yes,uncommon,
-Charred Skeever Hide,1,no,uncommon,
-Chaurus Eggs,10,no,uncommon,
-Chicken's Egg,2,no,uncommon,
-Claws,2,no,uncommon,
-Creep Cluster,1,yes,uncommon,
-Crimson Nirnroot,250,no,,
-Cyrodilic Spadetail,15,no,common,
-Daedra Heart,1500,no,,
-Deathbell,4,yes,rare,
-Dragon's Tongue,5,yes,common,
-Dwarven Oil,50,no,uncommon,
-Ectoplasm,25,no,uncommon,
-Elves Ear,10,no,common,
-Emperol Parasol Moss,1,no,limited,Dragonborn
-Falmer Ear,10,no,uncommon,
-Felsaad Tern Feathers,15,no,,Dragonborn
-Fire Salts,250,no,rare,
-Fly Amanita,2,yes,uncommon,
-Frost Mirriam,1,no,uncommon,
-Frost Salts,400,no,rare,
-Garlic,3,no,common,
-Giant Lichen,5,yes,uncommon,
-Giant's Toe,20,no,rare,
-Glassfish,1,no,,Fishing
-Gleamblossom,5,no,,Dawnguard
-Glow Dust,20,no,uncommon,
-Glowing Mushroom,5,yes,,
-Goldfish,10,no,,Fishing
-Grass Pod,1,yes,uncommon,
-Hagraven Claw,20,no,rare,
-Hagraven Feathers,20,no,rare,
-Hanging Moss,1,no,uncommon,
-Hawk Beak,15,no,uncommon,
-Hawk Feathers,10,no,uncommon,
-Heart,77,no,,
-Histcarp,6,no,common,
-Honeycomb,12,no,common,
-Horker Fat,25,no,uncommon,Requiem
-Human Flesh,1,no,,
-Ice Wraith Teeth,30,no,rare,
-Imp Stool,12,yes,rare,
-Jazbay Grapes,1,yes,rare,
-Juniper Berries,1,yes,common,
-Juvenile Mudcrab,10,no,,Fishing
-Large Antlers,25,no,uncommon,
-Lavender,5,yes,common,
-Luna Moth Wing,5,no,uncommon,
-Lyretail Anthias,30,no,,Fishing
-Mammoth Heart,250,no,,Requiem
-Moon Sugar,45,no,uncommon,
-Mora Tapinella,4,yes,uncommon,
-Mudcrab Chitin,7,no,common,
-Namira's Rot,12,yes,uncommon,
-Netch Jelly,20,no,limited,Dragonborn
-Nightshade,8,yes,rare,
-Nirnroot,100,no,rare,
-Nordic Barnacle,5,yes,uncommon,
-Orange Dartwing,1,no,uncommon,
-Pearl,40,no,rare,
-Pearlfish,15,no,,Fishing
-Pine Thrush Egg,2,no,common,
-Poisonous Bloom,5,no,,Dawnguard
-Powdered Mammoth Tusk,25,no,uncommon,
-Purple Mountain Flower,1,yes,common,
-Pygmy Sunfish,2,no,,Fishing
-Red Glitterdust,50,no,rare,Requiem
-Red Mountain Flower,1,yes,common,
-River Betty,15,no,common,
-Rock Warbler Egg,2,no,uncommon,
-Sabre Cat Eye,2,no,uncommon,
-Sabre Cat Heart,35,no,,Requiem
-Sabre Cat Tooth,2,no,uncommon,
-Salmon Roe,5,no,,Hearthfire
-Salt,5,no,common,
-Scaly Pholiota,4,yes,uncommon,
+Abcean Longfin,15,False,common,
+Aloe Vera Leaves,1,False,limited,ResourcePack
+Ancestor Moth Wing,2,False,,Dawnguard
+Angelfish,30,False,,Fishing
+Angler Larvae,1,False,,Fishing
+Ash Creep Cluster,20,False,limited,Dragonborn
+Ash Hopper Jelly,20,False,limited,Dragonborn
+Ashen Grass Pod,1,False,limited,Dragonborn
+Bear Heart,40,False,,Requiem
+Bee,3,False,common,
+Beehive Husk,5,False,common,
+Bleeding Crown,10,True,uncommon,
+Blisterwort,12,True,uncommon,
+Blue Butterfly Wing,2,False,uncommon,
+Blue Dartwing,1,False,uncommon,
+Blue Glitterdust,100,False,rare,Requiem
+Blue Mountain Flower,1,True,common,
+Boar Tusk,20,False,,
+Bone Meal,5,False,common,
+Briar Heart,100,False,rare,
+Burnt Spriggan Wood,20,False,limited,Dragonborn
+Butterfly Wing,3,False,uncommon,
+Canis Root,15,True,uncommon,
+Charred Skeever Hide,1,False,uncommon,
+Chaurus Eggs,10,False,uncommon,
+Chicken's Egg,2,False,uncommon,
+Claws,2,False,uncommon,
+Creep Cluster,1,True,uncommon,
+Crimson Nirnroot,250,False,,
+Cyrodilic Spadetail,15,False,common,
+Daedra Heart,1500,False,,
+Deathbell,4,True,rare,
+Dragon's Tongue,5,True,common,
+Dwarven Oil,50,False,uncommon,
+Ectoplasm,25,False,uncommon,
+Elves Ear,10,False,common,
+Emperol Parasol Moss,1,False,limited,Dragonborn
+Falmer Ear,10,False,uncommon,
+Felsaad Tern Feathers,15,False,,Dragonborn
+Fire Salts,250,False,rare,
+Fly Amanita,2,True,uncommon,
+Frost Mirriam,1,False,uncommon,
+Frost Salts,400,False,rare,
+Garlic,3,False,common,
+Giant Lichen,5,True,uncommon,
+Giant's Toe,20,False,rare,
+Glassfish,1,False,,Fishing
+Gleamblossom,5,False,,Dawnguard
+Glow Dust,20,False,uncommon,
+Glowing Mushroom,5,True,,
+Goldfish,10,False,,Fishing
+Grass Pod,1,True,uncommon,
+Hagraven Claw,20,False,rare,
+Hagraven Feathers,20,False,rare,
+Hanging Moss,1,False,uncommon,
+Hawk Beak,15,False,uncommon,
+Hawk Feathers,10,False,uncommon,
+Heart,77,False,,
+Histcarp,6,False,common,
+Honeycomb,12,False,common,
+Horker Fat,25,False,uncommon,Requiem
+Human Flesh,1,False,,
+Ice Wraith Teeth,30,False,rare,
+Imp Stool,12,True,rare,
+Jazbay Grapes,1,True,rare,
+Juniper Berries,1,True,common,
+Juvenile Mudcrab,10,False,,Fishing
+Large Antlers,25,False,uncommon,
+Lavender,5,True,common,
+Luna Moth Wing,5,False,uncommon,
+Lyretail Anthias,30,False,,Fishing
+Mammoth Heart,250,False,,Requiem
+Moon Sugar,45,False,uncommon,
+Mora Tapinella,4,True,uncommon,
+Mudcrab Chitin,7,False,common,
+Namira's Rot,12,True,uncommon,
+Netch Jelly,20,False,limited,Dragonborn
+Nightshade,8,True,rare,
+Nirnroot,100,False,rare,
+Nordic Barnacle,5,True,uncommon,
+Orange Dartwing,1,False,uncommon,
+Pearl,40,False,rare,
+Pearlfish,15,False,,Fishing
+Pine Thrush Egg,2,False,common,
+Poisonous Bloom,5,False,,Dawnguard
+Powdered Mammoth Tusk,25,False,uncommon,
+Purple Mountain Flower,1,True,common,
+Pygmy Sunfish,2,False,,Fishing
+Red Glitterdust,50,False,rare,Requiem
+Red Mountain Flower,1,True,common,
+River Betty,15,False,common,
+Rock Warbler Egg,2,False,uncommon,
+Sabre Cat Eye,2,False,uncommon,
+Sabre Cat Heart,35,False,,Requiem
+Sabre Cat Tooth,2,False,uncommon,
+Salmon Roe,5,False,,Hearthfire
+Salt,5,False,common,
+Scaly Pholiota,4,True,uncommon,
 Scathecraw,1,,limited,Dragonborn
-Silverside Perch,15,no,common,
-Skeever Tail,3,no,common,
-Slaughterfish Egg,3,no,uncommon,
-Slaughterfish Scales,3,no,uncommon,
-Small Antlers,15,no,common,
-Small Pearl,35,no,uncommon,
-Snowberry,1,yes,common,
-Spadefish,15,no,,Fishing
-Spider Egg,5,no,uncommon,
-Spriggan Sap,50,no,uncommon,
-Spwan Ash,20,no,limited,Dragonborn
-Strange Remains,850,no,,Requiem
-Swamp Fungal Pod,5,yes,uncommon,
-Taproot,15,no,uncommon,
-Thistle Branch,1,yes,common,
-Torchbug Thorax,1,no,uncommon,
-Trama Root,1,no,limited,Dragonborn
-Troll Fat,25,no,uncommon,
-Tundra Cotton,1,yes,common,
-Vampire Dust,250,no,rare,
-Venomous Spittle,50,no,limited,Requiem
-Void Salts,500,no,,
-Wheat,1,yes,common,
-White Cap,12,yes,uncommon,
-Wisp Wrappings,30,no,uncommon,
-Wolf Heart,25,no,,Requiem
-Yellow Mountain Flower,1,no,,Dawnguard
+Silverside Perch,15,False,common,
+Skeever Tail,3,False,common,
+Slaughterfish Egg,3,False,uncommon,
+Slaughterfish Scales,3,False,uncommon,
+Small Antlers,15,False,common,
+Small Pearl,35,False,uncommon,
+Snowberry,1,True,common,
+Spadefish,15,False,,Fishing
+Spider Egg,5,False,uncommon,
+Spriggan Sap,50,False,uncommon,
+Spwan Ash,20,False,limited,Dragonborn
+Strange Remains,850,False,,Requiem
+Swamp Fungal Pod,5,True,uncommon,
+Taproot,15,False,uncommon,
+Thistle Branch,1,True,common,
+Torchbug Thorax,1,False,uncommon,
+Trama Root,1,False,limited,Dragonborn
+Troll Fat,25,False,uncommon,
+Tundra Cotton,1,True,common,
+Vampire Dust,250,False,rare,
+Venomous Spittle,50,False,limited,Requiem
+Void Salts,500,False,,
+Wheat,1,True,common,
+White Cap,12,True,uncommon,
+Wisp Wrappings,30,False,uncommon,
+Wolf Heart,25,False,,Requiem
+Yellow Mountain Flower,1,False,,Dawnguard

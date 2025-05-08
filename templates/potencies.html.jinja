@@ -1,0 +1,44 @@
+{% extends "default.html.jinja" %}
+{% block content %}
+  <section>
+    <h2>Table</h2>
+    <table id="potencies" data-paging="false" 
+    class="table table-hover table-bordered align-middle text-center table-sm">
+      <thead>
+        <tr>
+          <th>Effect</th>
+          <th>Magnitude</th>
+          <th>Duration</th>
+          <th>Price</th>
+          <th>Magnitude multiplier</th>
+          <th>Duration multiplier</th>
+          <th>Price multiplier</th>
+          <th>Ingredients</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for potency in data.potencies %}
+        <tr>
+          <th>{{ potency.effect.name }}</th>
+          <td>{{ "%.1f" | format(potency.magnitude) }}</td>
+          <td>{{ "%.0f" | format(potency.duration) }}</td>
+          <td>{{ "%.1f" | format(potency.price) }}</td>
+          <td>{{ macros.format_magnitude_mult(potency.magnitude_mult) }}</td>
+          <td>{{ macros.format_duration_mult(potency.duration_mult) }}</td>
+          <td>{{ macros.format_price_mult(potency.price_mult) }}</td>
+          <td>
+          {% for ingredient in potency.ingredients %}
+            {{ ingredient.name }}<br/>
+          {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock content %}
+
+
+{% block additional_scripts %}
+{{ macros.datatables(['potencies']) }}
+{% endblock additional_scripts %}

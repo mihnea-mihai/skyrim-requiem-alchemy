@@ -1,73 +1,66 @@
-{% import 'macros.jinja' as macros %}
-
 {% extends "default.html.jinja" %}
 {% block content %}
-  <section>
-    <h2>Table</h2>
-    <table id="effects" data-paging="false" 
-    class="table table-hover table-bordered align-middle text-center table-sm">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Effect type</th>
-          <th>Base cost</th>
-          <th>Median magnitude</th>
-          <th>Median duration</th>
-          <th>Median price</th>
-          {# <th data-orderable="false">Potency</th> #}
-          {# <th data-orderable="false">Ingredients</th> #}
-        </tr>
-      </thead>
-      <tbody>
-      {# {% for effect in data.effects %}
-        {% set grows = effect.grouped_rows %}
-        {% set grlen = grows | length %}
-        {% for key, value in grows.items() %}
-        <tr>
-          {% if loop.first %}
-          <th rowspan="{{ grlen }}">{{ effect.name }}</th>
-          <td rowspan="{{ grlen }}">{{ effect.value }}</td>
-          <td rowspan="{{ grlen }}">{{ effect.type_ }}</td>
-          {% else %}
+<section>
+  <h2>Table</h2>
+  <table id="effects" data-paging="false" 
+  class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Effect type</th>
+        <th>Base cost</th>
+        {# <th>Median magnitude</th>
+        <th>Median duration</th>
+        <th>Median price</th>
+        <th>Potencies</th> #}
+      </tr>
+    </thead>
+    <tbody>
+    {% for effect in data.effects %}
+      <tr>
+        <th>{% include "formatting/effect/link.html.jinja" %}</th>
+        <td>
+          {% include "formatting/effect/effect_type.html.jinja" %}
+        </td>
+        <td>{{ "%.4f" | format(effect.base_cost) }}</td>
+        {# <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
+        <td>{{ "%.0f" | format(effect.median_duration) }}</td>
+        <td>{{ "%.1f" | format(effect.median_price) }}</td>
+        <td>
+        {% for potency in effect.potencies %}
+        {{ macros.format_potency(potency, includeEffect=False) }}: 
+          {% for ingredient in potency.ingredients %}
+          {{ ingredient.name }}
+          {% if not loop.last %}
+          , 
           {% endif %}
-          <td>{{ macros.format_magdur(key[0], key[1]) }}</td>
-          <td class="text-start">{{ value | join(', ') }}</td>
-        </tr>
-        {% endfor %}
-      {% endfor %} #}
-      {% for effect in effects %}
-        <tr>
-          <th>{{ effect.name }}</th>
-          <td>
-            {% if effect.effect_type == 'beneficial' %}
-            <span class="text-success fw-bold">＋ beneficial</span>
-            {% else %}
-            <span class="text-danger fw-bold">− harmful</span>
-            {% endif %}
-          </td>
-          <td>{{ "%.4f" | format(effect.base_cost) }}</td>
-          <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
-          <td>{{ "%.0f" | format(effect.median_duration) }}</td>
-          <td>{{ "%.1f" | format(effect.median_price) }}</td>
-          {# <td class="text-start">
-          {% for key, value in effect.grouped_rows.items() %}
-            {{ macros.format_magdur(key[0], key[1]) }}
-            :
-            {{ value | join(', ') }}
-            <br/>
           {% endfor %}
-          </td> #}
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-  </section>
+        <br/>
+        {% endfor %}
+        </td>
+      </tr> #}
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
 {% endblock content %}
 
 {% block additional_scripts %}
-  <script defer>new DataTable('#effects', {
-        layout: {
-        topStart: 'searchBuilder'
-    }
+<script defer>new DataTable('#effects', {
+  fixedHeader: true,
+      layout: {
+        top2Start: {searchBuilder: {} },
+        topStart: {search: {} },
+        topEnd: {
+          buttons: [{
+            extend: 'colvis'
+          }]
+        }
+      },
+      language: {
+        searchBuilder: {
+          title: 'Filter this table'
+        }
+      }
   });</script>
 {% endblock additional_scripts %}
