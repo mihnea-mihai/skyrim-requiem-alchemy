@@ -1,0 +1,16 @@
+{% if ingredient.vendor_rarity == 'common' %}
+<span class="text-success">◆◆◆</span>
+<span class="text-success verbose">common</span>
+{% elif ingredient.vendor_rarity == 'uncommon' %}
+<span class="text-warning">◇◆◆</span>
+<span class="text-warning verbose">uncommon</span>
+{% elif ingredient.vendor_rarity == 'rare' %}
+<span class="text-danger">◇◇◆</span>
+<span class="text-danger verbose">rare</span>
+{% elif ingredient.vendor_rarity == 'limited' %}
+<span class="text-danger">◇◇◇</span>
+<span class="text-danger verbose">limited</span>
+{% else %}
+<span class="verbose">🚫</span>
+<span class="text-danger verbose">none</span>
+{% endif %}

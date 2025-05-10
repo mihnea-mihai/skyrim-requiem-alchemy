@@ -1,71 +1,68 @@
 {% extends "default.html.jinja" %}
 {% block content %}
-  <section>
-    {# <h2>Table</h2> #}
-    <table id="ingredients" data-paging="false" 
-    class="table table-hover table-bordered align-middle text-center table-sm">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Value</th>
-          <th>Plantable</th>
-          <th>Vendor Rarity</th>
-          <th>Unique to</th>
-          {# <th>Traits</th>
-          <th>Compatible ingredients</th> #}
-        </tr>
-      </thead>
-      <tbody>
-      {% for ingredient in data.ingredients %}
-        <tr>
-          <th>{{ formatting.link(ingredient) }}</th>
-          <td>{{ ingredient.value }}</td>
-          <td>{{ formatting.plantable(ingredient) }}</td>
-          <td>{{ formatting.vendor_rarity(ingredient) }}</td>
-          <td>{{ ingredient.unique_to | string }}</td>
-          {# <td>
-            {% for trait in ingredient.traits %}
-              <div>
-                {{ formatting.link(trait.potency.effect) }}:
-                {{ formatting.f_potency(trait.potency) }}
-              </div>
-            {% endfor %}
-          </td>
-          <td>
-            {% for ing, effects in ingredient.compatibilities.items() %}
+<section>
+  {# <h2>Table</h2> #}
+  <table id="ingredients" data-paging="false" 
+  class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+        <th>Plantable</th>
+        <th>Vendor Rarity</th>
+        <th>Unique to</th>
+        <th>Effects</th>
+        {# <th>Traits</th>
+        <th>Compatible ingredients</th> #}
+      </tr>
+    </thead>
+    <tbody>
+    {% for ingredient in data.ingredients %}
+      <tr>
+        <th>{% include "snippets/ingredient/link.html.jinja" %}</th>
+        <td>{{ ingredient.value }}</td>
+        <td>{% include "snippets/ingredient/plantable.html.jinja" %}</td>
+        <td>{% include "snippets/ingredient/vendor_rarity.html.jinja" %}</td>
+        <td>{{ ingredient.unique_to | string }}</td>
+        <td>
+          {% for potency in ingredient.potencies %}
+          <div>
+            {% set effect = potency.effect %}
+            <span>{% include "snippets/effect/link.html.jinja" %}:</span>
+            <span>{% include "snippets/potency/magnitude.html.jinja" %}💥,</span>
+            <span>{% include "snippets/potency/duration.html.jinja" %}⌛,</span>
+            <span>{% include "snippets/potency/price.html.jinja" %}🪙</span>
+          </div>
+          {% endfor %}
+        </td>
+        {# <td>
+          {% for trait in ingredient.traits %}
             <div>
-              <span>{{ formatting.link(ing) }},</span>
-              {% for effect in effects %}
-                <span>{{ formatting.link(effect) }}</span>
-              {% endfor %}
-              
+              {{ formatting.link(trait.potency.effect) }}:
+              {{ formatting.f_potency(trait.potency) }}
             </div>
+          {% endfor %}
+        </td>
+        <td>
+          {% for ing, effects in ingredient.compatibilities.items() %}
+          <div>
+            <span>{{ formatting.link(ing) }},</span>
+            {% for effect in effects %}
+              <span>{{ formatting.link(effect) }}</span>
             {% endfor %}
-          </td> #}
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-  </section>
+            
+          </div>
+          {% endfor %}
+        </td> #}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
 {% endblock content %}
 
 
 {% block additional_scripts %}
-<script defer>new DataTable('#ingredients', {
-      layout: {
-        top2Start: {searchBuilder: {} },
-        topStart: {search: {} },
-        topEnd: {
-          buttons: [{
-            extend: 'colvis'
-          }]
-        }
-      },
-      language: {
-        searchBuilder: {
-          title: 'Filter this table'
-        },
-      fixedHeader: true
-      }
-  });</script>
+{% set datatable_id = 'ingredients' %}
+{% include "snippets/datatables.html.jinja" %}
 {% endblock additional_scripts %}

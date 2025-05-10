@@ -9,24 +9,24 @@
         <th>Name</th>
         <th>Effect type</th>
         <th>Base cost</th>
-        {# <th>Median magnitude</th>
+        <th>Median magnitude</th>
         <th>Median duration</th>
         <th>Median price</th>
-        <th>Potencies</th> #}
+        {# <th>Potencies</th> #}
       </tr>
     </thead>
     <tbody>
     {% for effect in data.effects %}
       <tr>
-        <th>{% include "formatting/effect/link.html.jinja" %}</th>
+        <th>{% include "snippets/effect/link.html.jinja" %}</th>
         <td>
-          {% include "formatting/effect/effect_type.html.jinja" %}
+          {% include "snippets/effect/effect_type.html.jinja" %}
         </td>
         <td>{{ "%.4f" | format(effect.base_cost) }}</td>
-        {# <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
+        <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
         <td>{{ "%.0f" | format(effect.median_duration) }}</td>
         <td>{{ "%.1f" | format(effect.median_price) }}</td>
-        <td>
+        {# <td>
         {% for potency in effect.potencies %}
         {{ macros.format_potency(potency, includeEffect=False) }}: 
           {% for ingredient in potency.ingredients %}
@@ -37,8 +37,8 @@
           {% endfor %}
         <br/>
         {% endfor %}
-        </td>
-      </tr> #}
+        </td> #}
+      </tr>
     {% endfor %}
     </tbody>
   </table>
@@ -46,21 +46,6 @@
 {% endblock content %}
 
 {% block additional_scripts %}
-<script defer>new DataTable('#effects', {
-  fixedHeader: true,
-      layout: {
-        top2Start: {searchBuilder: {} },
-        topStart: {search: {} },
-        topEnd: {
-          buttons: [{
-            extend: 'colvis'
-          }]
-        }
-      },
-      language: {
-        searchBuilder: {
-          title: 'Filter this table'
-        }
-      }
-  });</script>
+{% set datatable_id = 'effects' %}
+{% include "snippets/datatables.html.jinja" %}
 {% endblock additional_scripts %}

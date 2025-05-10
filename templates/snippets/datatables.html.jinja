@@ -1,0 +1,17 @@
+<script defer>new DataTable('#{{ datatable_id }}', {
+  fixedHeader: true,
+  layout: {
+    top2Start: {searchBuilder: {} },
+    topStart: {search: {} },
+    topEnd: {
+      buttons: [{
+        extend: 'colvis'
+      }]
+    }
+  },
+  language: {
+    searchBuilder: {
+      title: 'Filter this table'
+    }
+  }
+});</script>

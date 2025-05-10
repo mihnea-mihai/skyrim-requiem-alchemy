@@ -10,25 +10,26 @@
           <th>Magnitude</th>
           <th>Duration</th>
           <th>Price</th>
-          <th>Magnitude multiplier</th>
-          <th>Duration multiplier</th>
-          <th>Price multiplier</th>
           <th>Ingredients</th>
         </tr>
       </thead>
       <tbody>
-      {% for potency in data.potencies %}
+      {% for potency in data.potencies | sort(attribute='effect.name')
+      | sort(attribute='price', reverse=True) %}
         <tr>
           <th>{{ potency.effect.name }}</th>
-          <td>{{ "%.1f" | format(potency.magnitude) }}</td>
-          <td>{{ "%.0f" | format(potency.duration) }}</td>
-          <td>{{ "%.1f" | format(potency.price) }}</td>
-          <td>{{ macros.format_magnitude_mult(potency.magnitude_mult) }}</td>
-          <td>{{ macros.format_duration_mult(potency.duration_mult) }}</td>
-          <td>{{ macros.format_price_mult(potency.price_mult) }}</td>
+          <td data-sort="{{ potency.magnitude }}">
+          {% include "snippets/potency/magnitude.html.jinja" %}
+          </td>
+          <td data-sort="{{ potency.duration }}">
+          {% include "snippets/potency/duration.html.jinja" %}
+          </td>
+          <td data-sort="{{ potency.price }}">
+          {% include "snippets/potency/price.html.jinja" %}
+          </td>
           <td>
-          {% for ingredient in potency.ingredients %}
-            {{ ingredient.name }}<br/>
+          {% for ingredient in potency.ingredients | sort(attribute='name') %}
+          <div>{{ ingredient.name }}</div>
           {% endfor %}
           </td>
         </tr>
@@ -40,5 +41,6 @@
 
 
 {% block additional_scripts %}
-{{ macros.datatables(['potencies']) }}
+{% set datatable_id = 'potencies' %}
+{% include "snippets/datatables.html.jinja" %}
 {% endblock additional_scripts %}

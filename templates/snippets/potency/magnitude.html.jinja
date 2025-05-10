@@ -1,0 +1,7 @@
+<span class="fw-bold {{ macros.compare_color(potency.magnitude, potency.effect.median_magnitude) }}">
+{{ potency.magnitude | crop_number }}
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  {{ potency.effect.median_magnitude | crop_number }}
+</span>
