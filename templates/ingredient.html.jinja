@@ -1,9 +1,22 @@
 {% extends "default.html.jinja" %}
+{% block title %}
+{{ ingredient.name }}
+{% endblock title %}
 {% block content %}
+
 <section>
-<h2>Compatible ingredients</h2>
-  <table id="compatible-ingredients" data-paging="false" 
-  class="table table-hover table-bordered align-middle text-center table-sm">
+  <h2>Effects</h2>
+  {% for outer_trait in ingredient.traits | sort(attribute="order") %}
+  {% set effect = outer_trait.potency.effect %}
+  <h3>{{ effect.name }}</h3>
+  {% include "snippets/effect/ingredients.html.jinja" %}
+  {% endfor %}
+</section>
+
+{# <section>
+  <h2>Compatible ingredients</h2>
+  <table id="compatible-ingredients" data-paging="false"
+    class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>
       <tr>
         <th>Name</th>
@@ -12,12 +25,12 @@
         <th>Vendor Rarity</th>
         <th>Unique to</th>
         {% for effect in ingredient.effects %}
-          <th>{{ effect.name }}</th>
+        <th>{{ effect.name }}</th>
         {% endfor %}
       </tr>
     </thead>
     <tbody>
-    {% for ing, effects in ingredient.compatibilities.items() %}
+      {% for ing, effects in ingredient.compatibilities.items() %}
       <tr>
         <th>{{ formatting.link(ing) }}</th>
         <td>{{ ing.value }}</td>
@@ -27,36 +40,17 @@
         {% for eff1 in ingredient.effects %}
         <td>
           {% for eff2 in effects %}
-            {% if eff1 == eff2 %}
-              yes
-            {% endif %}
+          {% if eff1 == eff2 %}
+          yes
+          {% endif %}
           {% endfor %}
         </td>
         {% endfor %}
-        {# <td>
-          {% for trait in ingredient.traits %}
-            <div>
-              {{ formatting.link(trait.potency.effect) }}:
-              {{ formatting.f_potency(trait.potency) }}
-            </div>
-          {% endfor %}
-        </td>
-        <td>
-          {% for ing, effects in ingredient.compatibilities.items() %}
-          <div>
-            <span>{{ formatting.link(ing) }},</span>
-            {% for effect in effects %}
-              <span>{{ formatting.link(effect) }}</span>
-            {% endfor %}
-            
-          </div>
-          {% endfor %}
-        </td> #}
       </tr>
-    {% endfor %}
+      {% endfor %}
     </tbody>
   </table>
-</section>
+</section> #}
 {% endblock content %}
 
 {% block additional_scripts %}

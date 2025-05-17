@@ -1,8 +1,10 @@
 {% extends "default.html.jinja" %}
+{% block title %}
+Effects
+{% endblock title %}
 {% block content %}
 <section>
-  <h2>Combinations</h2>
-  {{ effect.name }}
-  
+  <h2>Ingredients</h2>
+  {% include "snippets/effect/ingredients.html.jinja" %}
 </section>
 {% endblock content %}

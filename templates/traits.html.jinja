@@ -1,7 +1,9 @@
 {% extends "default.html.jinja" %}
+{% block title %}
+Traits
+{% endblock title %}
 {% block content %}
   <section>
-    <h2>Table</h2>
     <table id="traits" data-paging="false" 
     class="table table-hover table-bordered align-middle text-center table-sm">
       <thead>
@@ -30,13 +32,13 @@
           | sort(attribute='order') %}
         <tr>
           {% set ingredient = trait.ingredient %}
-          <td>{{ ingredient.name }}</td>
+          <td>{% include "snippets/ingredient/link.html.jinja" %}</td>
           <td>{{ ingredient.value }}</td>
           <td>{% include "snippets/ingredient/plantable.html.jinja" %}</td>
           <td>{% include "snippets/ingredient/vendor_rarity.html.jinja" %}</td>
           <td>{{ ingredient.unique_to | string }}</td>
           {% set effect = trait.potency.effect %}
-          <td>{{ effect.name }}</td>
+          <td>{% include "snippets/effect/link.html.jinja" %}</td>
           <td>{% include "snippets/effect/effect_type.html.jinja" %}</td>
           <td>{{ "%.4f" | format(effect.base_cost) }}</td>
           <td>{{ trait.order }}</td>

@@ -1,0 +1,23 @@
+<span class="concise">
+  {% include "snippets/ingredient/link.html.jinja" %}
+
+  {% if ingredient.unique_to == 'ResourcePack' %}
+  <sup><abbr title="ResourcePack">RP</abbr></sup>
+  {% elif ingredient.unique_to == 'Requiem' %}
+  <sup><abbr title="Requiem">REQ</abbr></sup>
+  {% elif ingredient.unique_to == 'Hearthfire' %}
+  <sup><abbr title="Hearthfire">HF</abbr></sup>
+  {% elif ingredient.unique_to == 'Fishing' %}
+  <sup><abbr title="Fishing">Fish</abbr></sup>
+  {% elif ingredient.unique_to == 'Dragonborn' %}
+  <sup><abbr title="Dragonborn">DB</abbr></sup>
+  {% elif ingredient.unique_to == 'Dawnguard' %}
+  <sup><abbr title="Dawnguard">DG</abbr></sup>
+  {% endif %}
+
+  {% if ingredient.plantable %}
+  <span>🪴</span>
+  {% else %}
+  {# {% include "snippets/ingredient/vendor_rarity.html.jinja" %} #}
+  {% endif %}
+</span>

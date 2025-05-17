@@ -1,42 +1,48 @@
 {% extends "default.html.jinja" %}
+{% block title %}
+Potencies
+{% endblock title %}
 {% block content %}
-  <section>
-    <h2>Table</h2>
-    <table id="potencies" data-paging="false" 
-    class="table table-hover table-bordered align-middle text-center table-sm">
-      <thead>
-        <tr>
-          <th>Effect</th>
-          <th>Magnitude</th>
-          <th>Duration</th>
-          <th>Price</th>
-          <th>Ingredients</th>
-        </tr>
-      </thead>
-      <tbody>
+<section>
+  <table id="potencies" data-paging="false" class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Effect</th>
+        <th>Magnitude</th>
+        <th>Duration</th>
+        <th>Price</th>
+        <th>Ingredients</th>
+      </tr>
+    </thead>
+    <tbody>
       {% for potency in data.potencies | sort(attribute='effect.name')
       | sort(attribute='price', reverse=True) %}
-        <tr>
-          <th>{{ potency.effect.name }}</th>
-          <td data-sort="{{ potency.magnitude }}">
+      <tr>
+        {% set effect = potency.effect %}
+        <th>
+          {% include "snippets/effect/link.html.jinja" %}
+        </th>
+        <td data-sort="{{ potency.magnitude }}">
           {% include "snippets/potency/magnitude.html.jinja" %}
-          </td>
-          <td data-sort="{{ potency.duration }}">
+        </td>
+        <td data-sort="{{ potency.duration }}">
           {% include "snippets/potency/duration.html.jinja" %}
-          </td>
-          <td data-sort="{{ potency.price }}">
+        </td>
+        <td data-sort="{{ potency.price }}">
           {% include "snippets/potency/price.html.jinja" %}
-          </td>
-          <td>
+        </td>
+        <td>
           {% for ingredient in potency.ingredients | sort(attribute='name') %}
-          <div>{{ ingredient.name }}</div>
+          <span class="px-2">
+            {% include "snippets/ingredient/short.html.jinja" %}
+          </span>
           {% endfor %}
-          </td>
-        </tr>
+        </td>
+      </tr>
       {% endfor %}
-      </tbody>
-    </table>
-  </section>
+    </tbody>
+  </table>
+</section>
 {% endblock content %}
 
 

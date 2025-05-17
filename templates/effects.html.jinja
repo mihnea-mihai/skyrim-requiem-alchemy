@@ -1,9 +1,10 @@
 {% extends "default.html.jinja" %}
+{% block title %}
+Effects
+{% endblock title %}
 {% block content %}
 <section>
-  <h2>Table</h2>
-  <table id="effects" data-paging="false" 
-  class="table table-hover table-bordered align-middle text-center table-sm">
+  <table id="effects" data-paging="false" class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>
       <tr>
         <th>Name</th>
@@ -12,11 +13,11 @@
         <th>Median magnitude</th>
         <th>Median duration</th>
         <th>Median price</th>
-        {# <th>Potencies</th> #}
+        <th>Ingredients</th>
       </tr>
     </thead>
     <tbody>
-    {% for effect in data.effects %}
+      {% for effect in data.effects %}
       <tr>
         <th>{% include "snippets/effect/link.html.jinja" %}</th>
         <td>
@@ -26,20 +27,17 @@
         <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
         <td>{{ "%.0f" | format(effect.median_duration) }}</td>
         <td>{{ "%.1f" | format(effect.median_price) }}</td>
-        {# <td>
-        {% for potency in effect.potencies %}
-        {{ macros.format_potency(potency, includeEffect=False) }}: 
-          {% for ingredient in potency.ingredients %}
-          {{ ingredient.name }}
-          {% if not loop.last %}
-          , 
-          {% endif %}
-          {% endfor %}
-        <br/>
-        {% endfor %}
-        </td> #}
+        <td>
+          <div>
+            {% for ingredient in effect.ingredients | sort(attribute='name') %}
+            <span class="px-1 text-nowrap">
+              {% include "snippets/ingredient/short.html.jinja" %}
+            </span>
+            {% endfor %}
+          </div>
+        </td>
       </tr>
-    {% endfor %}
+      {% endfor %}
     </tbody>
   </table>
 </section>

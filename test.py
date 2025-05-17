@@ -1,6 +1,3 @@
-dct1 = {'test': 'val1'}
-dc2 = {'othertest': 'val2'}
-dct3 = {'test': 'val3'}
+tst: list[str] = ["asdsa", "dsda"]
 
-
-print(dct1 | dc2)
+print(type(tst))

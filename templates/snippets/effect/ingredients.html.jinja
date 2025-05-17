@@ -1,0 +1,25 @@
+<table class="table table-hover table-bordered align-middle text-center table-sm">
+  <thead>
+    <tr>
+      <th>Potency</th>
+      <th>Ingredient</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for potency, traits in effect.potencies.items()
+    | sort(attribute='0.price', reverse=True) %}
+    {% for trait in traits | sort(attribute='ingredient.name') %}
+    <tr>
+      {% if loop.first %}
+      <td rowspan="{{ traits | length }}">
+        {% include "snippets/potency/very_short.html.jinja" %}
+      </td>
+      {% endif %}
+      <td class="{{'table-active' if trait.ingredient == ingredient else ''}}">
+        {{ trait.ingredient.name }}
+      </td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
