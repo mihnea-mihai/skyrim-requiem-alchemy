@@ -46,19 +46,41 @@
 
 <section>
   <h2>Effects</h2>
-  <h3>Damage Magicka</h3>
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-damage-magicka" type="button" role="tab">
+        Damage Magicka
+      </button>
+      <button class="nav-link " data-bs-toggle="tab" data-bs-target="#nav-fortify-armor-rating" type="button" role="tab">
+        Fortify Armor Rating
+      </button>
+      <button class="nav-link " data-bs-toggle="tab" data-bs-target="#nav-fortify-health-regeneration" type="button" role="tab">
+        Fortify Health Regeneration
+      </button>
+      <button class="nav-link " data-bs-toggle="tab" data-bs-target="#nav-invisibility" type="button" role="tab">
+        Invisibility
+      </button>
+    </div>
+  </nav>
+
+  <div class="tab-content">
+    <div class="tab-pane show active"
+    id="nav-damage-magicka" tabindex="0">
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th>Potency</th>
-      <th>Ingredient</th>
+      <th colspan="3">Potency</th>
+      <th rowspan="2">Ingredient</th>
+    </tr>
+    <tr>
+      <th>Magnitude</th>
+      <th>Duration</th>
+      <th>Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-success
 ">
 5
@@ -66,9 +88,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   3
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -76,9 +97,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 6.5
@@ -86,17 +106,14 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   3.7
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Heart
-      </td>
+<a href="ingredients/Heart">
+Heart
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="13">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 3
@@ -104,9 +121,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   3
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="13">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -114,9 +130,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="13">
 <span class="fw-bold     text-secondary
 ">
 3.7
@@ -124,87 +139,103 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   3.7
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Aloe Vera Leaves
-      </td>
+<a href="ingredients/Chaurus%20Eggs">
+Chaurus Eggs
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Butterfly Wing
-      </td>
+<a href="ingredients/Hagraven%20Feathers">
+Hagraven Feathers
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Chaurus Eggs
-      </td>
+<a href="ingredients/Glow%20Dust">
+Glow Dust
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Glow Dust
-      </td>
+<a href="ingredients/Namira%27s%20Rot">
+Namira's Rot
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Hagraven Feathers
-      </td>
+<a href="ingredients/Hanging%20Moss">
+Hanging Moss
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Hanging Moss
-      </td>
+<a href="ingredients/Sabre%20Cat%20Eye">
+Sabre Cat Eye
+</a>      </td>
     </tr>
     <tr>
-      <td class="table-active">
-        Luna Moth Wing
-      </td>
-    </tr>
-    <tr>
-      <td class="">
-        Namira's Rot
-      </td>
+      <td class="bg-primary-subtle">
+<a href="ingredients/Luna%20Moth%20Wing">
+Luna Moth Wing
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Nordic Barnacle
-      </td>
+<a href="ingredients/Butterfly%20Wing">
+Butterfly Wing
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Sabre Cat Eye
-      </td>
+<a href="ingredients/Nordic%20Barnacle">
+Nordic Barnacle
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Sabre Cat Heart
-      </td>
+<a href="ingredients/Trama%20Root">
+Trama Root
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Trama Root
-      </td>
+<a href="ingredients/Aloe%20Vera%20Leaves">
+Aloe Vera Leaves
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Wolf Heart
-      </td>
+<a href="ingredients/Wolf%20Heart">
+Wolf Heart
+</a>      </td>
+    </tr>
+    <tr>
+      <td class="">
+<a href="ingredients/Sabre%20Cat%20Heart">
+Sabre Cat Heart
+</a>      </td>
     </tr>
   </tbody>
-</table>  <h3>Fortify Armor Rating</h3>
+</table>    </div>
+    <div class="tab-pane "
+    id="nav-fortify-armor-rating" tabindex="0">
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th>Potency</th>
-      <th>Ingredient</th>
+      <th colspan="3">Potency</th>
+      <th rowspan="2">Ingredient</th>
+    </tr>
+    <tr>
+      <th>Magnitude</th>
+      <th>Duration</th>
+      <th>Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-success
 ">
 12
@@ -212,9 +243,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   6
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-secondary
 ">
 60
@@ -222,9 +252,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   60
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 27.6
@@ -232,17 +261,14 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.9
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Mammoth Heart
-      </td>
+<a href="ingredients/Mammoth%20Heart">
+Mammoth Heart
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="2">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-success
 ">
 8.4
@@ -250,9 +276,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   6
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="2">
 <span class="fw-bold     text-secondary
 ">
 60
@@ -260,9 +285,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   60
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="2">
 <span class="fw-bold     text-success
 ">
 18.6
@@ -270,22 +294,20 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.9
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Hawk Feathers
-      </td>
+<a href="ingredients/Slaughterfish%20Scales">
+Slaughterfish Scales
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Slaughterfish Scales
-      </td>
+<a href="ingredients/Hawk%20Feathers">
+Hawk Feathers
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="6">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 6
@@ -293,9 +315,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   6
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="6">
 <span class="fw-bold     text-secondary
 ">
 60
@@ -303,9 +324,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   60
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="6">
 <span class="fw-bold     text-secondary
 ">
 12.9
@@ -313,42 +333,44 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.9
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Claws
-      </td>
+<a href="ingredients/Thistle%20Branch">
+Thistle Branch
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Goldfish
-      </td>
-    </tr>
-    <tr>
-      <td class="table-active">
-        Luna Moth Wing
-      </td>
+<a href="ingredients/Skeever%20Tail">
+Skeever Tail
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Skeever Tail
-      </td>
+<a href="ingredients/White%20Cap">
+White Cap
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Thistle Branch
-      </td>
+<a href="ingredients/Claws">
+Claws
+</a>      </td>
+    </tr>
+    <tr>
+      <td class="bg-primary-subtle">
+<a href="ingredients/Luna%20Moth%20Wing">
+Luna Moth Wing
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        White Cap
-      </td>
+<a href="ingredients/Goldfish">
+Goldfish
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="3">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-danger
 ">
 4.8
@@ -356,9 +378,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   6
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="3">
 <span class="fw-bold     text-secondary
 ">
 60
@@ -366,9 +387,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   60
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="3">
 <span class="fw-bold     text-danger
 ">
 10.1
@@ -376,27 +396,26 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.9
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Beehive Husk
-      </td>
+<a href="ingredients/Sabre%20Cat%20Tooth">
+Sabre Cat Tooth
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Honeycomb
-      </td>
+<a href="ingredients/Beehive%20Husk">
+Beehive Husk
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Sabre Cat Tooth
-      </td>
+<a href="ingredients/Honeycomb">
+Honeycomb
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="2">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-danger
 ">
 4
@@ -404,9 +423,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   6
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="2">
 <span class="fw-bold     text-secondary
 ">
 60
@@ -414,9 +432,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   60
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="2">
 <span class="fw-bold     text-danger
 ">
 8.2
@@ -424,32 +441,37 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.9
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Ash Hopper Jelly
-      </td>
+<a href="ingredients/Ash%20Hopper%20Jelly">
+Ash Hopper Jelly
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Felsaad Tern Feathers
-      </td>
+<a href="ingredients/Felsaad%20Tern%20Feathers">
+Felsaad Tern Feathers
+</a>      </td>
     </tr>
   </tbody>
-</table>  <h3>Fortify Health Regeneration</h3>
+</table>    </div>
+    <div class="tab-pane "
+    id="nav-fortify-health-regeneration" tabindex="0">
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th>Potency</th>
-      <th>Ingredient</th>
+      <th colspan="3">Potency</th>
+      <th rowspan="2">Ingredient</th>
+    </tr>
+    <tr>
+      <th>Magnitude</th>
+      <th>Duration</th>
+      <th>Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="7">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 5
@@ -457,9 +479,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   5
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="7">
 <span class="fw-bold     text-secondary
 ">
 300
@@ -467,9 +488,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   300
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="7">
 <span class="fw-bold     text-secondary
 ">
 12.4
@@ -477,47 +497,50 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.4
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Angelfish
-      </td>
+<a href="ingredients/Namira%27s%20Rot">
+Namira's Rot
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Emperol Parasol Moss
-      </td>
+<a href="ingredients/Juniper%20Berries">
+Juniper Berries
+</a>      </td>
+    </tr>
+    <tr>
+      <td class="bg-primary-subtle">
+<a href="ingredients/Luna%20Moth%20Wing">
+Luna Moth Wing
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Gleamblossom
-      </td>
+<a href="ingredients/Nordic%20Barnacle">
+Nordic Barnacle
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Juniper Berries
-      </td>
-    </tr>
-    <tr>
-      <td class="table-active">
-        Luna Moth Wing
-      </td>
+<a href="ingredients/Gleamblossom">
+Gleamblossom
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Namira's Rot
-      </td>
+<a href="ingredients/Emperol%20Parasol%20Moss">
+Emperol Parasol Moss
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Nordic Barnacle
-      </td>
+<a href="ingredients/Angelfish">
+Angelfish
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 5
@@ -525,9 +548,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   5
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-danger
 ">
 60
@@ -535,9 +557,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   300
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-danger
 ">
 2.1
@@ -545,27 +566,31 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   12.4
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Garlic
-      </td>
+<a href="ingredients/Garlic">
+Garlic
+</a>      </td>
     </tr>
   </tbody>
-</table>  <h3>Invisibility</h3>
+</table>    </div>
+    <div class="tab-pane "
+    id="nav-invisibility" tabindex="0">
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th>Potency</th>
-      <th>Ingredient</th>
+      <th colspan="3">Potency</th>
+      <th rowspan="2">Ingredient</th>
+    </tr>
+    <tr>
+      <th>Magnitude</th>
+      <th>Duration</th>
+      <th>Price</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -573,9 +598,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 60
@@ -583,9 +607,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   4
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 358.9
@@ -593,17 +616,14 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   18.2
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Strange Remains
-      </td>
+<a href="ingredients/Strange%20Remains">
+Strange Remains
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -611,9 +631,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 24
@@ -621,9 +640,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   4
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 131.0
@@ -631,17 +649,14 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   18.2
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Crimson Nirnroot
-      </td>
+<a href="ingredients/Crimson%20Nirnroot">
+Crimson Nirnroot
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -649,9 +664,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 16
@@ -659,9 +673,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   4
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 83.8
@@ -669,17 +682,14 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   18.2
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Nirnroot
-      </td>
+<a href="ingredients/Nirnroot">
+Nirnroot
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="1">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -687,9 +697,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 15
@@ -697,9 +706,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   4
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="1">
 <span class="fw-bold     text-success
 ">
 78.1
@@ -707,17 +715,14 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   18.2
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Vampire Dust
-      </td>
+<a href="ingredients/Vampire%20Dust">
+Vampire Dust
+</a>      </td>
     </tr>
     <tr>
       <td rowspan="6">
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
 0
@@ -725,9 +730,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>💥
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="6">
 <span class="fw-bold     text-secondary
 ">
 4
@@ -735,9 +739,8 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   4
-</span>⌛
-  </span>
-  <span class="px-1">
+</span>      </td>
+      <td rowspan="6">
 <span class="fw-bold     text-secondary
 ">
 18.2
@@ -745,40 +748,46 @@
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   18.2
-</span>🪙
-  </span>
-</div>      </td>
+</span>      </td>
       <td class="">
-        Aloe Vera Leaves
-      </td>
+<a href="ingredients/Chaurus%20Eggs">
+Chaurus Eggs
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Ash Creep Cluster
-      </td>
+<a href="ingredients/Ice%20Wraith%20Teeth">
+Ice Wraith Teeth
+</a>      </td>
+    </tr>
+    <tr>
+      <td class="bg-primary-subtle">
+<a href="ingredients/Luna%20Moth%20Wing">
+Luna Moth Wing
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Chaurus Eggs
-      </td>
+<a href="ingredients/Ash%20Creep%20Cluster">
+Ash Creep Cluster
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Glassfish
-      </td>
+<a href="ingredients/Glassfish">
+Glassfish
+</a>      </td>
     </tr>
     <tr>
       <td class="">
-        Ice Wraith Teeth
-      </td>
-    </tr>
-    <tr>
-      <td class="table-active">
-        Luna Moth Wing
-      </td>
+<a href="ingredients/Aloe%20Vera%20Leaves">
+Aloe Vera Leaves
+</a>      </td>
     </tr>
   </tbody>
-</table></section>
+</table>    </div>
+  </div>
+</section>
 
   </main>
   <footer>

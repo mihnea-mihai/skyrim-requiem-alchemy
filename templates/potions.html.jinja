@@ -10,15 +10,43 @@ Potions
       <tr>
         <th>Ingredients</th>
         <th>Potencies</th>
+        <th>Effects</th>
+        <th>Accessibility</th>
         <th>Price</th>
+        <th>Accessibility / Price</th>
       </tr>
     </thead>
     <tbody>
+      {# {% for potencies, potions in data.potions_by_potencies.items() %}
+      <tr>
+        <td>
+          {% for potency in potencies %}
+          {% include "snippets/potency/short.html.jinja" %}
+          {% endfor %}
+        </td>
+        <td>
+          {% for potion in potions %}
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for ingredient in potion.ingredients %}
+            <div class="px-1">
+              {% include "snippets/ingredient/link.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </td>
+        <td>
+          {{ potions[0].price | round(1) }}
+        </td>
+      </tr>
+      {% endfor %} #}
       {% for potion in data.potions %}
       <tr>
         <td>
           {% for ingredient in potion.ingredients %}
-          {% include "snippets/ingredient/link.html.jinja" %}
+          <div class="px-1">
+            {% include "snippets/ingredient/link.html.jinja" %}
+          </div>
           {% endfor %}
         </td>
         <td>
@@ -26,7 +54,21 @@ Potions
           {% include "snippets/potency/short.html.jinja" %}
           {% endfor %}
         </td>
-        <td>{{ potion.price | round(2) }}</td>
+        <td>
+          {% for effect in potion.effects %}
+          <div class="px-1">
+            {% include "snippets/effect/link.html.jinja" %}
+          </div>
+          {% endfor %}
+        </td>
+        <td>
+          {{ potion.accessibility | round(1) }}
+        <td>
+          {{ potion.price | round(1) }}
+        </td>
+        <td>
+          {{ (potion.accessibility / potion.price) | round(1) }}
+        </td>
       </tr>
       {% endfor %}
     </tbody>

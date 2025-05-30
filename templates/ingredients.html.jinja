@@ -13,7 +13,11 @@ Ingredients
         <th>Plantable</th>
         <th>Vendor Rarity</th>
         <th>Unique to</th>
-        <th>Effects</th>
+        <th>Average potency price</th>
+        <th>Accessibility</th>
+        <th>Average potion price</th>
+        <th>Mean potion price</th>
+        {# <th>Effects</th> #}
       </tr>
     </thead>
     <tbody>
@@ -24,12 +28,16 @@ Ingredients
         <td>{% include "snippets/ingredient/plantable.html.jinja" %}</td>
         <td>{% include "snippets/ingredient/vendor_rarity.html.jinja" %}</td>
         <td>{{ ingredient.unique_to | string }}</td>
-        <td>
+        <td>{{ ingredient.average_potency_price | round(1) }}</td>
+        <td>{{ ingredient.sort_string }}</td>
+        {# <td>
           {% for trait in ingredient.traits | sort(attribute='order') %}
           {% set potency = trait.potency %}
           {% include "snippets/potency/short.html.jinja" %}
           {% endfor %}
-        </td>
+        </td> #}
+        <td>{{ ingredient.average_potion_price | round(1) }}</td>
+        <td>{{ ingredient.median_potion_price | round(1) }}</td>
       </tr>
       {% endfor %}
     </tbody>

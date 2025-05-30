@@ -1,3 +1,5 @@
-tst: list[str] = ["asdsa", "dsda"]
+dict1: dict = {"eff1": {"tr1"}, "eff2": {"tr4"}}
 
-print(type(tst))
+dict2: dict = {"eff2": {"tr5"}, "eff3": {"tr7"}}
+
+print(dict1 | dict2)

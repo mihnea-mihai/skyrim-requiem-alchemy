@@ -13,7 +13,8 @@ Effects
         <th>Median magnitude</th>
         <th>Median duration</th>
         <th>Median price</th>
-        <th>Ingredients</th>
+        <th>Median accessibility</th>
+        {# <th>Ingredients</th> #}
       </tr>
     </thead>
     <tbody>
@@ -27,15 +28,16 @@ Effects
         <td>{{ "%.1f" | format(effect.median_magnitude) }}</td>
         <td>{{ "%.0f" | format(effect.median_duration) }}</td>
         <td>{{ "%.1f" | format(effect.median_price) }}</td>
-        <td>
+        <td>{{ "%.1f" | format(effect.median_accessibility) }}</td>
+        {# <td>
           <div>
-            {% for ingredient in effect.ingredients | sort(attribute='name') %}
+            {% for ingredient in effect.ingredients | sort(attribute='sort_string') %}
             <span class="px-1 text-nowrap">
-              {% include "snippets/ingredient/short.html.jinja" %}
+              {% include "snippets/ingredient/link.html.jinja" %}
             </span>
             {% endfor %}
           </div>
-        </td>
+        </td> #}
       </tr>
       {% endfor %}
     </tbody>

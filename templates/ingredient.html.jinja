@@ -6,51 +6,30 @@
 
 <section>
   <h2>Effects</h2>
-  {% for outer_trait in ingredient.traits | sort(attribute="order") %}
-  {% set effect = outer_trait.potency.effect %}
-  <h3>{{ effect.name }}</h3>
-  {% include "snippets/effect/ingredients.html.jinja" %}
-  {% endfor %}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      {% for outer_trait in ingredient.traits | sort(attribute="order") %}
+      {% set effect = outer_trait.potency.effect %}
+      {% set effect_id = effect.name | lower | replace(' ', '-') %}
+      <button class="nav-link {{ 'active' if loop.first }}" data-bs-toggle="tab" data-bs-target="#nav-{{ effect_id }}" type="button" role="tab">
+        {{ effect.name }}
+      </button>
+      {% endfor %}
+    </div>
+  </nav>
+
+  <div class="tab-content">
+    {% for outer_trait in ingredient.traits | sort(attribute="order") %}
+    {% set effect = outer_trait.potency.effect %}
+    {% set effect_id = effect.name | lower | replace(' ', '-') %}
+    <div class="tab-pane {{ 'show active' if loop.first }}"
+    id="nav-{{ effect_id }}" tabindex="0">
+      {% include "snippets/effect/ingredients.html.jinja" %}
+    </div>
+    {% endfor %}
+  </div>
 </section>
 
-{# <section>
-  <h2>Compatible ingredients</h2>
-  <table id="compatible-ingredients" data-paging="false"
-    class="table table-hover table-bordered align-middle text-center table-sm">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Value</th>
-        <th>Plantable</th>
-        <th>Vendor Rarity</th>
-        <th>Unique to</th>
-        {% for effect in ingredient.effects %}
-        <th>{{ effect.name }}</th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      {% for ing, effects in ingredient.compatibilities.items() %}
-      <tr>
-        <th>{{ formatting.link(ing) }}</th>
-        <td>{{ ing.value }}</td>
-        <td>{{ formatting.plantable(ing) }}</td>
-        <td>{{ formatting.vendor_rarity(ing) }}</td>
-        <td>{{ ing.unique_to | string }}</td>
-        {% for eff1 in ingredient.effects %}
-        <td>
-          {% for eff2 in effects %}
-          {% if eff1 == eff2 %}
-          yes
-          {% endif %}
-          {% endfor %}
-        </td>
-        {% endfor %}
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</section> #}
 {% endblock content %}
 
 {% block additional_scripts %}

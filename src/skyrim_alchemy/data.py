@@ -5,99 +5,74 @@ Data model.
 from __future__ import annotations
 
 import csv
-from collections import defaultdict
+from collections import defaultdict, namedtuple
 from collections.abc import Generator
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from functools import cache, cached_property
-from statistics import median, mean
-from typing import NamedTuple
+from statistics import mean, median
+from typing import Literal, Optional
+
 from skyrim_alchemy.logger import logger
 from skyrim_alchemy.utils import value_formula
 
-from types import MappingProxyType
 
-# from pprint import pprint
-from typing import Literal, Optional
+# class TraitSet(set):
+
+#     @cached_property
+#     def ingredients(self: set[Trait]) -> set[Ingredient]:
+#         return {trait.ingredient for trait in self}
+
+#     @cached_property
+#     def potencies(self: set[Trait]) -> dict[Potency, Trait]:
+#         res = defaultdict(set)
+#         for trait in self:
+#             res[trait.potency].add(trait)
+#         return res
+
+#     @cached_property
+#     def effects(self: set[Trait]) -> set[Ingredient]:
+#         return {trait.potency.effect for trait in self}
 
 
-@dataclass
+IngredientRow = namedtuple(
+    "IngredientRow", "name,value,plantable,vendor_rarity,unique_to"
+)
+
+
 class Ingredient:
     """Alchemy ingredient.
     Only the `name` field is used for hash and equality."""
 
-    _row: dict
-
-    @cached_property
-    def name(self) -> str:
-        """Ingredient name."""
-        return self._row["name"]
-
-    @cached_property
-    def value(self) -> int:
-        """Ingredient septim cost."""
-        return int(self._row["value"])
-
-    @cached_property
-    def plantable(self) -> bool:
-        """Whether or not the ingredient can be planted in Hearthfire."""
-        return bool(self._row["plantable"])
-
-    @cached_property
-    def vendor_rarity(
-        self,
-    ) -> Optional[Literal["common", "uncommon", "rare", "limited"]]:
-        """What is the possibility of finding/buying this ingredient.
-        Missing value means it is unsold."""
-        return self._row["vendor_rarity"]
-
-    @cached_property
-    def unique_to(
-        self,
-    ) -> Optional[
-        Literal[
-            "ResourcePack",
-            "Dawnguard",
-            "Dragonborn",
-            "Fishing",
-            "Hearthfire",
-            "Requiem",
-        ]
-    ]:
-        """The plugin that introduces this ingredient, if applicable."""
-        return self._row["unique_to"]
+    def __init__(self, row: IngredientRow):
+        self.name: str = row.name
+        self.value = int(row.value)
+        self.plantable = row.plantable == "True"
+        self.vendor_rarity: Optional[
+            Literal["common", "uncommon", "rare", "limited"]
+        ] = row.vendor_rarity
+        self.unique_to: Optional[
+            Literal[
+                "ResourcePack",
+                "Dawnguard",
+                "Dragonborn",
+                "Fishing",
+                "Hearthfire",
+                "Requiem",
+            ]
+        ] = row.unique_to
 
     @cached_property
     def average_price(self) -> float:
         """The average price of this ingredient's potencies."""
-        return mean({potency.price for potency in self.potencies})
+        return mean({potency.price for potency in self.traits.potencies})
 
     @cached_property
     def traits(self) -> set[Trait]:
         """Subset of `Trait` entries pertaining to this ingredient."""
         return {trait for trait in Data.traits if trait.ingredient == self}
 
-    @cached_property
-    def potencies(self) -> set[Potency]:
-        """Subset of `Potency` entries pertaining to this ingredient."""
-        return {trait.potency for trait in self.traits}
-
-    @cached_property
-    def effects(self) -> set[Effect]:
-        """Subset of `Effect` entries pertaining to this ingredient."""
-        return {potency.effect for potency in self.potencies}
-
-    @cached_property
-    def compatible_ingredients(self) -> set[Ingredient]:
-        """Subset of other ingredients having at least a single effect in common
-        with the current one."""
-        return {
-            ingredient
-            for ingredient in Data.ingredients - {self}
-            if ingredient.effects.intersection(self.effects)
-        }
-
     @classmethod
-    def create(cls, row: dict) -> Ingredient:
+    def create(cls, row: IngredientRow) -> Ingredient:
         """Create a new instance from a CSV row.
         No need for cache as this will only be called once per
         traversed CSV row.
@@ -156,28 +131,17 @@ class Ingredient:
         return self.name == ing.name
 
 
-@dataclass
+EffectRow = namedtuple("EffectRow", "name,effect_type,base_cost")
+
+
 class Effect:
     """Alchemy effect.
     Only the `name` field is used for hash and equality."""
 
-    _row: dict
-
-    @cached_property
-    def name(self) -> str:
-        """Effect name."""
-        return self._row["name"]
-
-    @cached_property
-    def effect_type(self) -> Literal["beneficial", "harmful"]:
-        """Type of effect: positive (`beneficial`) or negative (`harmful`)."""
-        return self._row["effect_type"]
-
-    @cached_property
-    def base_cost(self) -> float:
-        """The base cost of this effect, which is later used in calculations
-        for potion value."""
-        return float(self._row["base_cost"])
+    def __init__(self, row: EffectRow):
+        self.name: str = row.name
+        self.effect_type: Literal["beneficial", "harmful"] = row.effect_type
+        self.base_cost = float(row.base_cost)
 
     @cached_property
     def median_magnitude(self) -> float:
@@ -202,24 +166,8 @@ class Effect:
         """Subset of `Trait` entries pertaining to this effect."""
         return {trait for trait in Data.traits if trait.potency.effect == self}
 
-    @cached_property
-    def potencies(self) -> dict[Potency, set[Trait]]:
-        """Dictionary of all `Potency` entries pertaining to this effect
-        (acting as keys) and the subset of traits pertaining to that potency
-        (acting as values). This basically groups effect traits by potencies.
-        """
-        res = defaultdict(set)
-        for trait in self.traits:
-            res[trait.potency].add(trait)
-        return res
-
-    @cached_property
-    def ingredients(self) -> set[Ingredient]:
-        """Subset of ingredients pertaining to this effect."""
-        return {trait.ingredient for trait in self.traits}
-
     @classmethod
-    def create(cls, row: dict) -> Effect:
+    def create(cls, row: EffectRow) -> Effect:
         """Create a new instance from a CSV row.
         No need for cache as this will only be called once per
         traversed CSV row.
@@ -278,29 +226,17 @@ class Effect:
         return self.name == eff.name
 
 
-class TraitRow(NamedTuple):
-    ingredient_name: str
-    effect_name: str
-    magnitude: float
-    duration: int
-    order: int
+TraitRow = namedtuple(
+    "TraitRow", "ingredient_name,effect_name,magnitude,duration,order"
+)
 
 
-@dataclass
 class Trait:
-    _row: TraitRow
 
-    @cached_property
-    def ingredient(self) -> Ingredient:
-        return Ingredient.get(self._row.ingredient_name)
-
-    @cached_property
-    def potency(self) -> Potency:
-        return Potency.create(self._row)
-
-    @cached_property
-    def order(self) -> int:
-        return int(self._row.order)
+    def __init__(self, row: TraitRow):
+        self.ingredient = Ingredient.get(row.ingredient_name)
+        self.potency = Potency.create(row)
+        self.order = int(row.order)
 
     def __eq__(self, obj: Trait):
         return self.ingredient == obj.ingredient and self.potency == obj.potency
@@ -321,19 +257,19 @@ class Trait:
         Data.traits.add(trait)
         return trait
 
-    def match(
-        self, obj: Ingredient | Effect | Potency
-    ) -> Ingredient | Effect | Potency:
-        match str(type(obj)):
-            case "Ingredient":
-                return self.ingredient
-            case "Effect":
-                return self.potency.effect
-            case "Potency":
-                return self.potency
+    # def match(
+    #     self, obj: Ingredient | Effect | Potency
+    # ) -> Ingredient | Effect | Potency:
+    #     match str(type(obj)):
+    #         case "Ingredient":
+    #             return self.ingredient
+    #         case "Effect":
+    #             return self.potency.effect
+    #         case "Potency":
+    #             return self.potency
 
-    def match_in(self, cont: list[Ingredient | Effect | Potency]) -> bool:
-        return self.match(cont[0]) in cont
+    # def match_in(self, cont: list[Ingredient | Effect | Potency]) -> bool:
+    #     return self.match(cont[0]) in cont
 
     @classmethod
     @cache
@@ -357,12 +293,17 @@ class Trait:
                 return trait
 
 
-@dataclass
 class Potency:
     """Alchemy potency. `effect`, `magnitude` and `duration` are all used
     for hash and equality."""
 
-    _row: TraitRow
+    def __init__(self, row: TraitRow):
+        self.effect = Effect.get(row.effect_name)
+        self.magnitude = float(row.magnitude)
+        self.duration = int(row.duration)
+        self.price = (
+            value_formula(self.magnitude, self.duration) * self.effect.base_cost
+        )
 
     def __repr__(self):
         return f"Potency({self.effect},{self.magnitude},{self.duration})"
@@ -381,33 +322,13 @@ class Potency:
         return self.price > obj.price
 
     @cached_property
-    def effect(self) -> Effect:
-        return Effect.get(self._row.effect_name)
-
-    @cached_property
-    def magnitude(self) -> float:
-        return float(self._row.magnitude)
-
-    @cached_property
-    def duration(self) -> int:
-        return int(self._row.duration)
-
-    @cached_property
-    def price(self) -> float:
-        return value_formula(self.magnitude, self.duration) * self.effect.base_cost
-
-    @cached_property
     def traits(self) -> set[Trait]:
         """Subset of `Trait` entries pertaining to this potency."""
         return {trait for trait in self.effect.traits if trait.potency == self}
 
-    @cached_property
-    def ingredients(self) -> set[Ingredient]:
-        return {trait.ingredient for trait in self.traits}
-
     @classmethod
     @cache  # this ensures no duplicates
-    def create(cls, row: MappingProxyType) -> Potency:
+    def create(cls, row: TraitRow) -> Potency:
         potency = Potency(row)
         logger.info("Created %s", potency)
         Data.potencies.add(potency)
@@ -492,9 +413,9 @@ class Data:
     @classmethod
     def read_csvs(cls):
         for row in cls.csv_to_dict("ingredients"):
-            Ingredient.create(row)
+            Ingredient.create(IngredientRow(**row))
         for row in cls.csv_to_dict("effects"):
-            Effect.create(row)
+            Effect.create(EffectRow(**row))
         for row in cls.csv_to_dict("traits"):
             Trait.create(TraitRow(**row))
 
@@ -504,7 +425,7 @@ class Data:
         cls.grouped_potions = defaultdict(dict)
         for ingredient1 in cls.ingredients:
             for ingredient2 in cls.ingredients:
-                if ingredient2 in ingredient1.compatible_ingredients:
+                if ingredient2 in ingredient1.traits.ingredients:
                     potion = Potion.create(frozenset({ingredient1, ingredient2}))
                     cls.potions.add(potion)
                     cls.grouped_potions[frozenset(potion.potencies)] = potion
