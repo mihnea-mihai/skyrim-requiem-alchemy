@@ -1,13 +1,9 @@
-# import skyrim_alchemy.alchemy
-# import skyrim_alchemy.effect
-# import skyrim_alchemy.ingredient
-# import skyrim_alchemy.potency
-# import skyrim_alchemy.potion
-# import skyrim_alchemy.trait
+from typing import TYPE_CHECKING
 
-# Data = skyrim_alchemy.alchemy.Data
-# Effect = skyrim_alchemy.effect.Effect
-# Ingredient = skyrim_alchemy.ingredient.Ingredient
-# Potency = skyrim_alchemy.potency.Potency
-# Trait = skyrim_alchemy.trait.Trait
-# Potion = skyrim_alchemy.potion.Potion
+if TYPE_CHECKING:
+    from skyrim_alchemy.data import Data
+    from skyrim_alchemy.effect import Effect
+    from skyrim_alchemy.ingredient import Ingredient
+    from skyrim_alchemy.potency import Potency
+    from skyrim_alchemy.potion import Potion
+    from skyrim_alchemy.trait import Trait

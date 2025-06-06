@@ -1,7 +1,18 @@
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from skyrim_alchemy.alchemy import Data, read
+from skyrim_alchemy.data import Data
 from skyrim_alchemy.logger import logger
+from skyrim_alchemy.effect import Effect
+from skyrim_alchemy.ingredient import Ingredient
+from skyrim_alchemy.potency import Potency
+from skyrim_alchemy.potion import Potion
+from skyrim_alchemy.trait import Trait
+
+
+Ingredient.read_all()
+Effect.read_all()
+Trait.read_all()
+
 
 logger.info("Started generating")
 
@@ -31,13 +42,12 @@ with open("docs/index.html", "w", encoding="utf-8") as file_out:
 
 if __name__ == "__main__":
 
-    read()
     for page in [
         "ingredients",
         "effects",
         "potencies",
         "traits",
-        "potions",
+        # "potions",
     ]:
         with open(f"docs/{page}.html", "w", encoding="utf-8") as file_out:
             file_out.write(
@@ -46,21 +56,21 @@ if __name__ == "__main__":
                 )
             )
 
-    for ingredient in Data.ingredients:
-        with open(
-            f"docs/ingredients/{ingredient.name}.html", "w", encoding="utf-8"
-        ) as file_out:
-            file_out.write(
-                env.get_template("ingredient.html.jinja").render(
-                    ingredient=ingredient, data=Data
-                )
-            )
-    for effect in Data.effects:
-        with open(
-            f"docs/effects/{effect.name}.html", "w", encoding="utf-8"
-        ) as file_out:
-            file_out.write(
-                env.get_template("effect.html.jinja").render(effect=effect, data=Data)
-            )
+    # for ingredient in Data.ingredients:
+    #     with open(
+    #         f"docs/ingredients/{ingredient.name}.html", "w", encoding="utf-8"
+    #     ) as file_out:
+    #         file_out.write(
+    #             env.get_template("ingredient.html.jinja").render(
+    #                 ingredient=ingredient, data=Data
+    #             )
+    #         )
+    # for effect in Data.effects:
+    #     with open(
+    #         f"docs/effects/{effect.name}.html", "w", encoding="utf-8"
+    #     ) as file_out:
+    #         file_out.write(
+    #             env.get_template("effect.html.jinja").render(effect=effect, data=Data)
+    #         )
 
     logger.info("ended Generation")

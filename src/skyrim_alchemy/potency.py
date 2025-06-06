@@ -1,0 +1,38 @@
+from __future__ import annotations
+
+
+from skyrim_alchemy.data import Data
+from skyrim_alchemy.effect import Effect
+from skyrim_alchemy.utils import value_formula
+from skyrim_alchemy.logger import logger
+
+
+class Potency:
+
+    def __init__(self, effect: Effect, magnitude: float, duration: int):
+        self.effect: Effect = effect
+        self.magnitude: float = magnitude
+        self.duration: int = duration
+        self.price: float = (
+            value_formula(self.magnitude, self.duration) * self.effect.base_cost
+        )
+
+    @staticmethod
+    def from_data(effect: Effect, magnitude: float, duration: int) -> Potency:
+        for pot in Data.potencies:
+            if (
+                pot.effect.name == effect.name
+                and pot.magnitude == magnitude
+                and pot.duration == duration
+            ):
+                return pot
+        pot = Potency(effect, magnitude, duration)
+        Data.potencies.append(pot)
+        logger.debug("Potency list += %s", pot)
+        return pot
+
+    def __lt__(self, other: Potency):
+        return (self.price, self.effect) < (other.price, other.effect)
+
+    def __repr__(self):
+        return f"Potency({self.effect.name}, {self.magnitude}, {self.duration})"

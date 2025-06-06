@@ -1,5 +1,12 @@
-dict1: dict = {"eff1": {"tr1"}, "eff2": {"tr4"}}
+from skyrim_alchemy.effect import Effect
 
-dict2: dict = {"eff2": {"tr5"}, "eff3": {"tr7"}}
+Effect.read_all()
 
-print(dict1 | dict2)
+e1 = Effect.get("Paralysis")
+e2 = Effect.get("Paralysis")
+
+print(e1)
+
+print(e2)
+
+print(e1 == e2)

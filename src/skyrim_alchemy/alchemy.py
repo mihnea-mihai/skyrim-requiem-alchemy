@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 import csv
-from skyrim_alchemy.logger import logger
+from collections import defaultdict
 from functools import cache, cached_property
 from itertools import combinations, pairwise
-from collections import defaultdict
-
-from skyrim_alchemy.utils import value_formula
-
 from statistics import mean, median
+
+from skyrim_alchemy.logger import logger
+from skyrim_alchemy.utils import value_formula
 
 
 class Ingredient:
@@ -26,6 +25,20 @@ class Ingredient:
         self.average_potion_price: float = 0
         self.median_potion_price: float = 0
 
+    # @cached_property
+    # def traits(self) -> list[Trait]:
+    #     return sorted(
+    #         [trait for trait in Data.traits if trait.ingredient is self],
+    #         key=lambda t: t.order,
+    #     )
+
+    # @cached_property
+    # def effects(self) -> list[Trait]:
+    #     return sorted(
+    #         [trait.potency.effect for trait in self.traits],
+    #         key=lambda e: e.order,
+    #     )
+
     def __repr__(self):
         return f"Ingredient({self.name})"
 
@@ -33,23 +46,30 @@ class Ingredient:
         return self.accessibility_factor < other.accessibility_factor
 
     @cached_property
-    def accessibility_factor(self) -> int:
-        res = 0
+    def average_potency_price(self) -> float:
+        return mean(potency.price for potency in self.potencies)
+
+    @cached_property
+    # @property
+    def accessibility_factor(self) -> float:
+        res: float = 0.0
         if self.plantable:
-            res += 2
+            res += 1
         elif self.name in ["Daedra Heart", "Strange Remains"]:
             res += 9
         else:
-            res += 5
-        res *= 10
+            res += 2
+        res *= 2
 
         if self.value < 50:
             res += 1
         elif self.value < 250:
             res += 3
+        elif self.value < 750:
+            res += 5
         else:
             res += 9
-        res *= 10
+        res *= 2
         match self.vendor_rarity:
             case "common":
                 res += 1
@@ -61,23 +81,19 @@ class Ingredient:
                 res += 7
             case _:
                 res += 9
-        res *= 10
+        res *= 2
         if self.unique_to in ["", "Requiem"]:
             res += 1
         elif self.unique_to == "Fishing":
             res += 9
         else:
             res += 4
-        res *= 1000
+        res *= 10
         res += self.value
-        res *= 100
+        res *= 2
         res += round(self.average_potency_price, 2)
 
         return res
-
-    @cached_property
-    def average_potency_price(self):
-        return mean({potency.price for potency in self.potencies})
 
     @staticmethod
     def from_row(row: dict) -> None:
@@ -102,6 +118,10 @@ class Ingredient:
         res.remove(self)
         return res
 
+    def update(self):
+        self.average_potion_price = mean(potion.price for potion in self.potions)
+        self.median_potion_price = median(potion.price for potion in self.potions)
+
 
 class Effect:
     def __init__(self, row: dict):
@@ -119,6 +139,9 @@ class Effect:
 
     def __repr__(self):
         return f"Effect({self.name})"
+
+    def __lt__(self, other: Effect):
+        return self.base_cost < other.base_cost
 
     @staticmethod
     def from_row(row: dict) -> None:
@@ -148,14 +171,19 @@ class Trait:
     def __repr__(self):
         return f"Trait({self.ingredient.name}, {self.potency}, {self.order})"
 
+    def __lt__(self, other: Trait) -> bool:
+        return self.potency < other.potency
+
     @staticmethod
     def from_row(row: dict) -> None:
         trait = Trait(row)
         logger.info("Created trait %s", trait)
         Data.traits.append(trait)
+
         ing = trait.ingredient
         eff = trait.potency.effect
         pot = trait.potency
+
         ing.traits.append(trait)
         ing.potencies.append(pot)
         ing.effects.append(eff)
@@ -206,11 +234,11 @@ class Potion:
         self.ingredients: tuple[Ingredient] = ingredients
 
     @cached_property
-    def traits_by_effects(self) -> dict[Effect, set[Trait]]:
-        res = defaultdict(set)
+    def traits_by_effects(self) -> dict[Effect, list[Trait]]:
+        res = defaultdict(list)
         for ing in self.ingredients:
             for effect, traits in ing.traits_by_effects.items():
-                res[effect] |= traits
+                res[effect] += traits
         return res
 
     @cached_property
@@ -348,14 +376,12 @@ def read():
     for ing1, ing2, ing3 in combinations(Data.ingredients, 3):
         Potion.from_ingredients(tuple(sorted([ing1, ing2, ing3])))
 
-    for ing in Data.ingredients:
-        ing.average_potion_price = mean(potion.price for potion in ing.potions)
-        ing.median_potion_price = median(potion.price for potion in ing.potions)
-
     for potencies, potions in Data.potions_by_potencies.items():
         Data.potions_by_potencies[potencies] = sorted(
             potions, key=lambda p: p.ingredients
         )
+    for ing in Data.ingredients:
+        ing.update()
 
 
 if __name__ == "__main__":
