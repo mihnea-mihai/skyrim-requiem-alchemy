@@ -57,7 +57,7 @@ class Potion:
     def potencies(self) -> tuple[Potency]:
         return tuple(
             sorted(
-                max(potencies)
+                max(sorted(potencies))
                 for _, potencies in self.all_potencies_by_effect
                 if len(potencies) > 1
             )

@@ -74,7 +74,7 @@ if __name__ == "__main__":
         "effects",
         "potencies",
         "traits",
-        # "potions",
+        "potions",
     ]:
         with open(f"docs/{page}.html", "w", encoding="utf-8") as file_out:
             html = env.get_template(f"{page}.html.jinja").render(

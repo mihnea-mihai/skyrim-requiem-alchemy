@@ -32,7 +32,11 @@ class Potency:
         return pot
 
     def __lt__(self, other: Potency):
-        return (self.price, self.effect) < (other.price, other.effect)
+        return (self.price, self.effect, id(self)) < (
+            other.price,
+            other.effect,
+            id(other),
+        )
 
     def __repr__(self):
         return f"Potency({self.effect.name}, {self.magnitude}, {self.duration})"
