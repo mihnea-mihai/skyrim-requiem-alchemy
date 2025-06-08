@@ -11,23 +11,21 @@
     </tr>
   </thead>
   <tbody>
-    {% for potency, traits in effect.traits_by_potencies.items()
-    | sort(attribute='0.price', reverse=True) %}
-    {% for trait in traits | sort(attribute='ingredient.sort_string') %}
+    {% for potency, ingredients in effect.ingredients_by_potencies %}
+    {% for ingredient in ingredients | sort(attribute='accessibility_factor') %}
     <tr>
       {% if loop.first %}
-      <td rowspan="{{ traits | length }}">
+      <td rowspan="{{ ingredients | length }}">
         {% include "snippets/potency/magnitude.html.jinja" %}
       </td>
-      <td rowspan="{{ traits | length }}">
+      <td rowspan="{{ ingredients | length }}">
         {% include "snippets/potency/duration.html.jinja" %}
       </td>
-      <td rowspan="{{ traits | length }}">
+      <td rowspan="{{ ingredients | length }}">
         {% include "snippets/potency/price.html.jinja" %}
       </td>
       {% endif %}
-      <td class="{{'bg-primary-subtle' if ingredient and trait.ingredient == ingredient else ''}}">
-        {% set ingredient = trait.ingredient %}
+      <td class="">
         {% include "snippets/ingredient/link.html.jinja" %}
       </td>
     </tr>

@@ -17,7 +17,8 @@ Ingredients
         <th>Accessibility</th>
         {# <th>Average potion price</th> #}
         {# <th>Mean potion price</th> #}
-        {# <th>Effects</th> #}
+        {# <th>Potencies</th> #}
+        {# <th>Compatible ingredients</th> #}
       </tr>
     </thead>
     <tbody>
@@ -38,6 +39,24 @@ Ingredients
         </td> #}
         {# <td>{{ ingredient.average_potion_price | round(1) }}</td> #}
         {# <td>{{ ingredient.median_potion_price | round(1) }}</td> #}
+        {# <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for potency in ingredient.potencies %}
+            <span class="px-1">
+              {% include "snippets/potency/short.html.jinja" %}
+            </span>
+            {% endfor %}
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for ingredient in ingredient.compatible_ingredients %}
+            <span class="px-1">
+              {% include "snippets/ingredient/link.html.jinja" %}
+            </span>
+            {% endfor %}
+          </div>
+        </td> #}
       </tr>
       {% endfor %}
     </tbody>

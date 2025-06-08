@@ -10,10 +10,10 @@ Potions
       <tr>
         <th>Ingredients</th>
         <th>Potencies</th>
-        <th>Effects</th>
+        {# <th>Effects</th>
         <th>Accessibility</th>
         <th>Price</th>
-        <th>Accessibility / Price</th>
+        <th>Accessibility / Price</th> #}
       </tr>
     </thead>
     <tbody>
@@ -54,7 +54,7 @@ Potions
           {% include "snippets/potency/short.html.jinja" %}
           {% endfor %}
         </td>
-        <td>
+        {# <td>
           {% for effect in potion.effects %}
           <div class="px-1">
             {% include "snippets/effect/link.html.jinja" %}
@@ -68,7 +68,7 @@ Potions
         </td>
         <td>
           {{ (potion.accessibility / potion.price) | round(1) }}
-        </td>
+        </td> #}
       </tr>
       {% endfor %}
     </tbody>

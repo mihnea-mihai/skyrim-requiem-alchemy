@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from functools import cache, cached_property
+
+from itertools import groupby
 from statistics import median
 from typing import TYPE_CHECKING
 
@@ -17,7 +19,7 @@ class Effect:
     def read_all():
         for row in read_csv("data/effects.csv"):
             Effect.from_row(row)
-        Data.effects = sorted(Data.effects)
+        # Data.effects.sort()
 
     @staticmethod
     def from_row(row: dict) -> None:
@@ -41,6 +43,17 @@ class Effect:
     @cached_property
     def ingredients(self) -> list[Ingredient]:
         return sorted({t.ingredient for t in self.traits})
+
+    @cached_property
+    def ingredients_by_potencies(self) -> list[tuple[Potency, list[Ingredient]]]:
+
+        return [
+            (p, sorted(trait.ingredient for trait in traits))
+            for p, traits in groupby(
+                sorted(self.traits, key=lambda t: t.potency, reverse=True),
+                key=lambda t: t.potency,
+            )
+        ]
 
     # @cached_property
     # def potions(self) -> list[Potion]:
@@ -66,7 +79,21 @@ class Effect:
         return f"Effect({self.name})"
 
     def __lt__(self, other: Effect):
-        return (self.base_cost, self.name) < (other.base_cost, other.name)
+        if self.median_price < other.median_price:
+            return True
+        if self.median_price > other.median_price:
+            return False
+        if self.median_accessibility < other.median_accessibility:
+            return True
+        if self.median_accessibility > other.median_accessibility:
+            return False
+        return False
+
+    def __le__(self, other: Effect):
+        try:
+            return self < other
+        except NotImplementedError:
+            return True
 
     @staticmethod
     @cache

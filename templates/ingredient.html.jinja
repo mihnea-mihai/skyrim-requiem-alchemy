@@ -1,37 +1,98 @@
 {% extends "default.html.jinja" %}
+
 {% block title %}
 {{ ingredient.name }}
 {% endblock title %}
+
 {% block content %}
-
 <section>
-  <h2>Effects</h2>
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      {% for outer_trait in ingredient.traits | sort(attribute="order") %}
-      {% set effect = outer_trait.potency.effect %}
-      {% set effect_id = effect.name | lower | replace(' ', '-') %}
-      <button class="nav-link {{ 'active' if loop.first }}" data-bs-toggle="tab" data-bs-target="#nav-{{ effect_id }}" type="button" role="tab">
-        {{ effect.name }}
-      </button>
+  <h2>Traits</h2>
+  <table id="potencies" data-paging="false" class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th colspan="4">Effect</th>
+        <th rowspan="2">Order</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Magnitude</th>
+        <th>Duration</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for trait in ingredient.traits %}
+      <tr>
+        <td>
+          {% set effect = trait.potency.effect %}
+          {% include "snippets/effect/link.html.jinja" %}
+        </td>
+        {% set potency = trait.potency %}
+        <td>
+          {% include "snippets/potency/magnitude.html.jinja" %}
+        </td>
+        <td>
+          {% include "snippets/potency/duration.html.jinja" %}
+        </td>
+        <td>
+          {% include "snippets/potency/price.html.jinja" %}
+        </td>
+        <td>{{ trait.order }}</td>
+      </tr>
       {% endfor %}
-    </div>
-  </nav>
-
-  <div class="tab-content">
-    {% for outer_trait in ingredient.traits | sort(attribute="order") %}
-    {% set effect = outer_trait.potency.effect %}
-    {% set effect_id = effect.name | lower | replace(' ', '-') %}
-    <div class="tab-pane {{ 'show active' if loop.first }}"
-    id="nav-{{ effect_id }}" tabindex="0">
-      {% include "snippets/effect/ingredients.html.jinja" %}
-    </div>
-    {% endfor %}
-  </div>
+    </tbody>
+  </table>
 </section>
+<section>
+  <h2>Potions</h2>
+  <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Potencies</th>
+        <th>Ingredients</th>
+        <th>Accessibility</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for potencies, potions in ingredient.grouped_potions %}
+      {% for potion in potions | select('is_recommended_potion') %}
+      <tr>
+        {% if loop.first %}
+        <td rowspan="{{ loop.length }}">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for potency in potencies %}
+            <div class="px-1">
+              {% include "snippets/potency/short.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
+        </td>
+        {% endif %}
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for ingredient in potion.ingredients %}
+            <div class="px-1">
+              {% include "snippets/ingredient/link.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
+        </td>
+        <td>
+        {{ potion.accessibility | round(1) }}
+        </td>
+        <td>
+        {{ potion.price | round(1)}}
+        </td>
+      </tr>
+      {% endfor %}
+      {% endfor %}
 
+    </tbody>
+  </table>
+</section>
 {% endblock content %}
 
 {% block additional_scripts %}
-{{ macros.datatables(['compatible-ingredients']) }}
+{# {{ macros.datatables(['potencies']) }} #}
 {% endblock additional_scripts %}

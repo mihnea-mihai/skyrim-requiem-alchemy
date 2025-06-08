@@ -3,9 +3,14 @@ from __future__ import annotations
 import csv
 import inspect
 from dataclasses import fields
+import itertools
 from functools import cached_property
 from inspect import isfunction, signature
 from typing import Any
+
+
+def groupby(in_list: list, key) -> list:
+    return [(k, list(v)) for k, v in itertools.groupby(sorted(in_list, key=key))]
 
 
 def cache_self_methods(cls: object):

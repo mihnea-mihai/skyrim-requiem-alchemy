@@ -13,5 +13,7 @@ class Data:
     traits: list[Trait] = []
     potencies: list[Potency] = []
     potions: list[Potion] = []
+    ingredient_combinations: list[tuple[Ingredient]] = []
+    potency_combinations: list[tuple[Potency]] = []
     potions_by_potencies: dict[tuple[Potency], list[Potion]] = defaultdict(list)
     potions_by_effects: dict[tuple[Effect], list[Potion]] = defaultdict(list)

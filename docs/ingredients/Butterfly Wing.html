@@ -43,77 +43,28 @@
 </h1>
   </header>
   <main>
-
 <section>
-  <h2>Effects</h2>
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-restore-health" type="button" role="tab">
-        Restore Health
-      </button>
-      <button class="nav-link " data-bs-toggle="tab" data-bs-target="#nav-fortify-barter" type="button" role="tab">
-        Fortify Barter
-      </button>
-      <button class="nav-link " data-bs-toggle="tab" data-bs-target="#nav-lingering-damage-stamina" type="button" role="tab">
-        Lingering Damage Stamina
-      </button>
-      <button class="nav-link " data-bs-toggle="tab" data-bs-target="#nav-damage-magicka" type="button" role="tab">
-        Damage Magicka
-      </button>
-    </div>
-  </nav>
-
-  <div class="tab-content">
-    <div class="tab-pane show active"
-    id="nav-restore-health" tabindex="0">
-<table class="table table-hover table-bordered align-middle text-center table-sm">
-  <thead>
-    <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
-    </tr>
-    <tr>
-      <th>Magnitude</th>
-      <th>Duration</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.5
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-120
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  20
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-48.4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.2
-</span>      </td>
-      <td class="">
-<a href="ingredients/Daedra%20Heart">
-Daedra Heart
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="3">
+  <h2>Traits</h2>
+  <table id="potencies" data-paging="false" class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th colspan="4">Effect</th>
+        <th rowspan="2">Order</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Magnitude</th>
+        <th>Duration</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+<a href="effects/Restore%20Health">
+Restore Health
+</a>        </td>
+        <td>
 <span class="fw-bold     text-success
 ">
 1
@@ -121,8 +72,8 @@ Daedra Heart
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0.5
-</span>      </td>
-      <td rowspan="3">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 20
@@ -130,8 +81,8 @@ Daedra Heart
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   20
-</span>      </td>
-      <td rowspan="3">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-success
 ">
 0.5
@@ -139,217 +90,15 @@ Daedra Heart
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0.2
-</span>      </td>
-      <td class="bg-primary-subtle">
-<a href="ingredients/Butterfly%20Wing">
-Butterfly Wing
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Swamp%20Fungal%20Pod">
-Swamp Fungal Pod
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Spadefish">
-Spadefish
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-1.5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.5
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-danger
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  20
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-0.4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.2
-</span>      </td>
-      <td class="">
-<a href="ingredients/Blisterwort">
-Blisterwort
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="8">
-<span class="fw-bold     text-secondary
-">
-0.5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.5
-</span>      </td>
-      <td rowspan="8">
-<span class="fw-bold     text-secondary
-">
-20
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  20
-</span>      </td>
-      <td rowspan="8">
-<span class="fw-bold     text-secondary
-">
-0.2
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.2
-</span>      </td>
-      <td class="">
-<a href="ingredients/Wheat">
-Wheat
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Imp%20Stool">
-Imp Stool
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Charred%20Skeever%20Hide">
-Charred Skeever Hide
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Sabre%20Cat%20Eye">
-Sabre Cat Eye
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Rock%20Warbler%20Egg">
-Rock Warbler Egg
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Blue%20Dartwing">
-Blue Dartwing
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Ash%20Hopper%20Jelly">
-Ash Hopper Jelly
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Aloe%20Vera%20Leaves">
-Aloe Vera Leaves
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.5
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-danger
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  20
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-secondary
-">
-0.2
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.2
-</span>      </td>
-      <td class="">
-<a href="ingredients/Felsaad%20Tern%20Feathers">
-Felsaad Tern Feathers
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="1">
-<span class="fw-bold     text-danger
-">
-0.2
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.5
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-danger
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  20
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-danger
-">
-0.1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.2
-</span>      </td>
-      <td class="">
-<a href="ingredients/Blue%20Mountain%20Flower">
-Blue Mountain Flower
-</a>      </td>
-    </tr>
-  </tbody>
-</table>    </div>
-    <div class="tab-pane "
-    id="nav-fortify-barter" tabindex="0">
-<table class="table table-hover table-bordered align-middle text-center table-sm">
-  <thead>
-    <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
-    </tr>
-    <tr>
-      <th>Magnitude</th>
-      <th>Duration</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="3">
+</span>        </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 2
@@ -357,8 +106,8 @@ Blue Mountain Flower
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   2
-</span>      </td>
-      <td rowspan="3">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 30
@@ -366,8 +115,8 @@ Blue Mountain Flower
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   30
-</span>      </td>
-      <td rowspan="3">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 7.2
@@ -375,43 +124,15 @@ Blue Mountain Flower
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   7.2
-</span>      </td>
-      <td class="">
-<a href="ingredients/Tundra%20Cotton">
-Tundra Cotton
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="bg-primary-subtle">
-<a href="ingredients/Butterfly%20Wing">
-Butterfly Wing
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Dragon%27s%20Tongue">
-Dragon's Tongue
-</a>      </td>
-    </tr>
-  </tbody>
-</table>    </div>
-    <div class="tab-pane "
-    id="nav-lingering-damage-stamina" tabindex="0">
-<table class="table table-hover table-bordered align-middle text-center table-sm">
-  <thead>
-    <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
-    </tr>
-    <tr>
-      <th>Magnitude</th>
-      <th>Duration</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="1">
+</span>        </td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 1
@@ -419,41 +140,8 @@ Dragon's Tongue
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   1
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-6.5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0.9
-</span>      </td>
-      <td class="">
-<a href="ingredients/Venomous%20Spittle">
-Venomous Spittle
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="4">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>      </td>
-      <td rowspan="4">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 10
@@ -461,8 +149,8 @@ Venomous Spittle
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   10
-</span>      </td>
-      <td rowspan="4">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 0.9
@@ -470,82 +158,15 @@ Venomous Spittle
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0.9
-</span>      </td>
-      <td class="">
-<a href="ingredients/Chicken%27s%20Egg">
-Chicken's Egg
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Nightshade">
-Nightshade
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Small%20Antlers">
-Small Antlers
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="bg-primary-subtle">
-<a href="ingredients/Butterfly%20Wing">
-Butterfly Wing
-</a>      </td>
-    </tr>
-  </tbody>
-</table>    </div>
-    <div class="tab-pane "
-    id="nav-damage-magicka" tabindex="0">
-<table class="table table-hover table-bordered align-middle text-center table-sm">
-  <thead>
-    <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
-    </tr>
-    <tr>
-      <th>Magnitude</th>
-      <th>Duration</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>      </td>
-      <td rowspan="1">
-<span class="fw-bold     text-success
-">
-6.5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3.7
-</span>      </td>
-      <td class="">
-<a href="ingredients/Heart">
-Heart
-</a>      </td>
-    </tr>
-    <tr>
-      <td rowspan="13">
+</span>        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 3
@@ -553,8 +174,8 @@ Heart
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   3
-</span>      </td>
-      <td rowspan="13">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 0
@@ -562,8 +183,8 @@ Heart
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>      </td>
-      <td rowspan="13">
+</span>        </td>
+        <td>
 <span class="fw-bold     text-secondary
 ">
 3.7
@@ -571,113 +192,4483 @@ Heart
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   3.7
-</span>      </td>
-      <td class="">
-<a href="ingredients/Chaurus%20Eggs">
-Chaurus Eggs
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Hagraven%20Feathers">
-Hagraven Feathers
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Glow%20Dust">
-Glow Dust
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Namira%27s%20Rot">
-Namira's Rot
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Hanging%20Moss">
-Hanging Moss
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Sabre%20Cat%20Eye">
-Sabre Cat Eye
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Luna%20Moth%20Wing">
-Luna Moth Wing
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="bg-primary-subtle">
-<a href="ingredients/Butterfly%20Wing">
-Butterfly Wing
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Nordic%20Barnacle">
-Nordic Barnacle
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Trama%20Root">
-Trama Root
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Aloe%20Vera%20Leaves">
-Aloe Vera Leaves
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Wolf%20Heart">
-Wolf Heart
-</a>      </td>
-    </tr>
-    <tr>
-      <td class="">
-<a href="ingredients/Sabre%20Cat%20Heart">
-Sabre Cat Heart
-</a>      </td>
-    </tr>
-  </tbody>
-</table>    </div>
-  </div>
+</span>        </td>
+        <td>4</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
+<section>
+  <h2>Potions</h2>
+  <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Potencies</th>
+        <th>Ingredients</th>
+        <th>Accessibility</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
 
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Stamina">
+Restore Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0.3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.6
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Purple%20Mountain%20Flower">
+  Purple Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Charred%20Skeever%20Hide">
+  Charred Skeever Hide
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1324.2
+        </td>
+        <td>
+        0.8
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Stamina">
+Restore Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0.3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.6
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Poison">
+Resist Poison
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  8.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Mudcrab%20Chitin">
+  Mudcrab Chitin
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Charred%20Skeever%20Hide">
+  Charred Skeever Hide
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1500.5
+        </td>
+        <td>
+        11.4
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Magic">
+Resist Magic
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+180
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+70.6
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Felsaad%20Tern%20Feathers">
+  Felsaad Tern Feathers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Crimson%20Nirnroot">
+  Crimson Nirnroot
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        3043.0
+        </td>
+        <td>
+        71.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Magic">
+Resist Magic
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+300
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+70.6
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Felsaad%20Tern%20Feathers">
+  Felsaad Tern Feathers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Void%20Salts">
+  Void Salts
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        3527.2
+        </td>
+        <td>
+        71.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Magic">
+Resist Magic
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+16.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Felsaad%20Tern%20Feathers">
+  Felsaad Tern Feathers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nirnroot">
+  Nirnroot
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2362.6
+        </td>
+        <td>
+        17.0
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+7.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  7.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Magic">
+Resist Magic
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+120
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+7.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Felsaad%20Tern%20Feathers">
+  Felsaad Tern Feathers
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1692.8
+        </td>
+        <td>
+        15.4
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Health">
+Fortify Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+6.6
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  6.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Glowing%20Mushroom">
+  Glowing Mushroom
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1449.3
+        </td>
+        <td>
+        7.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Health">
+Fortify Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+3.1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  6.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Wheat">
+  Wheat
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1122.6
+        </td>
+        <td>
+        3.6
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+7.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  7.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+120
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+48.4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Daedra%20Heart">
+  Daedra Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        6469.9
+        </td>
+        <td>
+        55.6
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+7.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  7.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1120.1
+        </td>
+        <td>
+        7.7
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Poison">
+Resist Poison
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+180
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+27.6
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  8.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Charred%20Skeever%20Hide">
+  Charred Skeever Hide
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Horker%20Fat">
+  Horker Fat
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1583.3
+        </td>
+        <td>
+        28.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Poison">
+Resist Poison
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  8.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Charred%20Skeever%20Hide">
+  Charred Skeever Hide
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Falmer%20Ear">
+  Falmer Ear
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1556.5
+        </td>
+        <td>
+        11.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Stamina%20Regeneration">
+Fortify Stamina Regeneration
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  300
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0.8
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  12.4
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Snowberry">
+  Snowberry
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Blisterwort">
+  Blisterwort
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1187.6
+        </td>
+        <td>
+        1.3
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Armor%20Rating">
+Fortify Armor Rating
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  6
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+8.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  12.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Ash%20Hopper%20Jelly">
+  Ash Hopper Jelly
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Felsaad%20Tern%20Feathers">
+  Felsaad Tern Feathers
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2190.1
+        </td>
+        <td>
+        8.8
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Carry%20Weight">
+Fortify Carry Weight
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+600
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  300
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+21.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  14.0
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Imp%20Stool">
+  Imp Stool
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Mammoth%20Heart">
+  Mammoth Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2591.2
+        </td>
+        <td>
+        22.5
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Restore%20Health">
+Restore Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  20
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Carry%20Weight">
+Fortify Carry Weight
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+300
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  300
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+14.0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  14.0
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Creep%20Cluster">
+  Creep Cluster
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Imp%20Stool">
+  Imp Stool
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1306.5
+        </td>
+        <td>
+        14.6
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+2.3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Deathbell">
+  Deathbell
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1386.9
+        </td>
+        <td>
+        3.2
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0.3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Red%20Mountain%20Flower">
+  Red Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Small%20Antlers">
+  Small Antlers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1305.1
+        </td>
+        <td>
+        1.2
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+8.8
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Heart">
+  Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2594.6
+        </td>
+        <td>
+        21.7
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+1.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Wolf%20Heart">
+  Wolf Heart
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2319.0
+        </td>
+        <td>
+        11.6
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+8.8
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Small%20Antlers">
+  Small Antlers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Heart">
+  Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2118.2
+        </td>
+        <td>
+        16.2
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+0.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Wolf%20Heart">
+  Wolf Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1792.4
+        </td>
+        <td>
+        5.3
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Small%20Antlers">
+  Small Antlers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Wolf%20Heart">
+  Wolf Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1842.6
+        </td>
+        <td>
+        5.0
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+8.8
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.4
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka%20Regeneration">
+Damage Magicka Regeneration
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+100
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  100
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  5
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+18.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  18.5
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Heart">
+  Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2068.1
+        </td>
+        <td>
+        34.7
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1478.7
+        </td>
+        <td>
+        6.5
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        952.1
+        </td>
+        <td>
+        0.9
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Health">
+Lingering Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10.8
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1.5
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Mora%20Tapinella">
+  Mora Tapinella
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1832.4
+        </td>
+        <td>
+        17.2
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Weakness%20to%20Poison">
+Weakness to Poison
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.6
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Giant%20Lichen">
+  Giant Lichen
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Small%20Antlers">
+  Small Antlers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1354.4
+        </td>
+        <td>
+        4.5
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Weakness%20to%20Poison">
+Weakness to Poison
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+7.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Small%20Antlers">
+  Small Antlers
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Chaurus%20Eggs">
+  Chaurus Eggs
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1531.0
+        </td>
+        <td>
+        12.3
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nordic%20Barnacle">
+  Nordic Barnacle
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1836.5
+        </td>
+        <td>
+        10.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nordic%20Barnacle">
+  Nordic Barnacle
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1310.0
+        </td>
+        <td>
+        4.6
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka%20Regeneration">
+Damage Magicka Regeneration
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+100
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  100
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  5
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+18.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  18.5
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Chicken%27s%20Egg">
+  Chicken's Egg
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Heart">
+  Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2136.5
+        </td>
+        <td>
+        25.8
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka%20Regeneration">
+Damage Magicka Regeneration
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+100
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  100
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  5
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+18.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  18.5
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Hanging%20Moss">
+  Hanging Moss
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1463.4
+        </td>
+        <td>
+        23.1
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+6.5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0.9
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Paralysis">
+Paralysis
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+19.9
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  19.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Gleamblossom">
+  Gleamblossom
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        2342.2
+        </td>
+        <td>
+        26.3
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+7.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  7.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Resist%20Magic">
+Resist Magic
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+120
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+7.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.6
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Hagraven%20Claw">
+  Hagraven Claw
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1442.8
+        </td>
+        <td>
+        14.9
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3.7
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.7
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fear">
+Fear
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+28.0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  17.9
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Namira%27s%20Rot">
+  Namira's Rot
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Cyrodilic%20Spadetail">
+  Cyrodilic Spadetail
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1381.6
+        </td>
+        <td>
+        31.7
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+7.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  7.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Block">
+Fortify Block
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+120
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+8.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  8.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Magicka">
+Fortify Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3.5
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+120
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10.6
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4.3
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Briar%20Heart">
+  Briar Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1766.4
+        </td>
+        <td>
+        26.0
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="1">
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Barter">
+Fortify Barter
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  2
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+30
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  30
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+7.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  7.2
+</span>🪙
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Fortify%20Block">
+Fortify Block
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+4
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  4
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+60
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  60
+</span>⌛
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+8.2
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  8.2
+</span>🪙
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-success" href="ingredients/Tundra%20Cotton">
+  Tundra Cotton
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Honeycomb">
+  Honeycomb
+</a>            </div>
+            <div class="px-1">
+<a class="link-success" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+        1305.5
+        </td>
+        <td>
+        15.4
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
   </main>
   <footer>
     <small>Mihnea Mihai</small>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
   <script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/dt-2.3.0/b-3.2.3/b-colvis-3.2.3/fh-4.0.1/sb-1.8.2/datatables.min.js" integrity="sha384-ujqn5cjGMWMp0oujP05IQ1PygVn+WWVyJDLhHW5/ngiOsu04nwtHcJPvTjJW62NV" crossorigin="anonymous"></script>
-    <script defer>new DataTable('#compatible-ingredients', {
-      layout: {
-        top2Start: {searchBuilder: {} },
-        topStart: {search: {} },
-        topEnd: {
-          buttons: [{
-            extend: 'colvis'
-          }]
-        }
-      },
-      language: {
-        searchBuilder: {
-          title: 'Filter this table'
-        },
-      fixedHeader: true
-      }
-  });</script>
-
 </body>
 </html>
 

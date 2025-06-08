@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from functools import cache, cached_property
+from itertools import groupby
 from statistics import mean, median
 from typing import TYPE_CHECKING
 
@@ -17,6 +18,7 @@ class Ingredient:
     def read_all():
         for row in read_csv("data/ingredients.csv"):
             Ingredient.from_row(row)
+        # Data.ingredients.sort()
 
     @staticmethod
     def from_row(row: dict) -> None:
@@ -37,7 +39,7 @@ class Ingredient:
 
     @cached_property
     def potencies(self) -> list[Potency]:
-        return sorted(t.potency for t in self.traits)
+        return [t.potency for t in self.traits]
 
     @cached_property
     def effects(self) -> list[Effect]:
@@ -46,6 +48,20 @@ class Ingredient:
     @cached_property
     def potions(self) -> list[Potion]:
         return sorted(p for p in Data.potions if self in p.ingredients)
+        # return [p for p in Data.potions if self in p.ingredients]
+
+    @cached_property
+    def grouped_potions(self) -> list[tuple[Potency, list[Potion]]]:
+        return [
+            (potency, list(potions))
+            for potency, potions in groupby(
+                sorted(
+                    sorted(self.potions, key=lambda p: p.potencies, reverse=True),
+                    key=lambda p: p.effects,
+                ),
+                key=lambda p: p.potencies,
+            )
+        ]
 
     @cached_property
     def average_potency_price(self) -> float:
@@ -71,7 +87,11 @@ class Ingredient:
         return f"Ingredient({self.name})"
 
     def __lt__(self, other: Ingredient):
-        return self.accessibility_factor < other.accessibility_factor
+        if self.accessibility_factor < other.accessibility_factor:
+            return True
+        if self.accessibility_factor > other.accessibility_factor:
+            return False
+        return NotImplemented
 
     @staticmethod
     @cache
