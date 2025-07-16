@@ -1,0 +1,16 @@
+{% extends "default.html.jinja" %}
+
+{% block title %}
+{{ potency.effect.name }} ({{ potency.magnitude }} 💥, {{ potency.duration }} ⌛)
+{% endblock title %}
+
+{% block content %}
+<section>
+  <h2>Traits</h2>
+  
+</section>
+{% endblock content %}
+
+{% block additional_scripts %}
+{# {{ macros.datatables(['potencies']) }} #}
+{% endblock additional_scripts %}

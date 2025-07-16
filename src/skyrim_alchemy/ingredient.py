@@ -9,6 +9,8 @@ from skyrim_alchemy.data import Data
 from skyrim_alchemy.logger import logger
 from skyrim_alchemy.utils import read_csv
 
+import math
+
 if TYPE_CHECKING:
     from skyrim_alchemy import Effect, Potency, Potion, Trait
 
@@ -48,7 +50,6 @@ class Ingredient:
     @cached_property
     def potions(self) -> list[Potion]:
         return sorted(p for p in Data.potions if self in p.ingredients)
-        # return [p for p in Data.potions if self in p.ingredients]
 
     @cached_property
     def grouped_potions(self) -> list[tuple[Potency, list[Potion]]]:
@@ -72,10 +73,6 @@ class Ingredient:
         return mean(p.price for p in self.potions)
 
     @cached_property
-    def median_potion_price(self) -> float:
-        return median(p.price for p in self.potions)
-
-    @cached_property
     def compatible_ingredients(self) -> list[Ingredient]:
         return sorted(
             i
@@ -87,11 +84,11 @@ class Ingredient:
         return f"Ingredient({self.name})"
 
     def __lt__(self, other: Ingredient):
-        if self.accessibility_factor < other.accessibility_factor:
+        if self.accessibility < other.accessibility:
             return True
-        if self.accessibility_factor > other.accessibility_factor:
+        if self.accessibility > other.accessibility:
             return False
-        return NotImplemented
+        return self.name < other.name
 
     @staticmethod
     @cache
@@ -101,49 +98,72 @@ class Ingredient:
                 return ing
 
     @cached_property
-    def accessibility_factor(self) -> float:
-        res: float = 0.0
-        if self.plantable:
-            res += 1
-        elif self.name in ["Daedra Heart", "Strange Remains"]:
-            res += 9
-        else:
-            res += 2
-        res *= 2
+    def accessibility(self) -> float:
+        # res: float = pow(int(math.sqrt(self.value)), 2)
+        # res: float = 1.0
 
-        if self.value < 50:
-            res += 1
-        elif self.value < 250:
-            res += 3
-        elif self.value < 750:
-            res += 5
-        else:
-            res += 9
-        res *= 2
+        res = (self.value // 25 + 1) * 100
+        # res = self.value * 1000
         match self.vendor_rarity:
             case "common":
-                res += 1
+                res *= 1
             case "uncommon":
-                res += 2
+                res *= 2
             case "rare":
-                res += 4
+                res *= 5
             case "limited":
-                res += 7
+                res *= 20
             case _:
-                res += 9
-        res *= 2
-        if self.unique_to in ["", "Requiem"]:
-            res += 1
-        elif self.unique_to == "Fishing":
-            res += 9
-        else:
-            res += 4
-        res *= 10
-        res += self.value
-        res *= 2
-        res += round(self.average_potency_price, 2)
+                res *= 30
 
+        if self.plantable:
+            # res = math.log(res + 1)
+            res = math.sqrt(res)
+        # else:
+        #     res *= 30
+
+        # return res
+
+        # res += (self.value // 50 + 1) * 50 + self.value
+
+        # res += self.value
+        # # res += math.sqrt(self.value)
+        # # if not self.plantable:
+        # #     res *= 2
+        # # else:
+        # #     res *= 0.1
+
+        # match self.vendor_rarity:
+        #     case "common":
+        #         res = 1 * (self.value // 5 + 1)
+        #     case "uncommon":
+        #         res = 2 * (self.value // 5 + 1)
+        #     case "rare":
+        #         res = 4 * (self.value // 5 + 1)
+        #     case "limited":
+        #         res = 7 * (self.value // 5 + 1)
+        #     case _:
+        #         res = ((self.value - 10) // 10 + 2) * 100
+        match self.unique_to:
+            case "Requiem":
+                res *= 1
+            case "":
+                res *= 1
+            case "Fishing":
+                res *= 2
+            case _:
+                res *= 1.5
+
+        # if self.plantable:
+        #     res = math.sqrt(res)
+        # print(self.name, res)
+        # # res += self.value
+        res += self.average_potency_price + self.value
         return res
+
+    @cached_property
+    def valuable_potions(self) -> list[Potion]:
+        return sorted(self.potions, key=lambda p: p.relative_value, reverse=True)[:10]
 
 
 if __name__ == "__main__":

@@ -1,0 +1,16 @@
+{% extends "default.html.jinja" %}
+{% block title %}
+{% endblock title %}
+{% block content %}
+<section>
+  <p>Welcome. We have:</p>
+  <p>{{ data.ingredients | length }} ingredients.</p>
+  <p>{{ data.effects | length }} effects.</p>
+  <p>{{ data.potencies | length }} potencies.</p>
+  <p>{{ data.traits | length }} traits.</p>
+  <p>{{ data.potions | length }} potions.</p>
+  <p>{{ data.potency_combinations | length }} potency combinations.</p>
+  <p>{{ data.effect_combinations | length }} effect combinations.</p>
+</section>
+{% endblock content %}
+

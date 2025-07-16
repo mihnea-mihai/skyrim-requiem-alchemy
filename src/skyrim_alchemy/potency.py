@@ -1,10 +1,18 @@
 from __future__ import annotations
 
-
 from skyrim_alchemy.data import Data
 from skyrim_alchemy.effect import Effect
-from skyrim_alchemy.utils import value_formula
 from skyrim_alchemy.logger import logger
+from skyrim_alchemy.utils import value_formula
+from functools import cached_property
+
+# from skyrim_alchemy.potion import Potion
+from typing import TYPE_CHECKING
+
+from statistics import mean
+
+if TYPE_CHECKING:
+    from skyrim_alchemy import Potion
 
 
 class Potency:
@@ -37,6 +45,26 @@ class Potency:
             other.effect,
             id(other),
         )
+
+    @cached_property
+    def potions(self) -> list[Potion]:
+        lst = []
+        for potion in Data.potions:
+            if self in potion.potencies:
+                lst.append(potion)
+        return lst
+
+    @cached_property
+    def min_potion_accessibility(self) -> float:
+        if self.potions:
+            return min(potion.accessibility for potion in self.potions)
+        return -1
+
+    @cached_property
+    def average_potion_accessibility(self) -> float:
+        if self.potions:
+            return mean(potion.accessibility for potion in self.potions)
+        return -1
 
     def __repr__(self):
         return f"Potency({self.effect.name}, {self.magnitude}, {self.duration})"

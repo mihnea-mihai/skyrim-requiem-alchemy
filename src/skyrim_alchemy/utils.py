@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import csv
 import inspect
-from dataclasses import fields
 import itertools
+from dataclasses import fields
 from functools import cached_property
 from inspect import isfunction, signature
 from typing import Any

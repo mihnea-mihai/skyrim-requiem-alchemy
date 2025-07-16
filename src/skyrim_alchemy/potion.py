@@ -1,14 +1,14 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
 from functools import cached_property
-from itertools import chain, groupby, pairwise, combinations
+from itertools import chain, combinations, groupby, pairwise
+from typing import TYPE_CHECKING
 
 from skyrim_alchemy.data import Data
 from skyrim_alchemy.logger import logger
 
 if TYPE_CHECKING:
-    from skyrim_alchemy import Ingredient, Potency, Trait, Effect
+    from skyrim_alchemy import Effect, Ingredient, Potency, Trait
 
 
 class Potion:
@@ -19,7 +19,7 @@ class Potion:
         #     if potion.ingredients == new_ings:
         #         return potion
         pot = Potion(new_ings)
-        if pot.valid and pot.pure and pot.is_improvement:
+        if pot.valid and pot.is_improvement:
             logger.debug("Potions += %s", str(pot))
             Data.potions.append(pot)
             # Data.ingredient_combinations.append(new_ings)
@@ -83,6 +83,7 @@ class Potion:
 
     @cached_property
     def pure(self) -> bool:
+        # return True
         for pot1, pot2 in pairwise(self.potencies):
             if pot1.effect.effect_type != pot2.effect.effect_type:
                 return False
@@ -90,15 +91,20 @@ class Potion:
 
     def __init__(self, ingredients: tuple[Ingredient]):
         self.ingredients = ingredients
-        self.recommended = False
+        self.best_in_slot = False
+        """Test"""
 
     @cached_property
     def accessibility(self) -> float:
-        return sum(i.accessibility_factor for i in self.ingredients)
+        return sum(i.accessibility for i in self.ingredients)
 
     @cached_property
     def price(self) -> float:
         return sum(p.price for p in self.potencies)
+
+    @cached_property
+    def relative_value(self) -> float:
+        return self.price / self.accessibility * 100
 
     def __lt__(self, other: Potion) -> bool:
         return (self.effects, self.potencies, self.accessibility) < (

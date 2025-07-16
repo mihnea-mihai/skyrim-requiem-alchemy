@@ -4,28 +4,31 @@ Potions
 {% endblock title %}
 {% block content %}
 <section>
-  <h2>Table</h2>
-  <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm">
+  <h2>Potions</h2>
+  <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm" data-order="[[ 4, &quot;desc&quot; ]]">
     <thead>
       <tr>
-        <th>Ingredients</th>
         <th>Potencies</th>
-        {# <th>Effects</th>
+        <th>Ingredients</th>
         <th>Accessibility</th>
         <th>Price</th>
-        <th>Accessibility / Price</th> #}
+        <th>Relative value</th>
       </tr>
     </thead>
     <tbody>
-      {# {% for potencies, potions in data.potions_by_potencies.items() %}
+      {% for potion in (data.potions | sort(reverse=true, attribute='relative_value'))[:100] %}
+      
       <tr>
         <td>
-          {% for potency in potencies %}
-          {% include "snippets/potency/short.html.jinja" %}
-          {% endfor %}
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for potency in potion.potencies %}
+            <div class="px-1">
+              {% include "snippets/potency/short.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
         </td>
         <td>
-          {% for potion in potions %}
           <div class="d-flex flex-wrap flex-row justify-content-center">
             {% for ingredient in potion.ingredients %}
             <div class="px-1">
@@ -33,44 +36,18 @@ Potions
             </div>
             {% endfor %}
           </div>
-          {% endfor %}
         </td>
         <td>
-          {{ potions[0].price | round(1) }}
+        {{ potion.accessibility | round | int }}
         </td>
+        <td>
+        {{ potion.price | round | int }}
+        </td>
+        <td>{{ potion.relative_value | round | int }}</td>
       </tr>
-      {% endfor %} #}
-      {% for potion in data.potions %}
-      <tr>
-        <td>
-          {% for ingredient in potion.ingredients %}
-          <div class="px-1">
-            {% include "snippets/ingredient/link.html.jinja" %}
-          </div>
-          {% endfor %}
-        </td>
-        <td>
-          {% for potency in potion.potencies %}
-          {% include "snippets/potency/short.html.jinja" %}
-          {% endfor %}
-        </td>
-        {# <td>
-          {% for effect in potion.effects %}
-          <div class="px-1">
-            {% include "snippets/effect/link.html.jinja" %}
-          </div>
-          {% endfor %}
-        </td>
-        <td>
-          {{ potion.accessibility | round(1) }}
-        <td>
-          {{ potion.price | round(1) }}
-        </td>
-        <td>
-          {{ (potion.accessibility / potion.price) | round(1) }}
-        </td> #}
-      </tr>
+
       {% endfor %}
+
     </tbody>
   </table>
 </section>
@@ -78,6 +55,6 @@ Potions
 
 
 {% block additional_scripts %}
-{% set datatable_id = 'potions' %}
-{% include "snippets/datatables.html.jinja" %}
+{# {% set datatable_id = 'potions' %} #}
+{# {% include "snippets/datatables.html.jinja" %} #}
 {% endblock additional_scripts %}

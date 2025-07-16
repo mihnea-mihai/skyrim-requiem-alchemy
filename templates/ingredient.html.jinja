@@ -44,49 +44,59 @@
   </table>
 </section>
 <section>
-  <h2>Potions</h2>
-  <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm">
+  <h2>Valuable potions</h2>
+  <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm" data-order="[[ 4, &quot;desc&quot; ]]">
     <thead>
       <tr>
         <th>Potencies</th>
-        <th>Ingredients</th>
+        <th>Combine with</th>
         <th>Accessibility</th>
         <th>Price</th>
+        <th>Relative value</th>
       </tr>
     </thead>
     <tbody>
-      {% for potencies, potions in ingredient.grouped_potions %}
-      {% for potion in potions | select('is_recommended_potion') %}
+      {# {% for potencies, potions in ingredient.grouped_potions %} #}
+      {# {% for potion in potions  %} #}
+      {% for potion in ingredient.valuable_potions %}
+      
       <tr>
-        {% if loop.first %}
-        <td rowspan="{{ loop.length }}">
+        {# {% if loop.first %} #}
+        {# <td rowspan="{{ loop.length }}"> #}
+        <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            {% for potency in potencies %}
+            {% for potency in potion.potencies %}
             <div class="px-1">
               {% include "snippets/potency/short.html.jinja" %}
             </div>
             {% endfor %}
           </div>
         </td>
-        {% endif %}
+        {# {% endif %} #}
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            {% for ingredient in potion.ingredients %}
+            {% for pot_ingredient in potion.ingredients %}
+            {% if ingredient != pot_ingredient %}
+            {% set ingredient = pot_ingredient %}
             <div class="px-1">
               {% include "snippets/ingredient/link.html.jinja" %}
             </div>
+            {% endif %}
             {% endfor %}
           </div>
         </td>
         <td>
-        {{ potion.accessibility | round(1) }}
+        {{ potion.accessibility | round | int }}
         </td>
         <td>
-        {{ potion.price | round(1)}}
+        {{ potion.price | round | int }}
         </td>
+        <td>{{ potion.relative_value | round | int }}</td>
       </tr>
+
       {% endfor %}
-      {% endfor %}
+      {# {% endfor %} #}
+      {# {% endfor %} #}
 
     </tbody>
   </table>
@@ -94,5 +104,5 @@
 {% endblock content %}
 
 {% block additional_scripts %}
-{# {{ macros.datatables(['potencies']) }} #}
+{# {{ macros.datatables(['potions']) }} #}
 {% endblock additional_scripts %}

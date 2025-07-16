@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from skyrim_alchemy.data import Data
-from skyrim_alchemy.potency import Potency
 from skyrim_alchemy.effect import Effect
 from skyrim_alchemy.ingredient import Ingredient
 from skyrim_alchemy.logger import logger
+from skyrim_alchemy.potency import Potency
 from skyrim_alchemy.utils import read_csv
 
 if TYPE_CHECKING:

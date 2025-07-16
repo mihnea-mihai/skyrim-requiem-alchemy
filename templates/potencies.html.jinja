@@ -11,16 +11,16 @@ Potencies
         <th>Magnitude</th>
         <th>Duration</th>
         <th>Price</th>
-        {# <th>Ingredients</th> #}
+        <th>Min potion accessibility</th>
+        <th>Average potion accessibility</th>
       </tr>
     </thead>
     <tbody>
-      {% for potency in data.potencies | sort(attribute='effect.name')
+      {% for potency in data.potencies | selectattr('potions') | sort(attribute='effect.name')
       | sort(attribute='price', reverse=True) %}
       <tr>
-        {% set effect = potency.effect %}
         <th>
-          {% include "snippets/effect/link.html.jinja" %}
+          {% include "snippets/potency/link.html.jinja" %}
         </th>
         <td data-sort="{{ potency.magnitude }}">
           {% include "snippets/potency/magnitude.html.jinja" %}
@@ -31,13 +31,12 @@ Potencies
         <td data-sort="{{ potency.price }}">
           {% include "snippets/potency/price.html.jinja" %}
         </td>
-        {# <td>
-          {% for ingredient in potency.ingredients | sort(attribute='name') %}
-          <span class="px-2">
-            {% include "snippets/ingredient/short.html.jinja" %}
-          </span>
-          {% endfor %}
-        </td> #}
+        <td>
+          {{ potency.min_potion_accessibility | round(1) }}
+        </td>
+        <td>
+          {{ potency.average_potion_accessibility | round(1) }}
+        </td>
       </tr>
       {% endfor %}
     </tbody>

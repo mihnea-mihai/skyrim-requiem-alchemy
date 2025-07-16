@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 from functools import cache, cached_property
-
 from itertools import groupby
 from statistics import median
 from typing import TYPE_CHECKING
 
 from skyrim_alchemy.data import Data
-from skyrim_alchemy.utils import read_csv
 from skyrim_alchemy.logger import logger
+from skyrim_alchemy.utils import read_csv
 
 if TYPE_CHECKING:
     from skyrim_alchemy import Ingredient, Potency, Potion, Trait
@@ -46,7 +45,6 @@ class Effect:
 
     @cached_property
     def ingredients_by_potencies(self) -> list[tuple[Potency, list[Ingredient]]]:
-
         return [
             (p, sorted(trait.ingredient for trait in traits))
             for p, traits in groupby(
@@ -54,10 +52,6 @@ class Effect:
                 key=lambda t: t.potency,
             )
         ]
-
-    # @cached_property
-    # def potions(self) -> list[Potion]:
-    #     return sorted(p for p in Data.potions if self in p.ingredients)
 
     @cached_property
     def median_magnitude(self) -> float:
@@ -73,7 +67,27 @@ class Effect:
 
     @cached_property
     def median_accessibility(self) -> float:
-        return median(i.accessibility_factor for i in self.ingredients)
+        return median(i.accessibility for i in self.ingredients)
+
+    @cached_property
+    def potions(self) -> list[Potion]:
+        return sorted(p for p in Data.potions if self in p.effects)
+
+    @cached_property
+    def grouped_potions(self) -> list[tuple[Potency, list[Potion]]]:
+        return sorted(
+            [
+                (potencies, list(potions))
+                for potencies, potions in groupby(
+                    sorted(
+                        sorted(self.potions, key=lambda p: p.potencies, reverse=True),
+                        key=lambda p: p.effects,
+                    ),
+                    key=lambda p: p.potencies,
+                )
+            ],
+            key=lambda g: len(g[0]),
+        )
 
     def __repr__(self):
         return f"Effect({self.name})"

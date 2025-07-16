@@ -1,0 +1,176 @@
+strict digraph {
+    ingredient [label=<
+    <table cellpadding="2" cellborder="1" cellspacing="0">
+    <tr><td colspan="2"><font point-size="30">Ingredient</font></td></tr>
+        <tr>
+            <td colspan="2"><b>Attributes</b></td>
+        </tr>
+        <tr>
+            <td>str</td>
+            <td>name</td>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>value</td>
+        </tr>
+        <tr>
+            <td>bool</td>
+            <td>plantable</td>
+        </tr>
+        <tr>
+            <td>opt</td>
+            <td>vendor_rarity</td>
+        </tr>
+        <tr>
+            <td>opt</td>
+            <td>unique_to</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Properties</b></td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>average_potency_price</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>average_potion_price</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>median_potion_price</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>accessibility</td>
+        </tr>
+        <tr>
+            <td>list[Trait]</td>
+            <td>traits</td>
+        </tr>
+        <tr>
+            <td>list[Potency]</td>
+            <td>potencies</td>
+        </tr>
+        <tr>
+            <td>list[Effect]</td>
+            <td>effects</td>
+        </tr>
+        <tr>
+            <td>list[Potion]</td>
+            <td>potions</td>
+        </tr>
+        <tr>
+            <td>list[tuple[Potency, list[Potion]]]</td>
+            <td>grouped_potions</td>
+        </tr>
+    </table>
+    >
+    shape=none]
+    
+    effect [label=<
+    <table cellpadding="2" cellborder="1" cellspacing="0">
+    <tr><td colspan="2"><font point-size="30">Effect</font></td></tr>
+        <tr>
+            <td colspan="2"><b>Attributes</b></td>
+        </tr>
+        <tr>
+            <td>str</td>
+            <td>name</td>
+        </tr>
+        <tr>
+            <td>opt</td>
+            <td>effect_type</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>base_cost</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Properties</b></td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>median_magnitude</td>
+            
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>median_duration</td>
+            
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>median_potion_price</td>
+            
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>accessibility</td>
+            
+        </tr>
+        <tr>
+            <td>list[Trait]</td>
+            <td>traits</td>
+            
+        </tr>
+        <tr>
+            <td>list[Potency]</td>
+            <td>potencies</td>
+            
+        </tr>
+        <tr>
+            <td>list[Effect]</td>
+            <td>effects</td>
+            
+        </tr>
+        <tr>
+            <td>list[Potion]</td>
+            <td>potions</td>
+            
+        </tr>
+        <tr>
+            <td>list[tuple[Potency, list[Potion]]]</td>
+            <td>grouped_potions</td>
+            
+        </tr>
+    </table>
+    >
+    shape=none]
+}
+
+strict digraph {
+    node[shape=box]
+    subgraph cluster_ingredient {
+       label="Ingredient"
+       fontsize="30"
+       ingredient_name[
+           label=<<i>str</i><br/><font point-size="20">name</font>>]
+       ingredient_value[
+           label=<<i>float</i><br/><font point-size="20">value</font>>]
+       ingredient_plantable[
+           label=<<i>bool</i><br/><font point-size="20">plantable</font>>]
+       ingredient_vendor_rarity[
+           label=<<i>opt</i><br/><font point-size="20">vendor_rarity</font>>]
+       ingredient_unique_to[
+           label=<<i>opt</i><br/><font point-size="20">unique_to</font>>]
+       ingredient_accessibility[
+           label=<<i>float</i><br/><font point-size="20">accessibility</font>>]
+       ingredient_traits[
+           label=<<i>list[Trait]</i><br/><font point-size="20">traits</font>>]
+       ingredient_potencies[
+           label=<<i>list[Potency]</i><br/><font point-size="20">potencies</font>>]
+       ingredient_effects[
+           label=<<i>list[Effect]</i><br/><font point-size="20">effects</font>>]
+       ingredient_potions[
+           label=<<i>list[Potion]</i><br/><font point-size="20">potions</font>>]
+       ingredient_grouped_potions[
+           label=<<i>list[tuple[Potency, list[Potion]]]</i><br/><font point-size="20">grouped_potions</font>>]
+        ingredient_value -> ingredient_accessibility
+        ingredient_plantable -> ingredient_accessibility
+        ingredient_vendor_rarity -> ingredient_accessibility
+        ingredient_unique_to -> ingredient_accessibility
+        ingredient_traits -> ingredient_potencies -> ingredient_effects
+        ingredient_potions -> ingredient_grouped_potions
+   }  
+}
