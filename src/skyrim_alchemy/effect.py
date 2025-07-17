@@ -30,6 +30,7 @@ class Effect:
         self.name: str = row["name"]
         self.effect_type: str = row["effect_type"]
         self.base_cost: float = float(row["base_cost"])
+        self.permanent: bool = row["permanent"] == "True"
 
     @cached_property
     def traits(self) -> list[Trait]:

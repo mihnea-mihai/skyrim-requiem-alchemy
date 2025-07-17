@@ -7,7 +7,7 @@
   <h2>Ingredients</h2>
   {% include "snippets/effect/ingredients.html.jinja" %}
 </section>
-<section>
+{# <section>
   <h2>Potions</h2>
   <table id="potions" data-page-length="100" class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>
@@ -51,6 +51,43 @@
         </td>
       </tr>
       {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
+</section> #}
+<section>
+  <h2>Recommended Potions</h2>
+  <table id="potions" class="table table-hover table-bordered align-middle text-center table-sm" data-order="[[ 4, &quot;desc&quot; ]]">
+    <thead>
+      <tr>
+        <th>Potencies</th>
+        <th>Ingredients</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for potion in data.useful_potions %}
+      {% if effect in potion.effects %}
+       <tr>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for potency in potion.potencies %}
+            <div class="px-1">
+              {% include "snippets/potency/short.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for ingredient in potion.ingredients %}
+            <div class="px-1">
+              {% include "snippets/ingredient/link.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
+        </td>
+      </tr>
+      {% endif %}
       {% endfor %}
     </tbody>
   </table>

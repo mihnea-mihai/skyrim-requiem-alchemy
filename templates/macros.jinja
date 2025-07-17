@@ -14,13 +14,13 @@
   {% for table_id in table_ids %}
     <script defer>new DataTable('#{{ table_id }}', {
       layout: {
-        top2Start: {searchBuilder: {} },
+        // top2Start: {searchBuilder: {} },
         topStart: {search: {} },
-        topEnd: {
+        /*topEnd: {
           buttons: [{
             extend: 'colvis'
           }]
-        }
+        }*/
       },
       language: {
         searchBuilder: {

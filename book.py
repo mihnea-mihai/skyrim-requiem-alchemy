@@ -43,6 +43,13 @@ Data.effect_combinations = sorted(
     )
 )
 
+for potion in Data.potions:
+    if potion.best_in_slot and potion.pure and potion.compatible_duration:
+        Data.useful_potions.append(potion)
+
+print(len(Data.useful_potions))
+
+
 # Data.valuable_potions = sor
 
 logger.info("Started generating")

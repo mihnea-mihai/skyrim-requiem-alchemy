@@ -1,57 +1,57 @@
-name,effect_type,base_cost
-Cure Disease,beneficial,0.25
-Cure Poison,beneficial,0.2
-Damage Health,harmful,1.5
-Damage Magicka,harmful,1.1
-Damage Magicka Regeneration,harmful,0.25
-Damage Maximum Health,harmful,0.25
-Damage Maximum Magicka,harmful,0.5
-Damage Maximum Stamina,harmful,0.8
-Damage Stamina,harmful,0.9
-Damage Stamina Regeneration,harmful,0.3
-Fear,harmful,2.5
-Fortify Alteration,beneficial,0.25
-Fortify Armor Rating,beneficial,0.25
-Fortify Barter,beneficial,1
-Fortify Block,beneficial,0.25
-Fortify Carry Weight,beneficial,0.0725
-Fortify Conjuration,beneficial,0.25
-Fortify Destruction,beneficial,0.25
-Fortify Health,beneficial,0.2
-Fortify Health Regeneration,beneficial,0.05
-Fortify Illusion,beneficial,0.25
-Fortify Lockpicking,beneficial,0.5
-Fortify Magicka,beneficial,0.15
-Fortify Magicka Regeneration,beneficial,0.1
-Fortify Marksman,beneficial,0.25
-Fortify One-Handed,beneficial,0.25
-Fortify Pickpocket,beneficial,0.25
-Fortify Restoration,beneficial,0.25
-Fortify Sneak,beneficial,0.25
-Fortify Speech,beneficial,0.25
-Fortify Stamina,beneficial,0.15
-Fortify Stamina Regeneration,beneficial,0.05
-Fortify Two-Handed,beneficial,0.25
-Frenzy,harmful,7.5
-Invisibility,beneficial,50
-Lingering Damage Health,harmful,1.5
-Lingering Damage Magicka,harmful,5
-Lingering Damage Stamina,harmful,0.9
-Paralysis,harmful,250
-Resist Fire,beneficial,0.25
-Resist Frost,beneficial,0.25
-Resist Magic,beneficial,0.5
-Resist Poison,beneficial,0.25
-Resist Shock,beneficial,0.25
-Restore Health,beneficial,0.25
-Restore Magicka,beneficial,0.3
-Restore Stamina,beneficial,0.3
-Sanguinare Vampiris,harmful,0
-Soulreaping,harmful,15
-Tardiness,harmful,0.5
-Waterbreathing,beneficial,15
-Weakness to Fire,harmful,0.3
-Weakness to Frost,harmful,0.25
-Weakness to Magic,harmful,0.5
-Weakness to Poison,harmful,0.5
-Weakness to Shock,harmful,0.35
+name,effect_type,base_cost,permanent
+Cure Disease,beneficial,0.25,False
+Cure Poison,beneficial,0.2,False
+Damage Health,harmful,1.5,True
+Damage Magicka,harmful,1.1,True
+Damage Magicka Regeneration,harmful,0.25,False
+Damage Maximum Health,harmful,0.25,False
+Damage Maximum Magicka,harmful,0.5,False
+Damage Maximum Stamina,harmful,0.8,False
+Damage Stamina,harmful,0.9,True
+Damage Stamina Regeneration,harmful,0.3,False
+Fear,harmful,2.5,False
+Fortify Alteration,beneficial,0.25,False
+Fortify Armor Rating,beneficial,0.25,False
+Fortify Barter,beneficial,1,False
+Fortify Block,beneficial,0.25,False
+Fortify Carry Weight,beneficial,0.0725,False
+Fortify Conjuration,beneficial,0.25,False
+Fortify Destruction,beneficial,0.25,False
+Fortify Health,beneficial,0.2,False
+Fortify Health Regeneration,beneficial,0.05,False
+Fortify Illusion,beneficial,0.25,False
+Fortify Lockpicking,beneficial,0.5,False
+Fortify Magicka,beneficial,0.15,False
+Fortify Magicka Regeneration,beneficial,0.1,False
+Fortify Marksman,beneficial,0.25,False
+Fortify One-Handed,beneficial,0.25,False
+Fortify Pickpocket,beneficial,0.25,False
+Fortify Restoration,beneficial,0.25,False
+Fortify Sneak,beneficial,0.25,False
+Fortify Speech,beneficial,0.25,False
+Fortify Stamina,beneficial,0.15,False
+Fortify Stamina Regeneration,beneficial,0.05,False
+Fortify Two-Handed,beneficial,0.25,False
+Frenzy,harmful,7.5,False
+Invisibility,beneficial,50,False
+Lingering Damage Health,harmful,1.5,True
+Lingering Damage Magicka,harmful,5,True
+Lingering Damage Stamina,harmful,0.9,True
+Paralysis,harmful,250,False
+Resist Fire,beneficial,0.25,False
+Resist Frost,beneficial,0.25,False
+Resist Magic,beneficial,0.5,False
+Resist Poison,beneficial,0.25,False
+Resist Shock,beneficial,0.25,False
+Restore Health,beneficial,0.25,False
+Restore Magicka,beneficial,0.3,False
+Restore Stamina,beneficial,0.3,False
+Sanguinare Vampiris,harmful,0,False
+Soulreaping,harmful,15,False
+Tardiness,harmful,0.5,False
+Waterbreathing,beneficial,15,False
+Weakness to Fire,harmful,0.3,False
+Weakness to Frost,harmful,0.25,False
+Weakness to Magic,harmful,0.5,False
+Weakness to Poison,harmful,0.5,False
+Weakness to Shock,harmful,0.35,False

@@ -19,3 +19,4 @@ class Data:
     potions_by_potencies: dict[tuple[Potency], list[Potion]] = defaultdict(list)
     potions_by_effects: dict[tuple[Effect], list[Potion]] = defaultdict(list)
     valuable_potions: list[Potion] = []
+    useful_potions: list[Potion] = []

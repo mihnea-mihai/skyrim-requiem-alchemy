@@ -89,6 +89,41 @@ class Potion:
                 return False
         return True
 
+    @cached_property
+    def compatible_duration(self) -> bool:
+        for pot1, pot2 in combinations(self.potencies, 2):
+            if pot1.duration != pot2.duration and not (
+                pot1.effect.permanent or pot2.effect.permanent
+            ):
+                return False
+            if pot1.magnitude == 0 and pot2.magnitude != 0:
+                return False
+            if pot2.magnitude == 0 and pot1.magnitude != 0:
+                return False
+        return True
+
+        # if pot1.duration == pot2.duration:
+        #     if pot1.duration == 0:  # applies to both
+        #         return True
+        #     else:  # magnitude affects duration only for one
+        #         return False
+        # else:
+        #     return False
+
+        # if (
+        #     pot1.duration != pot2.duration
+        #     and not (pot1.effect.permanent or pot2.effect.permanent)
+        #     and (pot1.magnitude != 0 and pot2.magnitude != 0)
+        # ):
+        #     return False
+        # (
+        #     pot1.magnitude == 0
+        #     and pot2.magnitude != 0
+        #     or pot1.magnitude != 0
+        #     and pot2.magnitude == 0
+        # )
+        return True
+
     def __init__(self, ingredients: tuple[Ingredient]):
         self.ingredients = ingredients
         self.best_in_slot = False
