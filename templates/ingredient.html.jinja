@@ -6,6 +6,35 @@
 
 {% block content %}
 <section>
+  <h2>Details</h2>
+  <table class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Value</th>
+        <th>Plantable</th>
+        <th>Vendor Rarity</th>
+        <th>Unique to</th>
+        <th>Average potency price</th>
+        <th>Accessibility</th>
+        <th>Average potion price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ ingredient.value }}</td>
+        <td>{% include "snippets/ingredient/plantable.html.jinja" %}</td>
+        <td>{% include "snippets/ingredient/vendor_rarity.html.jinja" %}</td>
+        <td>{{ ingredient.unique_to | string }}</td>
+        <td>{{ ingredient.average_potency_price | round(1) }}</td>
+        <td>{{ ingredient.accessibility | round(1) }}</td>
+        <td>{{ ingredient.average_potion_price | round(1) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<section>
   <h2>Traits</h2>
   <table id="potencies" data-paging="false" class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>

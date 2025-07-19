@@ -92,9 +92,9 @@ class Potion:
     @cached_property
     def compatible_duration(self) -> bool:
         for pot1, pot2 in combinations(self.potencies, 2):
-            if pot1.duration != pot2.duration and not (
-                pot1.effect.permanent or pot2.effect.permanent
-            ):
+            if pot1.effect.permanent or pot2.effect.permanent:
+                continue
+            if pot1.duration != pot2.duration:
                 return False
             if pot1.magnitude == 0 and pot2.magnitude != 0:
                 return False
@@ -122,7 +122,14 @@ class Potion:
         #     or pot1.magnitude != 0
         #     and pot2.magnitude == 0
         # )
-        return True
+
+    @cached_property
+    def overpriced(self) -> bool:
+        return any(potency.overpriced for potency in self.potencies)
+
+    @cached_property
+    def potencies_accessibility_sum(self) -> float:
+        return sum(potency.min_potion_accessibility for potency in self.potencies)
 
     def __init__(self, ingredients: tuple[Ingredient]):
         self.ingredients = ingredients

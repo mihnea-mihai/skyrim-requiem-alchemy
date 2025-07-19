@@ -48,13 +48,16 @@
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
+      <th colspan="4">Potency</th>
+      <th colspan="2">Ingredient</th>
     </tr>
     <tr>
       <th>Magnitude</th>
       <th>Duration</th>
       <th>Price</th>
+      <th>Min potion accessibility</th>
+      <th>Name</th>
+      <th>Accessibility</th>
     </tr>
   </thead>
   <tbody>
@@ -86,76 +89,116 @@
 <span class="text-secondary">
   18.5
 </span>      </td>
+      <td rowspan="12" 
+      class="fw-bold " >
+        50
+      </td>
       <td class="">
 <a class="" href="ingredients/Nightshade">
   Nightshade
 </a>      </td>
+      <td>
+        37
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Chicken%27s%20Egg">
   Chicken's Egg
 </a>      </td>
+      <td>
+        209
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Hanging%20Moss">
   Hanging Moss
 </a>      </td>
+      <td>
+        210
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Claws">
   Claws
 </a>      </td>
+      <td>
+        211
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Blue%20Butterfly%20Wing">
   Blue Butterfly Wing
 </a>      </td>
+      <td>
+        212
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Spider%20Egg">
   Spider Egg
 </a>      </td>
+      <td>
+        213
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Glow%20Dust">
   Glow Dust
 </a>      </td>
+      <td>
+        230
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Spriggan%20Sap">
   Spriggan Sap
 </a>      </td>
+      <td>
+        661
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Burnt%20Spriggan%20Wood">
   Burnt Spriggan Wood
 </a>      </td>
+      <td>
+        3032
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Ancestor%20Moth%20Wing">
   Ancestor Moth Wing
 </a>      </td>
+      <td>
+        4510
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Pygmy%20Sunfish">
   Pygmy Sunfish
 </a>      </td>
+      <td>
+        6010
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Heart">
   Heart
 </a>      </td>
+      <td>
+        12099
+      </td>
     </tr>
     <tr>
       <td rowspan="1">
@@ -185,27 +228,33 @@
 <span class="text-secondary">
   18.5
 </span>      </td>
+      <td rowspan="1" 
+      class="fw-bold " >
+        -1
+      </td>
       <td class="">
 <a class="" href="ingredients/Blue%20Mountain%20Flower">
   Blue Mountain Flower
 </a>      </td>
+      <td>
+        13
+      </td>
     </tr>
   </tbody>
 </table></section>
 <section>
   <h2>Recommended Potions</h2>
-  <table id="potions" class="table table-hover table-bordered align-middle text-center table-sm" data-order="[[ 4, &quot;desc&quot; ]]">
+  <table class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>
       <tr>
-        <th>Potencies</th>
+        <th>Potency</th>
         <th>Ingredients</th>
+        <th>Additional potencies</th>
       </tr>
     </thead>
     <tbody>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
+        <td rowspan="33">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
@@ -233,9 +282,8 @@ Damage Magicka Regeneration
   5
 </span>⌛
   </span>
-</div></div>            </div>
-          </div>
-        </td>
+</div></div>        </td>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -248,8 +296,24 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Chicken%27s%20Egg">
+  Chicken's Egg
+</a>            </div>
+          </div>
+        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -281,113 +345,10 @@ Lingering Damage Stamina
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Chicken%27s%20Egg">
-  Chicken's Egg
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -404,96 +365,14 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
-  Blue Mountain Flower
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nordic%20Barnacle">
-  Nordic Barnacle
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Glow%20Dust">
-  Glow Dust
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
+<a href="effects/Damage%20Health">
+Damage Health
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
@@ -509,45 +388,18 @@ Damage Magicka
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
-0
+1
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
+  1
 </span>⌛
   </span>
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -564,8 +416,57 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Magicka">
+Damage Magicka
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Deathbell">
+  Deathbell
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+          </div>
+        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -597,197 +498,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
-  Blue Mountain Flower
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Deathbell">
-  Deathbell
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Tardiness">
-Tardiness
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-50
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  50
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
-  Blue Mountain Flower
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Deathbell">
-  Deathbell
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
-  Burnt Spriggan Wood
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -804,8 +518,6 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -819,7 +531,7 @@ Damage Health
   <span class="px-1">
 <span class="fw-bold     text-success
 ">
-5
+10
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -837,66 +549,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Lingering%20Damage%20Stamina">
-Lingering Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -913,8 +569,86 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/River%20Betty">
+  River Betty
+</a>            </div>
+          </div>
+        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -946,37 +680,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -988,44 +695,13 @@ Damage Magicka Regeneration
   Nightshade
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/River%20Betty">
-  River Betty
+<a class="link-secondary" href="ingredients/Red%20Glitterdust">
+  Red Glitterdust
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -1057,6 +733,8 @@ Damage Health
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1068,44 +746,13 @@ Damage Health
   Nightshade
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Red%20Glitterdust">
-  Red Glitterdust
+<a class="link-secondary" href="ingredients/Nirnroot">
+  Nirnroot
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -1137,6 +784,8 @@ Damage Health
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1148,13 +797,11 @@ Damage Health
   Nightshade
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Nirnroot">
-  Nirnroot
+<a class="link-secondary" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1215,37 +862,10 @@ Lingering Damage Stamina
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1257,13 +877,11 @@ Damage Magicka Regeneration
   Nightshade
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Venomous%20Spittle">
-  Venomous Spittle
+<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
+  Crimson Nirnroot
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1295,117 +913,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
-  Blue Mountain Flower
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
-  Crimson Nirnroot
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1422,8 +933,57 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Stamina">
+Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+3
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
+  Blue Mountain Flower
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Chicken%27s%20Egg">
+  Chicken's Egg
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Venomous%20Spittle">
+  Venomous Spittle
+</a>            </div>
+          </div>
+        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1455,37 +1015,10 @@ Lingering Damage Stamina
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1493,48 +1026,17 @@ Damage Magicka Regeneration
   Blue Mountain Flower
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Chicken%27s%20Egg">
-  Chicken's Egg
+<a class="link-secondary" href="ingredients/Spider%20Egg">
+  Spider Egg
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Venomous%20Spittle">
-  Venomous Spittle
+<a class="link-secondary" href="ingredients/Red%20Glitterdust">
+  Red Glitterdust
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -1566,6 +1068,8 @@ Damage Stamina
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1577,13 +1081,11 @@ Damage Stamina
   Spider Egg
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Red%20Glitterdust">
-  Red Glitterdust
+<a class="link-secondary" href="ingredients/Nirnroot">
+  Nirnroot
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1615,37 +1117,10 @@ Damage Stamina
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1657,44 +1132,13 @@ Damage Magicka Regeneration
   Spider Egg
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Nirnroot">
-  Nirnroot
+<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
+  Crimson Nirnroot
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -1726,413 +1170,8 @@ Damage Stamina
 </div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Mountain%20Flower">
-  Blue Mountain Flower
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Spider%20Egg">
-  Spider Egg
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
-  Crimson Nirnroot
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Lingering%20Damage%20Magicka">
-Lingering Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Wheat">
-  Wheat
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Pygmy%20Sunfish">
-  Pygmy Sunfish
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Lingering%20Damage%20Magicka">
-Lingering Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Swamp%20Fungal%20Pod">
-  Swamp Fungal Pod
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Pygmy%20Sunfish">
-  Pygmy Sunfish
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Lingering%20Damage%20Magicka">
-Lingering Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Swamp%20Fungal%20Pod">
-  Swamp Fungal Pod
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Pygmy%20Sunfish">
-  Pygmy Sunfish
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Heart">
-  Heart
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -2149,36 +1188,34 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Lingering%20Damage%20Stamina">
-Lingering Damage Stamina
+<a href="effects/Damage%20Magicka">
+Damage Magicka
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
-1
+5
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  1
+  3
 </span>💥
   </span>
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
-10
+0
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  10
+  0
 </span>⌛
   </span>
 </div></div>            </div>
@@ -2191,9 +1228,9 @@ Damage Health
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
-3
+5
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -2201,9 +1238,9 @@ Damage Health
 </span>💥
   </span>
   <span class="px-1">
-<span class="fw-bold     text-success
+<span class="fw-bold     text-danger
 ">
-5
+0
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -2211,37 +1248,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -2258,226 +1268,6 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Tardiness">
-Tardiness
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-50
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  50
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Deathbell">
-  Deathbell
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
-  Burnt Spriggan Wood
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Tardiness">
-Tardiness
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-50
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  50
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Deathbell">
-  Deathbell
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
-  Burnt Spriggan Wood
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Heart">
-  Heart
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -2518,9 +1308,9 @@ Damage Health
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-success
+<span class="fw-bold     text-secondary
 ">
-10
+3
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -2528,9 +1318,9 @@ Damage Health
 </span>💥
   </span>
   <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
-1
+5
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -2538,37 +1328,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -2585,306 +1348,6 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Canis%20Root">
-  Canis Root
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Canis%20Root">
-  Canis Root
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Heart">
-  Heart
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blisterwort">
-  Blisterwort
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -2927,7 +1390,7 @@ Damage Health
   <span class="px-1">
 <span class="fw-bold     text-success
 ">
-5
+10
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -2935,9 +1398,60 @@ Damage Health
 </span>💥
   </span>
   <span class="px-1">
-<span class="fw-bold     text-danger
+<span class="fw-bold     text-secondary
 ">
-0
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Canis%20Root">
+  Canis Root
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
+  Blue Butterfly Wing
+</a>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -2949,33 +1463,35 @@ Damage Health
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
+<a href="effects/Damage%20Stamina">
+Damage Stamina
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
-100
+3
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  100
+  3
 </span>💥
   </span>
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
-5
+0
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  5
+  0
 </span>⌛
   </span>
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -2992,8 +1508,86 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
+</span>⌛
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Butterfly%20Wing">
+  Butterfly Wing
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Hanging%20Moss">
+  Hanging Moss
+</a>            </div>
+          </div>
+        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -3054,175 +1648,10 @@ Damage Magicka
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Butterfly%20Wing">
-  Butterfly Wing
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Hanging%20Moss">
-  Hanging Moss
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Lingering%20Damage%20Stamina">
-Lingering Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -3239,8 +1668,6 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -3276,28 +1703,108 @@ Lingering Damage Stamina
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
+<a href="effects/Damage%20Magicka">
+Damage Magicka
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
 5
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  5
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
+</span>⌛
+  </span>
+</div></div>            </div>
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Damage%20Health">
+Damage Health
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+5
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-danger
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>⌛
+  </span>
+</div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Nightshade">
+  Nightshade
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Chicken%27s%20Egg">
+  Chicken's Egg
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Red%20Glitterdust">
+  Red Glitterdust
+</a>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <div class="px-2">
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
+</a>  </div>
+<div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+1
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  1
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+10
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  10
 </span>⌛
   </span>
 </div></div>            </div>
@@ -3332,6 +1839,8 @@ Damage Health
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -3339,8 +1848,8 @@ Damage Health
   Nightshade
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Chicken%27s%20Egg">
-  Chicken's Egg
+<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
+  Blue Butterfly Wing
 </a>            </div>
             <div class="px-1">
 <a class="link-secondary" href="ingredients/Red%20Glitterdust">
@@ -3348,148 +1857,8 @@ Damage Health
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Hanging%20Moss">
-  Hanging Moss
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Wolf%20Heart">
-  Wolf Heart
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -3550,115 +1919,8 @@ Damage Stamina
 </div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Red%20Glitterdust">
-  Red Glitterdust
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-15
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-15
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -3675,39 +1937,8 @@ Damage Health
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -3717,9 +1948,9 @@ Damage Stamina
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
-3
+15
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -3741,57 +1972,6 @@ Damage Stamina
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Wolf%20Heart">
-  Wolf Heart
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
 <a href="effects/Damage%20Health">
 Damage Health
 </a>  </div>
@@ -3799,254 +1979,7 @@ Damage Health
   <span class="px-1">
 <span class="fw-bold     text-success
 ">
-20
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-20
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
-  Crimson Nirnroot
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Tardiness">
-Tardiness
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-50
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  50
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nightshade">
-  Nightshade
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
-  Burnt Spriggan Wood
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Poisonous%20Bloom">
-  Poisonous Bloom
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Lingering%20Damage%20Stamina">
-Lingering Damage Stamina
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-1
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Health">
-Damage Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
+15
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -4064,37 +1997,10 @@ Damage Health
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -4102,27 +2008,35 @@ Damage Magicka Regeneration
   Nightshade
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Venomous%20Spittle">
-  Venomous Spittle
+<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
+  Blue Butterfly Wing
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Heart">
-  Heart
+<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
+  Crimson Nirnroot
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Lingering%20Damage%20Stamina">
-Lingering Damage Stamina
+<a href="effects/Damage%20Health">
+Damage Health
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
+  <span class="px-1">
+<span class="fw-bold     text-success
+">
+20
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  3
+</span>💥
+  </span>
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
@@ -4131,16 +2045,6 @@ Lingering Damage Stamina
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   1
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-10
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  10
 </span>⌛
   </span>
 </div></div>            </div>
@@ -4148,14 +2052,14 @@ Lingering Damage Stamina
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
+<a href="effects/Damage%20Stamina">
+Damage Stamina
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
 <span class="fw-bold     text-success
 ">
-5
+20
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -4173,37 +2077,10 @@ Damage Magicka
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -4220,119 +2097,37 @@ Damage Magicka Regeneration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Stamina">
-Damage Stamina
+<a href="effects/Lingering%20Damage%20Stamina">
+Lingering Damage Stamina
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
-3
+1
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  3
+  1
 </span>💥
   </span>
   <span class="px-1">
 <span class="fw-bold     text-secondary
 ">
-0
+10
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  0
+  10
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Hanging%20Moss">
-  Hanging Moss
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Wolf%20Heart">
-  Wolf Heart
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -4362,32 +2157,54 @@ Damage Magicka
 </span>⌛
   </span>
 </div></div>            </div>
+          </div>
+        </td>
+      <tr>
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Hanging%20Moss">
+  Hanging Moss
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Red%20Glitterdust">
+  Red Glitterdust
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Heart">
+  Heart
+</a>            </div>
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
+<a href="effects/Damage%20Magicka">
+Damage Magicka
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
 5
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
-  5
+  3
+</span>💥
+  </span>
+  <span class="px-1">
+<span class="fw-bold     text-secondary
+">
+0
+</span>
+<span class="text-secondary">/</span>
+<span class="text-secondary">
+  0
 </span>⌛
   </span>
 </div></div>            </div>
@@ -4422,6 +2239,8 @@ Damage Health
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -4429,8 +2248,8 @@ Damage Health
   Hanging Moss
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Red%20Glitterdust">
-  Red Glitterdust
+<a class="link-secondary" href="ingredients/Nirnroot">
+  Nirnroot
 </a>            </div>
             <div class="px-1">
 <a class="link-secondary" href="ingredients/Heart">
@@ -4438,8 +2257,6 @@ Damage Health
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -4468,35 +2285,6 @@ Damage Magicka
 <span class="text-secondary">/</span>
 <span class="text-secondary">
   0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
 </span>⌛
   </span>
 </div></div>            </div>
@@ -4531,133 +2319,24 @@ Damage Health
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Hanging%20Moss">
-  Hanging Moss
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Nirnroot">
-  Nirnroot
+<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
+  Blue Butterfly Wing
 </a>            </div>
             <div class="px-1">
 <a class="link-secondary" href="ingredients/Heart">
   Heart
 </a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka">
-Damage Magicka
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-0
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  0
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Tardiness">
-Tardiness
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-50
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  50
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Hanging%20Moss">
-  Hanging Moss
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Trama%20Root">
-  Trama Root
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
-  Burnt Spriggan Wood
+<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
+  Crimson Nirnroot
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -4693,35 +2372,6 @@ Damage Health
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
 <a href="effects/Damage%20Stamina">
 Damage Stamina
 </a>  </div>
@@ -4749,24 +2399,24 @@ Damage Stamina
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Blue%20Butterfly%20Wing">
-  Blue Butterfly Wing
+<a class="link-secondary" href="ingredients/Trama%20Root">
+  Trama Root
+</a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
+  Burnt Spriggan Wood
 </a>            </div>
             <div class="px-1">
 <a class="link-secondary" href="ingredients/Heart">
   Heart
 </a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Crimson%20Nirnroot">
-  Crimson Nirnroot
-</a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -4827,51 +2477,6 @@ Tardiness
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Damage%20Magicka%20Regeneration">
-Damage Magicka Regeneration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-100
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  100
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  5
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Trama%20Root">
-  Trama Root
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Burnt%20Spriggan%20Wood">
-  Burnt Spriggan Wood
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Heart">
-  Heart
-</a>            </div>
           </div>
         </td>
       </tr>

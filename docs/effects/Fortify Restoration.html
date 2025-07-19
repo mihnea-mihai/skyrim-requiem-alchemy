@@ -48,13 +48,16 @@
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
+      <th colspan="4">Potency</th>
+      <th colspan="2">Ingredient</th>
     </tr>
     <tr>
       <th>Magnitude</th>
       <th>Duration</th>
       <th>Price</th>
+      <th>Min potion accessibility</th>
+      <th>Name</th>
+      <th>Accessibility</th>
     </tr>
   </thead>
   <tbody>
@@ -86,46 +89,71 @@
 <span class="text-secondary">
   8.2
 </span>      </td>
+      <td rowspan="7" 
+      class="fw-bold " >
+        236
+      </td>
       <td class="">
 <a class="" href="ingredients/Salt">
   Salt
 </a>      </td>
+      <td>
+        118
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Small%20Antlers">
   Small Antlers
 </a>      </td>
+      <td>
+        118
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Abcean%20Longfin">
   Abcean Longfin
 </a>      </td>
+      <td>
+        121
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Cyrodilic%20Spadetail">
   Cyrodilic Spadetail
 </a>      </td>
+      <td>
+        125
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Small%20Pearl">
   Small Pearl
 </a>      </td>
+      <td>
+        441
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Spriggan%20Sap">
   Spriggan Sap
 </a>      </td>
+      <td>
+        661
+      </td>
     </tr>
     <tr>
       <td class="">
 <a class="" href="ingredients/Pygmy%20Sunfish">
   Pygmy Sunfish
 </a>      </td>
+      <td>
+        6010
+      </td>
     </tr>
     <tr>
       <td rowspan="1">
@@ -155,27 +183,33 @@
 <span class="text-secondary">
   8.2
 </span>      </td>
+      <td rowspan="1" 
+      class="fw-bold " >
+        -1
+      </td>
       <td class="">
 <a class="" href="ingredients/Yellow%20Mountain%20Flower">
   Yellow Mountain Flower
 </a>      </td>
+      <td>
+        4508
+      </td>
     </tr>
   </tbody>
 </table></section>
 <section>
   <h2>Recommended Potions</h2>
-  <table id="potions" class="table table-hover table-bordered align-middle text-center table-sm" data-order="[[ 4, &quot;desc&quot; ]]">
+  <table class="table table-hover table-bordered align-middle text-center table-sm">
     <thead>
       <tr>
-        <th>Potencies</th>
+        <th>Potency</th>
         <th>Ingredients</th>
+        <th>Additional potencies</th>
       </tr>
     </thead>
     <tbody>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
+        <td rowspan="8">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
@@ -203,9 +237,8 @@ Fortify Restoration
   60
 </span>⌛
   </span>
-</div></div>            </div>
-          </div>
-        </td>
+</div></div>        </td>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -218,70 +251,12 @@ Fortify Restoration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Health">
-Fortify Health
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -298,51 +273,20 @@ Fortify Health
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Fortify%20Sneak">
-Fortify Sneak
+<a href="effects/Fortify%20Health">
+Fortify Health
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
-<span class="fw-bold     text-secondary
+<span class="fw-bold     text-success
 ">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
+5
 </span>
 <span class="text-secondary">/</span>
 <span class="text-secondary">
@@ -362,6 +306,8 @@ Fortify Restoration
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -378,45 +324,14 @@ Fortify Restoration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Resist%20Frost">
-Resist Frost
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
+<a href="effects/Fortify%20Sneak">
+Fortify Sneak
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
@@ -442,624 +357,8 @@ Fortify Restoration
 </div></div>            </div>
           </div>
         </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Snowberry">
-  Snowberry
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Salt">
-  Salt
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Small%20Pearl">
-  Small Pearl
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
+      <tr>
 
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Resist%20Poison">
-Resist Poison
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-2
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Thistle%20Branch">
-  Thistle Branch
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Salt">
-  Salt
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Resist%20Poison">
-Resist Poison
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-2
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Resist%20Frost">
-Resist Frost
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-3
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  3
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Thistle%20Branch">
-  Thistle Branch
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Small%20Pearl">
-  Small Pearl
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Alteration">
-Fortify Alteration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Grass%20Pod">
-  Grass Pod
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Salt">
-  Salt
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Spriggan%20Sap">
-  Spriggan Sap
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Resist%20Poison">
-Resist Poison
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Grass%20Pod">
-  Grass Pod
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Salt">
-  Salt
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Resist%20Poison">
-Resist Poison
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Alteration">
-Fortify Alteration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Grass%20Pod">
-  Grass Pod
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Spriggan%20Sap">
-  Spriggan Sap
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Illusion">
-Fortify Illusion
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Dragon%27s%20Tongue">
-  Dragon's Tongue
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Salt">
-  Salt
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Spriggan%20Sap">
-  Spriggan Sap
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20One-Handed">
-Fortify One-Handed
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-          </div>
-        </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1076,74 +375,14 @@ Fortify Restoration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <div class="px-2">
-<a href="effects/Resist%20Poison">
-Resist Poison
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-danger
-">
-2
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Sneak">
-Fortify Sneak
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
+<a href="effects/Fortify%20One-Handed">
+Fortify One-Handed
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
@@ -1169,135 +408,26 @@ Fortify Restoration
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Beehive%20Husk">
-  Beehive Husk
+<a class="link-secondary" href="ingredients/Small%20Antlers">
+  Small Antlers
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Abcean%20Longfin">
-  Abcean Longfin
+<a class="link-secondary" href="ingredients/Dwarven%20Oil">
+  Dwarven Oil
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
+<a class="link-secondary" href="ingredients/Spriggan%20Sap">
+  Spriggan Sap
 </a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Resist%20Poison">
-Resist Poison
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-success
-">
-5
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Mudcrab%20Chitin">
-  Mudcrab Chitin
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Salt">
-  Salt
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
-</a>            </div>
-          </div>
-        </td>
-      </tr>
-       <tr>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
             <div class="px-1">
 
 <div class="d-flex flex-wrap flex-row justify-content-center">
@@ -1329,24 +459,24 @@ Fortify Illusion
 </div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Small%20Antlers">
-  Small Antlers
+<a class="link-secondary" href="ingredients/Abcean%20Longfin">
+  Abcean Longfin
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Dwarven%20Oil">
-  Dwarven Oil
+<a class="link-secondary" href="ingredients/Frost%20Mirriam">
+  Frost Mirriam
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Spriggan%20Sap">
-  Spriggan Sap
+<a class="link-secondary" href="ingredients/Small%20Pearl">
+  Small Pearl
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1407,37 +537,10 @@ Fortify Sneak
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1445,8 +548,8 @@ Fortify Restoration
   Abcean Longfin
 </a>            </div>
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Frost%20Mirriam">
-  Frost Mirriam
+<a class="link-secondary" href="ingredients/Hawk%20Feathers">
+  Hawk Feathers
 </a>            </div>
             <div class="px-1">
 <a class="link-secondary" href="ingredients/Small%20Pearl">
@@ -1454,8 +557,6 @@ Fortify Restoration
 </a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1516,55 +617,26 @@ Fortify Sneak
 </span>⌛
   </span>
 </div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
           </div>
         </td>
+      <tr>
+
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
-<a class="link-secondary" href="ingredients/Abcean%20Longfin">
-  Abcean Longfin
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Hawk%20Feathers">
-  Hawk Feathers
+<a class="link-secondary" href="ingredients/Hanging%20Moss">
+  Hanging Moss
 </a>            </div>
             <div class="px-1">
 <a class="link-secondary" href="ingredients/Small%20Pearl">
   Small Pearl
 </a>            </div>
+            <div class="px-1">
+<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
+  Yellow Mountain Flower
+</a>            </div>
           </div>
         </td>
-      </tr>
-       <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             <div class="px-1">
@@ -1573,35 +645,6 @@ Fortify Restoration
   <div class="px-2">
 <a href="effects/Fortify%20One-Handed">
 Fortify One-Handed
-</a>  </div>
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-4
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  4
-</span>💥
-  </span>
-  <span class="px-1">
-<span class="fw-bold     text-secondary
-">
-60
-</span>
-<span class="text-secondary">/</span>
-<span class="text-secondary">
-  60
-</span>⌛
-  </span>
-</div></div>            </div>
-            <div class="px-1">
-
-<div class="d-flex flex-wrap flex-row justify-content-center">
-  <div class="px-2">
-<a href="effects/Fortify%20Restoration">
-Fortify Restoration
 </a>  </div>
 <div class="d-flex flex-wrap flex-row justify-content-center">
   <span class="px-1">
@@ -1654,22 +697,6 @@ Fortify Health
 </span>⌛
   </span>
 </div></div>            </div>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex flex-wrap flex-row justify-content-center">
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Hanging%20Moss">
-  Hanging Moss
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Small%20Pearl">
-  Small Pearl
-</a>            </div>
-            <div class="px-1">
-<a class="link-secondary" href="ingredients/Yellow%20Mountain%20Flower">
-  Yellow Mountain Flower
-</a>            </div>
           </div>
         </td>
       </tr>

@@ -66,5 +66,21 @@ class Potency:
             return mean(potion.accessibility for potion in self.potions)
         return -1
 
+    @cached_property
+    def overpriced(self) -> bool:
+        for potency in self.effect.potencies:
+            if potency.price > self.price:
+                if (
+                    potency.min_potion_accessibility < self.min_potion_accessibility
+                    and potency.magnitude >= self.magnitude
+                    and potency.duration >= self.duration
+                ):
+                    return True
+        return False
+
+    @cached_property
+    def useful_potions(self) -> list[Potion]:
+        return [potion for potion in Data.useful_potions if self in potion.potencies]
+
     def __repr__(self):
         return f"Potency({self.effect.name}, {self.magnitude}, {self.duration})"

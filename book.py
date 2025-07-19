@@ -44,7 +44,13 @@ Data.effect_combinations = sorted(
 )
 
 for potion in Data.potions:
-    if potion.best_in_slot and potion.pure and potion.compatible_duration:
+    if (
+        potion.best_in_slot
+        and potion.pure
+        and potion.compatible_duration
+        and not potion.overpriced
+        and potion.potencies_accessibility_sum > potion.accessibility / 2
+    ):
         Data.useful_potions.append(potion)
 
 print(len(Data.useful_potions))

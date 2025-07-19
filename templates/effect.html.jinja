@@ -44,10 +44,10 @@
           </div>
         </td>
         <td>
-        {{ potion.accessibility | round(1) }}
+          {{ potion.accessibility | round(1) }}
         </td>
         <td>
-        {{ potion.price | round(1)}}
+          {{ potion.price | round(1)}}
         </td>
       </tr>
       {% endfor %}
@@ -55,19 +55,24 @@
     </tbody>
   </table>
 </section> #}
-<section>
+{# <section>
   <h2>Recommended Potions</h2>
-  <table id="potions" class="table table-hover table-bordered align-middle text-center table-sm" data-order="[[ 4, &quot;desc&quot; ]]">
+  <table id="potions" class="table table-hover table-bordered align-middle text-center table-sm"
+    data-order="[[ 4, &quot;desc&quot; ]]">
     <thead>
       <tr>
         <th>Potencies</th>
+        <th>Sum of potencies accessibility</th>
         <th>Ingredients</th>
+        <th>Potion accessibility</th>
       </tr>
     </thead>
     <tbody>
       {% for potion in data.useful_potions %}
       {% if effect in potion.effects %}
-       <tr>
+      {% if not potion.overpriced %}
+      {% if potion.potencies_accessibility_sum > potion.accessibility / 2 %}
+      <tr>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             {% for potency in potion.potencies %}
@@ -77,6 +82,7 @@
             {% endfor %}
           </div>
         </td>
+        <td>{{ potion.potencies_accessibility_sum | round | int }}</td>
         <td>
           <div class="d-flex flex-wrap flex-row justify-content-center">
             {% for ingredient in potion.ingredients %}
@@ -86,9 +92,60 @@
             {% endfor %}
           </div>
         </td>
+        <td>{{ potion.accessibility | round | int }}</td>
       </tr>
       {% endif %}
+      {% endif %}
+      {% endif %}
       {% endfor %}
+    </tbody>
+  </table>
+</section> #}
+<section>
+  <h2>Recommended Potions</h2>
+  <table class="table table-hover table-bordered align-middle text-center table-sm">
+    <thead>
+      <tr>
+        <th>Potency</th>
+        <th>Ingredients</th>
+        <th>Additional potencies</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for main_potency in effect.potencies %}
+      {% for potion in main_potency.useful_potions %}
+      <tr>
+        {% if loop.first %}
+        <td rowspan="{{ main_potency.useful_potions | length }}">
+          {% set potency = main_potency %}
+          {% include "snippets/potency/short.html.jinja" %}
+        </td>
+        {% endif %}
+
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for ingredient in potion.ingredients %}
+            <div class="px-1">
+              {% include "snippets/ingredient/link.html.jinja" %}
+            </div>
+            {% endfor %}
+          </div>
+        </td>
+        <td>
+          <div class="d-flex flex-wrap flex-row justify-content-center">
+            {% for potency in potion.potencies %}
+            {% if potency.effect.name != main_potency.effect.name %}
+            <div class="px-1">
+              {% include "snippets/potency/short.html.jinja" %}
+            </div>
+            {% else %}
+            {% endif %}
+            {% endfor %}
+          </div>
+        </td>
+        {% endfor %}
+        {% endfor %}
+      </tr>
     </tbody>
   </table>
 </section>

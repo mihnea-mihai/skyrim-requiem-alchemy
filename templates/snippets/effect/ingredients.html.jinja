@@ -1,13 +1,16 @@
 <table class="table table-hover table-bordered align-middle text-center table-sm">
   <thead>
     <tr>
-      <th colspan="3">Potency</th>
-      <th rowspan="2">Ingredient</th>
+      <th colspan="4">Potency</th>
+      <th colspan="2">Ingredient</th>
     </tr>
     <tr>
       <th>Magnitude</th>
       <th>Duration</th>
       <th>Price</th>
+      <th>Min potion accessibility</th>
+      <th>Name</th>
+      <th>Accessibility</th>
     </tr>
   </thead>
   <tbody>
@@ -24,9 +27,16 @@
       <td rowspan="{{ ingredients | length }}">
         {% include "snippets/potency/price.html.jinja" %}
       </td>
+      <td rowspan="{{ ingredients | length }}" 
+      class="fw-bold {{ 'text-danger' if potency.overpriced }}" >
+        {{ potency.min_potion_accessibility | round | int }}
+      </td>
       {% endif %}
       <td class="">
         {% include "snippets/ingredient/link.html.jinja" %}
+      </td>
+      <td>
+        {{ ingredient.accessibility | round | int }}
       </td>
     </tr>
     {% endfor %}
