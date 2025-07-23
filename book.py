@@ -49,7 +49,7 @@ for potion in Data.potions:
         and potion.pure
         and potion.compatible_duration
         and not potion.overpriced
-        and potion.potencies_accessibility_sum > potion.accessibility / 2
+        and potion.potencies_accessibility_sum > potion.accessibility / 10
     ):
         Data.useful_potions.append(potion)
 

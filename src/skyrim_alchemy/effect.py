@@ -38,7 +38,7 @@ class Effect:
 
     @cached_property
     def potencies(self) -> list[Potency]:
-        return sorted({t.potency for t in self.traits})
+        return sorted({t.potency for t in self.traits}, reverse=True)
 
     @cached_property
     def ingredients(self) -> list[Ingredient]:

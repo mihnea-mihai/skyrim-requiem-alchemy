@@ -2,12 +2,12 @@ name,effect_type,base_cost,permanent
 Cure Disease,beneficial,0.25,False
 Cure Poison,beneficial,0.2,False
 Damage Health,harmful,1.5,True
-Damage Magicka,harmful,1.1,True
+Damage Magicka,harmful,1.1,False
 Damage Magicka Regeneration,harmful,0.25,False
 Damage Maximum Health,harmful,0.25,False
 Damage Maximum Magicka,harmful,0.5,False
 Damage Maximum Stamina,harmful,0.8,False
-Damage Stamina,harmful,0.9,True
+Damage Stamina,harmful,0.9,False
 Damage Stamina Regeneration,harmful,0.3,False
 Fear,harmful,2.5,False
 Fortify Alteration,beneficial,0.25,False
@@ -35,8 +35,8 @@ Fortify Two-Handed,beneficial,0.25,False
 Frenzy,harmful,7.5,False
 Invisibility,beneficial,50,False
 Lingering Damage Health,harmful,1.5,True
-Lingering Damage Magicka,harmful,5,True
-Lingering Damage Stamina,harmful,0.9,True
+Lingering Damage Magicka,harmful,5,False
+Lingering Damage Stamina,harmful,0.9,False
 Paralysis,harmful,250,False
 Resist Fire,beneficial,0.25,False
 Resist Frost,beneficial,0.25,False

@@ -19,7 +19,7 @@ class Potion:
         #     if potion.ingredients == new_ings:
         #         return potion
         pot = Potion(new_ings)
-        if pot.valid and pot.is_improvement:
+        if pot.valid and pot.pure and pot.compatible_duration and pot.is_improvement:
             logger.debug("Potions += %s", str(pot))
             Data.potions.append(pot)
             # Data.ingredient_combinations.append(new_ings)

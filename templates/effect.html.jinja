@@ -109,6 +109,7 @@
         <th>Potency</th>
         <th>Ingredients</th>
         <th>Additional potencies</th>
+        <th>Accessibility</th>
       </tr>
     </thead>
     <tbody>
@@ -142,6 +143,9 @@
             {% endif %}
             {% endfor %}
           </div>
+        </td>
+        <td>
+          {{ potion.accessibility | round | int }}
         </td>
         {% endfor %}
         {% endfor %}

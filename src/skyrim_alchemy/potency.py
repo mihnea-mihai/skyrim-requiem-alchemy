@@ -80,7 +80,11 @@ class Potency:
 
     @cached_property
     def useful_potions(self) -> list[Potion]:
-        return [potion for potion in Data.useful_potions if self in potion.potencies]
+        return sorted(
+            [potion for potion in Data.useful_potions if self in potion.potencies],
+            key=lambda p: p.accessibility,
+            # reverse=True,
+        )
 
     def __repr__(self):
         return f"Potency({self.effect.name}, {self.magnitude}, {self.duration})"

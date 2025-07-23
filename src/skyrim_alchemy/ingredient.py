@@ -150,7 +150,7 @@ class Ingredient:
             case "":
                 res *= 1
             case "Fishing":
-                res *= 2
+                res *= 1
             case _:
                 res *= 1.5
 
@@ -163,7 +163,11 @@ class Ingredient:
 
     @cached_property
     def valuable_potions(self) -> list[Potion]:
-        return sorted(self.potions, key=lambda p: p.relative_value, reverse=True)[:10]
+        return sorted(self.useful_potions, key=lambda p: p.relative_value, reverse=True)
+
+    @cached_property
+    def useful_potions(self) -> list[Potion]:
+        return sorted(pot for pot in Data.useful_potions if self in pot.ingredients)
 
 
 if __name__ == "__main__":
